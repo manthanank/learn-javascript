@@ -742,10 +742,12 @@ let result = str.match(/the/i);
 console.log(result);
 ```
 
-replace
+**replace** - It can be used to replace a specific string or a regular expression with another string. The method takes two arguments: the first argument is the string or regular expression to be replaced, and the second argument is the string that will replace the matched string or regular expression. It returns a new string with the replacements made.
 
 ```javascript
-
+let str = "JavaScript is a programming language";
+let newStr = str.replace("JavaScript", "JS");
+console.log(newStr); // "JS is a programming language"
 ```
 
 search
