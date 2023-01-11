@@ -3,19 +3,11 @@
 ## Table of Contents
 
 1. [Introduction](#introduction)
-2. [Syntax](#syntax)
+2. []()
 
 ## Introduction
 
 **JavaScript** is a scripting language. It is object-based, lightweight, cross-platform translated language. It is widely used for client-side validation.
-
-## Syntax
-
-```javascript
-<script>
- JavaScript code
-</script>
-```
 
 ## Add javascript
 
@@ -2132,3 +2124,9 @@ D3.js
 ```javascript
 
 ```
+
+## Learn more from GitHub Repositories
+
+### 1. [30 Days of JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript)
+
+## Learn more from websites
