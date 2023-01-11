@@ -1,5 +1,12 @@
 # Learn Javascript
 
+## Table of Contents
+
+1. [Introduction](#introduction)
+2. [Syntax](#syntax)
+
+## Introduction
+
 **JavaScript** is a scripting language. It is object-based, lightweight, cross-platform translated language. It is widely used for client-side validation.
 
 ## Syntax
