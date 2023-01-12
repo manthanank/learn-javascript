@@ -7,6 +7,7 @@
 3. [Output JavaScript](#outputing-javascript)
 4. [Learn From GitHub Repos](#learn-more-from-github-repositories)
 5. [Learn From websites](#learn-more-from-websites)
+6. [Examples](#examples)
 
 ## Introduction
 
@@ -2191,3 +2192,70 @@ D3.js
 ### 1. [30 Days of JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript)
 
 ## Learn more from websites
+
+### 1. [W3School](https://www.w3schools.com/)
+
+## Examples
+
+Print only id's
+
+```jsx
+const nameList = [{
+  name: 'a',
+  id: '1'
+},
+{
+  name: 'b',
+  id: '2'
+}, {
+  name: 'c',
+  id: '3'
+}]
+
+// solution
+const ids = nameList.map(item => item.id);
+console.log(ids); // [ '1', '2', '3' ]
+```
+
+Get output as below
+
+```jsx
+// output
+OutPutArray=[{amount:300,name:'a',id:'1'},{amount:300,name:'b',id:'2'},{amount:300,name:'c',id:'3'}]
+
+// solution
+const nameList = {
+  amount: 300,
+  name: [{
+    name: 'a',
+    id: '1'
+  },
+  {
+    name: 'b',
+    id: '2'
+  }, {
+    name: 'c',
+    id: '3'
+  }]
+}
+
+const outputArray = nameList.name.map(item => ({amount: nameList.amount, name: item.name, id: item.id}));
+console.log(outputArray); // [{amount: 300, name: 'a', id: '1'}, {amount: 300, name: 'b', id: '2'}, {amount: 300, name: 'c', id: '3'}]
+```
+
+Print a half pyramid in JavaScript as shown below
+
+```jsx
+// output 
+*
+**
+***
+
+// solution
+let string = "";
+
+for (let i = 0; i < 3; i++){
+    string += '*';
+    console.log(string);
+}
+```
