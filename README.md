@@ -3,7 +3,10 @@
 ## Table of Contents
 
 1. [Introduction](#introduction)
-2. []()
+2. [Add JavaScript](#add-javascript)
+3. [Output JavaScript](#outputing-javascript)
+4. [Learn From GitHub Repos](#learn-more-from-github-repositories)
+5. [Learn From websites](#learn-more-from-websites)
 
 ## Introduction
 
@@ -62,7 +65,7 @@
 </html>
 ```
 
-## JavaScript Output
+## Outputing JavaScript
 
 ### JavaScript can "display" data in different ways
 
@@ -749,110 +752,168 @@ let newStr = str.replace("JavaScript", "JS");
 console.log(newStr); // "JS is a programming language"
 ```
 
-search
+**search** - It is used to search for a specified regular expression in a string and returns the position of the first match. If no match is found, it returns -1. The method is called on a string and takes a regular expression as an argument.
 
 ```javascript
-
+let str = "The quick brown fox jumps over the lazy dog.";
+let result = str.search(/fox/);
+console.log(result); // Output: 16
 ```
 
-slice
+**slice** - It is used to extract a part of a string and returns a new string. The method is called on a string and takes two arguments, the first is the starting index (required) and the second is the ending index (optional). If the ending index is not specified, the method will extract the substring to the end of the original string.
 
 ```javascript
-
+let str = "The quick brown fox";
+let result = str.slice(4, 9);
+console.log(result); // Output: "quick"
 ```
 
-split
+**split** - It is used to split a string into an array of substrings based on a specified separator. The method is called on a string and takes one required argument, the separator, which can be a string or a regular expression. The separator specifies where to divide substrings. If the separator is not found, the array will contain the original string.
 
 ```javascript
-
+let str = "The quick brown fox";
+let result = str.split(" ");
+console.log(result); // Output: [ "The", "quick", "brown", "fox" ]
 ```
 
-substr
+**substr** - It is used to extract a part of a string and returns a new string. The method is called on a string and takes two arguments: the first is the starting index (required) and the second is the length of the substring (required).
 
 ```javascript
-
+let str = "The quick brown fox";
+let result = str.substr(4, 5);
+console.log(result); // Output: "quick"
 ```
 
-substring
+**substring** - It is used to extract a part of a string and returns a new string. The method is called on a string and takes two arguments: the first is the starting index (required) and the second is the ending index (optional). If the ending index is not specified, the method will extract the substring to the end of the original string.
 
 ```javascript
-
+let str = "The quick brown fox";
+let result = str.substring(4, 9);
+console.log(result); // Output: "quick"
 ```
 
-toLowerCase
+**toLowerCase** - It is used to convert all the characters in a string to lowercase and returns a new string. The method is called on a string and takes no arguments.
 
 ```javascript
-
+let str = "The Quick BROWN Fox";
+let result = str.toLowerCase();
+console.log(result); // Output: "the quick brown fox"
 ```
 
-toUpperCase
+**toUpperCase** - It is used to convert all the characters in a string to uppercase and returns a new string. The method is called on a string and takes no arguments.
 
 ```javascript
-
+let str = "The Quick BROWN Fox";
+let result = str.toUpperCase();
+console.log(result); // Output: "THE QUICK BROWN FOX"
 ```
 
-valueOf
+**valueOf** - It is used to return the primitive value of a String object, which is the string itself. The method is called on a string and takes no arguments.
 
 ```javascript
-
+let str = "The Quick BROWN Fox";
+let result = str.valueOf();
+console.log(result); // Output: "The Quick BROWN Fox"
 ```
 
 ## Loops
 
-for
+**for** - This type of loop is used to execute a block of code a specified number of times. The for loop has three parts: the initialization, the condition, and the increment.
 
 ```javascript
-
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
 ```
 
-while
+**while** - This type of loop is used to execute a block of code as long as a specified condition is true.
 
 ```javascript
-
+let i = 0;
+while (i < 5) {
+  console.log(i);
+  i++;
+}
 ```
 
-do while
+**do while** - This type of loop is similar to the while loop, but it guarantees that the code block will be executed at least once.
 
 ```javascript
-
+let i = 0;
+do {
+  console.log(i);
+  i++;
+} while (i < 5);
 ```
 
-for in
+**for in** - This type of loop is used to iterate over the enumerable properties of an object.
 
 ```javascript
-
+let obj = {a: 1, b: 2, c: 3};
+for (let prop in obj) {
+  console.log(prop + ": " + obj[prop]);
+}
 ```
 
-for of
+**for of** - This type of loop is used to iterate over the iterable objects such as arrays, strings, and maps.
 
 ```javascript
-
+let arr = [1, 2, 3];
+for (let value of arr) {
+  console.log(value);
+}
 ```
 
 ## Conditional Statements
 
-if
+**if** - The if statement is used to execute a block of code if a specified condition is true.
 
 ```javascript
-
+if (x > 0) {
+  console.log("x is greater than 0");
+}
 ```
 
-if else
+**if else** - The if...else statement is used to execute a block of code if a specified condition is true and another block of code if the condition is false.
 
 ```javascript
-
+if (x > 0) {
+  console.log("x is greater than 0");
+} else {
+  console.log("x is not greater than 0");
+}
 ```
 
-else if
+**if else else if**- The if...else if...else statement is used to specify multiple conditions and execute a different block of code for each one.
 
 ```javascript
-
+if (x > 0) {
+  console.log("x is positive");
+} else if (x < 0) {
+  console.log("x is negative");
+} else {
+  console.log("x is zero");
+}
 ```
 
-switch
+**switch** - The switch statement is used to select one of many blocks of code to be executed.
 
 ```javascript
-
+let day = new Date().getDay();
+switch (day) {
+  case 0:
+    console.log("Sunday");
+    break;
+  case 1:
+    console.log("Monday");
+    break;
+  case 2:
+    console.log("Tuesday");
+    break;
+  // and so on
+  default:
+    console.log("Invalid day");
+}
 ```
 
 ## Functions
