@@ -51,7 +51,7 @@
 **External JavaScript** -
 
 ```javascript
-// code
+// comment
 ```
 
 ```html
@@ -2191,21 +2191,21 @@ D3.js
 
 ### 1. [30 Days of JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript)
 
-### 2. [You Don't Know JavaScript](https://shrinke.me/iTai)
+### 2. [You Don't Know JavaScript](https://github.com/getify/You-Dont-Know-JS)
 
-### 3. [Wtfjs](https://shrinke.me/R9iSm)
+### 3. [Wtfjs](https://github.com/denysdovhan/wtfjs)
 
-### 4. [JavaScript30](https://shrinke.me/riE66g)
+### 4. [JavaScript30](https://github.com/wesbos/JavaScript30)
 
-### 5. [Clean Code JavaScript](https://shrinke.me/9Hhdq6y)
+### 5. [Clean Code JavaScript](https://github.com/ryanmcdermott/clean-code-javascript)
 
-### 6. [JavaScript Questions](https://shrinke.me/tgdv)
+### 6. [JavaScript Questions](https://github.com/lydiahallie/javascript-questions)
 
-### 7. [ES6 For Humans](https://shrinke.me/a9xS)
+### 7. [ES6 For Humans](https://github.com/metagrover/ES6-for-humans)
 
-### 8. [Javascript Algorithms](https://shrinke.me/aFn5S)
+### 8. [Javascript Algorithms](https://github.com/trekhleb/javascript-algorithms)
 
-### 9. [Js Stack From Scratch](https://shrinke.me/1vjkn6La)
+### 9. [Js Stack From Scratch](https://github.com/verekia/js-stack-from-scratch)
 
 ## Learn more from websites
 
