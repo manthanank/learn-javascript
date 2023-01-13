@@ -2191,6 +2191,22 @@ D3.js
 
 ### 1. [30 Days of JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript)
 
+### 2. [You Don't Know JavaScript](https://shrinke.me/iTai)
+
+### 3. [Wtfjs](https://shrinke.me/R9iSm)
+
+### 4. [JavaScript30](https://shrinke.me/riE66g)
+
+### 5. [Clean Code JavaScript](https://shrinke.me/9Hhdq6y)
+
+### 6. [JavaScript Questions](https://shrinke.me/tgdv)
+
+### 7. [ES6 For Humans](https://shrinke.me/a9xS)
+
+### 8. [Javascript Algorithms](https://shrinke.me/aFn5S)
+
+### 9. [Js Stack From Scratch](https://shrinke.me/1vjkn6La)
+
 ## Learn more from websites
 
 ### 1. [W3School](https://www.w3schools.com/)
