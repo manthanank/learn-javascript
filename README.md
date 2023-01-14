@@ -1,13 +1,15 @@
 # Learn Javascript
 
-## Table of Contents
+## Contents
 
-1. [Introduction](#introduction)
-2. [Add JavaScript](#add-javascript)
-3. [Output JavaScript](#outputing-javascript)
-4. [Learn From GitHub Repos](#learn-more-from-github-repositories)
-5. [Learn From websites](#learn-more-from-websites)
-6. [Examples](#examples)
+- [Introduction](#introduction)
+- [Add JavaScript](#add-javascript)
+- [Output JavaScript](#outputing-javascript)
+- [Examples](#examples)
+- [Learn From GitHub Repositories](#learn-more-from-github-repositories)
+- [Learn From websites](#learn-more-from-websites)
+- [Learn From Books](#learn-more-from-books)
+- [Learn From YouTube Channel](#learn-from-youtube-channels)
 
 ## Introduction
 
@@ -2438,30 +2440,6 @@ D3.js
 
 ```
 
-## Learn more from GitHub Repositories
-
-### 1. [30 Days of JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript)
-
-### 2. [You Don't Know JavaScript](https://github.com/getify/You-Dont-Know-JS)
-
-### 3. [Wtfjs](https://github.com/denysdovhan/wtfjs)
-
-### 4. [JavaScript30](https://github.com/wesbos/JavaScript30)
-
-### 5. [Clean Code JavaScript](https://github.com/ryanmcdermott/clean-code-javascript)
-
-### 6. [JavaScript Questions](https://github.com/lydiahallie/javascript-questions)
-
-### 7. [ES6 For Humans](https://github.com/metagrover/ES6-for-humans)
-
-### 8. [Javascript Algorithms](https://github.com/trekhleb/javascript-algorithms)
-
-### 9. [Js Stack From Scratch](https://github.com/verekia/js-stack-from-scratch)
-
-## Learn more from websites
-
-### 1. [W3School](https://www.w3schools.com/)
-
 ## Examples
 
 Print only id's
@@ -2526,3 +2504,109 @@ for (let i = 0; i < 3; i++){
     console.log(string);
 }
 ```
+
+## Learn more from GitHub Repositories
+
+- [30 Days of JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript)
+
+- [You Don't Know JavaScript](https://github.com/getify/You-Dont-Know-JS)
+
+- [Wtfjs](https://github.com/denysdovhan/wtfjs)
+
+- [JavaScript30](https://github.com/wesbos/JavaScript30)
+
+- [Clean Code JavaScript](https://github.com/ryanmcdermott/clean-code-javascript)
+
+- [JavaScript Questions](https://github.com/lydiahallie/javascript-questions)
+
+- [ES6 For Humans](https://github.com/metagrover/ES6-for-humans)
+
+- [Javascript Algorithms](https://github.com/trekhleb/javascript-algorithms)
+
+- [Js Stack From Scratch](https://github.com/verekia/js-stack-from-scratch)
+
+## Learn more from websites
+
+- [W3School](https://www.w3schools.com/)
+
+- [MDN]()
+
+- [DevDocs]()
+
+- [Programiz]()
+
+- [GeeksForGeeks]()
+
+## Learn more from Books
+
+- [Eloquent JavaScript](https://eloquentjavascript.net/)
+
+- [You Don’t Know JS](https://www.amazon.in/You-Dont-Know-Set-Volumes/dp/9352136268)
+
+- [Effective JavaScript](https://www.amazon.in/Effective-JavaScript-Specific-Software-Development/dp/0321812182)
+
+- [JavaScript: The Good Parts](https://www.oreilly.com/library/view/javascript-the-good/9780596517748/)
+
+- [JavaScript: The Definitive Guide](https://www.oreilly.com/library/view/javascript-the-definitive/9781491952016/)
+
+- [A Smarter Way to Learn JavaScript](https://asmarterwaytolearn.com/js/index-of-exercises.html)
+
+- [Programming JavaScript Applications](https://www.oreilly.com/library/view/programming-javascript-applications/9781491950289/)
+
+## Learn From YouTube Channels
+
+- [Freecodecamp](https://www.youtube.com/@freecodecamp)
+
+- [Code With Harry](https://www.youtube.com/@CodeWithHarry)
+
+- [Programming With Mosh](https://www.youtube.com/@programmingwithmosh)
+
+- [Hitesh Choudhary](https://www.youtube.com/@HiteshChoudharydotcom)
+
+- [Clever Programmer](https://www.youtube.com/@CleverProgrammer)
+
+- [JavaScript Mastery](https://www.youtube.com/@javascriptmastery)
+
+- [Traversy Media](https://www.youtube.com/@TraversyMedia)
+
+- [Yahoo Baba](https://www.youtube.com/@YahooBaba)
+
+- [The New Boston](https://www.youtube.com/@thenewboston)
+
+- [LearnCode. academy](https://www.youtube.com/@learncodeacademy)
+
+- [Academind](https://www.youtube.com/@academind)
+
+- [LearnWebCode](https://www.youtube.com/@LearnWebCode)
+
+- [Wes Bos](https://www.youtube.com/@WesBos)
+
+- [WebDevMentors](https://www.youtube.com/@webdevmentors)
+
+- [Codevolution](https://www.youtube.com/@Codevolution)
+
+- [Codecademy](https://www.youtube.com/@codecademy)
+
+- [Daily Tuition](https://www.youtube.com/@DailyTuition)
+
+## Learn JavaScript by playing games
+
+- [JSRobot](https://lab.reaal.me/jsrobot/)
+
+- [JSdares](https://jsdares.com/)
+
+- [CodeCombat](https://codecombat.com/)
+
+- [CodinGame](https://www.codingame.com/start)
+
+- [Crunchzilla](https://www.crunchzilla.com/)
+
+- [Screeps](https://screeps.com/)
+
+## Learn More From Blogs Sites
+
+- [Medium]()
+
+- [Dev.to]()
+
+- [Hashnode]()
