@@ -1,15 +1,54 @@
 # Learn Javascript
 
+<!-- ![logo](./assets/javascript-original.svg) -->
+
 ## Contents
 
 - [Introduction](#introduction)
 - [Add JavaScript](#add-javascript)
 - [Output JavaScript](#outputing-javascript)
 - [Examples](#examples)
+- [Single Line Comments](#single-line-comments)
+- [Multi Line Comments](#multi-line-comments)
+- [Variables](#variables)
+- [Data Types](#data-types)
+- [Operators](#operators)
+- [Arrays](#arrays)
+- [Strings](#strings)
+- [Loops](#loops)
+- [Conditional Statements](#conditional-statements)
+- [Functions](#functions)
+- [Scope](#scope)
+- [Dates](#dates)
+- [Date Get Methods](#date-get-methods)
+- [Date Set Methods](#date-set-methods)
+- [Type Conversion](#type-conversion)
+- [Typeof](#typeof)
+- [Arrow Functions](#arrow-function)
+- [Math](#math)
+- [Sets](#sets)
+- [Map](#map)
+- [Async](#async)
+- [DOM](#dom)
+- [Best Practices](#best-practices)
+- [Common Mistakes](#common-mistakes)
+- [Performace](#performance)
+- [ES6 Featues](#es6-features)
+- [ES5 Features](#es5-features)
+- [Browser BOM](#browser-bom)
+- [JSON](#json)
+- [Web API](#web-api)
+- [Ajax](#ajax)
+- [jQuery](#jquery)
+- [Graphocs](#graphics)
+- [Examples](#examples)
 - [Learn From GitHub Repositories](#learn-more-from-github-repositories)
-- [Learn From websites](#learn-more-from-websites)
+- [Learn From Websites](#learn-more-from-websites)
 - [Learn From Books](#learn-more-from-books)
-- [Learn From YouTube Channel](#learn-from-youtube-channels)
+- [Learn From YouTube Channels](#learn-from-youtube-channels)
+- [Learn by Playing Games](#learn-javascript-by-playing-games)
+- [Learn More From Blogs Sites](#learn-more-from-blogs-sites)
+- [Learn More From Twitter Users](#learn-more-from-twitter-users)
 
 ## Introduction
 
@@ -2508,105 +2547,85 @@ for (let i = 0; i < 3; i++){
 ## Learn more from GitHub Repositories
 
 - [30 Days of JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript)
-
 - [You Don't Know JavaScript](https://github.com/getify/You-Dont-Know-JS)
-
 - [Wtfjs](https://github.com/denysdovhan/wtfjs)
-
 - [JavaScript30](https://github.com/wesbos/JavaScript30)
-
 - [Clean Code JavaScript](https://github.com/ryanmcdermott/clean-code-javascript)
-
 - [JavaScript Questions](https://github.com/lydiahallie/javascript-questions)
-
 - [ES6 For Humans](https://github.com/metagrover/ES6-for-humans)
-
 - [Javascript Algorithms](https://github.com/trekhleb/javascript-algorithms)
-
 - [Js Stack From Scratch](https://github.com/verekia/js-stack-from-scratch)
 
-## Learn more from websites
+## Learn more from Websites
 
 - [W3School](https://www.w3schools.com/)
-
-- [MDN]()
-
-- [DevDocs]()
-
-- [Programiz]()
-
-- [GeeksForGeeks]()
+- [MDN](https://developer.mozilla.org/en-US/)
+- [GeeksForGeeks](https://www.geeksforgeeks.org/)
+- [DevDocs](https://devdocs.io/)
+- [Programiz](programiz.com)
+- [Freecodecamp](https://www.freecodecamp.org/)
+- [Javatpoint](https://www.javatpoint.com/)
+- [Javascript.info](https://javascript.info/)
+- [Tutorialspoint](https://www.tutorialspoint.com/index.htm)
+- [Udemy](https://www.udemy.com/)
+- [YouTube](https://www.youtube.com)
+- [Stackoverflow](https://stackoverflow.com)
 
 ## Learn more from Books
 
 - [Eloquent JavaScript](https://eloquentjavascript.net/)
-
 - [You Don’t Know JS](https://www.amazon.in/You-Dont-Know-Set-Volumes/dp/9352136268)
-
 - [Effective JavaScript](https://www.amazon.in/Effective-JavaScript-Specific-Software-Development/dp/0321812182)
-
 - [JavaScript: The Good Parts](https://www.oreilly.com/library/view/javascript-the-good/9780596517748/)
-
 - [JavaScript: The Definitive Guide](https://www.oreilly.com/library/view/javascript-the-definitive/9781491952016/)
-
 - [A Smarter Way to Learn JavaScript](https://asmarterwaytolearn.com/js/index-of-exercises.html)
-
 - [Programming JavaScript Applications](https://www.oreilly.com/library/view/programming-javascript-applications/9781491950289/)
 
-## Learn From YouTube Channels
+## Learn from YouTube Channels
 
 - [Freecodecamp](https://www.youtube.com/@freecodecamp)
-
 - [Code With Harry](https://www.youtube.com/@CodeWithHarry)
-
 - [Programming With Mosh](https://www.youtube.com/@programmingwithmosh)
-
 - [Hitesh Choudhary](https://www.youtube.com/@HiteshChoudharydotcom)
-
 - [Clever Programmer](https://www.youtube.com/@CleverProgrammer)
-
 - [JavaScript Mastery](https://www.youtube.com/@javascriptmastery)
-
 - [Traversy Media](https://www.youtube.com/@TraversyMedia)
-
 - [Yahoo Baba](https://www.youtube.com/@YahooBaba)
-
 - [The New Boston](https://www.youtube.com/@thenewboston)
-
 - [LearnCode. academy](https://www.youtube.com/@learncodeacademy)
-
 - [Academind](https://www.youtube.com/@academind)
-
 - [LearnWebCode](https://www.youtube.com/@LearnWebCode)
-
 - [Wes Bos](https://www.youtube.com/@WesBos)
-
 - [WebDevMentors](https://www.youtube.com/@webdevmentors)
-
 - [Codevolution](https://www.youtube.com/@Codevolution)
-
 - [Codecademy](https://www.youtube.com/@codecademy)
-
 - [Daily Tuition](https://www.youtube.com/@DailyTuition)
+- [WebDevSimplified](https://www.youtube.com/WebDevSimplified)
+- [Harshit Vashisth](https://www.youtube.com/@Harshitvashisth)
+- [AniaKubow](https://www.youtube.com/@AniaKubow)
 
 ## Learn JavaScript by playing games
 
 - [JSRobot](https://lab.reaal.me/jsrobot/)
-
 - [JSdares](https://jsdares.com/)
-
 - [CodeCombat](https://codecombat.com/)
-
 - [CodinGame](https://www.codingame.com/start)
-
 - [Crunchzilla](https://www.crunchzilla.com/)
-
 - [Screeps](https://screeps.com/)
 
 ## Learn More From Blogs Sites
 
-- [Medium]()
+- [Freecodecamp](https://www.freecodecamp.org/news)
+- [Medium](https://medium.com/)
+- [Dev.to](https://dev.to/)
+- [Hashnode](https://hashnode.com/)
+- [Hacker Noon](https://hackernoon.com/)
 
-- [Dev.to]()
+## Learn More From Twitter Users
 
-- [Hashnode]()
+- [Csaba Kissi](https://twitter.com/csaba_kissi)
+- [Codermarch](https://twitter.com/codemarch)
+- [Swapna Kumar Panda](https://twitter.com/swapnakpanda)
+- [Pratham](https://twitter.com/Prathkum)
+
+### 🙏🏻Please Support and Don't Forget to give star⭐, Also Feel free to contribute
