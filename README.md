@@ -1162,45 +1162,62 @@ d.setTime(30);
 Number
 
 ```javascript
-
+Number("3.14") // 3.14
+Number(Math.PI) // 3.141592653589793
+Number(" ") // 0
+Number("") // 0
+Number("99 88") // NaN
+Number("John") // NaN
 ```
 
 parseFloat
 
 ```javascript
-
+let num = parseFloat("123.456");
+console.log(num); // Output: 123.456
 ```
 
 parseInt
 
 ```javascript
-
+let num = parseInt("123");
+console.log(num); // Output: 123
 ```
 
 ### Convert Number to a string
 
+String
+
+```javascript
+String(123) // Output: '123'
+```
+
 toString
 
 ```javascript
-
+let str = (123).toString();
+console.log(str); // Output: "123"
 ```
 
 toExponential
 
 ```javascript
-
+let str = (123).toExponential();
+console.log(str); // Output: 1.23e+2
 ```
 
 toFixed
 
 ```javascript
-
+let str = (123).toFixed();
+console.log(str); // Output: 123
 ```
 
 toPrecision
 
 ```javascript
-
+let str = (123).toPrecision();
+console.log(str); // Output: 123
 ```
 
 ### Convert Dates to numbers
@@ -1208,25 +1225,27 @@ toPrecision
 Number
 
 ```javascript
-
+d = new Date();
+Number(d) // 1673677425068
 ```
 
 getTime
 
 ```javascript
-
+d = new Date();
+d.getTime() // 1673677461233
 ```
 
 string
 
 ```javascript
-
+String(Date()) // 'Sat Jan 14 2023 11:54:38 GMT+0530 (India Standard Time)'
 ```
 
 toString
 
 ```javascript
-
+Date().toString() //'Sat Jan 14 2023 11:54:57 GMT+0530 (India Standard Time)'
 ```
 
 ### Convert boolean to Number
@@ -1234,7 +1253,8 @@ toString
 Number
 
 ```javascript
-
+Number(false)     // returns 0
+Number(true)      // returns 1
 ```
 
 ### Convert boolean to string
@@ -1242,8 +1262,61 @@ Number
 string
 
 ```javascript
-
+String(false)      // returns "false"
+String(true)       // returns "true"
 ```
+
+| Original Value | Converted to Number | Converted to String | Converted to Boolean |
+|---|---|---|---|
+| false | 0 | "false" | false |
+| true | 1 | "true" | true |
+| 0 | 0 | "0" | false |
+| 1 | 1 | "1" | true |
+| "0" | 0 | "0" | true |
+| "000" | 0 | "000" | true |
+| "1" | 1 | "1" | true |
+| NaN | NaN | "NaN" | false |
+| Infinity | Infinity | "Infinity" | true |
+| -Infinity | -Infinity | "-Infinity" | true |
+| "" | 0 | "" | false |
+| "20" | 20 | "20" | true |
+| "twenty" | NaN | "twenty" | true |
+| [ ] | 0 | "" | true |
+| [20] | 20 | "20" | true |
+| [10,20] | NaN | "10,20" | true |
+| ["twenty"] | NaN | "twenty" | true |
+| ["ten","twenty"] | NaN | "ten,twenty" | true |
+| function(){} | NaN | "function(){}" | true |
+| { } | NaN | "[object Object]" | true |
+| null | 0 | "null" | false |
+| undefined | NaN | "undefined" | false |
+
+## Typeof
+
+```javascript
+typeof "John"                 // Returns "string"
+typeof 3.14                   // Returns "number"
+typeof NaN                    // Returns "number"
+typeof false                  // Returns "boolean"
+typeof [1,2,3,4]              // Returns "object"
+typeof {name:'John', age:34}  // Returns "object"
+typeof new Date()             // Returns "object"
+typeof function () {}         // Returns "function"
+typeof myCar                  // Returns "undefined" *
+typeof null                   // Returns "object"
+```
+
+The data type of NaN is number
+
+The data type of an array is object
+
+The data type of a date is object
+
+The data type of null is object
+
+The data type of an undefined variable is undefined *
+
+The data type of a variable that has not been assigned a value is also undefined *
 
 ## Arrow Function
 
