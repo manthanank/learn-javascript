@@ -1004,134 +1004,155 @@ new Date()
 
 ### Date Methods
 
-toString
+**toString** - It is a built-in function that can be used to convert a date object to a string.
 
 ```javascript
-
+const d = new Date();
+d.toString(); // 'Sat Jan 14 2023 10:36:20 GMT+0530 (India Standard Time)'
 ```
 
-toDateString
+**toDateString** - It is a built-in function that can be used to convert a date object to a string in the format of "Weekday Month Date Year".
 
 ```javascript
-
+const d = new Date();
+d.toDateString(); // 'Sat Jan 14 2023'
 ```
 
-toUTCString
+**toUTCString** - It is a built-in function that can be used to convert a date object to a string in the format of "Weekday, DD Mon YYYY HH:MM:SS GMT".
 
 ```javascript
-
+const d = new Date();
+d.toUTCString(); // 'Sat, 14 Jan 2023 05:06:20 GMT'
 ```
 
-toISOString
+**toISOString** - It is a built-in function that can be used to convert a date object to a string in the format of "YYYY-MM-DDTHH:mm:ss.sssZ".
 
 ```javascript
-
+const d = new Date();
+d.toISOString(); // '2023-01-14T05:06:20.524Z'
 ```
 
 ## Date Get Methods
 
-getFullYear
+**getFullYear** - returns the four-digit year of the date.
 
 ```javascript
-
+const d = new Date();
+d.getFullYear();
 ```
 
-getMonth
+**getMonth** - returns the month of the date (0-11, where 0 represents January and 11 represents December).
 
 ```javascript
-
+const d = new Date();
+d.getMonth();
 ```
 
-getDate
+**getDate** - returns the day of the month of the date (1-31).
 
 ```javascript
-
+const d = new Date();
+d.getDate();
 ```
 
-getDay
+**getDay** - returns the day of the week of the date (0-6, where 0 represents Sunday and 6 represents Saturday).
 
 ```javascript
-
+const d = new Date();
+d.getDay();
 ```
 
-getHours
+**getHours** - returns the hour of the date (0-23).
 
 ```javascript
-
+const d = new Date();
+d.getHours();
 ```
 
-getMinutes
+**getMinutes** - returns the minutes of the date (0-59).
 
 ```javascript
-
+const d = new Date();
+d.getMinutes();
 ```
 
-getSeconds
+**getSeconds** - returns the seconds of the date (0-59).
 
 ```javascript
-
+const d = new Date();
+d.getSeconds();
 ```
 
-getMilliseconds
+**getMilliseconds** - returns the milliseconds of the date (0-999).
 
 ```javascript
-
+const d = new Date();
+d.getMilliseconds();
 ```
 
-getTime
+**getTime** - returns the number of milliseconds since January 1, 1970, 00:00:00 UTC.
 
 ```javascript
-
+const d = new Date();
+d.getTime();
 ```
 
 ## Date Set Methods
 
-setDate
+**setDate** - sets the day of the month of the date object.
 
 ```javascript
-
+const d = new Date();
+d.setDate(15);
 ```
 
-setFullYear
+**setFullYear** - sets the year, and optionally the month and date, of the date object.
 
 ```javascript
-
+const d = new Date();
+d.setFullYear(2020);
 ```
 
-setHours
+**setHours** - sets the hours, minutes, seconds and milliseconds of the date object.
 
 ```javascript
-
+const d = new Date();
+d.setHours(22);
 ```
 
-setMilliseconds
+**setMilliseconds** - sets the milliseconds of the date object.
 
 ```javascript
-
+const d = new Date();
+d.setMilliSeconds(3000);
 ```
 
-setMinutes
+**setMinutes** - sets the minutes, seconds and milliseconds of the date object.
 
 ```javascript
-
+const d = new Date();
+d.setMinutes(30);
 ```
 
-setSeconds
+**setSeconds** - sets the seconds and milliseconds of the date object.
 
 ```javascript
-
+const d = new Date();
+d.setSeconds(30);
 ```
 
-setMonth
+**setMonth** - sets the month, and optionally the date, of the date object.
 
 ```javascript
-
+const d = new Date();
+d.setMonth(11);
 ```
 
-setTime
+**setTime** - sets the date object to the time represented by a number of milliseconds since January 1, 1970, 00:00:00 UTC.
 
 ```javascript
-
+const d = new Date();
+d.setTime(30);
 ```
 
 ## Type Conversion
