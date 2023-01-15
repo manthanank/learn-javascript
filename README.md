@@ -30,17 +30,17 @@
 - [Map](#map)
 - [Async](#async)
 - [DOM](#dom)
-- [Best Practices](#best-practices)
-- [Common Mistakes](#common-mistakes)
-- [Performace](#performance)
-- [ES6 Featues](#es6-features)
-- [ES5 Features](#es5-features)
 - [Browser BOM](#browser-bom)
 - [JSON](#json)
 - [Web API](#web-api)
 - [Ajax](#ajax)
 - [jQuery](#jquery)
 - [Graphocs](#graphics)
+- [Best Practices](#best-practices)
+- [Common Mistakes](#common-mistakes)
+- [Performace](#performance)
+- [ES6 Featues](#es6-features)
+- [ES5 Features](#es5-features)
 - [Examples](#examples)
 - [Learn From GitHub Repositories](#learn-more-from-github-repositories)
 - [Learn From Websites](#learn-more-from-websites)
@@ -1803,6 +1803,198 @@ Lists
 
 ```
 
+## Browser BOM
+
+Window
+
+```javascript
+
+```
+
+Screen
+
+```javascript
+
+```
+
+Location
+
+```javascript
+
+```
+
+History
+
+```javascript
+
+```
+
+Navigator
+
+```javascript
+
+```
+
+Popup Alert
+
+```javascript
+
+```
+
+Timing
+
+```javascript
+
+```
+
+Cookies
+
+```javascript
+
+```
+
+## JSON
+
+Data Types
+
+```javascript
+
+```
+
+Parse
+
+```javascript
+
+```
+
+Stringify
+
+```javascript
+
+```
+
+Objects
+
+```javascript
+
+```
+
+Arrays
+
+```javascript
+
+```
+
+Server
+
+```javascript
+
+```
+
+## Web API
+
+Forms API
+
+```javascript
+
+```
+
+History API
+
+```javascript
+
+```
+
+Storage API
+
+```javascript
+
+```
+
+Worker API
+
+```javascript
+
+```
+
+Fetch API
+
+```javascript
+
+```
+
+GeoLocation API
+
+```javascript
+
+```
+
+## AJAX
+
+XMLHttp
+
+```javascript
+
+```
+
+Request
+
+```javascript
+
+```
+
+Response
+
+```javascript
+
+```
+
+XML File
+
+```javascript
+
+```
+
+## JQuery
+
+Selectors
+
+```javascript
+
+```
+
+## Graphics
+
+Canvas
+
+```javascript
+
+```
+
+Plotly
+
+```javascript
+
+```
+
+Chart.js
+
+```javascript
+
+```
+
+Google Chart
+
+```javascript
+
+```
+
+D3.js
+
+```javascript
+
+```
+
 ## Best Practices
 
 Avoid Global Variables
@@ -2282,198 +2474,6 @@ Function bind()
 ```
 
 Trailing commas
-
-```javascript
-
-```
-
-## Browser BOM
-
-Window
-
-```javascript
-
-```
-
-Screen
-
-```javascript
-
-```
-
-Location
-
-```javascript
-
-```
-
-History
-
-```javascript
-
-```
-
-Navigator
-
-```javascript
-
-```
-
-Popup Alert
-
-```javascript
-
-```
-
-Timing
-
-```javascript
-
-```
-
-Cookies
-
-```javascript
-
-```
-
-## JSON
-
-Data Types
-
-```javascript
-
-```
-
-Parse
-
-```javascript
-
-```
-
-Stringify
-
-```javascript
-
-```
-
-Objects
-
-```javascript
-
-```
-
-Arrays
-
-```javascript
-
-```
-
-Server
-
-```javascript
-
-```
-
-## Web API
-
-Forms API
-
-```javascript
-
-```
-
-History API
-
-```javascript
-
-```
-
-Storage API
-
-```javascript
-
-```
-
-Worker API
-
-```javascript
-
-```
-
-Fetch API
-
-```javascript
-
-```
-
-GeoLocation API
-
-```javascript
-
-```
-
-## AJAX
-
-XMLHttp
-
-```javascript
-
-```
-
-Request
-
-```javascript
-
-```
-
-Response
-
-```javascript
-
-```
-
-XML File
-
-```javascript
-
-```
-
-## JQuery
-
-Selectors
-
-```javascript
-
-```
-
-## Graphics
-
-Canvas
-
-```javascript
-
-```
-
-Plotly
-
-```javascript
-
-```
-
-Chart.js
-
-```javascript
-
-```
-
-Google Chart
-
-```javascript
-
-```
-
-D3.js
 
 ```javascript
 
