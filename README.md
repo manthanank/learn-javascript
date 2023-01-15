@@ -1721,7 +1721,7 @@ asyncFunc();
 
 Document Object Model
 
-Documents
+### Documents
 
 **Finding HTML Elements** -
 
@@ -1731,7 +1731,7 @@ Documents
 | document.getElementsByTagName(name) | Find elements by tag name |
 | document.getElementsByClassName(name) | Find elements by class name |
 
-Changing HTML Elements
+**Changing HTML Elements** -
 
 | Property | Description |
 |--|--|
@@ -1743,7 +1743,7 @@ Changing HTML Elements
 |--|--|
 | element.setAttribute(attribute, value) | Change the attribute value of an HTML element |
 
-Adding and Deleting Elements
+**Adding and Deleting Elements** -
 
 | Method | Description |
 |--|--|
@@ -1753,23 +1753,80 @@ Adding and Deleting Elements
 | document.replaceChild(new, old) | Replace an HTML element |
 | document.write(text) | Write into the HTML output stream |
 
-Adding Events Handlers
+**Adding Events Handlers** -
 
 | Method | Description |
 |--|--|
 | document.getElementById(id).onclick = function(){code} | Adding event handler code to an onclick event |
 
-```javascript
+**Finding HTML Objects** -
 
+| Property | Description | DOM |
+|--|--|--|
+| document.anchors | Returns all elements that have a name attribute | 1
+| document.applets | Deprecated | 1 |
+| document.baseURI | Returns the absolute base URI of the document | 3 |
+| document.body | Returns the element | 1 |
+| document.cookie | Returns the document's cookie | 1 |
+| document.doctype | Returns the document's doctype | 3 |
+| document.documentElement | Returns the element | 3 |
+| document.documentMode | Returns the mode used by the browser | 3 |
+| document.documentURI | Returns the URI of the document | 3 |
+| document.domain | Returns the domain name of the document server | 1 |
+| document.domConfig | Obsolete. | 3 |
+| document.embeds | Returns all  elements | 3 |
+| document.forms | Returns all  elements | 1 |
+| document.head | Returns the  element | 3 |
+| document.images | Returns all  elements | 1 |
+| document.implementation | Returns the DOM implementation | 3 |
+| document.inputEncoding | Returns the document's encoding (character set) | 3 |
+| document.lastModified | Returns the date and time the document was updated | 3 |
+| document.links | Returns all  and elements that have a href attribute | 1 |
+| document.readyState | Returns the (loading) status of the document | 3 |
+| document.referrer | Returns the URI of the referrer (the linking document) | 1 |
+| document.scripts | Returns all  elements | 3 |
+| document.strictErrorChecking | Returns if error checking is enforced | 3 |
+| document.title | Returns the  element | 1 |
+| document.URL | Returns the complete URL of the document | 1 |
+
+**Elements** -
+
+Finding HTML elements by id
+
+```javascript
+const element = document.getElementById("intro");
 ```
 
-Elements
+Finding HTML elements by tag name
 
 ```javascript
-
+const element = document.getElementsByTagName("p");
 ```
 
-HTML
+Finding HTML elements by class name
+
+```javascript
+const x = document.getElementsByClassName("intro");
+```
+
+Finding HTML elements by CSS selectors
+
+```javascript
+const x = document.querySelectorAll("p.intro");
+```
+
+Finding HTML elements by HTML object collections
+
+```javascript
+const x = document.forms["frm1"];
+let text = "";
+for (let i = 0; i < x.length; i++) {
+  text += x.elements[i].value + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+```
+
+Changing HTML
 
 ```javascript
 
@@ -1781,7 +1838,7 @@ Forms
 
 ```
 
-CSS
+Changing CSS
 
 ```javascript
 
