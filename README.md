@@ -2012,7 +2012,7 @@ document.getElementById('demo6').innerHTML =
 
 [Stackblitz Link](https://stackblitz.com/edit/web-platform-paqevc?file=index.html)
 
-Location
+Window Location
 
 `window.location` - object can be used to get the current page address (URL) and to redirect the browser to a new page.
 
@@ -2093,7 +2093,7 @@ document.getElementById('demo5').innerHTML =
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home</title>
+    <title>Window Location</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
@@ -2116,31 +2116,126 @@ document.getElementById('demo5').innerHTML =
 
 [Stackblitz Link](https://stackblitz.com/edit/web-platform-sixdd6?file=script.js)
 
-History
+**Window History** -
+
+`window.history` - object can be written without the window prefix.
+
+history.back() - same as clicking back in the browser
+
+history.forward() - same as clicking forward in the browser
+
+```javascript
+window.history.back()
+window.history.forward()
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Window History</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <h1>Window History</h1>
+    </nav>
+    <main>
+      <input type="button" value="Forward" onclick="goForward()" />
+      <input type="button" value="Back" onclick="goBack()" />
+    </main>
+  </body>
+</html>
+```
+
+**Window Navigator** -
+
+navigator.cookieEnabled
+
+navigator.appCodeName
+
+navigator.platform
+
+Browser Cookies
+
+```javascript
+document.getElementById("demo").innerHTML =
+"cookiesEnabled is " + navigator.cookieEnabled;
+```
+
+Browser Application Name
+
+```javascript
+document.getElementById("demo").innerHTML =
+"navigator.appName is " + navigator.appName;
+```
+
+Browser Application Code Name
+
+```javascript
+document.getElementById("demo").innerHTML =
+"navigator.appCodeName is " + navigator.appCodeName;
+```
+
+Browser Engine
+
+```javascript
+document.getElementById("demo").innerHTML =
+"navigator.product is " + navigator.product;
+```
+
+Browser Version
+
+```javascript
+document.getElementById("demo").innerHTML = navigator.appVersion;
+```
+
+Browser Agent
+
+```javascript
+document.getElementById("demo").innerHTML = navigator.userAgent;
+```
+
+Browser Platform
+
+```javascript
+document.getElementById("demo").innerHTML = navigator.platform;
+```
+
+Browser Language
+
+```javascript
+document.getElementById("demo").innerHTML = navigator.language;
+```
+
+Is The Browser Online?
+
+```javascript
+document.getElementById("demo").innerHTML = navigator.onLine;
+```
+
+Is Java Enabled?
+
+```javascript
+document.getElementById("demo").innerHTML = navigator.javaEnabled();
+```
+
+**Popup Boxes** -
 
 ```javascript
 
 ```
 
-Navigator
+**Timing Events** -
 
 ```javascript
 
 ```
 
-Popup Alert
-
-```javascript
-
-```
-
-Timing
-
-```javascript
-
-```
-
-Cookies
+**Cookies** -
 
 ```javascript
 
