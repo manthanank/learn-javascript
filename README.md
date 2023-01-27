@@ -2014,9 +2014,107 @@ document.getElementById('demo6').innerHTML =
 
 Location
 
-```javascript
+`window.location` - object can be used to get the current page address (URL) and to redirect the browser to a new page.
 
+window.location.href returns the href (URL) of the current page
+
+```javascript
+document.getElementById("demo").innerHTML =
+"Page location is " + window.location.href;
 ```
+
+window.location.hostname returns the domain name of the web host
+
+```javascript
+document.getElementById("demo").innerHTML =
+"Page hostname is " + window.location.hostname;
+```
+
+window.location.pathname returns the path and filename of the current page
+
+```javascript
+document.getElementById("demo").innerHTML =
+"Page path is " + window.location.pathname;
+```
+
+window.location.protocol returns the web protocol used (http: or https:)
+
+```javascript
+document.getElementById("demo").innerHTML =
+"Page protocol is " + window.location.protocol;
+```
+
+window.location.assign() loads a new document
+
+```javascript
+document.getElementById("demo").innerHTML =
+"Port number is " + window.location.port;
+```
+
+Window Location Assign
+
+```javascript
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript</h2>
+
+<h3>The window.location object</h3>
+
+<input type="button" value="Load new document" onclick="newDoc()">
+
+<script>
+function newDoc() {
+  window.location.assign("https://www.w3schools.com")
+}
+</script>
+
+</body>
+</html>
+```
+
+Example
+
+```javascript
+document.getElementById('demo1').innerHTML =
+  'Page location is ' + window.location.href;
+document.getElementById('demo2').innerHTML =
+  'Page hostname is ' + window.location.hostname;
+document.getElementById('demo3').innerHTML =
+  'Page path is ' + window.location.pathname;
+document.getElementById('demo4').innerHTML =
+  'Page protocol is ' + window.location.protocol;
+document.getElementById('demo5').innerHTML =
+  'Port number is ' + window.location.port;
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <h1>Window Location Example</h1>
+    </nav>
+    <main>
+      <p id="demo1"></p>
+      <p id="demo2"></p>
+      <p id="demo3"></p>
+      <p id="demo4"></p>
+      <p id="demo5"></p>
+    </main>
+  </body>
+</html>
+```
+
+[Stackblitz Link](https://stackblitz.com/edit/web-platform-sixdd6?file=script.js)
 
 History
 
