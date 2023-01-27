@@ -2223,7 +2223,143 @@ Is Java Enabled?
 document.getElementById("demo").innerHTML = navigator.javaEnabled();
 ```
 
+```javascript
+document.getElementById('demo1').innerHTML =
+  'navigator.cookieEnabled is ' + navigator.cookieEnabled;
+document.getElementById('demo2').innerHTML =
+  'navigator.appName is ' + navigator.appName;
+document.getElementById('demo3').innerHTML =
+  'navigator.appCodeName is ' + navigator.appCodeName;
+document.getElementById('demo4').innerHTML =
+  'navigator.product is ' + navigator.product;
+document.getElementById('demo5').innerHTML =
+  'navigator.appVersion is ' + navigator.appVersion;
+document.getElementById('demo6').innerHTML =
+  'navigator.userAgent is ' + navigator.userAgent;
+document.getElementById('demo7').innerHTML =
+  'navigator.platform is ' + navigator.platform;
+document.getElementById('demo8').innerHTML =
+  'navigator.language is ' + navigator.language;
+document.getElementById('demo9').innerHTML =
+  'navigator.onLine is ' + navigator.onLine;
+document.getElementById('demo10').innerHTML =
+  'navigator.javaEnabled is ' + navigator.javaEnabled();
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Window Navigator</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <h1>Window Navigator</h1>
+    </nav>
+    <main>
+      <p id="demo1"></p>
+      <p id="demo2"></p>
+      <p id="demo3"></p>
+      <p id="demo4"></p>
+      <p id="demo5"></p>
+      <p id="demo6"></p>
+      <p id="demo7"></p>
+      <p id="demo8"></p>
+      <p id="demo9"></p>
+      <p id="demo10"></p>
+    </main>
+  </body>
+</html>
+```
+
+[Stackblitz Link](https://stackblitz.com/edit/web-platform-m1vzbh?file=index.html)
+
 **Popup Boxes** -
+
+Alert Box
+
+`window.alert("sometext");`
+
+```javascript
+function myFunction() {
+  alert('I am an alert box!');
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Alert Box</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <h2>Alert Box</h2>
+    </nav>
+    <main>
+      <button onclick="myFunction()">Try it</button>
+    </main>
+  </body>
+</html>
+```
+
+[Stackblitz Link](https://stackblitz.com/edit/web-platform-5crpv2?file=index.html)
+
+Confirm Box
+
+`window.confirm("sometext");`
+
+```javascript
+function myFunction() {
+  var txt;
+  if (confirm("Press a button!")) {
+    txt = "You pressed OK!";
+  } else {
+    txt = "You pressed Cancel!";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Confirm Box</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <h1>Confirm Box</h1>
+    </nav>
+    <main>
+      <button onclick="myFunction()">Try it</button>
+      <p id="demo"></p>
+    </main>
+  </body>
+</html>
+```
+
+Prompt Box
+
+`window.prompt("sometext","defaultText");`
+
+```javascript
+
+```
+
+Line Breaks
 
 ```javascript
 
