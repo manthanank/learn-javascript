@@ -1894,17 +1894,123 @@ Lists
 
 ## Browser BOM
 
-Window
+Browser Object Model
+
+**Window** -
+
+Window Object
 
 ```javascript
-
+window.document.getElementById("header");
+//or
+document.getElementById("header");
 ```
 
-Screen
+Window Size
+
+window.innerHeight - the inner height of the browser window (in pixels)
+
+window.innerWidth - the inner width of the browser window (in pixels)
+
+window.open() - open a new window
+
+window.close() - close the current window
+
+window.moveTo() - move the current window
+
+window.resizeTo() - resize the current window
 
 ```javascript
+window.innerWidth;
 
+window.innerHeight;
 ```
+
+**Window Screen** -
+
+`window.screen` - object contains information about the user's screen.
+
+screen.width
+
+```javascript
+document.getElementById("demo").innerHTML =
+"Screen Width: " + screen.width;
+```
+
+screen.height
+
+```javascript
+document.getElementById("demo").innerHTML =
+"Screen Height: " + screen.height;
+```
+
+screen.availWidth
+
+```javascript
+document.getElementById("demo").innerHTML =
+"Available Screen Width: " + screen.availWidth;
+```
+
+screen.availHeight
+
+```javascript
+document.getElementById("demo").innerHTML =
+"Available Screen Height: " + screen.availHeight;
+```
+
+screen.colorDepth
+
+```javascript
+document.getElementById("demo").innerHTML =
+"Screen Color Depth: " + screen.colorDepth;
+```
+
+screen.pixelDepth
+
+```javascript
+document.getElementById("demo").innerHTML =
+"Screen Pixel Depth: " + screen.pixelDepth;
+```
+
+Example
+
+```javascript
+document.getElementById('demo1').innerHTML = 'Screen Width: ' + screen.width;
+document.getElementById('demo2').innerHTML = 'Screen Height: ' + screen.height;
+document.getElementById('demo3').innerHTML =
+  'Available Screen Width: ' + screen.availWidth;
+document.getElementById('demo4').innerHTML =
+  'Available Screen Height: ' + screen.availHeight;
+document.getElementById('demo5').innerHTML =
+  'Screen Color Depth: ' + screen.colorDepth;
+document.getElementById('demo6').innerHTML =
+  'Screen Pixel Depth: ' + screen.pixelDepth;
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Window Screen</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <p id="demo1"></p>
+      <p id="demo2"></p>
+      <p id="demo3"></p>
+      <p id="demo4"></p>
+      <p id="demo5"></p>
+      <p id="demo6"></p>
+    </main>
+  </body>
+</html>
+```
+
+[Stackblitz Link](https://stackblitz.com/edit/web-platform-paqevc?file=index.html)
 
 Location
 
