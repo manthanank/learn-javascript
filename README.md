@@ -2311,7 +2311,7 @@ function myFunction() {
 </html>
 ```
 
-[Stackblitz Link](https://stackblitz.com/edit/web-platform-5crpv2?file=index.html)
+[Replit Link](https://replit.com/@manthanank/Alert-box-in-JavaScript#index.html)
 
 Confirm Box
 
@@ -2351,19 +2351,74 @@ function myFunction() {
 </html>
 ```
 
+[Replit Link](https://replit.com/@manthanank/Confirm-Box-in-JavaScript#index.html)
+
 Prompt Box
 
 `window.prompt("sometext","defaultText");`
 
 ```javascript
-
+function myFunction() {
+  let text;
+  let person = prompt('Please enter your name:', 'Harry Potter');
+  if (person == null || person == '') {
+    text = 'User cancelled the prompt.';
+  } else {
+    text = 'Hello ' + person + '! How are you today?';
+  }
+  document.getElementById('demo').innerHTML = text;
+}
 ```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <h1>Prompt Box</h1>
+    </nav>
+    <main>
+      <button onclick="myFunction()">Try it</button>
+
+      <p id="demo"></p>
+    </main>
+  </body>
+</html>
+```
+
+[Replit Link](https://replit.com/@manthanank/Prompt-Box#index.html)
 
 Line Breaks
 
 ```javascript
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <h1>Line Breaks</h1>
+    </nav>
+    <main>
+      <button onclick="alert('Hello\nHow are you?')">Try it</button>
+    </main>
+  </body>
+</html>
 ```
+
+[Replit Link](https://replit.com/@manthanank/Line-Breaks-in-JavaScript#index.html)
 
 **Timing Events** -
 
