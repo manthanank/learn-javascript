@@ -3134,6 +3134,19 @@ for (let i = 0; i < 3; i++){
 - [ES6 For Humans](https://github.com/metagrover/ES6-for-humans)
 - [Javascript Algorithms](https://github.com/trekhleb/javascript-algorithms)
 - [Js Stack From Scratch](https://github.com/verekia/js-stack-from-scratch)
+- [30 Seconds of Code](https://github.com/30-seconds/30-seconds-of-code)
+- [Airbnb Js Style Guide](https://github.com/airbnb/javascript)
+- [Js The Right Way](https://github.com/braziljs/js-the-right-way)
+- [33 Js Concepts](https://github.com/leonardomso/33-js-concepts)
+- [Awesome JavaScript](https://github.com/sorrycc/awesome-javascript)
+- [Modern Js CheatSheet](https://github.com/mbeaudru/modern-js-cheatsheet)
+- [Jstips](https://github.com/loverajoel/jstips)
+- [Awesome JavaScript Projects](https://github.com/Vishal-raj-1/Awesome-JavaScript-Projects)
+- [Project Guidelines](https://github.com/elsewhencode/project-guidelines)
+- [Nodebestpractices](https://github.com/goldbergyoni/nodebestpractices)
+- [JavaScript Testing Best Practices](https://github.com/goldbergyoni/javascript-testing-best-practices)
+- [JavaScript Interview Questions](https://github.com/sudheerj/javascript-interview-questions)
+- [Must Watch JavaScript](https://github.com/AllThingsSmitty/must-watch-javascript)
 
 ## Learn more from Websites
 
