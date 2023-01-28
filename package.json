@@ -1,0 +1,22 @@
+{
+  "name": "learn-javascript",
+  "version": "1.0.0",
+  "description": "Complete JavaScript with all resources to learn.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manthanank/learn-javascript.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Manthan Ank",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manthanank/learn-javascript/issues"
+  },
+  "homepage": "https://github.com/manthanank/learn-javascript#readme"
+}
