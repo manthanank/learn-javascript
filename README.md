@@ -2422,52 +2422,57 @@ Line Breaks
 
 **Timing Events** -
 
-```javascript
+**setTimeout(function, milliseconds)** - Executes a function, after waiting a specified number of milliseconds.
 
+Syntax : `window.setTimeout(function, milliseconds);`
+
+```javascript
+setTimeout(() => {
+  console.log("Hello World!");
+}, 5000);
 ```
 
-**Cookies** -
+**setInterval(function, milliseconds)** - Same as setTimeout(), but repeats the execution of the function continuously.
+
+Syntax : `window.setInterval(function, milliseconds);`
 
 ```javascript
-
+setInterval(() => {
+  console.log("Hello World!");
+}, 5000);
 ```
 
-## JSON
+**Cookies** - Cookies are data, stored in small text files, on your computer.
 
-Data Types
+Create a Cookie with JavaScript
 
 ```javascript
+document.cookie = "username=Manthan Ank";
 
+//with an expiry date(in UTC Time)
+document.cookie = "username=Manthan Ank; expires=Sat, 28 Jan 2023 12:00:00 UTC";
+
+//with path parameter
+document.cookie = "username=Manthan Ank; expires=Sat, 28 Jan 2023 12:00:00 UTC; path=/";
 ```
 
-Parse
+Read a Cookie with JavaScript
 
 ```javascript
-
+let x = document.cookie;
+console.log(x);
 ```
 
-Stringify
+Change a Cookie with JavaScript
 
 ```javascript
-
+document.cookie = "username=Manthan Ankolekar; expires=Sat, 28 Jan 2023 12:00:00 UTC; path=/";
 ```
 
-Objects
+Delete a Cookie with JavaScript
 
 ```javascript
-
-```
-
-Arrays
-
-```javascript
-
-```
-
-Server
-
-```javascript
-
+document.cookie = "username=; expires=Sat, 28 Jan 2023 12:00:00 UTC; path=/;";
 ```
 
 ## Web API
@@ -2529,6 +2534,44 @@ Response
 ```
 
 XML File
+
+```javascript
+
+```
+
+## JSON
+
+Data Types
+
+```javascript
+
+```
+
+Parse
+
+```javascript
+
+```
+
+Stringify
+
+```javascript
+
+```
+
+Objects
+
+```javascript
+
+```
+
+Arrays
+
+```javascript
+
+```
+
+Server
 
 ```javascript
 
@@ -3110,9 +3153,9 @@ Print a half pyramid in JavaScript as shown below
 
 ```jsx
 // output 
-*
-**
-***
+// *
+// **
+// ***
 
 // solution
 let string = "";
