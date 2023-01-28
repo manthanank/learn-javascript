@@ -3123,6 +3123,29 @@ for (let i = 0; i < 3; i++){
 }
 ```
 
+Print the output as shown below
+
+```javascript
+// OUTPUT
+// {
+//   "odd" : all odd nums,
+//   "even": all even numbers
+// }
+
+let nums = [2, 5, 3, 6, 8, 5];
+
+let evenNums = nums.filter((num) => num % 2 === 0);
+let oddNums = nums.filter((num) => num % 2 !== 0);
+
+let result = nums.reduce((acc, num) => {
+  acc['even'] = evenNums;
+  acc['odd'] = oddNums;
+  return acc;
+}, {});
+
+console.log(result);
+```
+
 ## Learn more from GitHub Repositories
 
 - [30 Days of JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript)
