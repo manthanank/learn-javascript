@@ -27,11 +27,25 @@
   - [delete Operator](#delete-operator)
   - [Spread (...) Operator](#spread--operator)
 - [Arrays](#arrays)
+  - [Array Methods](#array-methods)
 - [Strings](#strings)
+  - [String Methods](#strings-methods)
 - [Loops](#loops)
+  - [for Loop](#for-loop)
+  - [while Loop](#while-loop)
+  - [do while Loop](#do-while-loop)
+  - [for in Loop](#for-in-loop)
+  - [for of Loop](#for-of-loop)
 - [Conditional Statements](#conditional-statements)
+  - [if statement](#if-statement)
+  - [if else statement](#if-else-statement)
+  - [if else else if statement](#if-else-else-if-statement)
+  - [switch statement](#switch-statement)
 - [Functions](#functions)
 - [Scope](#scope)
+  - [Block Scope](#block-scope)
+  - [Function Scope](#function-scope)
+  - [Global Scope](#global-scope)
 - [Dates](#dates)
 - [Date Get Methods](#date-get-methods)
 - [Date Set Methods](#date-set-methods)
@@ -295,7 +309,7 @@ let pattern = /w3schools/i;
 
 ## Operators
 
-### Arithmetic Operators -
+### Arithmetic Operators
 
 | Operator | Description |
 | :-----------: | :-----------: |
@@ -327,7 +341,7 @@ y--;
 console.log(y); // Output: 1
 ```
 
-### Logical Operators -
+### Logical Operators
 
 | Operator | Description |
 | :-----------: | :-----------: |
@@ -346,7 +360,7 @@ console.log(x || y); // Output: true
 console.log(!x); // Output: false
 ```
 
-### Comparison Operators -
+### Comparison Operators
 
 | Operator | Description |
 | :-----------: | :-----------: |
@@ -378,7 +392,7 @@ console.log(x ? y : x); // Output: 10
 console.log(x ? x : y); // Output: 5
 ```
 
-### Bitwise Operators -
+### Bitwise Operators
 
 | Operator | Description |
 | :-----------: | :-----------: |
@@ -405,7 +419,7 @@ console.log(x >> 1); // Output: 2 (binary: 10)
 console.log(x >>> 1); // Output: 2 (binary: 10)
 ```
 
-### Type Operators -
+### Type Operators
 
 | Operator | Description |
 | :-----------: | :-----------: |
@@ -425,7 +439,7 @@ console.log(typeof []); // Output: "object"
 console.log(typeof function() {}); // Output: "function"
 ```
 
-### Assignment Operators -
+### Assignment Operators
 
 | Operator | Description |
 | :-----------: | :-----------: |
@@ -463,7 +477,7 @@ x : y;
 console.log(x); // Output: 10
 ```
 
-### Conditional (Ternary) Operator -
+### Conditional (Ternary) Operator
 
 Syntax
 
@@ -479,7 +493,7 @@ let max = (x > y) ? x : y;
 console.log(max); // Output: 10
 ```
 
-### Nullish Coalescing Operator (??) -
+### Nullish Coalescing Operator(??)
 
 Example
 
@@ -493,7 +507,7 @@ console.log(y ?? 'world'); // Output: "world"
 console.log(z ?? 'world'); // Output: "Hello"
 ```
 
-### Optional Chaining Operator (?.) -
+### Optional Chaining Operator(?.)
 
 Example
 
@@ -513,7 +527,7 @@ console.log(person.address.city); // Output: "New York"
 console.log(person.address.zipCode?.code); // Output: undefined
 ```
 
-### delete Operator -
+### delete Operator
 
 Example
 
@@ -528,7 +542,7 @@ delete person.age; // Deleted the "age" property from the "person" object
 console.log(person.age); // Output: undefined
 ```
 
-### Spread (...) Operator -
+### Spread (...) Operator
 
 Example
 
@@ -564,7 +578,7 @@ console.log(sum(...numbers)); // Output: 6
 const letters = ['a', 'b', 'c'];
 ```
 
-### Array methods -
+### Array methods
 
 **concat** - It is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array that contains the values of the original arrays.
 
@@ -862,7 +876,9 @@ console.log(result); // Output: "The Quick BROWN Fox"
 
 ## Loops
 
-**for** - This type of loop is used to execute a block of code a specified number of times. The for loop has three parts: the initialization, the condition, and the increment.
+### for loop
+
+This type of loop is used to execute a block of code a specified number of times. The for loop has three parts: the initialization, the condition, and the increment.
 
 ```javascript
 for (let i = 0; i < 5; i++) {
@@ -870,7 +886,9 @@ for (let i = 0; i < 5; i++) {
 }
 ```
 
-**while** - This type of loop is used to execute a block of code as long as a specified condition is true.
+### while loop
+
+This type of loop is used to execute a block of code as long as a specified condition is true.
 
 ```javascript
 let i = 0;
@@ -880,7 +898,9 @@ while (i < 5) {
 }
 ```
 
-**do while** - This type of loop is similar to the while loop, but it guarantees that the code block will be executed at least once.
+### do while loop
+
+This type of loop is similar to the while loop, but it guarantees that the code block will be executed at least once.
 
 ```javascript
 let i = 0;
@@ -890,7 +910,9 @@ do {
 } while (i < 5);
 ```
 
-**for in** - This type of loop is used to iterate over the enumerable properties of an object.
+### for in loop
+
+This type of loop is used to iterate over the enumerable properties of an object.
 
 ```javascript
 let obj = {a: 1, b: 2, c: 3};
@@ -899,7 +921,9 @@ for (let prop in obj) {
 }
 ```
 
-**for of** - This type of loop is used to iterate over the iterable objects such as arrays, strings, and maps.
+### for of loop
+
+This type of loop is used to iterate over the iterable objects such as arrays, strings, and maps.
 
 ```javascript
 let arr = [1, 2, 3];
@@ -910,7 +934,9 @@ for (let value of arr) {
 
 ## Conditional Statements
 
-**if** - The if statement is used to execute a block of code if a specified condition is true.
+## if statement
+
+The if statement is used to execute a block of code if a specified condition is true.
 
 ```javascript
 if (x > 0) {
@@ -918,7 +944,9 @@ if (x > 0) {
 }
 ```
 
-**if else** - The if...else statement is used to execute a block of code if a specified condition is true and another block of code if the condition is false.
+### if else statement
+
+The if...else statement is used to execute a block of code if a specified condition is true and another block of code if the condition is false.
 
 ```javascript
 if (x > 0) {
@@ -928,7 +956,9 @@ if (x > 0) {
 }
 ```
 
-**if else else if**- The if...else if...else statement is used to specify multiple conditions and execute a different block of code for each one.
+### if else else if statement
+
+The if...else if...else statement is used to specify multiple conditions and execute a different block of code for each one.
 
 ```javascript
 if (x > 0) {
@@ -940,7 +970,9 @@ if (x > 0) {
 }
 ```
 
-**switch** - The switch statement is used to select one of many blocks of code to be executed.
+### switch statement
+
+The switch statement is used to select one of many blocks of code to be executed.
 
 ```javascript
 let day = new Date().getDay();
@@ -962,9 +994,17 @@ switch (day) {
 
 ## Functions
 
+Defined with the function keyword, followed by a name, followed by parentheses ().
+
+```jsx
+function name(parameter1, parameter2, parameter3) {
+  // code to be executed
+}
+```
+
 ## Scope
 
-Block Scope
+### Block Scope
 
 ```javascript
 //var
@@ -995,7 +1035,7 @@ function myFunction () {
 myFunction();
 ```
 
-Function Scope
+### Function Scope
 
 ```javascript
 //var
@@ -1020,7 +1060,7 @@ myFunction()
 console.log(a);
 ```
 
-Global Scope
+### Global Scope
 
 ```javascript
 //var
