@@ -42,19 +42,29 @@
   - [if else else if statement](#if-else-else-if-statement)
   - [switch statement](#switch-statement)
 - [Functions](#functions)
+- [Arrow Functions](#arrow-function)
 - [Scope](#scope)
   - [Block Scope](#block-scope)
   - [Function Scope](#function-scope)
   - [Global Scope](#global-scope)
 - [Dates](#dates)
+  - [Date Methods](#date-methods)
 - [Date Get Methods](#date-get-methods)
 - [Date Set Methods](#date-set-methods)
 - [Type Conversion](#type-conversion)
+  - [Convert string to numbers](#convert-string-to-numbers)
+  - [Convert number to a string](#convert-number-to-a-string)
+  - [Convert dates to numbers](#convert-dates-to-numbers)
+  - [Convert boolean to number](#convert-boolean-to-number)
+  - [Convert boolean to string](#convert-boolean-to-string)
 - [Typeof](#typeof)
-- [Arrow Functions](#arrow-function)
 - [Math](#math)
+  - [Math Property](#math-property)
+  - [Math Methods](#math-methods)
 - [Sets](#sets)
+  - [Set Methods](#set-methods)
 - [Map](#map)
+  - [Map Methods](#map-methods)
 - [Async](#async)
 - [DOM](#dom)
 - [Browser BOM](#browser-bom)
@@ -69,6 +79,15 @@
 - [ES6 Featues](#es6-features)
 - [ES5 Features](#es5-features)
 - [Examples](#examples)
+- [List of GitHub Repositories to learn JavaScript](#list-of-github-repositories-to-learn-javascript)
+- [List of Websites to learn JavaScript](#list-of-websites-to-learn-javascript)
+- [List of Books to learn JavaScript](#list-of-books-to-learn-javascript)
+- [List of YouTube Channels to learn JavaScript](#list-of-youtube-channels-to-learn-javascript)
+- [List of Games to learn JavaScript by playing](#list-of-games-to-learn-javascript-by-playing)
+- [List of Blogs Sites to learn JavaScript](#list-of-blogs-sites-to-learn-javascript)
+- [List of JavaScript Online Editors/Compilers](#list-of-javascript-online-editorscompilers)
+- [List of Twitter Users](#list-of-twitter-users)
+- [List of LinkedIn Users](#list-of-linkedin-users)
 
 ## Introduction
 
@@ -1002,6 +1021,14 @@ function name(parameter1, parameter2, parameter3) {
 }
 ```
 
+## Arrow Function
+
+```javascript
+hello = () => {
+    return 'hello';
+}
+```
+
 ## Scope
 
 ### Block Scope
@@ -1240,7 +1267,7 @@ d.setTime(30);
 
 ## Type Conversion
 
-### Covert String to Numbers
+### Convert string to numbers
 
 Number
 
@@ -1267,7 +1294,7 @@ let num = parseInt("123");
 console.log(num); // Output: 123
 ```
 
-### Convert Number to a string
+### Convert number to a string
 
 String
 
@@ -1303,7 +1330,7 @@ let str = (123).toPrecision();
 console.log(str); // Output: 123
 ```
 
-### Convert Dates to numbers
+### Convert dates to numbers
 
 Number
 
@@ -1331,7 +1358,7 @@ toString
 Date().toString() //'Sat Jan 14 2023 11:54:57 GMT+0530 (India Standard Time)'
 ```
 
-### Convert boolean to Number
+### Convert boolean to number
 
 Number
 
@@ -1400,14 +1427,6 @@ The data type of null is object
 The data type of an undefined variable is undefined *
 
 The data type of a variable that has not been assigned a value is also undefined *
-
-## Arrow Function
-
-```javascript
-hello = () => {
-    return 'hello';
-}
-```
 
 ## Math
 
@@ -3304,7 +3323,7 @@ console.log(result);
 - [Harshit Vashisth](https://www.youtube.com/@Harshitvashisth)
 - [AniaKubow](https://www.youtube.com/@AniaKubow)
 
-## List of Games to tearn JavaScript by playing
+## List of Games to learn JavaScript by playing
 
 - [JSRobot](https://lab.reaal.me/jsrobot/)
 - [JSdares](https://jsdares.com/)
@@ -3313,7 +3332,7 @@ console.log(result);
 - [Crunchzilla](https://www.crunchzilla.com/)
 - [Screeps](https://screeps.com/)
 
-## List of Blogs Sites to learn JavScript
+## List of Blogs Sites to learn JavaScript
 
 - [Freecodecamp](https://www.freecodecamp.org/news)
 - [Medium](https://medium.com/)
