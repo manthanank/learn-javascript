@@ -3344,6 +3344,8 @@ console.log(result);
 
 ## List of LinkedIn Users
 
-- []()
+- [Adrian Bogdan](https://www.linkedin.com/in/adrian-%F0%9F%9F%A3-b-b52348181/)
+- [Jayesh Choudary](https://www.linkedin.com/in/jayesh-choudhary-72444518b/)
+- [Pradeep Pandey](https://www.linkedin.com/in/pradeep-pandey-5a545a163/)
 
 ### 🙏🏻Please Support and Don't Forget to give star⭐, Also Feel free to contribute
