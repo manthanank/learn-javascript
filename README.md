@@ -7,12 +7,25 @@
 - [Introduction](#introduction)
 - [Add JavaScript](#add-javascript)
 - [Output JavaScript](#outputing-javascript)
-- [Examples](#examples)
 - [Single Line Comments](#single-line-comments)
 - [Multi Line Comments](#multi-line-comments)
 - [Variables](#variables)
+  - [Declare Variables](#declare-variables)
 - [Data Types](#data-types)
+  - [Primitive Data Types](#1-primitive-data-types)
+  - [Non Primitive Data Types](#2-non-primitive-data-types)
 - [Operators](#operators)
+  - [Arithmetic Operators](#arithmetic-operators)
+  - [Logical Operators](#logical-operators)
+  - [Comparison Operators](#comparison-operators)
+  - [Bitwise Operators](#bitwise-operators)
+  - [Type operators](#type-operators)
+  - [Assignment Operators](#assignment-operators)
+  - [Conditional (Ternary) Operators](#conditional-ternary-operator)
+  - [Nullish Coalescing Operator(??)](#nullish-coalescing-operator)
+  - [Optional Chaining Operator(?.)](#optional-chaining-operator)
+  - [delete Operator](#delete-operator)
+  - [Spread (...) Operator](#spread--operator)
 - [Arrays](#arrays)
 - [Strings](#strings)
 - [Loops](#loops)
@@ -42,13 +55,6 @@
 - [ES6 Featues](#es6-features)
 - [ES5 Features](#es5-features)
 - [Examples](#examples)
-- [Learn From GitHub Repositories](#learn-more-from-github-repositories)
-- [Learn From Websites](#learn-more-from-websites)
-- [Learn From Books](#learn-more-from-books)
-- [Learn From YouTube Channels](#learn-from-youtube-channels)
-- [Learn by Playing Games](#learn-javascript-by-playing-games)
-- [Learn More From Blogs Sites](#learn-more-from-blogs-sites)
-- [Learn More From Twitter Users](#learn-more-from-twitter-users)
 
 ## Introduction
 
@@ -90,10 +96,6 @@
 ```
 
 **External JavaScript** -
-
-```javascript
-// comment
-```
 
 ```html
 <!DOCTYPE html>
@@ -202,7 +204,7 @@ Hello, How are you?
 
 ## Variables
 
-### Declare Variables using
+### Declare Variables
 
 **1. var** -
 
@@ -293,7 +295,7 @@ let pattern = /w3schools/i;
 
 ## Operators
 
-**Arithmetic Operators** -
+### Arithmetic Operators -
 
 | Operator | Description |
 | :-----------: | :-----------: |
@@ -325,7 +327,7 @@ y--;
 console.log(y); // Output: 1
 ```
 
-**Logical Operators** -
+### Logical Operators -
 
 | Operator | Description |
 | :-----------: | :-----------: |
@@ -344,7 +346,7 @@ console.log(x || y); // Output: true
 console.log(!x); // Output: false
 ```
 
-**Comparison Operators** -
+### Comparison Operators -
 
 | Operator | Description |
 | :-----------: | :-----------: |
@@ -376,7 +378,7 @@ console.log(x ? y : x); // Output: 10
 console.log(x ? x : y); // Output: 5
 ```
 
-**Bitwise Operators** -
+### Bitwise Operators -
 
 | Operator | Description |
 | :-----------: | :-----------: |
@@ -403,7 +405,7 @@ console.log(x >> 1); // Output: 2 (binary: 10)
 console.log(x >>> 1); // Output: 2 (binary: 10)
 ```
 
-**Type Operators** -
+### Type Operators -
 
 | Operator | Description |
 | :-----------: | :-----------: |
@@ -423,7 +425,7 @@ console.log(typeof []); // Output: "object"
 console.log(typeof function() {}); // Output: "function"
 ```
 
-**Assignment Operators** -
+### Assignment Operators -
 
 | Operator | Description |
 | :-----------: | :-----------: |
@@ -461,7 +463,7 @@ x : y;
 console.log(x); // Output: 10
 ```
 
-**Conditional (Ternary) Operator** -
+### Conditional (Ternary) Operator -
 
 Syntax
 
@@ -477,7 +479,7 @@ let max = (x > y) ? x : y;
 console.log(max); // Output: 10
 ```
 
-**Nullish Coalescing Operator (??)** -
+### Nullish Coalescing Operator (??) -
 
 Example
 
@@ -491,7 +493,7 @@ console.log(y ?? 'world'); // Output: "world"
 console.log(z ?? 'world'); // Output: "Hello"
 ```
 
-**Optional Chaining Operator (?.)** -
+### Optional Chaining Operator (?.) -
 
 Example
 
@@ -511,7 +513,7 @@ console.log(person.address.city); // Output: "New York"
 console.log(person.address.zipCode?.code); // Output: undefined
 ```
 
-**delete Operator** -
+### delete Operator -
 
 Example
 
@@ -526,7 +528,7 @@ delete person.age; // Deleted the "age" property from the "person" object
 console.log(person.age); // Output: undefined
 ```
 
-**Spread (...) Operator** -
+### Spread (...) Operator -
 
 Example
 
@@ -3189,7 +3191,7 @@ let result = nums.reduce((acc, num) => {
 console.log(result);
 ```
 
-## Learn more from GitHub Repositories
+## List of GitHub Repositories to learn JavaScript
 
 - [30 Days of JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript)
 - [You Don't Know JavaScript](https://github.com/getify/You-Dont-Know-JS)
@@ -3214,7 +3216,7 @@ console.log(result);
 - [JavaScript Interview Questions](https://github.com/sudheerj/javascript-interview-questions)
 - [Must Watch JavaScript](https://github.com/AllThingsSmitty/must-watch-javascript)
 
-## Learn more from Websites
+## List of Websites to learn JavaScript
 
 - [W3School](https://www.w3schools.com/)
 - [MDN](https://developer.mozilla.org/en-US/)
@@ -3229,7 +3231,7 @@ console.log(result);
 - [YouTube](https://www.youtube.com)
 - [Stackoverflow](https://stackoverflow.com)
 
-## Learn more from Books
+## List of Books to learn JavaScript
 
 - [Eloquent JavaScript](https://eloquentjavascript.net/)
 - [You Don’t Know JS](https://www.amazon.in/You-Dont-Know-Set-Volumes/dp/9352136268)
@@ -3239,7 +3241,7 @@ console.log(result);
 - [A Smarter Way to Learn JavaScript](https://asmarterwaytolearn.com/js/index-of-exercises.html)
 - [Programming JavaScript Applications](https://www.oreilly.com/library/view/programming-javascript-applications/9781491950289/)
 
-## Learn from YouTube Channels
+## List of YouTube Channels to learn JavaScript
 
 - [Freecodecamp](https://www.youtube.com/@freecodecamp)
 - [Code With Harry](https://www.youtube.com/@CodeWithHarry)
@@ -3262,7 +3264,7 @@ console.log(result);
 - [Harshit Vashisth](https://www.youtube.com/@Harshitvashisth)
 - [AniaKubow](https://www.youtube.com/@AniaKubow)
 
-## Learn JavaScript by playing games
+## List of Games to tearn JavaScript by playing
 
 - [JSRobot](https://lab.reaal.me/jsrobot/)
 - [JSdares](https://jsdares.com/)
@@ -3271,7 +3273,7 @@ console.log(result);
 - [Crunchzilla](https://www.crunchzilla.com/)
 - [Screeps](https://screeps.com/)
 
-## Learn More From Blogs Sites
+## List of Blogs Sites to learn JavScript
 
 - [Freecodecamp](https://www.freecodecamp.org/news)
 - [Medium](https://medium.com/)
@@ -3279,11 +3281,15 @@ console.log(result);
 - [Hashnode](https://hashnode.com/)
 - [Hacker Noon](https://hackernoon.com/)
 
-## Learn More From Twitter Users
+## List of Twitter Users
 
 - [Csaba Kissi](https://twitter.com/csaba_kissi)
 - [Codermarch](https://twitter.com/codemarch)
 - [Swapna Kumar Panda](https://twitter.com/swapnakpanda)
 - [Pratham](https://twitter.com/Prathkum)
+
+## List of LinkedIn Users
+
+- []()
 
 ### 🙏🏻Please Support and Don't Forget to give star⭐, Also Feel free to contribute
