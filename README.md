@@ -3227,6 +3227,23 @@ for (let i = 0; i < 3; i++){
 }
 ```
 
+Print a inverted half pyramid in JavaScript as shown below
+
+```jsx
+// output 
+// ***
+// **
+// *
+
+for (let i = 3; i >= 1; i--) {
+  let string = '';
+  for (let j = 1; j <= i; j++) {
+    string += '*';
+  }
+  console.log(string);
+}
+```
+
 Print the output as shown below
 
 ```javascript
