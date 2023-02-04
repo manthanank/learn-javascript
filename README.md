@@ -634,9 +634,9 @@ valueOf()	Returns the primitive value of an object
 const letters = ['a', 'b', 'c'];
 ```
 
-### Array methods
+### Array Methods
 
-concat()	Joins arrays and returns an array with the joined arrays
+**concat()** - Joins arrays and returns an array with the joined arrays
 
 constructor	Returns the function that created the Array object's prototype
 
@@ -1579,17 +1579,14 @@ typeof myCar                  // Returns "undefined" *
 typeof null                   // Returns "object"
 ```
 
-The data type of NaN is number
+Keep in mind that
 
-The data type of an array is object
-
-The data type of a date is object
-
-The data type of null is object
-
-The data type of an undefined variable is undefined *
-
-The data type of a variable that has not been assigned a value is also undefined *
+- The data type of NaN is number
+- The data type of an array is object
+- The data type of a date is object
+- The data type of null is object
+- The data type of an undefined variable is undefined *
+- The data type of a variable that has not been assigned a value is also undefined *
 
 ## Math
 
