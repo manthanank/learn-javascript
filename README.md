@@ -591,6 +591,20 @@ let numbers = [1, 2, 3];
 console.log(sum(...numbers)); // Output: 6
 ```
 
+## Boolean
+
+JavaScript booleans can have one of two values: true or false.
+
+### Boolean Methods and Properties
+
+constructor	Returns the function that created JavaScript's Boolean prototype
+
+prototype	Allows you to add properties and methods to the Boolean prototype
+
+toString()	Converts a boolean value to a string, and returns the result
+
+valueOf()	Returns the primitive value of a boolean
+
 ## Object
 
 Objects are used to store key/value (name/value) collections.
