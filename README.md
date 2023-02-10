@@ -3470,6 +3470,125 @@ for (let i = 0; i < 8; i++) {
 document.body.appendChild(chessboard);
 ```
 
+Print the result for the code below
+
+```javascript
+var obj1 = {
+  num: 10
+}
+var obj2 = Object.create(obj1); 
+console.log(obj2.num);
+
+// output: 10
+```
+
+Print the result for the code below
+
+```javascript
+var num = 10; var obj = {
+  num: 20
+}; 
+(function() {
+  console.log(num, obj.num);
+})();
+
+// output: 10 20
+```
+
+Print the result for the code below
+
+```javascript
+var num1 = 20;
+var num2 = 30;
+[num1, num2] [num2, num1];
+console.log(num1, num2);
+
+// output: 20 30 
+```
+
+
+Print the result for the code below
+
+```javascript
+var num= 10;
+var obj = {
+    num: 20,
+    printNum: function() {
+      console.log(this.num);
+  }
+};
+var newObj = obj.printNum.bind(obj);
+newObj();
+
+// output: 20
+```
+
+
+Print the result for the code below
+
+```javascript
+var num= 10;
+var obj = {
+  num: 20,
+  printNum: function() { 
+    console.log(this.num);
+  }
+}; 
+var newObj = obj.printNum.bind({ num: 30 });
+newObj();
+
+//  output: 30
+```
+
+
+Print the result for the code below
+
+```javascript
+var person = { 
+  name: "John",
+  greet: function() { 
+    console.log("Hello, my name is "+this.name); 
+  }
+}
+var newPerson = person;
+newPerson.name = "Jane";
+person.greet();
+
+// output: Hello, my name is Jane
+```
+
+
+Print the result for the code below
+
+```javascript
+var num = 10;
+var obj = {
+  num: 20
+};
+(function(num, obj) { 
+  console.log(num, obj.num); 
+})(num, obj);
+
+// output: 10 20
+```
+
+
+Print the result for the code below
+
+```javascript
+var num = 10; 
+var obj = {
+  num: 20,
+  printNum: function() { 
+    console.log(this.num); 
+  }
+};
+var newObj = obj.printNum; 
+newObj();
+
+// output: 10
+```
+
 ## List of GitHub Repositories to learn JavaScript
 
 - [30 Days of JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript)
