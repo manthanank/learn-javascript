@@ -597,13 +597,13 @@ JavaScript booleans can have one of two values: true or false.
 
 ### Boolean Methods and Properties
 
-constructor	Returns the function that created JavaScript's Boolean prototype
+constructor - Returns the function that created JavaScript's Boolean prototype
 
-prototype	Allows you to add properties and methods to the Boolean prototype
+prototype - Allows you to add properties and methods to the Boolean prototype
 
-toString()	Converts a boolean value to a string, and returns the result
+toString() - Converts a boolean value to a string, and returns the result
 
-valueOf()	Returns the primitive value of a boolean
+valueOf() - Returns the primitive value of a boolean
 
 ## Object
 
@@ -618,15 +618,15 @@ const person = {
 
 ### Object Methods & Properties
 
-constructor	Returns the function that created an object's prototype
+constructor -Returns the function that created an object's prototype
 
-keys()	Returns an Array Iterator object with the keys of an object
+keys() -Returns an Array Iterator object with the keys of an object
 
-prototype	Let you to add properties and methods to JavaScript objects
+prototype -Let you to add properties and methods to JavaScript objects
 
-toString()	Converts an object to a string and returns the result
+toString() -Converts an object to a string and returns the result
 
-valueOf()	Returns the primitive value of an object
+valueOf() -Returns the primitive value of an object
 
 ## Arrays
 
@@ -638,69 +638,69 @@ const letters = ['a', 'b', 'c'];
 
 **concat()** - Joins arrays and returns an array with the joined arrays
 
-constructor	Returns the function that created the Array object's prototype
+constructor - Returns the function that created the Array object's prototype
 
-copyWithin()	Copies array elements within the array, to and from specified positions
+copyWithin() - Copies array elements within the array, to and from specified positions
 
-entries()	Returns a key/value pair Array Iteration Object
+entries() - Returns a key/value pair Array Iteration Object
 
-every()	Checks if every element in an array pass a test
+every() - Checks if every element in an array pass a test
 
-fill()	Fill the elements in an array with a static value
+fill() - Fill the elements in an array with a static value
 
-filter()	Creates a new array with every element in an array that pass a test
+filter() - Creates a new array with every element in an array that pass a test
 
-find()	Returns the value of the first element in an array that pass a test
+find() - Returns the value of the first element in an array that pass a test
 
-findIndex()	Returns the index of the first element in an array that pass a test
+findIndex() - Returns the index of the first element in an array that pass a test
 
-forEach()	Calls a function for each array element
+forEach() - Calls a function for each array element
 
-from()	Creates an array from an object
+from() - Creates an array from an object
 
-includes()	Check if an array contains the specified element
+includes() - Check if an array contains the specified element
 
-indexOf()	Search the array for an element and returns its position
+indexOf() - Search the array for an element and returns its position
 
-isArray()	Checks whether an object is an array
+isArray() - Checks whether an object is an array
 
-join()	Joins all elements of an array into a string
+join() - Joins all elements of an array into a string
 
-keys()	Returns a Array Iteration Object, containing the keys of the original array
+keys() - Returns a Array Iteration Object, containing the keys of the original array
 
-lastIndexOf()	Search the array for an element, starting at the end, and returns its position
+lastIndexOf() - Search the array for an element, starting at the end, and returns its position
 
-length	Sets or returns the number of elements in an array
+length - Sets or returns the number of elements in an array
 
-map()	Creates a new array with the result of calling a function for each array element
+map() - Creates a new array with the result of calling a function for each array element
 
-pop()	Removes the last element of an array, and returns that element
+pop() - Removes the last element of an array, and returns that element
 
-prototype	Allows you to add properties and methods to an Array object
+prototype - Allows you to add properties and methods to an Array object
 
-push()	Adds new elements to the end of an array, and returns the new length
+push() - Adds new elements to the end of an array, and returns the new length
 
-reduce()	Reduce the values of an array to a single value (going left-to-right)
+reduce() - Reduce the values of an array to a single value (going left-to-right)
 
-reduceRight()	Reduce the values of an array to a single value (going right-to-left)
+reduceRight() - Reduce the values of an array to a single value (going right-to-left)
 
-reverse()	Reverses the order of the elements in an array
+reverse() - Reverses the order of the elements in an array
 
-shift()	Removes the first element of an array, and returns that element
+shift() - Removes the first element of an array, and returns that element
 
-slice()	Selects a part of an array, and returns the new array
+slice() - Selects a part of an array, and returns the new array
 
-some()	Checks if any of the elements in an array pass a test
+some() - Checks if any of the elements in an array pass a test
 
-sort()	Sorts the elements of an array
+sort() - Sorts the elements of an array
 
-splice()	Adds/Removes elements from an array
+splice() - Adds/Removes elements from an array
 
-toString()	Converts an array to a string, and returns the result
+toString() - Converts an array to a string, and returns the result
 
-unshift()	Adds new elements to the beginning of an array, and returns the new length
+unshift() - Adds new elements to the beginning of an array, and returns the new length
 
-valueOf()	Returns the primitive value of an array
+valueOf() - Returns the primitive value of an array
 
 **concat** - It is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array that contains the values of the original arrays.
 
@@ -859,65 +859,65 @@ const name = 'Manthan';
 
 ### Strings methods
 
-charAt()	Returns the character at a specified index (position)
+charAt() - Returns the character at a specified index (position)
 
-charCodeAt()	Returns the Unicode of the character at a specified index
+charCodeAt() - Returns the Unicode of the character at a specified index
 
-concat()	Returns two or more joined strings
+concat() - Returns two or more joined strings
 
-constructor	Returns the string's constructor function
+constructor - Returns the string's constructor function
 
-endsWith()	Returns if a string ends with a specified value
+endsWith() - Returns if a string ends with a specified value
 
-fromCharCode()	Returns Unicode values as characters
+fromCharCode() - Returns Unicode values as characters
 
-includes()	Returns if a string contains a specified value
+includes() - Returns if a string contains a specified value
 
-indexOf()	Returns the index (position) of the first occurrence of a value in a string
+indexOf() - Returns the index (position) of the first occurrence of a value in a string
 
-lastIndexOf()	Returns the index (position) of the last occurrence of a value in a string
+lastIndexOf() - Returns the index (position) of the last occurrence of a value in a string
 
-length	Returns the length of a string
+length - Returns the length of a string
 
-localeCompare()	Compares two strings in the current locale
+localeCompare() - Compares two strings in the current locale
 
-match()	Searches a string for a value, or a regular expression, and returns the matches
+match() - Searches a string for a value, or a regular expression, and returns the matches
 
-prototype	Allows you to add properties and methods to an object
+prototype - Allows you to add properties and methods to an object
 
-repeat()	Returns a new string with a number of copies of a string
+repeat() - Returns a new string with a number of copies of a string
 
-replace()	Searches a string for a value, or a regular expression, and returns a string where the values are replaced
+replace() - Searches a string for a value, or a regular expression, and returns a string where the values are replaced
 
-search()	Searches a string for a value, or regular expression, and returns the index (position) of the match
+search() - Searches a string for a value, or regular expression, and returns the index (position) of the match
 
-slice()	Extracts a part of a string and returns a new string
+slice() - Extracts a part of a string and returns a new string
 
-split()	Splits a string into an array of substrings
+split() - Splits a string into an array of substrings
 
-startsWith()	Checks whether a string begins with specified characters
+startsWith() - Checks whether a string begins with specified characters
 
-substr()	Extracts a number of characters from a string, from a start index (position)
+substr() - Extracts a number of characters from a string, from a start index (position)
 
-substring()	Extracts characters from a string, between two specified indices (positions)
+substring() - Extracts characters from a string, between two specified indices (positions)
 
-toLocaleLowerCase()	Returns a string converted to lowercase letters, using the host's locale
+toLocaleLowerCase() - Returns a string converted to lowercase letters, using the host's locale
 
-toLocaleUpperCase()	Returns a string converted to uppercase letters, using the host's locale
+toLocaleUpperCase() - Returns a string converted to uppercase letters, using the host's locale
 
-toLowerCase()	Returns a string converted to lowercase letters
+toLowerCase() - Returns a string converted to lowercase letters
 
-toString()	Returns a string or a string object as a string
+toString() - Returns a string or a string object as a string
 
-toUpperCase()	Returns a string converted to uppercase letters
+toUpperCase() - Returns a string converted to uppercase letters
 
-trim()	Returns a string with removed whitespaces
+trim() - Returns a string with removed whitespaces
 
-trimEnd()	Returns a string with removed whitespaces from the end
+trimEnd() - Returns a string with removed whitespaces from the end
 
-trimStart()	Returns a string with removed whitespaces from the start
+trimStart() - Returns a string with removed whitespaces from the start
 
-valueOf()	Returns the primitive value of a string or a string object
+valueOf() - Returns the primitive value of a string or a string object
 
 **charAt** - It returns the character at a specified index in a string. The index is zero-based, which means that the first character in the string is at index 0, the second character is at index 1, and so on.
 
@@ -2779,9 +2779,9 @@ XML File
 
 ### JSON Methods
 
-parse()	Parses a JSON string and returns a JavaScript object
+parse() - Parses a JSON string and returns a JavaScript object
 
-stringify()	Convert a JavaScript object to a JSON string
+stringify() - Convert a JavaScript object to a JSON string
 
 Data Types
 
@@ -3521,7 +3521,6 @@ console.log(num1, num2);
 // output: 20 30 
 ```
 
-
 Print the result for the code below
 
 ```javascript
@@ -3537,7 +3536,6 @@ newObj();
 
 // output: 20
 ```
-
 
 Print the result for the code below
 
@@ -3555,7 +3553,6 @@ newObj();
 //  output: 30
 ```
 
-
 Print the result for the code below
 
 ```javascript
@@ -3572,7 +3569,6 @@ person.greet();
 // output: Hello, my name is Jane
 ```
 
-
 Print the result for the code below
 
 ```javascript
@@ -3586,7 +3582,6 @@ var obj = {
 
 // output: 10 20
 ```
-
 
 Print the result for the code below
 
