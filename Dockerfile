@@ -1,19 +1,20 @@
-# FROM node:alpine
-# COPY . /index
-# WORKDIR /index
-# CMD node index.js
-FROM node:lts-alpine
+# Use an existing docker image as a base
+FROM ubuntu:latest
 
-WORKDIR /usr/src/app
+# Set the working directory for the container
+WORKDIR /app
 
-COPY package*.json ./
+# Copy the local package.json file into the container
+COPY package.json .
 
-RUN npm i
+# Install dependencies
+RUN npm install
 
+# Copy the rest of the application code into the container
 COPY . .
 
+# Expose a port for the container to listen on
 EXPOSE 3000
 
-RUN npm run build
-
-CMD [ "node", "dist/index.js" ]
+# Start the application
+CMD ["npm", "start"]
