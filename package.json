@@ -1,6 +1,6 @@
 {
   "name": "learn-javascript",
-  "version": "1.0.1",
+  "version": "0.0.1",
   "description": "Complete JavaScript with all resources to learn.",
   "main": "index.js",
   "scripts": {
