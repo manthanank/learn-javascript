@@ -2713,19 +2713,147 @@ document.cookie = "username=; expires=Sat, 28 Jan 2023 12:00:00 UTC; path=/;";
 
 ## Web API
 
-Forms API
+Web API is an application programming interface for the Web.
+
+`API` - Application Programming Interface.
+
+**Forms API** -
+
+**Constraint Validation DOM Methods** -
+
+`checkValidity()` - Returns true if an input element contains valid data.
 
 ```javascript
 
 ```
 
-History API
+`setCustomValidity()` - Sets the validationMessage property of an input element.
+
+```jsx
+
+```
+
+**Constraint Validation DOM Properties** -
+
+`validity` - Contains boolean properties related to the validity of an input element.
+
+```jsx
+
+```
+
+`validationMessage` - Contains the message a browser will display when the validity is false.
+
+```jsx
+
+```
+
+`willValidate` - Indicates if an input element will be validated.
+
+```jsx
+
+```
+
+**Validity Properties** -
+
+`customError` - Set to true, if a custom validity message is set.
+
+```jsx
+
+```
+
+`patternMismatch` - Set to true, if an element's value does not match its pattern attribute.
+
+```jsx
+
+```
+
+`rangeOverflow` - Set to true, if an element's value is greater than its max attribute.
+
+```jsx
+
+```
+
+`rangeUnderflow` - Set to true, if an element's value is less than its min attribute.
+
+```jsx
+
+```
+
+`stepMismatch` - Set to true, if an element's value is invalid per its step attribute.
+
+```jsx
+
+```
+
+`tooLong` - Set to true, if an element's value exceeds its maxLength attribute.
+
+```jsx
+
+```
+
+`typeMismatch` - Set to true, if an element's value is invalid per its type attribute.
+
+```jsx
+
+```
+
+`valueMissing` - Set to true, if an element (with a required attribute) has no value.
+
+```jsx
+
+```
+
+`valid` - Set to true, if an element's value is valid.
+
+```jsx
+
+```
+
+**History API** -
+
+Web History API provides easy methods to access the windows.history object.
+
+`History back()` Method
 
 ```javascript
 
 ```
 
-Storage API
+`History go()` Method
+
+```javascript
+
+```
+
+**History Object Properties** -
+
+`length` - Returns the number of URLs in the history list
+
+```javascript
+
+```
+
+**History Object Methods** -
+
+`back()` - Loads the previous URL in the history list
+
+```javascript
+
+```
+
+`forward()` - Loads the next URL in the history list
+
+```javascript
+
+```
+
+`go()` - Loads a specific URL from the history list
+
+```javascript
+
+```
+
+**Storage API** -
 
 ```javascript
 
