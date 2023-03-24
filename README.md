@@ -2924,31 +2924,31 @@ Data Types
 
 ```
 
-Parse
+**Parse** -
 
 ```javascript
 
 ```
 
-Stringify
+**Stringify** -
 
 ```javascript
 
 ```
 
-Objects
+**Objects** -
 
 ```javascript
 
 ```
 
-Arrays
+**Arrays** -
 
 ```javascript
 
 ```
 
-Server
+**Server** -
 
 ```javascript
 
