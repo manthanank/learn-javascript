@@ -2859,19 +2859,19 @@ Web History API provides easy methods to access the windows.history object.
 
 ```
 
-Worker API
+**Worker API** -
 
 ```javascript
 
 ```
 
-Fetch API
+**Fetch API** -
 
 ```javascript
 
 ```
 
-GeoLocation API
+**GeoLocation API** -
 
 ```javascript
 
