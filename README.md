@@ -2879,25 +2879,25 @@ Web History API provides easy methods to access the windows.history object.
 
 ## AJAX
 
-XMLHttp
+**XMLHttp** -
 
 ```javascript
 
 ```
 
-Request
+**Request** -
 
 ```javascript
 
 ```
 
-Response
+**Response** -
 
 ```javascript
 
 ```
 
-XML File
+**XML File** -
 
 ```javascript
 
