@@ -2964,31 +2964,31 @@ Selectors
 
 ## Graphics
 
-Canvas
+**Canvas** -
 
 ```javascript
 
 ```
 
-Plotly
+**Plotly** -
 
 ```javascript
 
 ```
 
-Chart.js
+**Chart.js** -
 
 ```javascript
 
 ```
 
-Google Chart
+**Google Chart** -
 
 ```javascript
 
 ```
 
-D3.js
+**D3.js** -
 
 ```javascript
 
