@@ -1,4 +1,13 @@
-# 1.1.0 (2023-03-26)
+# [1.2.0](https://github.com/manthanank/learn-javascript/compare/v1.1.0...v1.2.0) (2023-03-26)
+
+
+### Features
+
+* removed publish yml file ([9678d4d](https://github.com/manthanank/learn-javascript/commit/9678d4d93ce83b094e1d52c5cc495596aafefd8f))
+
+
+
+# [1.1.0](https://github.com/manthanank/learn-javascript/compare/c82e16c5627a6862a374128714ce82c29215e892...v1.1.0) (2023-03-26)
 
 
 ### Bug Fixes
