@@ -1,3 +1,12 @@
+# [1.3.0](https://github.com/manthanank/learn-javascript/compare/v1.2.0...v1.3.0) (2023-03-27)
+
+
+### Features
+
+*  added npm downloads badge ([9b1c017](https://github.com/manthanank/learn-javascript/commit/9b1c01726ddf1c03606fc16bd9f1dbecf015a049))
+
+
+
 # [1.2.0](https://github.com/manthanank/learn-javascript/compare/v1.1.0...v1.2.0) (2023-03-26)
 
 
