@@ -2,6 +2,8 @@
 
 <!-- ![logo](./assets/javascript-original.svg) -->
 
+![npm](https://img.shields.io/npm/dw/learn-javascript)
+
 ## Contents
 
 - [Introduction](#introduction)
