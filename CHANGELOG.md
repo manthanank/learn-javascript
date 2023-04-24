@@ -1,3 +1,12 @@
+# [1.4.0](https://github.com/manthanank/learn-javascript/compare/v1.3.0...v1.4.0) (2023-04-24)
+
+
+### Features
+
+* updated ([197cfca](https://github.com/manthanank/learn-javascript/commit/197cfca44056e824c76c76d8a96e440ddd603c81))
+
+
+
 # [1.3.0](https://github.com/manthanank/learn-javascript/compare/v1.2.0...v1.3.0) (2023-03-27)
 
 
