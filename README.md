@@ -2725,8 +2725,20 @@ Web API is an application programming interface for the Web.
 
 `checkValidity()` - Returns true if an input element contains valid data.
 
-```javascript
+```html
+<input id="id1" type="number" min="100" max="300" required>
+<button onclick="myFunction()">OK</button>
 
+<p id="demo"></p>
+```
+
+```javascript
+function myFunction() {
+  const inpObj = document.getElementById("id1");
+  if (!inpObj.checkValidity()) {
+    document.getElementById("demo").innerHTML = inpObj.validationMessage;
+  }
+}
 ```
 
 `setCustomValidity()` - Sets the validationMessage property of an input element.
@@ -2771,14 +2783,38 @@ Web API is an application programming interface for the Web.
 
 `rangeOverflow` - Set to true, if an element's value is greater than its max attribute.
 
-```jsx
+```html
+<input id="id1" type="number" max="100">
+<button onclick="myFunction()">OK</button>
 
+<p id="demo"></p>
+```
+
+```jsx
+function myFunction() {
+  let text = "Value OK";
+  if (document.getElementById("id1").validity.rangeOverflow) {
+    text = "Value too large";
+  }
+}
 ```
 
 `rangeUnderflow` - Set to true, if an element's value is less than its min attribute.
 
-```jsx
+```html
+<input id="id1" type="number" max="100">
+<button onclick="myFunction()">OK</button>
 
+<p id="demo"></p>
+```
+
+```jsx
+function myFunction() {
+  let text = "Value OK";
+  if (document.getElementById("id1").validity.rangeUnderflow) {
+    text = "Value too small";
+  }
+}
 ```
 
 `stepMismatch` - Set to true, if an element's value is invalid per its step attribute.
@@ -2818,13 +2854,17 @@ Web History API provides easy methods to access the windows.history object.
 `History back()` Method
 
 ```javascript
-
+function myFunction() {
+  window.history.back();
+}
 ```
 
 `History go()` Method
 
 ```javascript
-
+function myFunction() {
+  window.history.go(-2);
+}
 ```
 
 **History Object Properties** -
@@ -2832,7 +2872,7 @@ Web History API provides easy methods to access the windows.history object.
 `length` - Returns the number of URLs in the history list
 
 ```javascript
-
+history.length
 ```
 
 **History Object Methods** -
@@ -2840,43 +2880,151 @@ Web History API provides easy methods to access the windows.history object.
 `back()` - Loads the previous URL in the history list
 
 ```javascript
-
+history.back()
 ```
 
 `forward()` - Loads the next URL in the history list
 
 ```javascript
-
+history.forward()
 ```
 
 `go()` - Loads a specific URL from the history list
 
 ```javascript
-
+history.go()
 ```
 
 **Storage API** -
 
-```javascript
+Web Storage API is a simple syntax for storing and retrieving data in the browser.
 
+The localStorage Object -
+
+The localStorage object provides access to a local storage for a particular Web Site. It allows you to store, read, add, modify, and delete data items for that domain.
+
+setItem() Method
+
+```javascript
+localStorage.setItem("name", "Manthan Ankolekar");
+```
+
+getItem() Method
+
+```javascript
+localStorage.getItem("name", "Manthan Ankolekar");
+```
+
+sessionStorage Object -
+
+The sessionStorage object is identical to the localStorage object. The difference is that the sessionStorage object stores data for one session.
+
+getItem() Method
+
+```javascript
+sessionStorage.getItem("name");
+```
+
+setItem() Method
+
+```javascript
+sessionStorage.setItem("name", "Manthan Ankolekar");
+```
+
+Storage Object Properties and Methods
+
+key(n) - Returns the name of the nth key in the storage
+
+```jsx
+localStorage.key(index)
+sessionStorage.key(index)
+```
+
+length - Returns the number of data items stored in the Storage object
+
+```jsx
+localStorage.length;
+sessionStorage.length;
+```
+
+getItem(keyname) - Returns the value of the specified key name
+
+```jsx
+localStorage.getItem(keyname)
+sessionStorage.getItem(keyname)
+```
+
+setItem(keyname, value) - Adds a key to the storage, or updates a key value (if it already exists)
+
+```jsx
+localStorage.setItem(keyname, value)
+sessionStorage.setItem(keyname, value)
+```
+
+removeItem(keyname)- Removes that key from the storage
+
+```jsx
+localStorage.removeItem(keyname)
+sessionStorage.removeItem(keyname)
+```
+
+clear() - Empty all key out of the storage
+
+```jsx
+localStorage.clear()
+sessionStorage.clear()
+```
+
+Related Pages for Web Storage API
+
+window.localStorage - Allows to save key/value pairs in a web browser. Stores the data with no expiration date
+
+```jsx
+window.localStorage
+
+localStorage
+```
+
+window.sessionStorage - Allows to save key/value pairs in a web browser. Stores the data for one session
+
+```jsx
+window.sessionStorage
+
+sessionStorage
 ```
 
 **Worker API** -
 
-```javascript
-
-```
+A web worker is a JavaScript running in the background, without affecting the performance of the page.
 
 **Fetch API** -
 
-```javascript
+The Fetch API interface allows web browser to make HTTP requests to web servers.
 
+```javascript
+fetch(file)
+.then(x => x.text())
+.then(y => myDisplay(y));
 ```
 
 **GeoLocation API** -
 
-```javascript
+The HTML Geolocation API is used to get the geographical position of a user.
 
+```javascript
+const x = document.getElementById("demo");
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
 ```
 
 ## AJAX
