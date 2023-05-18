@@ -84,6 +84,8 @@
 - [ES6 Featues](#es6-features)
 - [ES5 Features](#es5-features)
 - [Examples](#examples)
+- [Snippets](#snippets)
+- [Short Hands](#short-hands)
 - [List of GitHub Repositories to learn JavaScript](#list-of-github-repositories-to-learn-javascript)
 - [List of Websites to learn JavaScript](#list-of-websites-to-learn-javascript)
 - [List of Books to learn JavaScript](#list-of-books-to-learn-javascript)
@@ -3878,6 +3880,18 @@ var newObj = obj.printNum;
 newObj();
 
 // output: 10
+```
+
+## Snippets
+
+```jsx
+
+```
+
+## Short Hands
+
+```jsx
+
 ```
 
 ## List of GitHub Repositories to learn JavaScript
