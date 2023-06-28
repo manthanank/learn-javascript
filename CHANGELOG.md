@@ -1,3 +1,12 @@
+# [1.9.0](https://github.com/manthanank/learn-javascript/compare/v1.7.0...v1.9.0) (2023-06-28)
+
+
+### Features
+
+* updated ([9b657c6](https://github.com/manthanank/learn-javascript/commit/9b657c679fccda972028aca59648aaaaf7e9a7db))
+
+
+
 # [1.7.0](https://github.com/manthanank/learn-javascript/compare/v1.6.0...v1.7.0) (2023-06-28)
 
 
@@ -32,15 +41,6 @@
 ### Features
 
 * updated ([197cfca](https://github.com/manthanank/learn-javascript/commit/197cfca44056e824c76c76d8a96e440ddd603c81))
-
-
-
-# [1.3.0](https://github.com/manthanank/learn-javascript/compare/v1.2.0...v1.3.0) (2023-03-27)
-
-
-### Features
-
-*  added npm downloads badge ([9b1c017](https://github.com/manthanank/learn-javascript/commit/9b1c01726ddf1c03606fc16bd9f1dbecf015a049))
 
 
 
