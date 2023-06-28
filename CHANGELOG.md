@@ -1,3 +1,12 @@
+# [1.7.0](https://github.com/manthanank/learn-javascript/compare/v1.6.0...v1.7.0) (2023-06-28)
+
+
+### Features
+
+* updated ([f41abf8](https://github.com/manthanank/learn-javascript/commit/f41abf8d76e3ba3bafa6590747363e645d17afdf))
+
+
+
 # [1.6.0](https://github.com/manthanank/learn-javascript/compare/v1.5.0...v1.6.0) (2023-06-28)
 
 
@@ -32,15 +41,6 @@
 ### Features
 
 *  added npm downloads badge ([9b1c017](https://github.com/manthanank/learn-javascript/commit/9b1c01726ddf1c03606fc16bd9f1dbecf015a049))
-
-
-
-# [1.2.0](https://github.com/manthanank/learn-javascript/compare/v1.1.0...v1.2.0) (2023-03-26)
-
-
-### Features
-
-* removed publish yml file ([9678d4d](https://github.com/manthanank/learn-javascript/commit/9678d4d93ce83b094e1d52c5cc495596aafefd8f))
 
 
 
