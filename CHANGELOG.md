@@ -1,3 +1,12 @@
+# [1.10.0](https://github.com/manthanank/learn-javascript/compare/v1.9.0...v1.10.0) (2023-06-28)
+
+
+### Features
+
+* updated ([612c27b](https://github.com/manthanank/learn-javascript/commit/612c27b690fca2b19cd23a701cc4a57647aa76e7))
+
+
+
 # [1.9.0](https://github.com/manthanank/learn-javascript/compare/v1.7.0...v1.9.0) (2023-06-28)
 
 
@@ -32,15 +41,6 @@
 ### Features
 
 * updated ([1606cee](https://github.com/manthanank/learn-javascript/commit/1606ceec7a96a5054a66c3054dc533b0fff1712e))
-
-
-
-# [1.4.0](https://github.com/manthanank/learn-javascript/compare/v1.3.0...v1.4.0) (2023-04-24)
-
-
-### Features
-
-* updated ([197cfca](https://github.com/manthanank/learn-javascript/commit/197cfca44056e824c76c76d8a96e440ddd603c81))
 
 
 
