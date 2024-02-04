@@ -2006,7 +2006,7 @@ Document Object Model
 
 | Property | Description | DOM |
 |--|--|--|
-| document.anchors | Returns all elements that have a name attribute | 1
+| document.anchors | Returns all elements that have a name attribute | 1 |
 | document.applets | Deprecated | 1 |
 | document.baseURI | Returns the absolute base URI of the document | 3 |
 | document.body | Returns the element | 1 |
@@ -3034,31 +3034,56 @@ function showPosition(position) {
 
 ## AJAX
 
-**XMLHttp** -
+AJAX (Asynchronous JavaScript and XML) is a technique used in web development to create asynchronous web applications. It allows you to update parts of a web page without reloading the entire page. Originally, XML (eXtensible Markup Language) was commonly used for data exchange, but modern AJAX implementations often use JSON (JavaScript Object Notation) for data interchange due to its lighter syntax.
+
+**XMLHttp** - The XMLHttpRequest object is used to interact with servers asynchronously. Here's an example of creating an XMLHttpRequest object
 
 ```javascript
-
+let xhttp = new XMLHttpRequest();
 ```
 
-**Request** -
+**Request** - To make a request to a server, you'll typically use methods like open() and send()
 
 ```javascript
-
+xhttp.open('GET', 'https://api.example.com/data', true); // Method, URL, async (true or false)
+xhttp.send(); // Send the request
 ```
 
-**Response** -
+You can also send data along with the request by passing parameters within the send() method.
+
+**Response** - Handling the response from the server can be done using event listeners like onreadystatechange and checking for the readyState and status of the request
 
 ```javascript
-
+xhttp.onreadystatechange = function() {
+  if (this.readyState === 4 && this.status === 200) {
+    // Handle successful response
+    console.log(this.responseText); // Response data
+  } else {
+    // Handle errors
+    console.error('There was a problem with the request.');
+  }
+};
 ```
 
-**XML File** -
+**XML File** - If you are working with an XML file, you can parse the response using methods like responseXML to access the XML data
 
 ```javascript
-
+xhttp.onreadystatechange = function() {
+  if (this.readyState === 4 && this.status === 200) {
+    let xmlDoc = this.responseXML;
+    // Process xmlDoc for XML data
+    console.log(xmlDoc);
+  }
+};
 ```
 
 ## JSON
+
+JSON stands for JavaScript Object Notation
+
+JSON is a text format for storing and transporting data
+
+JSON is "self-describing" and easy to understand
 
 ### JSON Methods
 
@@ -3079,34 +3104,39 @@ Data Types
 
 ```
 
-**Parse** -
+**Parse** - The parse() method is used to parse a JSON string and convert it into a JavaScript object.
 
 ```javascript
-
+const jsonString = '{"name": "John", "age": 30}';
+const jsonObject = JSON.parse(jsonString);
+console.log(jsonObject); // Output: { name: 'John', age: 30 }
 ```
 
-**Stringify** -
+**Stringify** - The stringify() method is used to convert a JavaScript object into a JSON string.
 
 ```javascript
-
+const jsonObject = { name: 'John', age: 30 };
+const jsonString = JSON.stringify(jsonObject);
+console.log(jsonString); // Output: '{"name":"John","age":30}'
 ```
 
-**Objects** -
+**Objects** - Objects in JSON are key-value pairs enclosed in curly braces {}.
 
 ```javascript
-
+const person = {
+  "name": "Alice",
+  "age": 30,
+  "address": {
+    "city": "New York",
+    "zipcode": "10001"
+  }
+};
 ```
 
-**Arrays** -
+**Arrays** - Arrays in JSON are ordered lists of values enclosed in square brackets [].
 
 ```javascript
-
-```
-
-**Server** -
-
-```javascript
-
+const colors = ["Red", "Green", "Blue"];
 ```
 
 ## JQuery
@@ -3884,15 +3914,206 @@ newObj();
 
 ## Snippets
 
-```jsx
+Here are a few JavaScript snippets that you might find useful:
 
-```
+1. **Hello World:**
+
+   ```javascript
+   console.log("Hello, World!");
+   ```
+
+2. **Variable Declaration:**
+
+   ```javascript
+   let variableName = "Some value";
+   ```
+
+3. **Conditional Statement (if-else):**
+
+   ```javascript
+   let condition = true;
+
+   if (condition) {
+       console.log("Condition is true");
+   } else {
+       console.log("Condition is false");
+   }
+   ```
+
+4. **Loop (for):**
+
+   ```javascript
+   for (let i = 0; i < 5; i++) {
+       console.log(i);
+   }
+   ```
+
+5. **Function Declaration:**
+
+   ```javascript
+   function greet(name) {
+       console.log("Hello, " + name + "!");
+   }
+
+   greet("John");
+   ```
+
+6. **Array Manipulation:**
+
+   ```javascript
+   let fruits = ['Apple', 'Banana', 'Orange'];
+
+   // Add an element to the end
+   fruits.push('Mango');
+
+   // Remove the last element
+   fruits.pop();
+
+   // Access elements by index
+   console.log(fruits[1]);
+   ```
+
+7. **Object Declaration:**
+
+   ```javascript
+   let person = {
+       name: 'John',
+       age: 25,
+       profession: 'Developer'
+   };
+
+   // Accessing object properties
+   console.log(person.name);
+   ```
+
+8. **Async/Await:**
+
+   ```javascript
+   async function fetchData() {
+       try {
+           let response = await fetch('https://api.example.com/data');
+           let data = await response.json();
+           console.log(data);
+       } catch (error) {
+           console.error('Error fetching data:', error);
+       }
+   }
+
+   fetchData();
+   ```
+
+9. **Event Handling:**
+
+   ```javascript
+   let button = document.getElementById('myButton');
+
+   button.addEventListener('click', function() {
+       console.log('Button clicked!');
+   });
+   ```
+
+10. **LocalStorage:**
+
+    ```javascript
+    // Save data to local storage
+    localStorage.setItem('username', 'JohnDoe');
+
+    // Retrieve data from local storage
+    let storedUsername = localStorage.getItem('username');
+    console.log('Username:', storedUsername);
+    ```
 
 ## Short Hands
 
-```jsx
+JavaScript offers several shorthand techniques to write code more concisely and improve readability. Here are some common JavaScript shorthand techniques:
 
-```
+1. **Ternary Operator:**
+   Instead of using an `if-else` statement, you can use the ternary operator for concise conditional expressions.
+
+   ```javascript
+   // Long form
+   let result;
+   if (condition) {
+       result = 'true';
+   } else {
+       result = 'false';
+   }
+
+   // Shorthand
+   let result = condition ? 'true' : 'false';
+   ```
+
+2. **Nullish Coalescing Operator (`??`):**
+   This operator provides a concise way to provide a default value if a variable is null or undefined.
+
+   ```javascript
+   // Long form
+   let value;
+   if (value !== null && value !== undefined) {
+       result = value;
+   } else {
+       result = 'default';
+   }
+
+   // Shorthand
+   let result = value ?? 'default';
+   ```
+
+3. **Arrow Functions:**
+   Arrow functions provide a concise syntax for writing function expressions.
+
+   ```javascript
+   // Long form
+   function add(x, y) {
+       return x + y;
+   }
+
+   // Shorthand
+   const add = (x, y) => x + y;
+   ```
+
+4. **Template Literals:**
+   Template literals make it easier to concatenate strings and include variables within strings.
+
+   ```javascript
+   // Long form
+   const greeting = 'Hello, ' + name + '!';
+
+   // Shorthand
+   const greeting = `Hello, ${name}!`;
+   ```
+
+5. **Object Property Shorthand:**
+   When creating an object with properties that have the same name as the variables being assigned, you can use shorthand notation.
+
+   ```javascript
+   // Long form
+   const name = 'John';
+   const age = 30;
+   const user = {
+       name: name,
+       age: age
+   };
+
+   // Shorthand
+   const user = {
+       name,
+       age
+   };
+   ```
+
+6. **Destructuring Assignment:**
+   Destructuring allows you to extract values from arrays or objects and assign them to variables in a concise way.
+
+   ```javascript
+   // Long form
+   const person = { name: 'John', age: 30 };
+   const name = person.name;
+   const age = person.age;
+
+   // Shorthand
+   const { name, age } = { name: 'John', age: 30 };
+   ```
 
 ## List of GitHub Repositories to learn JavaScript
 
