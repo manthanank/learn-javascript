@@ -1,3 +1,12 @@
+# [1.12.0](https://github.com/manthanank/learn-javascript/compare/v1.11.0...v1.12.0) (2024-02-14)
+
+
+### Features
+
+* Update Dockerfile ([c5cb230](https://github.com/manthanank/learn-javascript/commit/c5cb23038387664b13b420401659ce8c09185821))
+
+
+
 # [1.11.0](https://github.com/manthanank/learn-javascript/compare/v1.10.0...v1.11.0) (2024-02-04)
 
 
@@ -31,16 +40,6 @@
 ### Features
 
 * updated ([f41abf8](https://github.com/manthanank/learn-javascript/commit/f41abf8d76e3ba3bafa6590747363e645d17afdf))
-
-
-
-# [1.6.0](https://github.com/manthanank/learn-javascript/compare/v1.5.0...v1.6.0) (2023-06-28)
-
-
-### Features
-
-* updated ([9855b59](https://github.com/manthanank/learn-javascript/commit/9855b590531cf0a350a57042f1559130e314ffc9))
-* updated yml files ([9204692](https://github.com/manthanank/learn-javascript/commit/920469240e77579b4856e1ae221caf0ceb4dc5c5))
 
 
 
