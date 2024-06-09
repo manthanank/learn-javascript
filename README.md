@@ -1,11 +1,14 @@
 # Learn Javascript
 
-<!-- ![logo](./assets/javascript-original.svg) -->
+This repository contains a list of JavaScript concepts, functions, methods, and other important topics that are essential for every JavaScript developer to learn. It is a comprehensive guide that covers all the basic and advanced concepts of JavaScript.
 
 ![npm](https://img.shields.io/npm/dw/learn-javascript)
 ![npm](https://img.shields.io/npm/dm/learn-javascript)
 ![npm](https://img.shields.io/npm/dy/learn-javascript)
 ![npm](https://img.shields.io/npm/dt/learn-javascript)
+![GitHub repo size](https://img.shields.io/github/repo-size/manthanank/learn-javascript)
+
+![GitHub](https://img.shields.io/github/license/manthanank/learn-javascript)
 
 ## Contents
 
@@ -100,9 +103,17 @@
 
 **JavaScript** is a scripting language. It is object-based, lightweight, cross-platform translated language. It is widely used for client-side validation.
 
-## Add javascript
+## Add JavaScript
 
-**JavaScript in `<head>`**
+There are three ways to add JavaScript to a web page:
+
+1. **Inline JavaScript** - It is used to add JavaScript directly to the HTML document. It is added inside the `<script>` tag in the HTML document.
+
+2. **Internal JavaScript** - It is used to add JavaScript to the HTML document. It is added inside the `<script>` tag in the `<head>` or `<body>` section of the HTML document.
+
+3. **External JavaScript** - It is used to add JavaScript to the HTML document. It is added in a separate file with a `.js` extension and linked to the HTML document using the `<script>` tag.
+
+**JavaScript in `<head>`** -
 
 ```html
 <!DOCTYPE html>
@@ -153,7 +164,7 @@
 
 ### JavaScript can "display" data in different ways
 
-Writing into an HTML element, using `innerHTML`.
+**1. Writing into an HTML element, using `innerHTML`**
 
 ```html
 <!DOCTYPE html>
@@ -173,7 +184,7 @@ document.getElementById("demo").innerHTML = 5 + 6;
 </html>
 ```
 
-Writing into the HTML output using `document.write()`.
+**2. Writing into an HTML element, using `document.write()`**
 
 ```html
 <!DOCTYPE html>
@@ -191,7 +202,7 @@ document.write(5 + 6);
 </html>
 ```
 
-Writing into an alert box, using `window.alert()`.
+**3. Writing into an alert box, using `window.alert()`**
 
 ```html
 <!DOCTYPE html>
@@ -209,7 +220,7 @@ window.alert(5 + 6);
 </html>
 ```
 
-Writing into the browser console, using `console.log()`.
+**4. Writing into the browser console, using `console.log()`**
 
 ```html
 <!DOCTYPE html>
@@ -246,27 +257,31 @@ Hello, How are you?
 
 ### Declare Variables
 
-**1. var** -
+Variables are containers for storing data values. In JavaScript, variables are declared using the `var`, `let`, or `const` keyword.
 
-```javascript
+**1. var** - It is used to declare a variable. It is function-scoped.
+
+```jsx
 var a = 1; // Declare a variable x with the value 1 (function-level scope).
 ```
 
-**2. let** -
+**2. let** - It is used to declare a variable. It is block-scoped.
 
-```javascript
+```jsx
 let b = 1; // Declare a variable y with the value 10 (block-level scope).
 ```
 
-**3. const** -
+**3. const** - It is used to declare a read-only variable. It is block-scoped.
 
-```javascript
+```jsx
 const c = 1; // Declare a read-only variable z with the value 15 (block-level scope).
 ```
 
 ## Data Types
 
 ### 1. Primitive Data Types
+
+**Primitive data types** are the most basic data types in JavaScript. They are immutable (cannot be changed) and are copied by value.
 
 **numbers** -
 
@@ -307,6 +322,14 @@ let a = Symbol();
 
 ### 2. Non Primitive Data Types
 
+**functions** -
+
+```javascript
+function greet() {
+  return "Hello!";
+}
+```
+
 **object** -
 
 ```javascript
@@ -334,6 +357,8 @@ let pattern = /w3schools/i;
 ```
 
 ## Operators
+
+Operators are used to perform operations on variables and values.
 
 ### Arithmetic Operators
 
@@ -505,6 +530,8 @@ console.log(x); // Output: 10
 
 ### Conditional (Ternary) Operator
 
+The conditional (ternary) operator is the only JavaScript operator that takes three operands: a condition followed by a question mark (?), then an expression to execute if the condition is truthy followed by a colon (:), and finally the expression to execute if the condition is falsy.
+
 Syntax
 
 ```javascript
@@ -521,6 +548,8 @@ console.log(max); // Output: 10
 
 ### Nullish Coalescing Operator(??)
 
+The nullish coalescing operator (??) is a logical operator that returns its right-hand side operand when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand.
+
 Example
 
 ```javascript
@@ -534,6 +563,8 @@ console.log(z ?? 'world'); // Output: "Hello"
 ```
 
 ### Optional Chaining Operator(?.)
+
+The optional chaining operator (?.) is a new operator in JavaScript that allows you to access properties of an object without having to check if the object or its properties are null or undefined.
 
 Example
 
@@ -555,6 +586,8 @@ console.log(person.address.zipCode?.code); // Output: undefined
 
 ### delete Operator
 
+The delete operator is used to delete a property from an object.
+
 Example
 
 ```javascript
@@ -569,6 +602,8 @@ console.log(person.age); // Output: undefined
 ```
 
 ### Spread (...) Operator
+
+The spread operator is a new addition to the JavaScript language in ES6. It is denoted by three dots (...). It is used to expand an array or object into individual elements.
 
 Example
 
@@ -645,69 +680,69 @@ const letters = ['a', 'b', 'c'];
 
 **concat()** - Joins arrays and returns an array with the joined arrays
 
-constructor - Returns the function that created the Array object's prototype
+**constructor** - Returns the function that created the Array object's prototype
 
-copyWithin() - Copies array elements within the array, to and from specified positions
+**copyWithin()** - Copies array elements within the array, to and from specified positions
 
-entries() - Returns a key/value pair Array Iteration Object
+**entries()** - Returns a key/value pair Array Iteration Object
 
-every() - Checks if every element in an array pass a test
+**every()** - Checks if every element in an array pass a test
 
-fill() - Fill the elements in an array with a static value
+**fill()** - Fill the elements in an array with a static value
 
-filter() - Creates a new array with every element in an array that pass a test
+**filter()** - Creates a new array with every element in an array that pass a test
 
-find() - Returns the value of the first element in an array that pass a test
+**find()** - Returns the value of the first element in an array that pass a test
 
-findIndex() - Returns the index of the first element in an array that pass a test
+**findIndex()** - Returns the index of the first element in an array that pass a test
 
-forEach() - Calls a function for each array element
+**forEach()** - Calls a function for each array element
 
-from() - Creates an array from an object
+**from()** - Creates an array from an object
 
-includes() - Check if an array contains the specified element
+**includes()** - Check if an array contains the specified element
 
-indexOf() - Search the array for an element and returns its position
+**indexOf()** - Search the array for an element and returns its position
 
-isArray() - Checks whether an object is an array
+**isArray()** - Checks whether an object is an array
 
-join() - Joins all elements of an array into a string
+**join()** - Joins all elements of an array into a string
 
-keys() - Returns a Array Iteration Object, containing the keys of the original array
+**keys()** - Returns a Array Iteration Object, containing the keys of the original array
 
-lastIndexOf() - Search the array for an element, starting at the end, and returns its position
+**lastIndexOf()** - Search the array for an element, starting at the end, and returns its position
 
-length - Sets or returns the number of elements in an array
+**length** - Sets or returns the number of elements in an array
 
-map() - Creates a new array with the result of calling a function for each array element
+**map()** - Creates a new array with the result of calling a function for each array element
 
-pop() - Removes the last element of an array, and returns that element
+**pop()** - Removes the last element of an array, and returns that element
 
-prototype - Allows you to add properties and methods to an Array object
+**prototype** - Allows you to add properties and methods to an Array object
 
-push() - Adds new elements to the end of an array, and returns the new length
+**push()** - Adds new elements to the end of an array, and returns the new length
 
-reduce() - Reduce the values of an array to a single value (going left-to-right)
+**reduce()** - Reduce the values of an array to a single value (going left-to-right)
 
-reduceRight() - Reduce the values of an array to a single value (going right-to-left)
+**reduceRight()** - Reduce the values of an array to a single value (going right-to-left)
 
-reverse() - Reverses the order of the elements in an array
+**reverse()** - Reverses the order of the elements in an array
 
-shift() - Removes the first element of an array, and returns that element
+**shift()** - Removes the first element of an array, and returns that element
 
-slice() - Selects a part of an array, and returns the new array
+**slice()** - Selects a part of an array, and returns the new array
 
-some() - Checks if any of the elements in an array pass a test
+**some()** - Checks if any of the elements in an array pass a test
 
-sort() - Sorts the elements of an array
+**sort()** - Sorts the elements of an array
 
-splice() - Adds/Removes elements from an array
+**splice()** - Adds/Removes elements from an array
 
-toString() - Converts an array to a string, and returns the result
+**toString()** - Converts an array to a string, and returns the result
 
-unshift() - Adds new elements to the beginning of an array, and returns the new length
+**unshift()** - Adds new elements to the beginning of an array, and returns the new length
 
-valueOf() - Returns the primitive value of an array
+**valueOf()** - Returns the primitive value of an array
 
 **concat** - It is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array that contains the values of the original arrays.
 
@@ -866,65 +901,65 @@ const name = 'Manthan';
 
 ### Strings methods
 
-charAt() - Returns the character at a specified index (position)
+**charAt()** - Returns the character at a specified index (position)
 
-charCodeAt() - Returns the Unicode of the character at a specified index
+**charCodeAt()** - Returns the Unicode of the character at a specified index
 
-concat() - Returns two or more joined strings
+**concat()** - Returns two or more joined strings
 
-constructor - Returns the string's constructor function
+**constructor** - Returns the string's constructor function
 
-endsWith() - Returns if a string ends with a specified value
+**endsWith()** - Returns if a string ends with a specified value
 
-fromCharCode() - Returns Unicode values as characters
+**fromCharCode()** - Returns Unicode values as characters
 
-includes() - Returns if a string contains a specified value
+**includes()** - Returns if a string contains a specified value
 
-indexOf() - Returns the index (position) of the first occurrence of a value in a string
+**indexOf()** - Returns the index (position) of the first occurrence of a value in a string
 
-lastIndexOf() - Returns the index (position) of the last occurrence of a value in a string
+**lastIndexOf()** - Returns the index (position) of the last occurrence of a value in a string
 
-length - Returns the length of a string
+**length** - Returns the length of a string
 
-localeCompare() - Compares two strings in the current locale
+**localeCompare()** - Compares two strings in the current locale
 
-match() - Searches a string for a value, or a regular expression, and returns the matches
+**match()** - Searches a string for a value, or a regular expression, and returns the matches
 
-prototype - Allows you to add properties and methods to an object
+**prototype** - Allows you to add properties and methods to an object
 
-repeat() - Returns a new string with a number of copies of a string
+**repeat()** - Returns a new string with a number of copies of a string
 
-replace() - Searches a string for a value, or a regular expression, and returns a string where the values are replaced
+**replace()** - Searches a string for a value, or a regular expression, and returns a string where the values are replaced
 
-search() - Searches a string for a value, or regular expression, and returns the index (position) of the match
+**search()** - Searches a string for a value, or regular expression, and returns the index (position) of the match
 
-slice() - Extracts a part of a string and returns a new string
+**slice()** - Extracts a part of a string and returns a new string
 
-split() - Splits a string into an array of substrings
+**split()** - Splits a string into an array of substrings
 
-startsWith() - Checks whether a string begins with specified characters
+**startsWith()** - Checks whether a string begins with specified characters
 
-substr() - Extracts a number of characters from a string, from a start index (position)
+**substr()** - Extracts a number of characters from a string, from a start index (position)
 
-substring() - Extracts characters from a string, between two specified indices (positions)
+**substring()** - Extracts characters from a string, between two specified indices (positions)
 
-toLocaleLowerCase() - Returns a string converted to lowercase letters, using the host's locale
+**toLocaleLowerCase()** - Returns a string converted to lowercase letters, using the host's locale
 
-toLocaleUpperCase() - Returns a string converted to uppercase letters, using the host's locale
+**toLocaleUpperCase()** - Returns a string converted to uppercase letters, using the host's locale
 
-toLowerCase() - Returns a string converted to lowercase letters
+**toLowerCase()** - Returns a string converted to lowercase letters
 
-toString() - Returns a string or a string object as a string
+**toString()** - Returns a string or a string object as a string
 
-toUpperCase() - Returns a string converted to uppercase letters
+**toUpperCase()** - Returns a string converted to uppercase letters
 
-trim() - Returns a string with removed whitespaces
+**trim()** - Returns a string with removed whitespaces
 
-trimEnd() - Returns a string with removed whitespaces from the end
+**trimEnd()** - Returns a string with removed whitespaces from the end
 
-trimStart() - Returns a string with removed whitespaces from the start
+**trimStart()** - Returns a string with removed whitespaces from the start
 
-valueOf() - Returns the primitive value of a string or a string object
+**valueOf()** - Returns the primitive value of a string or a string object
 
 **charAt** - It returns the character at a specified index in a string. The index is zero-based, which means that the first character in the string is at index 0, the second character is at index 1, and so on.
 
@@ -1193,13 +1228,43 @@ function name(parameter1, parameter2, parameter3) {
 
 ## Arrow Function
 
+Arrow functions are a more concise way to write functions in JavaScript. They are defined using the => syntax.
+
 ```javascript
-hello = () => {
-    return 'hello';
+const name = (parameter1, parameter2, parameter3) => {
+  // code to be executed
+}
+
+const name = (parameter1, parameter2, parameter3) => expression
+
+const name = parameter => expression
+
+const name = () => expression
+
+const name = (parameter1, parameter2, parameter3) => {
+  return expression
+}
+
+const name = parameter => {
+  return expression
+}
+
+const name = () => {
+  return expression
 }
 ```
 
 ## Scope
+
+### Global Scope
+
+```javascript
+let a = 10;
+function myFunction() {
+    console.log(a);
+}
+myFunction();
+```
 
 ### Block Scope
 
@@ -1255,25 +1320,6 @@ function myFunction() {
 }
 myFunction()
 console.log(a);
-```
-
-### Global Scope
-
-```javascript
-//var
-a = 4;
-var a;
-console.log(a);
-
-//let
-a = 4;
-let a;
-console.log(a); // Uncaught ReferenceError: Cannot access 'a' before initialization
-
-//const
-a = 4;
-const a;
-console.log(a); // Uncaught SyntaxError: Missing initializer in const declaration
 ```
 
 ## Dates
@@ -1877,13 +1923,43 @@ fruits.size;
 Callbacks
 
 ```javascript
+function myDisplayer(some) {
+  document.getElementById("demo").innerHTML = some;
+}
 
+function myCalculator(num1, num2, myCallback) {
+  let sum = num1 + num2;
+  myCallback(sum);
+}
+
+myCalculator(5, 5, myDisplayer);
+
+// Output: 10
 ```
 
 Asynchronous
 
 ```javascript
+function myDisplayer(some) {
+  document.getElementById("demo").innerHTML = some;
+}
 
+function getFile(myCallback) {
+  let req = new XMLHttpRequest();
+  req.open('GET', "mycar.html");
+  req.onload = function() {
+    if (req.status == 200) {
+      myCallback(this.responseText);
+    } else {
+      myCallback("Error: " + req.status);
+    }
+  }
+  req.send();
+}
+
+getFile(myDisplayer);
+
+// Output: The content of the mycar.html file
 ```
 
 Callback function
@@ -1891,24 +1967,55 @@ Callback function
 A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
 
 ```javascript
-function greeting(name) {
-  alert(`Hello, ${name}`);
+function myDisplayer(some) {
+  document.getElementById("demo").innerHTML = some;
 }
-function processUserInput(callback) {
-  const name = prompt("Please enter your name.");
-  callback(name);
+
+function myCalculator(num1, num2, myCallback) {
+  let sum = num1 + num2;
+  myCallback(sum);
 }
-processUserInput(greeting);
+
+myCalculator(5, 5, myDisplayer);
+
+// Output: 10
 ```
 
-Promises
+Promise
 
-Syntax
+Promises are used to handle asynchronous operations in JavaScript. They are easy to manage when dealing with multiple asynchronous operations where callbacks can create callback hell leading to unmanageable code.
+
+A Promise is a JavaScript object that links producing code and consuming code.
+
+Syntax -
 
 ```javascript
-let promise = new Promise(function(resolve, reject){
-     //do something
+const myPromise = new Promise((resolve, reject) => {
+    // code
 });
+
+myPromise.then(
+    (value) => {
+        // success
+    },
+    (error) => {
+        // error
+    }
+);
+
+myPromise.catch(
+    (error) => {
+        // error
+    }
+);
+
+myPromise.finally(
+    () => {
+        // code
+    }
+);
+
+myPromise.all([promise1, promise2, promise3, ...])
 ```
 
 Example
@@ -1921,13 +2028,15 @@ const myPromise = new Promise((resolve, reject) => {
 });
 ```
 
-async/await
+async/await -
+
+The async/await feature was introduced in ES8 (ECMAScript 2017) to simplify the process of working with promises.
 
 Async Syntax
 
 ```javascript
-async function name(parameter1, parameter2, ...paramaterN) {
-    // statements
+async function asyncFunc() {
+    // code
 }
 ```
 
@@ -1935,29 +2044,25 @@ Await Syntax
 
 ```javascript
 let result = await promise;
+
+// or
+
+await promise1;
 ```
 
 Example
 
 ```javascript
-// a promise
-let promise = new Promise(function (resolve, reject) {
-    setTimeout(function () {
-    resolve('Promise resolved')}, 4000); 
-});
+async function myFunction() {
+    let promise = new Promise((resolve, reject) => {
+        setTimeout(() => resolve("done!"), 1000)
+    });
 
-// async function
-async function asyncFunc() {
-
-    // wait until the promise resolves 
-    let result = await promise; 
-
+    let result = await promise;
     console.log(result);
-    console.log('hello');
 }
 
-// calling the async function
-asyncFunc();
+myFunction();
 ```
 
 ## DOM
@@ -2072,67 +2177,69 @@ document.getElementById("demo").innerHTML = text;
 Changing HTML
 
 ```javascript
-
+document.getElementById("demo").innerHTML = "Hello World!";
 ```
 
 Forms
 
 ```javascript
-
+document.getElementById("myForm").submit();
 ```
 
 Changing CSS
 
 ```javascript
-
+document.getElementById("demo").style.fontSize = "35px";
 ```
 
 Animations
 
 ```javascript
-
+document.getElementById("animate").style.animation = "mymove 4s infinite";
 ```
 
 Events
 
 ```javascript
-
+document.getElementById("myBtn").addEventListener("click", displayDate);
 ```
 
 Event Listener
 
 ```javascript
-
+document.getElementById("myBtn").addEventListener("click", function() {
+  alert("Hello World!");
+});
 ```
 
 Navigation
 
 ```javascript
-
+document.getElementById("myAnchor").href = "https://www.w3schools.com";
 ```
 
 Nodes
 
 ```javascript
-
+document.getElementById("demo").childNodes[0].nodeValue = "new text";
 ```
 
 Collections
 
 ```javascript
-
+document.getElementsByTagName("p");
 ```
 
 Node
 
 ```javascript
-
+document.getElementById("main").firstChild.nodeValue;
 ```
 
 Lists
 
 ```javascript
-
+document.getElementById("myList").innerHTML = "Mango";
 ```
 
 ## Browser BOM
@@ -2748,42 +2855,42 @@ function myFunction() {
 
 `setCustomValidity()` - Sets the validationMessage property of an input element.
 
-```jsx
-
+```javascript
+document.getElementById("id1").setCustomValidity("Input not valid");
 ```
 
 **Constraint Validation DOM Properties** -
 
 `validity` - Contains boolean properties related to the validity of an input element.
 
-```jsx
-
+```javascript
+document.getElementById("id1").validity.rangeOverflow;
 ```
 
 `validationMessage` - Contains the message a browser will display when the validity is false.
 
-```jsx
-
+```javascript
+document.getElementById("id1").validationMessage;
 ```
 
 `willValidate` - Indicates if an input element will be validated.
 
-```jsx
-
+```javascript
+document.getElementById("id1").willValidate;
 ```
 
 **Validity Properties** -
 
 `customError` - Set to true, if a custom validity message is set.
 
-```jsx
-
+```javascript
+document.getElementById("id1").validity.customError;
 ```
 
 `patternMismatch` - Set to true, if an element's value does not match its pattern attribute.
 
-```jsx
-
+```javascript
+document.getElementById("id1").validity.patternMismatch;
 ```
 
 `rangeOverflow` - Set to true, if an element's value is greater than its max attribute.
@@ -2824,32 +2931,32 @@ function myFunction() {
 
 `stepMismatch` - Set to true, if an element's value is invalid per its step attribute.
 
-```jsx
-
+```javascript
+document.getElementById("id1").validity.stepMismatch;
 ```
 
 `tooLong` - Set to true, if an element's value exceeds its maxLength attribute.
 
-```jsx
-
+```javascript
+document.getElementById("id1").validity.tooLong;
 ```
 
 `typeMismatch` - Set to true, if an element's value is invalid per its type attribute.
 
-```jsx
-
+```javascript
+document.getElementById("id1").validity.typeMismatch;
 ```
 
 `valueMissing` - Set to true, if an element (with a required attribute) has no value.
 
-```jsx
-
+```javascript
+document.getElementById("id1").validity.valueMissing;
 ```
 
 `valid` - Set to true, if an element's value is valid.
 
-```jsx
-
+```javascript
+document.getElementById("id1").validity.valid;
 ```
 
 **History API** -
@@ -3100,8 +3207,44 @@ Data Types
 - a boolean
 - null
 
-```javascript
+**String:**
 
+```javascript
+const str = "Hello, World!";
+```
+
+**Number:**
+
+```javascript
+const num = 42;
+```
+
+**Object:**
+
+```javascript
+const obj = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+```
+
+**Array:**
+
+```javascript
+const arr = [1, 2, 3, 4, 5];
+```
+
+**Boolean:**
+
+```javascript
+const bool = true;
+```
+
+**Null:**
+
+```javascript
+const nullValue = null;
 ```
 
 **Parse** - The parse() method is used to parse a JSON string and convert it into a JavaScript object.
@@ -3144,523 +3287,903 @@ const colors = ["Red", "Green", "Blue"];
 Selectors
 
 ```javascript
-
+$("p")
+$(".test")
+$("#test")
 ```
 
 ## Graphics
 
-**Canvas** -
+**Canvas** - The HTML `<canvas>` element is used to draw graphics, on the fly, via JavaScript.
 
 ```javascript
-
+const canvas = document.getElementById("myCanvas");
+const ctx = canvas.getContext("2d");
+ctx.fillStyle = "#FF0000";
+ctx.fillRect(0, 0, 150, 75);
 ```
 
-**Plotly** -
+**Plotly** - Plotly is a charting library for JavaScript. It is used to create interactive charts in web applications.
 
 ```javascript
-
+const data = [
+  {
+    x: [1, 2, 3, 4, 5],
+    y: [1, 2, 4, 8, 16],
+    type: 'scatter'
+  }
+];
+Plotly.newPlot('myDiv', data);
 ```
 
-**Chart.js** -
+**Chart.js** - Chart.js is a simple yet flexible JavaScript charting library for designers & developers.
 
 ```javascript
-
+const ctx = document.getElementById('myChart').getContext('2d');
 ```
 
-**Google Chart** -
+**Google Chart** - Google Charts provides a perfect way to visualize data on your website. From simple line charts to complex hierarchical tree maps, the chart gallery provides a large number of ready-to-use chart types.
 
 ```javascript
-
+google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawChart);
 ```
 
-**D3.js** -
+**D3.js** - D3.js is a JavaScript library for producing dynamic, interactive data visualizations in web browsers.
 
 ```javascript
+const svg = d3.select("body").append("svg")
+  .attr("width", 960)
+  .attr("height", 500);
 
+svg.append("circle")
+  .attr("cx", 480)
+  .attr("cy", 250)
+  .attr("r", 240)
+  .style("fill", "purple");
+
+svg.append("text")
+  .attr("x", 480)
+  .attr("y", 250)
+  .attr("text-anchor", "middle")
+  .attr("dy", ".3em")
+  .text("Hello, D3.js!");
 ```
 
 ## Best Practices
 
-Avoid Global Variables
+Avoid Global Variables - Avoid using global variables in JavaScript.
 
 ```javascript
+// Bad
+var name = "Alice";
 
+// Good
+const name = "Alice";
 ```
 
-Avoid Declare Local Variables
+Avoid Declare Local Variables - Avoid declaring local variables without using the `var`, `let`, or `const` keyword.
 
 ```javascript
+// Bad
+name = "Alice";
 
+// Good
+const name = "Alice";
 ```
 
-Declarations on Top
+Declarations on Top - Declare all variables at the beginning of every script or function.
 
 ```javascript
+// Bad
+function myFunction() {
+  console.log("Hello, World!");
+  var name = "Alice";
+}
 
+// Good
+function myFunction() {
+  var name = "Alice";
+  console.log("Hello, World!");
+}
 ```
 
-Intialize Variables
+Intialize Variables - Always initialize variables when you declare them.
 
 ```javascript
+// Bad
+let name;
 
+// Good
+let name = "Alice";
 ```
 
-Declare Objects with const
+Declare Objects with const - Use `const` to declare objects.
 
 ```javascript
+// Bad
+let person = {
+  name: "Alice",
+  age: 30
+};
 
+// Good
+const person = {
+  name: "Alice",
+  age: 30
+};
 ```
 
-Declare Arrays with const
+Declare Arrays with const - Use `const` to declare arrays.
 
 ```javascript
+// Bad
+let colors = ["Red", "Green", "Blue"];
 
+// Good
+const colors = ["Red", "Green", "Blue"];
 ```
 
-Don't Use new Objects
+Don't Use new Objects - Avoid using the `new` keyword to create objects.
 
 ```javascript
+// Bad
+let person = new Object();
 
+// Good
+let person = {};
 ```
 
-Beware of Automatic Type Conversions
+Beware of Automatic Type Conversions - Be aware of automatic type conversions in JavaScript.
 
 ```javascript
-
+console.log(10 + "20"); // Output: "1020"
 ```
 
-Use === Comparison
+Use === Comparison - Use the `===` operator to compare values and data types.
 
 ```javascript
-
+console.log(10 === "10"); // Output: false
 ```
 
-Use Parameter Defaults
+Use Parameter Defaults - Use parameter defaults to assign default values to function parameters.
 
 ```javascript
+function greet(name = "Alice") {
+  console.log("Hello, " + name + "!");
+}
 
+greet(); // Output: "Hello, Alice!"
 ```
 
-End Your Switches with Defaults
+End Your Switches with Defaults - Always end your `switch` statements with a `default` case.
 
 ```javascript
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case 6:
+    day = "Saturday";
+    break;
+  default:
+    day = "Unknown";
+}
 
+console.log(day);
 ```
 
-Avoid Number, String, and Boolean as Objects
+Avoid Number, String, and Boolean as Objects - Avoid using `Number`, `String`, or `Boolean` objects.
 
 ```javascript
+// Bad
+let x = new Number(500);
 
+// Good
+let x = 500;
 ```
 
-Avoid Using eval()
+Avoid Using eval() - Avoid using the `eval()` function in JavaScript.
 
 ```javascript
+// Bad
+let x = eval("10 * 20");
 
+// Good
+let x = 10 * 20;
 ```
 
 ## Common Mistakes
 
-Accidentally Using the Assignment Operator
+Accidentally Using the Assignment Operator - Be careful when using the assignment operator `=` instead of the equality operator `==` or `===`.
 
 ```javascript
+let x = 10;
 
+if (x = 10) {
+  console.log("Hello, World!");
+}
+
+// Output: "Hello, World!"
 ```
 
-Expecting Loose Comparison
+Expecting Loose Comparison - Be aware of the differences between loose and strict comparison in JavaScript.
 
 ```javascript
-
+console.log(10 == "10"); // Output: true
 ```
 
-Confusing Addition & Concatenation
+Confusing Addition & Concatenation - Be careful when adding numbers and strings in JavaScript.
 
 ```javascript
-
+console.log(10 + 20); // Output: 30
 ```
 
-Misundering Floats
+Misundering Floats - Be aware of floating-point arithmetic in JavaScript.
 
 ```javascript
-
+console.log(0.1 + 0.2); // Output: 0.30000000000000004
 ```
 
-Breaking a JavaScript String
+Breaking a JavaScript String - Be careful when breaking a string into multiple lines.
 
 ```javascript
+let text = "Hello \ World!";
 
+console.log(text); // Output: "Hello  World!"
 ```
 
-Misplacing semicolon
+Misplacing semicolon - Be careful when misplacing semicolons in JavaScript.
 
 ```javascript
+let x = 10
+let y = 20
 
+console.log(x + y); // Output: 30
 ```
 
-Breaking a Return Statement
+Breaking a Return Statement - Be careful when breaking a return statement into multiple lines.
 
 ```javascript
+function myFunction() {
+  return
+  "Hello, World!";
+}
 
+console.log(myFunction()); // Output: undefined
 ```
 
-Accessing Arrays with Named Indexes
+Accessing Arrays with Named Indexes - Be careful when accessing arrays with named indexes.
 
 ```javascript
+let person = [];
+person["name"] = "Alice";
+person["age"] = 30;
 
+console.log(person); // Output: []
 ```
 
-Ending Definition with a Comma
+Ending Definition with a Comma - Be careful when ending object definitions with a comma.
 
 ```javascript
+let person = {
+  name: "Alice",
+  age: 30,
+};
 
+console.log(person); // Output: { name: 'Alice', age: 30 }
 ```
 
-Undefined is Not Null
+Undefined is Not Null - Be aware of the difference between `undefined` and `null` in JavaScript.
 
 ```javascript
+let x;
 
+console.log(x); // Output: undefined
 ```
 
 ## Performance
 
-Reduce Activity in Loops
+Reduce Activity in Loops - Avoid unnecessary activity inside loops.
 
 ```javascript
+// Bad
+for (let i = 0; i < 1000; i++) {
+  console.log("Hello, World!");
+}
 
+// Good
+for (let i = 0; i < 1000; i++) {
+  // Do nothing
+}
 ```
 
-Reduce DOM Access
+Reduce DOM Access - Minimize DOM access in JavaScript.
 
 ```javascript
+// Bad
+document.getElementById("demo").innerHTML = "Hello, World!";
 
+// Good
+let element = document.getElementById("demo");
+element.innerHTML = "Hello, World!";
 ```
 
-Reduce DOM Size
+Reduce DOM Size - Minimize the size of the DOM.
 
 ```javascript
+// Bad
+for (let i = 0; i < 1000; i++) {
+  document.body.innerHTML += "Hello, World!";
+}
 
+// Good
+let text = "";
+for (let i = 0; i < 1000; i++) {
+  text += "Hello, World!";
+}
 ```
 
-Avoid Unnecessary Variables
+Avoid Unnecessary Variables - Avoid unnecessary variables in JavaScript.
 
 ```javascript
+// Bad
+let x = 10;
+let y = 20;
+let z = x + y;
 
+// Good
+let z = 10 + 20;
 ```
 
-Delay Javascript Loading
+Delay Javascript Loading - Load JavaScript files at the end of the body tag.
 
 ```javascript
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Delay JavaScript Loading</title>
+</head>
+<body>
+  <h1>Hello, World!</h1>
+  <script src="script.js"></script>
+</body>
+</html>
 ```
 
-Avoid Using with
+Avoid Using with - Avoid using the `with` statement in JavaScript.
 
 ```javascript
+// Bad
+with (document) {
+  let text = "Hello, World!";
+  console.log(text);
+}
 
+// Good
+let text = "Hello, World!";
+console.log(text);
 ```
 
 ## ES6 Features
 
-The let keyword
+The let keyword - The `let` keyword allows you to declare block-scoped variables.
 
 ```javascript
+let x = 10;
 
+if (x === 10) {
+  let y = 20;
+  console.log(x + y); // Output: 30
+}
+
+console.log(x + y); // Error: y is not defined
 ```
 
-The const keyword
+The const keyword - The `const` keyword allows you to declare constants in JavaScript.
 
 ```javascript
+const PI = 3.14159;
+PI = 3.14; // Error: Assignment to constant variable
 
+console.log(PI); // Output: 3.14159
 ```
 
-Arrow Functions
+Arrow Functions - Arrow functions provide a more concise syntax for writing function expressions.
 
 ```javascript
+const add = (x, y) => x + y;
 
+console.log(add(10, 20)); // Output: 30
 ```
 
-The ... Operator
+The ... Operator - The `...` operator allows you to spread elements of an array or object.
 
 ```javascript
+const arr1 = [1, 2, 3];
 
+const arr2 = [...arr1, 4, 5, 6];
+
+console.log(arr2); // Output: [1, 2, 3, 4, 5, 6]
 ```
 
-For/of
+For/of Loop - The `for...of` loop allows you to iterate over the values of an iterable object.
 
 ```javascript
+const colors = ["Red", "Green", "Blue"];
 
+for (const color of colors) {
+  console.log(color);
+}
+
+// Output: Red, Green, Blue
 ```
 
-Map Objects
+Map Objects - The `Map` object allows you to store key-value pairs.
 
 ```javascript
+const map = new Map();
 
+map.set("name", "Alice");
+
+console.log(map.get("name")); // Output: Alice
 ```
 
-Set Objects
+Set Objects - The `Set` object allows you to store unique values of any type.
 
 ```javascript
+const set = new Set();
 
+set.add(1);
+
+console.log(set.has(1)); // Output: true
 ```
 
-Classes
+Classes - Classes provide a more concise syntax for creating objects and dealing with inheritance.
 
 ```javascript
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
 
+  greet() {
+    console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+  }
+}
+
+const person = new Person("Alice", 30);
+
+person.greet(); // Output: Hello, my name is Alice and I am 30 years old.
 ```
 
-Promises
+Promises - Promises provide a more flexible way to handle asynchronous operations in JavaScript.
 
 ```javascript
+const promise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("Hello, World!");
+  }, 2000);
+});
 
+promise.then((value) => {
+  console.log(value); // Output: Hello, World!
+});
 ```
 
-Symbol
+Symbol - The `Symbol` object allows you to create unique values that can be used as object properties.
 
 ```javascript
+const key = Symbol("key");
 
+const obj = {};
+
+obj[key] = "value";
+
+console.log(obj[key]); // Output: value
 ```
 
-Default Parameters
+Default Parameters - Default parameters allow you to specify default values for function parameters.
 
 ```javascript
+function greet(name = "Alice") {
+  console.log(`Hello, ${name}!`);
+}
 
+greet(); // Output: Hello, Alice!
 ```
 
-Function Rest Parameter
+Function Rest Parameter - The rest parameter allows you to pass an indefinite number of arguments to a function.
 
 ```javascript
+function sum(...args) {
+  return args.reduce((acc, val) => acc + val, 0);
+}
 
+console.log(sum(1, 2, 3, 4, 5)); // Output: 15
 ```
 
-String.includes()
+String.includes() - The `includes()` method allows you to check if a string contains a specific substring.
 
 ```javascript
+const str = "Hello, World!";
 
+console.log(str.includes("World")); // Output: true
 ```
 
-String.startsWith()
+String.startsWith() - The `startsWith()` method allows you to check if a string starts with a specific substring.
 
 ```javascript
+const str = "Hello, World!";
 
+console.log(str.startsWith("Hello")); // Output: true
 ```
 
-String.endsWith()
+String.endsWith() - The `endsWith()` method allows you to check if a string ends with a specific substring.
 
 ```javascript
-
+const str = "Hello, World!";
+console.log(str.endsWith("World!")); // Output: true
 ```
 
-Array.from()
+Array.from() - The `from()` method allows you to create an array from an array-like or iterable object.
 
 ```javascript
+const arr = Array.from("Hello");
 
+console.log(arr); // Output: ["H", "e", "l", "l", "o"]
 ```
 
-Array keys()
+Array keys() - The `keys()` method returns an array iterator that contains the keys for each index in the array.
 
 ```javascript
+const arr = ["a", "b", "c"];
 
+const iterator = arr.keys();
+
+for (const key of iterator) {
+  console.log(key); // Output: 0, 1, 2
+}
 ```
 
-Array find()
+Array find() - The `find()` method returns the first element in an array that satisfies a provided condition.
 
 ```javascript
+const arr = [1, 2, 3, 4, 5];
 
+const result = arr.find((x) => x > 3);
+
+console.log(result); // Output: 4
 ```
 
-Array findIndex()
+Array findIndex() - The `findIndex()` method returns the index of the first element in an array that satisfies a provided condition.
 
 ```javascript
+const arr = [1, 2, 3, 4, 5];
 
+const index = arr.findIndex((x) => x > 3);
+
+console.log(index); // Output: 3
 ```
 
-New Math Methods
+New Math Methods - The `Math` object in JavaScript provides several new methods in ES6.
 
 ```javascript
-
+console.log(Math.cbrt(27)); // Output: 3
 ```
 
-New Number Properties
+New Number Properties - The `Number` object in JavaScript provides several new properties in ES6.
 
 ```javascript
-
+console.log(Number.EPSILON); // Output: 2.220446049250313e-16
 ```
 
-New Number Methods
+New Number Methods - The `Number` object in JavaScript provides several new methods in ES6.
 
 ```javascript
-
+console.log(Number.isInteger(10)); // Output: true
 ```
 
-New Global Methods
+New Global Methods - The global object in JavaScript provides several new methods in ES6.
 
 ```javascript
-
+console.log(isFinite(10)); // Output: true
 ```
 
-Object entries
+Object entries - The `Object.entries()` method returns an array of a given object's own enumerable property `[key, value]` pairs.
 
 ```javascript
+const obj = { name: "Alice", age: 30 };
 
+const entries = Object.entries(obj);
+
+console.log(entries); // Output: [["name", "Alice"], ["age", 30]]
 ```
 
-JavaScript Modules
+JavaScript Modules - JavaScript modules allow you to split your code into multiple files and import/export functionality between them.
 
 ```javascript
+// math.js
+export const add = (x, y) => x + y;
 
+// main.js
+import { add } from "./math.js";
+
+console.log(add(10, 20)); // Output: 30
 ```
 
 ## ES5 Features
 
-"use strict"
+"use strict" - The `"use strict"` directive is used to enable strict mode in JavaScript.
 
 ```javascript
-
+"use strict";
 ```
 
-String[number] access
+String[number] access - You can access characters in a string using array-like syntax.
 
 ```javascript
+const str = "Hello, World!";
 
+console.log(str[0]); // Output: H
 ```
 
-Multiline strings
+Multiline strings - You can create multiline strings in JavaScript using backticks.
 
 ```javascript
+const str = `Hello, 
+World!`;
 
+console.log(str); // Output: Hello,
+                  //         World!
 ```
 
-String.trim()
+String.trim() - The `trim()` method removes whitespace from both ends of a string.
 
 ```javascript
+const str = "  Hello, World!  ";
 
+console.log(str.trim()); // Output: "Hello, World!"
 ```
 
-Array.isArray()
+Array.isArray() - The `isArray()` method checks if a value is an array.
 
 ```javascript
+const arr = [1, 2, 3];
 
+console.log(Array.isArray(arr)); // Output: true
 ```
 
-Array forEach()
+Array forEach() - The `forEach()` method executes a provided function once for each array element.
 
 ```javascript
+const arr = [1, 2, 3];
 
+arr.forEach((x) => console.log(x));
+
+// Output: 1, 2, 3
 ```
 
-Array map()
+Array map() - The `map()` method creates a new array with the results of calling a provided function on every element in the array.
 
 ```javascript
+const arr = [1, 2, 3];
 
+const result = arr.map((x) => x * 2);
+
+console.log(result); // Output: [2, 4, 6]
 ```
 
-Array filter()
+Array filter() - The `filter()` method creates a new array with all elements that pass the test implemented by the provided function.
 
 ```javascript
+const arr = [1, 2, 3, 4, 5];
 
+const result = arr.filter((x) => x % 2 === 0);
+
+console.log(result); // Output: [2, 4]
 ```
 
-Array reduce()
+Array reduce() - The `reduce()` method applies a function against an accumulator and each element in the array (from left to right) to reduce it to a single value.
 
 ```javascript
+const arr = [1, 2, 3, 4, 5];
 
+const result = arr.reduce((acc, val) => acc + val, 0);
+
+console.log(result); // Output: 15
 ```
 
-Array reduceRight()
+Array reduceRight() - The `reduceRight()` method applies a function against an accumulator and each value of the array (from right-to-left) to reduce it to a single value.
 
 ```javascript
+const arr = [1, 2, 3, 4, 5];
 
+const result = arr.reduceRight((acc, val) => acc + val, 0);
+
+console.log(result); // Output: 15
 ```
 
-Array every()
+Array every() - The `every()` method tests whether all elements in the array pass the test implemented by the provided function.
 
 ```javascript
+const arr = [1, 2, 3, 4, 5];
 
+const result = arr.every((x) => x > 0);
+
+console.log(result); // Output: true
 ```
 
-Array some()
+Array some() - The `some()` method tests whether at least one element in the array passes the test implemented by the provided function.
 
 ```javascript
+const arr = [1, 2, 3, 4, 5];
 
+const result = arr.some((x) => x > 3);
+
+console.log(result); // Output: true
 ```
 
-Array indexOf()
+Array indexOf() - The `indexOf()` method returns the first index at which a given element can be found in the array, or -1 if it is not present.
 
 ```javascript
+const arr = [1, 2, 3, 4, 5];
 
+const index = arr.indexOf(3);
+
+console.log(index); // Output: 2
 ```
 
-Array lastIndexOf()
+Array lastIndexOf() - The `lastIndexOf()` method returns the last index at which a given element can be found in the array, or -1 if it is not present.
 
 ```javascript
+const arr = [1, 2, 3, 4, 5, 3];
 
+const index = arr.lastIndexOf(3);
+
+console.log(index); // Output: 5
 ```
 
-JSON.parse()
+JSON.parse() - The `parse()` method parses a JSON string and returns a JavaScript object.
 
 ```javascript
+const jsonString = '{"name": "Alice", "age": 30}';
 
+const jsonObject = JSON.parse(jsonString);
+
+console.log(jsonObject); // Output: { name: 'Alice', age: 30 }
 ```
 
-JSON.stringify()
+JSON.stringify() - The `stringify()` method converts a JavaScript object to a JSON string.
 
 ```javascript
+const jsonObject = { name: 'Alice', age: 30 };
 
+const jsonString = JSON.stringify(jsonObject);
+
+console.log(jsonString); // Output: '{"name":"Alice","age":30}'
 ```
 
-Date.now()
+Date.now() - The `now()` method returns the number of milliseconds elapsed since January 1, 1970.
 
 ```javascript
+const timestamp = Date.now();
 
+console.log(timestamp); // Output: 1633660800000
 ```
 
-Date toISOString()
+Date toISOString() - The `toISOString()` method returns a string in simplified extended ISO format.
 
 ```javascript
+const date = new Date();
 
+console.log(date.toISOString()); // Output: "2021-10-08T07:00:00.000Z"
 ```
 
-Date toJSON()
+Date toJSON() - The `toJSON()` method returns a string representation of the Date object.
 
 ```javascript
+const date = new Date();
 
+console.log(date.toJSON()); // Output: "2021-10-08T07:00:00.000Z"
 ```
 
-Property getters and setters
+Property getters and setters - Getters and setters allow you to define object properties that behave like methods.
 
 ```javascript
+const person = {
+  firstName: "Alice",
+  lastName: "Smith",
+  get fullName() {
+    return `${this.firstName} ${this.lastName}`;
+  },
+  set fullName(value) {
+    const parts = value.split(" ");
+    this.firstName = parts[0];
+    this.lastName = parts[1];
+  }
+};
 
+console.log(person.fullName); // Output: "Alice Smith"
 ```
 
-Reserved words as property names
+Reserved words as property names - You can use reserved words as property names in JavaScript.
 
 ```javascript
+const person = {
+  class: "A",
+  function: "greet"
+};
 
+console.log(person.class); // Output: "A"
 ```
 
-Object Methods
+Object Methods - The `Object` object provides several methods for working with objects in JavaScript.
 
 ```javascript
+const obj = { name: "Alice", age: 30 };
 
+const keys = Object.keys(obj);
+
+console.log(keys); // Output: ["name", "age"]
 ```
 
-Object defineProperty()
+Object defineProperty() - The `defineProperty()` method defines a new property directly on an object, or modifies an existing property.
 
 ```javascript
+const obj = {};
 
+Object.defineProperty(obj, "name", {
+  value: "Alice",
+  writable: true,
+  enumerable: true,
+  configurable: true
+});
+
+console.log(obj.name); // Output: "Alice"
 ```
 
-Function bind()
+Function bind() - The `bind()` method creates a new function that, when called, has its `this` keyword set to the provided value.
 
 ```javascript
+const person = {
+  name: "Alice",
+  greet: function() {
+    console.log(`Hello, my name is ${this.name}.`);
+  }
+};
 
+const greet = person.greet.bind(person);
+
+greet(); // Output: "Hello, my name is Alice."
 ```
 
-Trailing commas
+Trailing commas - Trailing commas are allowed in JavaScript.
 
 ```javascript
+const arr = [
+  1,
+  2,
+  3,
+];
 
+console.log(arr); // Output: [1, 2, 3]
 ```
 
 ## Examples
@@ -4232,4 +4755,44 @@ JavaScript offers several shorthand techniques to write code more concisely and 
 - [Jayesh Choudary](https://www.linkedin.com/in/jayesh-choudhary-72444518b/)
 - [Pradeep Pandey](https://www.linkedin.com/in/pradeep-pandey-5a545a163/)
 
-### 🙏🏻Please Support and Don't Forget to give star⭐, Also Feel free to contribute
+## Contributing
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [Asabeneh](https://github.com/Asabeneh/30-Days-Of-JavaScript) - For his 30 Days of JavaScript challenge.
+- [JavaScript.info](https://javascript.info/) - For their comprehensive JavaScript tutorials.
+- [W3Schools](https://www.w3schools.com/) - For their interactive JavaScript tutorials.
+- [MDN Web Docs](https://developer.mozilla.org/en-US/) - For their detailed JavaScript documentation.
+- [FreeCodeCamp](https://www.freecodecamp.org/) - For their JavaScript tutorials and projects.
+- [Programiz](https://www.programiz.com/) - For their simple and easy-to-understand JavaScript tutorials.
+- [GeeksforGeeks](https://www.geeksforgeeks.org/) - For their JavaScript articles and tutorials.
+- [DevDocs](https://devdocs.io/) - For their JavaScript documentation.
+- [Codecademy](https://www.codecademy.com/) - For their interactive JavaScript courses.
+- [Stack Overflow](https://stackoverflow.com/) - For their vast collection of JavaScript questions and answers.
+
+## Connect with me
+
+- [Twitter](https://twitter.com/manthan_ank)
+- [LinkedIn](https://www.linkedin.com/in/manthanank)
+- [Facebook](https://www.facebook.com/manthanank/)
+- [Instagram](https://www.instagram.com/manthan_ank/)
+- [YouTube](https://www.youtube.com/@manthanank)
+- [GitHub](https://github.com/manthanank)
+
+## Support
+
+If you like this learning repository and find it useful, consider buying me a coffee or sponsoring me through the GitHub Sponsor. Your support will help me to continue and bring more exciting projects. Thank you!
+
+[![Buy Me A Coffee](/assets/bmc-button.svg)](https://www.buymeacoffee.com/manthanank)
+
+[![Sponsor Me](https://img.shields.io/badge/Sponsor-GitHub-green)]([https://](https://github.com/sponsors/manthanank))
+
+---
+
+Show your support by 🌟 the repository.
