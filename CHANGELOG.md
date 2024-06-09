@@ -1,3 +1,12 @@
+# [1.13.0](https://github.com/manthanank/learn-javascript/compare/v1.12.0...v1.13.0) (2024-06-09)
+
+
+### Features
+
+* Update README.md and add svg file ([aba04bf](https://github.com/manthanank/learn-javascript/commit/aba04bfca61b3a22b8528ddc7f43b4c8baa6bc70))
+
+
+
 # [1.12.0](https://github.com/manthanank/learn-javascript/compare/v1.11.0...v1.12.0) (2024-02-14)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * updated ([9b657c6](https://github.com/manthanank/learn-javascript/commit/9b657c679fccda972028aca59648aaaaf7e9a7db))
-
-
-
-# [1.7.0](https://github.com/manthanank/learn-javascript/compare/v1.6.0...v1.7.0) (2023-06-28)
-
-
-### Features
-
-* updated ([f41abf8](https://github.com/manthanank/learn-javascript/commit/f41abf8d76e3ba3bafa6590747363e645d17afdf))
 
 
 
