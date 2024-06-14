@@ -637,15 +637,47 @@ console.log(sum(...numbers)); // Output: 6
 
 JavaScript booleans can have one of two values: true or false.
 
+```javascript
+let value = true;
+```
+
 ### Boolean Methods and Properties
+
+The following are some of the most commonly used boolean methods and properties in JavaScript:
 
 constructor - Returns the function that created JavaScript's Boolean prototype
 
+```javascript
+let value = true;
+
+console.log(value.constructor); // Output: ƒ Boolean() { [native code] }
+```
+
 prototype - Allows you to add properties and methods to the Boolean prototype
+
+```javascript
+Boolean.prototype.age = 25;
+
+let value = true;
+
+console.log(value.age); // Output: 25
+```
 
 toString() - Converts a boolean value to a string, and returns the result
 
+```javascript
+let value = true;
+
+console.log(value.toString()); // Output: "true"
+```
+
 valueOf() - Returns the primitive value of a boolean
+
+```javascript
+let value = true;
+
+console.log(value.valueOf()); // Output: true
+```
 
 ## Object
 
@@ -660,17 +692,69 @@ const person = {
 
 ### Object Methods & Properties
 
-constructor -Returns the function that created an object's prototype
+The following are some of the most commonly used object methods and properties in JavaScript:
 
-keys() -Returns an Array Iterator object with the keys of an object
+constructor - Returns the function that created an object's prototype
 
-prototype -Let you to add properties and methods to JavaScript objects
+```javascript
+let person = {
+  firstName: "Manthan",
+  lastName: "Ank",
+};
 
-toString() -Converts an object to a string and returns the result
+console.log(person.constructor); // Output: ƒ Object() { [native code] }
+```
 
-valueOf() -Returns the primitive value of an object
+keys() - Returns an Array Iterator object with the keys of an object
+
+```javascript
+const person = {
+  firstName: "Manthan",
+  lastName: "Ank",
+};
+
+let keys = Object.keys(person);
+console.log(keys); // Output: ["firstName", "lastName"]
+```
+
+prototype - Let you to add properties and methods to JavaScript objects
+
+```javascript
+let person = {
+  firstName: "Manthan",
+  lastName: "Ank",
+};
+
+Object.prototype.age = 25;
+
+console.log(person.age); // Output: 25
+```
+
+toString() - Converts an object to a string and returns the result
+
+```javascript
+let person = {
+  firstName: "Manthan",
+  lastName: "Ank",
+};
+
+console.log(person.toString()); // Output: "[object Object]"
+```
+
+valueOf() - Returns the primitive value of an object
+
+```javascript
+let person = {
+  firstName: "Manthan",
+  lastName: "Ank",
+};
+
+console.log(person.valueOf()); // Output: {firstName: "Manthan", lastName: "Ank"}
+```
 
 ## Arrays
+
+Arrays are used to store multiple values in a single variable.
 
 ```javascript
 const letters = ['a', 'b', 'c'];
@@ -678,73 +762,11 @@ const letters = ['a', 'b', 'c'];
 
 ### Array Methods
 
+The following are some of the most commonly used array methods in JavaScript:
+
 **concat()** - Joins arrays and returns an array with the joined arrays
 
-**constructor** - Returns the function that created the Array object's prototype
-
-**copyWithin()** - Copies array elements within the array, to and from specified positions
-
-**entries()** - Returns a key/value pair Array Iteration Object
-
-**every()** - Checks if every element in an array pass a test
-
-**fill()** - Fill the elements in an array with a static value
-
-**filter()** - Creates a new array with every element in an array that pass a test
-
-**find()** - Returns the value of the first element in an array that pass a test
-
-**findIndex()** - Returns the index of the first element in an array that pass a test
-
-**forEach()** - Calls a function for each array element
-
-**from()** - Creates an array from an object
-
-**includes()** - Check if an array contains the specified element
-
-**indexOf()** - Search the array for an element and returns its position
-
-**isArray()** - Checks whether an object is an array
-
-**join()** - Joins all elements of an array into a string
-
-**keys()** - Returns a Array Iteration Object, containing the keys of the original array
-
-**lastIndexOf()** - Search the array for an element, starting at the end, and returns its position
-
-**length** - Sets or returns the number of elements in an array
-
-**map()** - Creates a new array with the result of calling a function for each array element
-
-**pop()** - Removes the last element of an array, and returns that element
-
-**prototype** - Allows you to add properties and methods to an Array object
-
-**push()** - Adds new elements to the end of an array, and returns the new length
-
-**reduce()** - Reduce the values of an array to a single value (going left-to-right)
-
-**reduceRight()** - Reduce the values of an array to a single value (going right-to-left)
-
-**reverse()** - Reverses the order of the elements in an array
-
-**shift()** - Removes the first element of an array, and returns that element
-
-**slice()** - Selects a part of an array, and returns the new array
-
-**some()** - Checks if any of the elements in an array pass a test
-
-**sort()** - Sorts the elements of an array
-
-**splice()** - Adds/Removes elements from an array
-
-**toString()** - Converts an array to a string, and returns the result
-
-**unshift()** - Adds new elements to the beginning of an array, and returns the new length
-
-**valueOf()** - Returns the primitive value of an array
-
-**concat** - It is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array that contains the values of the original arrays.
+It is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array that contains the values of the original arrays.
 
 ```javascript
 let array1 = ['a', 'b', 'c'];
@@ -754,146 +776,332 @@ let mergedArray = array1.concat(array2);
 console.log(mergedArray); // mergedArray is ['a', 'b', 'c', 'd', 'e', 'f']
 ```
 
-**indexOf** - It is used to find the index of the first occurrence of an element in an array. If the element is not found, the method returns -1.
-
-```javascript
-let array = ['a', 'b', 'c', 'd', 'a', 'b'];
-
-console.log(array.indexOf('a')); // Output: 0
-console.log(array.indexOf('b')); // Output: 1
-console.log(array.indexOf('c')); // Output: 2
-console.log(array.indexOf('e')); // Output: -1
-console.log(array.indexOf('a', 3)); // Output: 4
-console.log(array.indexOf('b', 3)); // Output: 5
-```
-
-**join** - It is used to join all elements of an array into a single string. The elements are separated by a specified separator string. If no separator is specified, the elements are joined with a comma (,) by default.
-
-```javascript
-let array = ['a', 'b', 'c', 'd'];
-
-let string1 = array.join(); 
-console.log(string1); // Output: "a,b,c,d"
-
-let string2 = array.join('-'); 
-console.log(string2); // Output: "a-b-c-d"
-
-let string3 = array.join(''); 
-console.log(string3); // Output: "abcd"
-```
-
-**lastIndexOf** - It is used to find the index of the last occurrence of an element in an array. If the element is not found, the method returns -1.
-
-```javascript
-let array = ['a', 'b', 'c', 'd', 'a', 'b'];
-
-console.log(array.lastIndexOf('a')); // Output: 4
-console.log(array.lastIndexOf('b')); // Output: 5
-console.log(array.lastIndexOf('c')); // Output: 2
-console.log(array.lastIndexOf('e')); // Output: -1
-console.log(array.lastIndexOf('a', 3)); // Output: 0
-console.log(array.lastIndexOf('b', 3)); // Output: 1
-```
-
-**pop** - It is used to remove the last element from an array and return that element. It modifies the original array.
-
-```javascript
-let array = ['a', 'b', 'c', 'd', 'e', 'f'];
-
-let lastElement = array.pop();
-console.log(lastElement); // Output: "f"
-console.log(array); // Output: ["a", "b", "c", "d", "e"]
-
-let lastTwoElements = array.pop(2);
-console.log(lastTwoElements); // Output: ["d", "e"]
-console.log(array); // Output: ["a", "b", "c"]
-```
-
-**push** - It is used to add one or more elements to the end of an array and return the new length of the array. It modifies the original array.
+**constructor** - Returns the function that created the Array object's prototype
 
 ```javascript
 let array = ['a', 'b', 'c'];
 
-let newLength = array.push('d');
-console.log(newLength); // Output: 4
-console.log(array); // Output: ["a", "b", "c", "d"]
+console.log(array.constructor); // Output: ƒ Array() { [native code] }
 ```
 
-**reverse** - It is used to reverse the order of the elements in an array. It modifies the original array.
+**copyWithin()** - Copies array elements within the array, to and from specified positions
 
 ```javascript
-let array = ['a', 'b', 'c', 'd'];
+let array = ['a', 'b', 'c', 'd', 'e', 'f'];
+
+array.copyWithin(0, 3, 5);
+console.log(array); // Output: ["d", "e", "c", "d", "e", "f"]
+```
+
+**entries()** - Returns a key/value pair Array Iteration Object
+
+```javascript
+let array = ['a', 'b', 'c'];
+
+let iterator = array.entries();
+
+console.log(iterator.next().value); // Output: [0, "a"]
+console.log(iterator.next().value); // Output: [1, "b"]
+console.log(iterator.next().value); // Output: [2, "c"]
+```
+
+**every()** - Checks if every element in an array pass a test
+
+```javascript
+let array = [1, 2, 3, 4, 5];
+
+let result = array.every(value => value > 0);
+
+console.log(result); // Output: true
+```
+
+**fill()** - Fill the elements in an array with a static value
+
+```javascript
+let array = ['a', 'b', 'c', 'd', 'e', 'f'];
+
+array.fill('x', 2, 4);
+
+console.log(array); // Output: ["a", "b", "x", "x", "e", "f"]
+```
+
+**filter()** - Creates a new array with every element in an array that pass a test
+
+```javascript
+let array = [1, 2, 3, 4, 5];
+
+let newArray = array.filter(value => value > 3);
+
+console.log(newArray); // Output: [4, 5]
+```
+
+**find()** - Returns the value of the first element in an array that pass a test
+
+```javascript
+let array = [1, 2, 3, 4, 5];
+
+let value = array.find(value => value > 3);
+
+console.log(value); // Output: 4
+```
+
+**findIndex()** - Returns the index of the first element in an array that pass a test
+
+```javascript
+let array = [1, 2, 3, 4, 5];
+
+let index = array.findIndex(value => value > 3);
+
+console.log(index); // Output: 3
+```
+
+**forEach()** - Calls a function for each array element
+
+```javascript
+let array = [1, 2, 3, 4, 5];
+
+array.forEach(value => {
+  console.log(value);
+});
+
+// Output: 1
+// Output: 2
+// Output: 3
+// Output: 4
+// Output: 5
+```
+
+**from()** - Creates an array from an object
+
+```javascript
+let array = Array.from('hello');
+
+console.log(array); // Output: ["h", "e", "l", "l", "o"]
+```
+
+**includes()** - Check if an array contains the specified element
+
+```javascript
+let array = [1, 2, 3, 4, 5];
+
+let result = array.includes(3);
+
+console.log(result); // Output: true
+```
+
+**indexOf()** - Search the array for an element and returns its position
+
+```javascript
+let array = [1, 2, 3, 4, 5];
+
+let index = array.indexOf(3);
+
+console.log(index); // Output: 2
+```
+
+**isArray()** - Checks whether an object is an array
+
+```javascript
+let array = [1, 2, 3, 4, 5];
+
+let result = Array.isArray(array);
+
+console.log(result); // Output: true
+```
+
+**join()** - Joins all elements of an array into a string
+
+```javascript
+let array = ['a', 'b', 'c'];
+
+let result = array.join();
+
+console.log(result); // Output: "a,b,c"
+```
+
+**keys()** - Returns a Array Iteration Object, containing the keys of the original array
+
+```javascript
+let array = ['a', 'b', 'c'];
+
+let iterator = array.keys();
+
+console.log(iterator.next().value); // Output: 0
+```
+
+**lastIndexOf()** - Search the array for an element, starting at the end, and returns its position
+
+```javascript
+let array = [1, 2, 3, 4, 5, 3];
+
+let index = array.lastIndexOf(3);
+
+console.log(index); // Output: 5
+```
+
+**length** - Sets or returns the number of elements in an array
+
+```javascript
+let array = ['a', 'b', 'c'];
+
+console.log(array.length); // Output: 3
+```
+
+**map()** - Creates a new array with the result of calling a function for each array element
+
+```javascript
+let array = [1, 2, 3, 4, 5];
+
+let newArray = array.map(value => value * 2);
+
+console.log(newArray); // Output: [2, 4, 6, 8, 10]
+```
+
+**pop()** - Removes the last element of an array, and returns that element
+
+```javascript
+let array = ['a', 'b', 'c'];
+
+let element = array.pop();
+
+console.log(element); // Output: "c"
+```
+
+**prototype** - Allows you to add properties and methods to an Array object
+
+```javascript
+Array.prototype.sum = function() {
+  let total = 0;
+  for (let i = 0; i < this.length; i++) {
+    total += this[i];
+  }
+  return total;
+};
+
+let array = [1, 2, 3, 4, 5];
+
+console.log(array.sum()); // Output: 15
+```
+
+**push()** - Adds new elements to the end of an array, and returns the new length
+
+```javascript
+let array = ['a', 'b', 'c'];
+
+let length = array.push('d');
+
+console.log(length); // Output: 4
+```
+
+**reduce()** - Reduce the values of an array to a single value (going left-to-right)
+
+```javascript
+let array = [1, 2, 3, 4, 5];
+
+let total = array.reduce((accumulator, value) => accumulator + value, 0);
+
+console.log(total); // Output: 15
+```
+
+**reduceRight()** - Reduce the values of an array to a single value (going right-to-left)
+
+```javascript
+let array = [1, 2, 3, 4, 5];
+
+let total = array.reduceRight((accumulator, value) => accumulator + value, 0);
+
+console.log(total); // Output: 15
+```
+
+**reverse()** - Reverses the order of the elements in an array
+
+```javascript
+let array = ['a', 'b', 'c'];
 
 array.reverse();
-console.log(array); // Output: ["d", "c", "b", "a"]
+
+console.log(array); // Output: ["c", "b", "a"]
 ```
 
-**shift** - It is used to remove the first element from an array and return that element. It the original array.
-
-```javascript
-let array = ['a', 'b', 'c', 'd'];
-
-let firstElement = array.shift();
-console.log(firstElement); // Output: "a"
-console.log(array); // Output: ["b", "c", "d"]
-```
-
-**slice** - It is used to extract a section of an array and return it as a new array. The original array is not modified. It takes two arguments: the start index and the end index (end index is not included). The start index is required, but the end index is optional; if it's not provided, the slice will include all the elements from the start index to the end of the array.
-
-```javascript
-let array = ['a', 'b', 'c', 'd', 'e', 'f'];
-
-let slicedArray = array.slice(1, 4);
-console.log(slicedArray); // Output: ["b", "c", "d"]
-console.log(array); // Output: ["a", "b", "c", "d", "e", "f"] (original array is not modified)
-```
-
-**sort** - It is used to sort the elements of an array in place and returns the sorted array. It sorts the elements in ascending alphabetical order.
-
-```javascript
-let array = ['c', 'e', 'a', 'd', 'b'];
-
-array.sort();
-console.log(array); // Output: ["a", "b", "c", "d", "e"]
-```
-
-**splice** - It is used to add, remove, and replace elements from an array. It modifies the original array. It takes three arguments: the starting index, the number of elements to remove, and the elements to add.
-
-```javascript
-let array = ['c', 'd', 'e', 'f'];
-
-array.splice(0, 0, 'a', 'b');
-console.log(array); // Output: ["a", "b", "c", "d", "e", "f"]
-```
-
-**toString** - It is used to convert an array to a string, with the elements separated by commas. It is inherited from the `Object.prototype`, so it can be used on any array.
-
-```javascript
-let array = ['a', 'b', 'c', 'd'];
-
-let string = array.toString();
-console.log(string); // Output: "a,b,c,d"
-```
-
-**unshift** - It is used to add one or more elements to the beginning of an array and return the new length of the array. It modifies the original array.
+**shift()** - Removes the first element of an array, and returns that element
 
 ```javascript
 let array = ['a', 'b', 'c'];
 
-let newLength = array.unshift('d');
-console.log(newLength); // Output: 4
-console.log(array); // Output: ["d", "a", "b", "c"]
+let element = array.shift();
+
+console.log(element); // Output: "a"
 ```
 
-**valueOf** - It is a method inherited from the Object.prototype, which is available on all objects in JavaScript, including arrays. It returns the primitive value of the object, which for arrays is the array itself.
+**slice()** - Selects a part of an array, and returns the new array
 
 ```javascript
-let array = ['a', 'b', 'c', 'd'];
+let array = ['a', 'b', 'c', 'd', 'e', 'f'];
 
-console.log(array.valueOf()); // Output: ["a", "b", "c", "d"]
+let newArray = array.slice(2, 4);
+
+console.log(newArray); // Output: ["c", "d"]
+```
+
+**some()** - Checks if any of the elements in an array pass a test
+
+```javascript
+let array = [1, 2, 3, 4, 5];
+
+let result = array.some(value => value > 3);
+
+console.log(result); // Output: true
+```
+
+**sort()** - Sorts the elements of an array
+
+```javascript
+let array = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5];
+
+array.sort();
+
+console.log(array); // Output: [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]
+```
+
+**splice()** - Adds/Removes elements from an array
+
+```javascript
+let array = ['a', 'b', 'c', 'd', 'e', 'f'];
+
+array.splice(2, 0, 'x', 'y');
+
+console.log(array); // Output: ["a", "b", "x", "y", "c", "d", "e", "f"]
+```
+
+**toString()** - Converts an array to a string, and returns the result
+
+```javascript
+let array = ['a', 'b', 'c'];
+
+console.log(array.toString()); // Output: "a,b,c"
+```
+
+**unshift()** - Adds new elements to the beginning of an array, and returns the new length
+
+```javascript
+let array = ['a', 'b', 'c'];
+
+let length = array.unshift('x', 'y');
+
+console.log(array); // Output: ["x", "y", "a", "b", "c"]
+```
+
+**valueOf()** - Returns the primitive value of an array
+
+```javascript
+let array = ['a', 'b', 'c'];
+
+console.log(array.valueOf()); // Output: ["a", "b", "c"]
 ```
 
 ## Strings
+
+Strings are used to store text. Strings must be enclosed in single or double quotes.
 
 ```javascript
 const name = 'Manthan';
@@ -901,73 +1109,265 @@ const name = 'Manthan';
 
 ### Strings methods
 
+The following are some of the most commonly used string methods in JavaScript:
+
 **charAt()** - Returns the character at a specified index (position)
-
-**charCodeAt()** - Returns the Unicode of the character at a specified index
-
-**concat()** - Returns two or more joined strings
-
-**constructor** - Returns the string's constructor function
-
-**endsWith()** - Returns if a string ends with a specified value
-
-**fromCharCode()** - Returns Unicode values as characters
-
-**includes()** - Returns if a string contains a specified value
-
-**indexOf()** - Returns the index (position) of the first occurrence of a value in a string
-
-**lastIndexOf()** - Returns the index (position) of the last occurrence of a value in a string
-
-**length** - Returns the length of a string
-
-**localeCompare()** - Compares two strings in the current locale
-
-**match()** - Searches a string for a value, or a regular expression, and returns the matches
-
-**prototype** - Allows you to add properties and methods to an object
-
-**repeat()** - Returns a new string with a number of copies of a string
-
-**replace()** - Searches a string for a value, or a regular expression, and returns a string where the values are replaced
-
-**search()** - Searches a string for a value, or regular expression, and returns the index (position) of the match
-
-**slice()** - Extracts a part of a string and returns a new string
-
-**split()** - Splits a string into an array of substrings
-
-**startsWith()** - Checks whether a string begins with specified characters
-
-**substr()** - Extracts a number of characters from a string, from a start index (position)
-
-**substring()** - Extracts characters from a string, between two specified indices (positions)
-
-**toLocaleLowerCase()** - Returns a string converted to lowercase letters, using the host's locale
-
-**toLocaleUpperCase()** - Returns a string converted to uppercase letters, using the host's locale
-
-**toLowerCase()** - Returns a string converted to lowercase letters
-
-**toString()** - Returns a string or a string object as a string
-
-**toUpperCase()** - Returns a string converted to uppercase letters
-
-**trim()** - Returns a string with removed whitespaces
-
-**trimEnd()** - Returns a string with removed whitespaces from the end
-
-**trimStart()** - Returns a string with removed whitespaces from the start
-
-**valueOf()** - Returns the primitive value of a string or a string object
-
-**charAt** - It returns the character at a specified index in a string. The index is zero-based, which means that the first character in the string is at index 0, the second character is at index 1, and so on.
 
 ```javascript
 let myString = "Hello World!";
+
 console.log(myString.charAt(0)); // Output: "H"
-console.log(myString.charAt(5)); // Output: " "
-console.log(myString.charAt(6)); // Output: "W"
+```
+
+**charCodeAt()** - Returns the Unicode of the character at a specified index
+
+```javascript
+let myString = "Hello World!";
+
+console.log(myString.charCodeAt(0)); // Output: 72
+```
+
+**concat()** - Returns two or more joined strings
+
+```javascript
+let myString1 = "Hello";
+let myString2 = "World!";
+
+console.log(myString1.concat(" ", myString2)); // Output: "Hello World!"
+```
+
+**constructor** - Returns the string's constructor function
+
+```javascript
+let myString = "Hello World!";
+
+console.log(myString.constructor); // Output: ƒ String() { [native code] }
+```
+
+**endsWith()** - Returns if a string ends with a specified value
+
+```javascript
+let myString = "Hello World!";
+
+console.log(myString.endsWith("!")); // Output: true
+```
+
+**fromCharCode()** - Returns Unicode values as characters
+
+```javascript
+let myString = String.fromCharCode(72, 101, 108, 108, 111);
+
+console.log(myString); // Output: "Hello"
+```
+
+**includes()** - Returns if a string contains a specified value
+
+```javascript
+let myString = "Hello World!";
+
+console.log(myString.includes("World")); // Output: true
+```
+
+**indexOf()** - Returns the index (position) of the first occurrence of a value in a string
+
+```javascript
+let myString = "Hello World!";
+
+console.log(myString.indexOf("World")); // Output: 6
+```
+
+**lastIndexOf()** - Returns the index (position) of the last occurrence of a value in a string
+
+```javascript
+let myString = "Hello World! World!";
+
+console.log(myString.lastIndexOf("World")); // Output: 13
+```
+
+**length** - Returns the length of a string
+
+```javascript
+let myString = "Hello World!";
+
+console.log(myString.length); // Output: 12
+```
+
+**localeCompare()** - Compares two strings in the current locale
+
+```javascript
+let myString = "Hello World!";
+
+console.log(myString.localeCompare("Hello World!")); // Output: 0
+```
+
+**match()** - Searches a string for a value, or a regular expression, and returns the matches
+
+```javascript
+let myString = "The quick brown fox jumps over the lazy dog.";
+
+let result = myString.match(/the/i);
+
+console.log(result); // Output: ["the", index: 30, input: "The quick brown fox jumps over the lazy dog.", groups: undefined]
+```
+
+**prototype** - Allows you to add properties and methods to an object
+
+```javascript
+String.prototype.reverse = () => {
+  return this.split("").reverse().join("");
+};
+
+let myString = "Hello World!";
+
+console.log(myString.reverse()); // Output: "!dlroW olle
+```
+
+**repeat()** - Returns a new string with a number of copies of a string
+
+```javascript
+let myString = "Hello World!";
+
+console.log(myString.repeat(2)); // Output: "Hello World!Hello World!"
+```
+
+**replace()** - Searches a string for a value, or a regular expression, and returns a string where the values are replaced
+
+```javascript
+let myString = "Hello World!";
+
+let newString = myString.replace("World", "Universe");
+
+console.log(newString); // Output: "Hello Universe!"
+```
+
+**search()** - Searches a string for a value, or regular expression, and returns the index (position) of the match
+
+```javascript
+let myString = "The quick brown fox jumps over the lazy dog.";
+
+let result = myString.search(/fox/);
+
+console.log(result); // Output: 16
+```
+
+**slice()** - Extracts a part of a string and returns a new string
+
+```javascript
+let myString = "Hello World!";
+
+let newString = myString.slice(6, 11);
+
+console.log(newString); // Output: "World"
+```
+
+**split()** - Splits a string into an array of substrings
+
+```javascript
+let myString = "Hello World!";
+
+let array = myString.split(" ");
+
+console.log(array); // Output: ["Hello", "World!"]
+```
+
+**startsWith()** - Checks whether a string begins with specified characters
+
+```javascript
+let myString = "Hello World!";
+
+console.log(myString.startsWith("Hello")); // Output: true
+```
+
+**substr()** - Extracts a number of characters from a string, from a start index (position)
+
+```javascript
+let myString = "Hello World!";
+
+let newString = myString.substr(6, 5);
+
+console.log(newString); // Output: "World"
+```
+
+**substring()** - Extracts characters from a string, between two specified indices (positions)
+
+```javascript
+let myString = "Hello World!";
+
+let newString = myString.substring(6, 11);
+
+console.log(newString); // Output: "World"
+```
+
+**toLocaleLowerCase()** - Returns a string converted to lowercase letters, using the host's locale
+
+```javascript
+let myString = "Hello World!";
+
+console.log(myString.toLocaleLowerCase()); // Output: "hello world!"
+```
+
+**toLocaleUpperCase()** - Returns a string converted to uppercase letters, using the host's locale
+
+```javascript
+let myString = "Hello World!";
+
+console.log(myString.toLocaleUpperCase()); // Output: "HELLO WORLD!"
+```
+
+**toLowerCase()** - Returns a string converted to lowercase letters
+
+```javascript
+let myString = "Hello World!";
+
+console.log(myString.toLowerCase()); // Output: "hello world!"
+```
+
+**toString()** - Returns a string or a string object as a string
+
+```javascript
+let myString = "Hello World!";
+
+console.log(myString.toString()); // Output: "Hello World!"
+```
+
+**toUpperCase()** - Returns a string converted to uppercase letters
+
+```javascript
+let myString = "Hello World!";
+
+console.log(myString.toUpperCase()); // Output: "HELLO WORLD
+```
+
+**trim()** - Returns a string with removed whitespaces
+
+```javascript
+let myString = " Hello World! ";
+
+console.log(myString.trim()); // Output: "Hello World!"
+```
+
+**trimEnd()** - Returns a string with removed whitespaces from the end
+
+```javascript
+let myString = " Hello World! ";
+
+console.log(myString.trimEnd()); // Output: " Hello World!"
+```
+
+**trimStart()** - Returns a string with removed whitespaces from the start
+
+```javascript
+let myString = " Hello World! ";
+
+console.log(myString.trimStart()); // Output: "Hello World! "
+```
+
+**valueOf()** - Returns the primitive value of a string or a string object
+
+```javascript
+let myString = "Hello World!";
+
+console.log(myString.valueOf()); // Output: "Hello World!"
 ```
 
 **charCodeAt** - It returns the Unicode of the character at a specified index in a string. Unicode is a standardized encoding system that assigns a unique number (code point) to each character in most languages and scripts in the world.
@@ -1002,103 +1402,17 @@ let n = str.indexOf("world");
 console.log(n);  // output: 7
 ```
 
-**lastIndexOf** - It is similar to the `indexOf()` method, but it returns the last index at which a given element can be found in a string, or -1 if the element is not present in the string. The method takes one argument, which is the string or character you want to search for.
-
-```javascript
-let str = "Hello, world! world! ";
-let n = str.lastIndexOf("world");
-console.log(n);  // output: 14
-```
-
-**match** - It is used to search a string for a match against a regular expression, and returns an array of matches.
-
-Syntax
-
-```javascript
-str.match(regexp)
-```
-
-Example
-
-```javascript
-let str = "The quick brown fox jumps over the lazy dog.";
-let result = str.match(/the/i);
-console.log(result);
-```
-
-**replace** - It can be used to replace a specific string or a regular expression with another string. The method takes two arguments: the first argument is the string or regular expression to be replaced, and the second argument is the string that will replace the matched string or regular expression. It returns a new string with the replacements made.
-
-```javascript
-let str = "JavaScript is a programming language";
-let newStr = str.replace("JavaScript", "JS");
-console.log(newStr); // "JS is a programming language"
-```
-
-**search** - It is used to search for a specified regular expression in a string and returns the position of the first match. If no match is found, it returns -1. The method is called on a string and takes a regular expression as an argument.
-
-```javascript
-let str = "The quick brown fox jumps over the lazy dog.";
-let result = str.search(/fox/);
-console.log(result); // Output: 16
-```
-
-**slice** - It is used to extract a part of a string and returns a new string. The method is called on a string and takes two arguments, the first is the starting index (required) and the second is the ending index (optional). If the ending index is not specified, the method will extract the substring to the end of the original string.
-
-```javascript
-let str = "The quick brown fox";
-let result = str.slice(4, 9);
-console.log(result); // Output: "quick"
-```
-
-**split** - It is used to split a string into an array of substrings based on a specified separator. The method is called on a string and takes one required argument, the separator, which can be a string or a regular expression. The separator specifies where to divide substrings. If the separator is not found, the array will contain the original string.
-
-```javascript
-let str = "The quick brown fox";
-let result = str.split(" ");
-console.log(result); // Output: [ "The", "quick", "brown", "fox" ]
-```
-
-**substr** - It is used to extract a part of a string and returns a new string. The method is called on a string and takes two arguments: the first is the starting index (required) and the second is the length of the substring (required).
-
-```javascript
-let str = "The quick brown fox";
-let result = str.substr(4, 5);
-console.log(result); // Output: "quick"
-```
-
-**substring** - It is used to extract a part of a string and returns a new string. The method is called on a string and takes two arguments: the first is the starting index (required) and the second is the ending index (optional). If the ending index is not specified, the method will extract the substring to the end of the original string.
-
-```javascript
-let str = "The quick brown fox";
-let result = str.substring(4, 9);
-console.log(result); // Output: "quick"
-```
-
-**toLowerCase** - It is used to convert all the characters in a string to lowercase and returns a new string. The method is called on a string and takes no arguments.
-
-```javascript
-let str = "The Quick BROWN Fox";
-let result = str.toLowerCase();
-console.log(result); // Output: "the quick brown fox"
-```
-
-**toUpperCase** - It is used to convert all the characters in a string to uppercase and returns a new string. The method is called on a string and takes no arguments.
-
-```javascript
-let str = "The Quick BROWN Fox";
-let result = str.toUpperCase();
-console.log(result); // Output: "THE QUICK BROWN FOX"
-```
-
-**valueOf** - It is used to return the primitive value of a String object, which is the string itself. The method is called on a string and takes no arguments.
-
-```javascript
-let str = "The Quick BROWN Fox";
-let result = str.valueOf();
-console.log(result); // Output: "The Quick BROWN Fox"
-```
-
 ## Loops
+
+Loops are used to execute a block of code multiple times.
+
+There are several types of loops in JavaScript:
+
+- for loop
+- while loop
+- do while loop
+- for in loop
+- for of loop
 
 ### for loop
 
@@ -1157,6 +1471,15 @@ for (let value of arr) {
 ```
 
 ## Conditional Statements
+
+Conditional statements are used to perform different actions based on different conditions.
+
+There are several types of conditional statements in JavaScript:
+
+- if statement
+- if else statement
+- if else else if statement
+- switch statement
 
 ## if statement
 
@@ -1256,6 +1579,12 @@ const name = () => {
 
 ## Scope
 
+Scope refers to the visibility of variables in JavaScript. There are three types of scope in JavaScript:
+
+- Global Scope
+- Function Scope
+- Block Scope
+
 ### Global Scope
 
 ```javascript
@@ -1324,8 +1653,62 @@ console.log(a);
 
 ## Dates
 
+JavaScript provides a built-in Date object that can be used to work with dates and times.
+
+### Date Object
+
+The Date object is used to work with dates and times in JavaScript. It can be created using the new keyword followed by the Date() constructor.
+
 ```javascript
 new Date()
+```
+
+### Date Formats
+
+There are several ways to create a new Date object in JavaScript:
+
+```javascript
+new Date() // current date and time
+new Date(milliseconds) // milliseconds since January 1, 1970, 00:00:00 UTC
+new Date(dateString) // date string (e.g. "October 13, 2014 11:13:00")
+new Date(year, month, day, hours, minutes, seconds, milliseconds) // year, month, day, hours, minutes, seconds, milliseconds
+```
+
+### Date Properties
+
+**constructor** - Returns the function that created the Date object's prototype
+
+```javascript
+const d = new Date();
+d.constructor; // ƒ Date() { [native code] }
+```
+
+**prototype** - Allows you to add properties and methods to the Date object
+
+```javascript
+Date.prototype.age = 25;
+
+const d = new Date();
+d.age; // 25
+```
+
+**UTC** - Returns the number of milliseconds since January 1, 1970, 00:00:00 UTC
+
+```javascript
+const d = new Date();
+d.UTC(); // 1642149980524
+```
+
+**parse** - Parses a date string and returns the number of milliseconds since January 1, 1970, 00:00:00 UTC
+
+```javascript
+Date.parse("Jan 1, 2023"); // 1672531200000
+```
+
+**now** - Returns the number of milliseconds since January 1, 1970, 00:00:00 UTC
+
+```javascript
+Date.now(); // 1642149980524
 ```
 
 ### Date Methods
@@ -1359,6 +1742,8 @@ d.toISOString(); // '2023-01-14T05:06:20.524Z'
 ```
 
 ## Date Get Methods
+
+The Date object has several built-in methods that can be used to get the date and time components of a date object. Some of the most commonly used get methods are:
 
 **getFullYear** - returns the four-digit year of the date.
 
@@ -1482,6 +1867,8 @@ d.setTime(30);
 ```
 
 ## Type Conversion
+
+JavaScript is a loosely typed language, which means that variables can hold values of any data type. JavaScript automatically converts the data type of a variable to the appropriate type when needed.
 
 ### Convert string to numbers
 
@@ -1619,6 +2006,8 @@ String(true)       // returns "true"
 
 ## Typeof
 
+The typeof operator is used to get the data type of a variable or an expression.
+
 ```javascript
 typeof "John"                 // Returns "string"
 typeof 3.14                   // Returns "number"
@@ -1643,6 +2032,12 @@ Keep in mind that
 
 ## Math
 
+The Math object allows you to perform mathematical tasks on numbers.
+
+```javascript
+Math.PI // returns 3.141592653589793
+```
+
 ### Math Property
 
 ```javascript
@@ -1663,6 +2058,8 @@ Math.LOG10E   // returns base 10 logarithm of E
 ```
 
 ### Math Methods
+
+The Math object has several built-in methods that can be used to perform mathematical tasks. Some of the most commonly used methods are:
 
 **Math.round** - Returns x rounded to its nearest integer
 
@@ -1792,7 +2189,28 @@ Math.log10(1000); // 3
 
 ## Sets
 
-collection of unique values.
+collection of unique values. A Set is a collection of unique values. A Set can hold any datatype, including primitive types and objects.
+
+```javascript
+const letters = new Set(["a","b","c"]);
+```
+
+### Set Properties
+
+**constructor** - Returns the function that created the Set object's prototype
+
+```javascript
+letters.constructor; // ƒ Set() { [native code] }
+```
+
+**prototype** - Allows you to add properties and methods to a Set object
+
+```javascript
+Set.prototype.size = 0;
+
+const letters = new Set(["a","b","c"]);
+letters.size; // 3
+```
 
 ### Set Methods
 
@@ -1848,6 +2266,35 @@ letters.size;
 ## Map
 
 A Map holds key-value pairs where the keys can be any datatype. A Map remembers the original insertion order of the keys.
+
+```javascript
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+```
+
+### Map Properties
+
+**constructor** - Returns the function that created the Map object's prototype
+
+```javascript
+fruits.constructor; // ƒ Map() { [native code] }
+```
+
+**prototype** - Allows you to add properties and methods to a Map object
+
+```javascript
+Map.prototype.size = 0;
+
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+fruits.size; // 3
+```
 
 ### Map Methods
 
@@ -1920,7 +2367,11 @@ fruits.size;
 
 ## Async
 
-Callbacks
+Asynchronous programming is a way to handle tasks that take time to complete. In synchronous programming, the program waits for each task to complete before moving on to the next task. In asynchronous programming, the program can move on to the next task before the first task is complete.
+
+### Callbacks
+
+A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
 
 ```javascript
 function myDisplayer(some) {
@@ -1937,7 +2388,7 @@ myCalculator(5, 5, myDisplayer);
 // Output: 10
 ```
 
-Asynchronous
+### Asynchronous JavaScript
 
 ```javascript
 function myDisplayer(some) {
@@ -1962,7 +2413,7 @@ getFile(myDisplayer);
 // Output: The content of the mycar.html file
 ```
 
-Callback function
+### Callback function
 
 A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
 
@@ -1981,7 +2432,7 @@ myCalculator(5, 5, myDisplayer);
 // Output: 10
 ```
 
-Promise
+### Promise
 
 Promises are used to handle asynchronous operations in JavaScript. They are easy to manage when dealing with multiple asynchronous operations where callbacks can create callback hell leading to unmanageable code.
 
@@ -2028,7 +2479,7 @@ const myPromise = new Promise((resolve, reject) => {
 });
 ```
 
-async/await -
+### async/await
 
 The async/await feature was introduced in ES8 (ECMAScript 2017) to simplify the process of working with promises.
 
@@ -2067,9 +2518,291 @@ myFunction();
 
 ## DOM
 
-Document Object Model
+The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document as a tree of nodes, where each node represents a part of the document (e.g., an element, an attribute, or a text node).
+
+### DOM Properties
+
+**document.body** - Returns the body element
+
+```javascript
+document.body;
+```
+
+**document.cookie** - Returns the document's cookie
+
+```javascript
+document.cookie;
+```
+
+**document.doctype** - Returns the document's doctype
+
+```javascript
+document.doctype;
+```
+
+**document.documentElement** - Returns the document's root element
+
+```javascript
+document.documentElement;
+```
+
+**document.documentURI** - Returns the URI of the document
+
+```javascript
+document.documentURI;
+```
+
+**document.domain** - Returns the domain name of the server that loaded the document
+
+```javascript
+document.domain;
+```
+
+**document.head** - Returns the head element
+
+```javascript
+document.head;
+```
+
+**document.images** - Returns a collection of all images in the document
+
+```javascript
+document.images;
+```
+
+**document.lastModified** - Returns the date and time the document was last modified
+
+```javascript
+document.lastModified;
+```
+
+**document.links** - Returns a collection of all links in the document
+
+```javascript
+document.links;
+```
+
+**document.readyState** - Returns the loading status of the document
+
+```javascript
+document.readyState;
+```
+
+**document.referrer** - Returns the URI of the referrer (the linking document)
+
+```javascript
+document.referrer;
+```
+
+**document.title** - Returns the title of the document
+
+```javascript
+document.title;
+```
+
+**document.URL** - Returns the complete URL of the document
+
+```javascript
+document.URL;
+```
+
+### DOM Methods
+
+The Document object has several built-in methods that can be used to manipulate the document. Some of the most commonly used methods are:
+
+addEventListener() - It is used to add an event listener to the document.
+
+```javascript
+document.addEventListener("click", () => {
+  console.log("The document was clicked");
+});
+```
+
+adoptNode() - It is used to adopt the node from the other documents.
+
+```javascript
+document.adoptNode(node);
+```
+
+append() - It appends the new node or HTML after the last child node of the document.
+
+```javascript
+document.append(node);
+```
+
+caretPositionFromPoint() - It returns the caretPosition object, containing the DOM node based on the coordinates passed as an argument.
+
+```javascript
+document.caretPositionFromPoint(x, y);
+```
+
+close() - It closes the output stream opened using the document.open() method.
+
+```javascript
+document.close();
+```
+
+createAttribute() - It creates a new attribute node.
+
+```javascript
+document.createAttribute("class");
+```
+
+createAttributeNS() - It creates a new attribute node with the particular namespace URI.
+
+```javascript
+document.createAttributeNS("http://www.w3.org/2000/svg", "class");
+```
+
+createComment() - It creates a new comment node with a specific text message.
+
+```javascript
+document.createComment("This is a comment");
+```
+
+createDocumentFragment() - It creates a DocumentFragment node.
+
+```javascript
+document.createDocumentFragment();
+```
+
+createElement() - It creates a new element node to insert into the web page.
+
+```javascript
+document.createElement("div");
+```
+
+createElementNS() - It is used to create a new element node with a particular namespace URI.
+
+```javascript
+document.createElementNS("http://www.w3.org/2000/svg", "div");
+```
+
+createEvent() - It creates a new event node.
+
+```javascript
+document.createEvent("Event");
+```
+
+createTextNode() - It creates a new text node.
+
+```javascript
+document.createTextNode("This is a text node");
+```
+
+elementFromPoint() - It accesses the element from the specified coordinates.
+
+```javascript
+document.elementFromPoint(x, y);
+```
+
+elementsFromPoint() - It returns the array of elements that are at the specified coordinates.
+
+```javascript
+document.elementsFromPoint(x, y);
+```
+
+getAnimations() - It returns the array of all animations applied on the document.
+
+```javascript
+document.getAnimations();
+```
+
+getElementById() - It accesses the HTML element using the id.
+
+```javascript
+document.getElementById("id");
+```
+
+getElementsByClassName() - It accesses the HTML element using the class name.
+
+```javascript
+document.getElementsByClassName("class");
+```
+
+getElementsByName() - It accesses the HTML element using the name.
+
+```javascript
+document.getElementsByName("name");
+```
+
+getElementsByTagName() - It accesses the HTML element using the tag name.
+
+```javascript
+document.getElementsByTagName("tag");
+```
+
+hasFocus() - It returns the boolean value based on whether any element or document itself is in the focus.
+
+```javascript
+document.hasFocus();
+```
+
+importNode() - It is used to import the node from another document.
+
+```javascript
+document.importNode(node);
+```
+
+normalize() - It removes the text nodes, which are empty, and joins other nodes.
+
+```javascript
+document.normalize();
+```
+
+open() - It is used to open a new output stream.
+
+```javascript
+document.open();
+```
+
+prepand() - It is used to insert the particular node before all nodes.
+
+```javascript
+document.prepand(node);
+```
+
+querySelector() - It is used to select the first element that matches the css selector passed as an argument.
+
+```javascript
+document.querySelector("p");
+```
+
+querySelectorAll() - It returns the nodelist of the HTML elements, which matches the multiple CSS selectors.
+
+```javascript
+document.querySelectorAll("p.intro");
+```
+
+removeEventListener() - It is used to remove the event listener from the document.
+
+```javascript
+document.removeEventListener("click", () => {
+  console.log("The document was clicked");
+});
+```
+
+replaceChildren() - It replaces the children nodes of the document.
+
+```javascript
+document.replaceChildren(node);
+```
+
+write() - It is used to write text, HTML, etc., into the document.
+
+```javascript
+document.write("Hello World!");
+```
+
+writeln() - It is similar to the write() method but writes each statement in the new line.
+
+```javascript
+document.writeln("Hello World!");
+```
 
 ### Documents
+
+The Document object represents the entire HTML document. It is the root node of the HTML document tree.
 
 **Finding HTML Elements** -
 
@@ -2466,7 +3199,7 @@ document.getElementById('demo5').innerHTML =
 
 [Stackblitz Link](https://stackblitz.com/edit/web-platform-sixdd6?file=script.js)
 
-**Window History** -
+**Window History** - The window.history object contains the browser's history.
 
 `window.history` - object can be written without the window prefix.
 
@@ -2501,7 +3234,7 @@ window.history.forward()
 </html>
 ```
 
-**Window Navigator** -
+**Window Navigator** - Window Navigator object contains information about the visitor's browser.
 
 navigator.cookieEnabled
 
@@ -4435,6 +5168,1814 @@ newObj();
 // output: 10
 ```
 
+Program To Print Hello World
+
+```javascript
+console.log("Hello, World!");
+
+// Output: Hello, World!
+```
+
+Program to Add Two Numbers
+
+```javascript
+const num1 = 5;
+const num2 = 10;
+const sum = num1 + num2;
+
+console.log("The sum of " + num1 + " and " + num2 + " is: " + sum);
+
+// Output: The sum of 5 and 10 is: 15
+```
+
+Program to Find the Square Root
+
+```javascript
+const num = 16;
+const squareRoot = Math.sqrt(num);
+
+console.log("The square root of " + num + " is: " + squareRoot);
+
+// Output: The square root of 16 is: 4
+```
+
+Program to Calculate the Area of a Triangle
+
+```javascript
+const base = 5;
+const height = 10;
+const area = 0.5 * base * height;
+
+console.log("The area of the triangle is: " + area);
+
+// Output: The area of the triangle is: 25
+```
+
+Program to Swap Two Variables
+
+```javascript
+let a = 5;
+let b = 10;
+
+[a, b] = [b, a];
+
+console.log("a is: " + a);
+console.log("b is: " + b);
+
+// Output: a is: 10
+// Output: b is: 5
+```
+
+Program to Solve Quadratic Equation
+
+```javascript
+const a = 1;
+const b = 5;
+const c = 6;
+
+const discriminant = b * b - 4 * a * c;
+
+let x1, x2;
+
+if (discriminant > 0) {
+  x1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+  x2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+  console.log("The roots are: " + x1 + " and " + x2);
+} else if (discriminant === 0) {
+  x1 = -b / (2 * a);
+  console.log("The root is: " + x1);
+} else {
+  const realPart = (-b / (2 * a)).toFixed(2);
+  const imaginaryPart = (Math.sqrt(-discriminant) / (2 * a)).toFixed(2);
+  console.log("The roots are: " + realPart + " + " + imaginaryPart + "i and " + realPart + " - " + imaginaryPart + "i");
+}
+
+// Output: The roots are: -2 and -3
+```
+
+Program to Convert Kilometers to Miles
+
+```javascript
+const kilometers = 5;
+const miles = kilometers * 0.621371;
+
+console.log(kilometers + " kilometers is equal to " + miles + " miles");
+
+// Output: 5 kilometers is equal to 3.10686 miles
+```
+
+Program to Convert Celsius to Fahrenheit
+
+```javascript
+const celsius = 37;
+const fahrenheit = (celsius * 9 / 5) + 32;
+
+console.log(celsius + "°C is equal to " + fahrenheit + "°F");
+
+// Output: 37°C is equal to 98.6°F
+```
+
+Program to Generate a Random Number
+
+```javascript
+const min = 1;
+const max = 10;
+const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+
+console.log("Random number between " + min + " and " + max + " is: " + randomNum);
+
+// Output: Random number between 1 and 10 is: 7
+```
+
+Program to Check if a number is Positive, Negative, or Zero
+
+```javascript
+const num = 5;
+
+if (num > 0) {
+  console.log(num + " is a positive number");
+} else if (num < 0) {
+  console.log(num + " is a negative number");
+} else {
+  console.log(num + " is zero");
+}
+
+// Output: 5 is a positive number
+```
+
+Program to Check if a Number is Odd or Even
+
+```javascript
+const num = 5;
+
+if (num % 2 === 0) {
+  console.log(num + " is an even number");
+} else {
+  console.log(num + " is an odd number");
+}
+
+// Output: 5 is an odd number
+```
+
+Program to Find the Largest Among Three Numbers
+
+```javascript
+const num1 = 10;
+const num2 = 20;
+const num3 = 15;
+
+let largest;
+
+if (num1 >= num2 && num1 >= num3) {
+  largest = num1;
+} else if (num2 >= num1 && num2 >= num3) {
+  largest = num2;
+} else {
+  largest = num3;
+}
+
+console.log("The largest number is: " + largest);
+
+// Output: The largest number is: 20
+```
+
+Program to Check Prime Number
+
+```javascript
+const num = 29;
+let isPrime = true;
+
+if (num === 1) {
+  console.log("1 is neither prime nor composite number.");
+} else if (num > 1) {
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0) {
+      isPrime = false;
+      break;
+    }
+  }
+
+  if (isPrime) {
+    console.log(num + " is a prime number");
+  } else {
+    console.log(num + " is not a prime number");
+  }
+} else {
+  console.log("Invalid input");
+}
+
+// Output: 29 is a prime number
+```
+
+Program to Print All Prime Numbers in an Interval
+
+```javascript
+const lowerNumber = 10;
+const upperNumber = 50;
+
+console.log("Prime numbers between " + lowerNumber + " and " + upperNumber + " are:");
+
+for (let i = lowerNumber; i <= upperNumber; i++) {
+  let isPrime = true;
+
+  if (i === 1) {
+    isPrime = false;
+  } else if (i > 1) {
+    for (let j = 2; j < i; j++) {
+      if (i % j === 0) {
+        isPrime = false;
+        break;
+      }
+    }
+  }
+
+  if (isPrime) {
+    console.log(i);
+  }
+}
+
+// Output: Prime numbers between 10 and 50 are:
+```
+
+Program to Find the Factorial of a Number
+
+```javascript
+const num = 5;
+let factorial = 1;
+
+if (num < 0) {
+  console.log("Factorial of a negative number is not possible");
+} else {
+  for (let i = 1; i <= num; i++) {
+    factorial *= i;
+  }
+  console.log("The factorial of " + num + " is: " + factorial);
+}
+
+// Output: The factorial of 5 is: 120
+```
+
+Program to Display the Multiplication Table
+
+```javascript
+const num = 5;
+
+console.log("Multiplication table of " + num + ":");
+
+for (let i = 1; i <= 10; i++) {
+  console.log(num + " * " + i + " = " + num * i);
+}
+
+// Output: Multiplication table of 5:
+```
+
+Program to Print the Fibonacci Sequence
+
+```javascript
+const num = 10;
+let n1 = 0, n2 = 1, nextTerm;
+
+console.log("Fibonacci series up to " + num + " terms:");
+
+for (let i = 1; i <= num; i++) {
+  console.log(n1);
+  nextTerm = n1 + n2;
+  n1 = n2;
+  n2 = nextTerm;
+}
+
+// Output: Fibonacci series up to 10 terms: 0 1 1 2 3 5 8 13 21 34
+```
+
+Program to Check Armstrong Number
+
+```javascript
+const num = 153;
+let sum = 0;
+let temp = num;
+let remainder;
+
+while (temp > 0) {
+  remainder = temp % 10;
+  sum += remainder * remainder * remainder;
+  temp = parseInt(temp / 10);
+}
+
+if (sum === num) {
+  console.log(num + " is an Armstrong number");
+} else {
+  console.log(num + " is not an Armstrong number");
+}
+
+// Output: 153 is an Armstrong number
+```
+
+Program to Find Armstrong Number in an Interval
+
+```javascript
+const lowerNumber = 100;
+const upperNumber = 1000;
+
+console.log("Armstrong numbers between " + lowerNumber + " and " + upperNumber + " are:");
+
+for (let i = lowerNumber; i <= upperNumber; i++) {
+  let numberOfDigits = i.toString().length;
+  let sum = 0;
+  let temp = i;
+  let remainder;
+
+  while (temp > 0) {
+    remainder = temp % 10;
+    sum += remainder ** numberOfDigits;
+    temp = parseInt(temp / 10);
+  }
+
+  if (sum === i) {
+    console.log(i);
+  }
+}
+
+// Output: Armstrong numbers between 100 and 1000 are: 153 370 371 407
+```
+
+Program to Make a Simple Calculator
+
+```javascript
+const operator = '+';
+const num1 = 5;
+const num2 = 10;
+let result;
+
+switch (operator) {
+  case '+':
+    result = num1 + num2;
+    break;
+  case '-':
+    result = num1 - num2;
+    break;
+  case '*':
+    result = num1 * num2;
+    break;
+  case '/':
+    result = num1 / num2;
+    break;
+  default:
+    console.log("Invalid operator");
+}
+
+console.log("The result is: " + result); // Output: The result is: 15
+```
+
+Program to Find the Sum of Natural Numbers
+
+```javascript
+const num = 10;
+let sum = 0;
+
+for (let i = 1; i <= num; i++) {
+  sum += i;
+}
+
+console.log("The sum of natural numbers up to " + num + " is: " + sum);
+
+// Output: The sum of natural numbers up to 10 is: 55
+```
+
+Program to Check if the Numbers Have Same Last Digit
+
+```javascript
+const num1 = 25;
+const num2 = 35;
+
+if (num1 % 10 === num2 % 10) {
+  console.log("Both numbers have the same last digit");
+} else {
+  console.log("Both numbers do not have the same last digit");
+}
+
+// Output: Both numbers have the same last digit
+```
+
+Program to Find HCF or GCD
+
+```javascript
+const num1 = 12;
+const num2 = 18;
+let hcf;
+
+for (let i = 1; i <= num1 && i <= num2; i++) {
+  if (num1 % i === 0 && num2 % i === 0) {
+    hcf = i;
+  }
+}
+
+console.log("The HCF of " + num1 + " and " + num2 + " is: " + hcf);
+
+// Output: The HCF of 12 and 18 is: 6
+```
+
+Program to Find LCM
+
+```javascript
+const num1 = 12;
+const num2 = 18;
+let lcm;
+
+lcm = (num1 > num2) ? num1 : num2;
+
+while (true) {
+  if (lcm % num1 === 0 && lcm % num2 === 0) {
+    console.log("The LCM of " + num1 + " and " + num2 + " is: " + lcm);
+    break;
+  }
+  lcm++;
+}
+
+// Output: The LCM of 12 and 18 is: 36
+```
+
+Program to Find the Factors of a Number
+
+```javascript
+const num = 60;
+
+console.log("The factors of " + num + " are:");
+
+for (let i = 1; i <= num; i++) {
+  if (num % i === 0) {
+    console.log(i);
+  }
+}
+
+// Output: The factors of 60 are: 1 2 3 4 5 6 10 12 15 20 30 60
+```
+
+Program to Find Sum of Natural Numbers Using Recursion
+
+```javascript
+function sum(num) {
+  if (num === 1) {
+    return 1;
+  } else {
+    return num + sum(num - 1);
+  }
+}
+
+const n = 10;
+const result = sum(n);
+
+console.log("The sum of natural numbers up to " + n + " is: " + result);
+
+// Output: The sum of natural numbers up to 10 is: 55
+```
+
+Program to Guess a Random Number
+
+```javascript
+const min = 1;
+const max = 10;
+const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+let guess;
+
+do {
+  guess = parseInt(prompt("Guess a number between " + min + " and " + max));
+  if (guess > randomNum) {
+    console.log("Too high. Try again!");
+  } else if (guess < randomNum) {
+    console.log("Too low. Try again!");
+  }
+} while (guess !== randomNum);
+
+console.log("Congratulations! You guessed the correct number.");
+
+// Output: Congratulations! You guessed the correct number.
+```
+
+Program to Shuffle Deck of Cards
+
+```javascript
+const suits = ["Hearts", "Diamonds", "Clubs", "Spades"];
+const ranks = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"];
+
+const deck = [];
+
+for (const suit of suits) {
+  for (const rank of ranks) {
+    deck.push(rank + " of " + suit);
+  }
+}
+
+console.log("Shuffled deck of cards:");
+for (const card of deck) {
+  console.log(card);
+}
+
+// Output: Shuffled deck of cards: 2 of Hearts 3 of Hearts 4 of Hearts ...
+```
+
+Program to Display Fibonacci Sequence Using Recursion
+
+```javascript
+function fibonacci(num) {
+  if (num <= 1) {
+    return num;
+  } else {
+    return fibonacci(num - 1) + fibonacci(num - 2);
+  }
+}
+
+const n = 10;
+
+console.log("Fibonacci series up to " + n + " terms:");
+
+for (let i = 0; i < n; i++) {
+  console.log(fibonacci(i));
+}
+
+// Output: Fibonacci series up to 10 terms: 0 1 1 2 3 5 8 13 21 34
+```
+
+Program to Find Factorial of Number Using Recursion
+
+```javascript
+function factorial(num) {
+  if (num === 0) {
+    return 1;
+  } else {
+    return num * factorial(num - 1);
+  }
+}
+
+const n = 5;
+
+console.log("The factorial of " + n + " is: " + factorial(n));
+
+// Output: The factorial of 5 is: 120
+```
+
+Program to Convert Decimal to Binary
+
+```javascript
+const decimal = 10;
+let binary = "";
+
+while (decimal > 0) {
+  binary = (decimal % 2) + binary;
+  decimal = parseInt(decimal / 2);
+}
+
+console.log("The binary equivalent is: " + binary);
+
+// Output: The binary equivalent is: 1010
+```
+
+Program to Find ASCII Value of Character
+
+```javascript
+const char = 'A';
+
+console.log("The ASCII value of " + char + " is: " + char.charCodeAt(0));
+
+// Output: The ASCII value of A is: 65
+```
+
+Program to Check Whether a String is Palindrome or Not
+
+```javascript
+const str = "madam";
+let isPalindrome = true;
+
+for (let i = 0; i < str.length / 2; i++) {
+  if (str[i] !== str[str.length - 1 - i]) {
+    isPalindrome = false;
+    break;
+  }
+}
+
+if (isPalindrome) {
+  console.log(str + " is a palindrome");
+} else {
+  console.log(str + " is not a palindrome");
+}
+
+// Output: madam is a palindrome
+```
+
+Program to Sort Words in Alphabetical Order
+
+```javascript
+const words = ["Apple", "Banana", "Orange", "Mango"];
+words.sort();
+
+console.log("Words in alphabetical order:");
+
+for (const word of words) {
+  console.log(word);
+}
+
+// Output: Words in alphabetical order: Apple Banana Mango Orange
+```
+
+Program to Replace Characters of a String
+
+```javascript
+const str = "Hello, World!";
+
+const newStr = str.replace(/o/g, "x");
+
+console.log("Original string: " + str);
+console.log("New string: " + newStr);
+
+// Output: Original string: Hello, World!
+// Output: New string: Hellx, Wxrld!
+```
+
+Program to Reverse a String
+
+```javascript
+const str = "Hello, World!";
+let reversedStr = "";
+
+for (let i = str.length - 1; i >= 0; i--) {
+  reversedStr += str[i];
+}
+
+console.log("Original string: " + str);
+
+console.log("Reversed string: " + reversedStr);
+
+// Output: Original string: Hello, World!
+// Output: Reversed string: !dlroW ,olleH
+```
+
+Program to Create Objects in Different Ways
+
+```javascript
+// Using Object Literal
+const person1 = {
+  name: "Alice",
+  age: 30
+};
+
+// Using Object Constructor
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+
+const person2 = new Person("Bob", 25);
+
+// Using Object.create()
+const person3 = Object.create(person1);
+
+console.log(person1);
+
+console.log(person2);
+
+console.log(person3);
+
+// Output: { name: 'Alice', age: 30 }
+// Output: Person { name: 'Bob', age: 25 }
+// Output: {}
+```
+
+Program to Check the Number of Occurrences of a Character in the String
+
+```javascript
+const str = "Hello, World!";
+const char = "o";
+
+let count = 0;
+
+for (let i = 0; i < str.length; i++) {
+  if (str[i] === char) {
+    count++;
+  }
+}
+
+console.log("The number of occurrences of " + char + " in the string is: " + count);
+
+// Output: The number of occurrences of o in the string is: 2
+```
+
+Program to Convert the First Letter of a String into UpperCase
+
+```javascript
+const str = "hello, world!";
+const firstLetter = str[0].toUpperCase();
+
+const newStr = firstLetter + str.slice(1);
+
+console.log("Original string: " + str);
+
+console.log("New string: " + newStr);
+
+// Output: Original string: hello, world!
+// Output: New string: Hello, world!
+```
+
+Program to Count the Number of Vowels in a String
+
+```javascript
+const str = "hello, world!";
+const vowels = "aeiou";
+let count = 0;
+
+for (let char of str) {
+  if (vowels.includes(char.toLowerCase())) {
+    count++;
+  }
+}
+
+console.log("The number of vowels in the string is: " + count);
+
+// Output: The number of vowels in the string is: 3
+```
+
+Program to Remove a Property from an Object
+
+```javascript
+const person = {
+  name: "Alice",
+  age: 30,
+  profession: "Developer"
+};
+
+delete person.profession;
+
+console.log(person);
+
+// Output: { name: 'Alice', age: 30 }
+```
+
+Program to Check Whether a String Starts and Ends With Certain Characters
+
+```javascript
+const str = "hello, world!";
+const startsWith = "he";
+const endsWith = "ld";
+
+if (str.startsWith(startsWith) && str.endsWith(endsWith)) {
+  console.log("The string starts with " + startsWith + " and ends with " + endsWith);
+} else {
+  console.log("The string does not start with " + startsWith + " and end with " + endsWith);
+}
+
+// Output: The string starts with he and ends with ld
+```
+
+Program to Check if a Key Exists in an Object
+
+```javascript
+const person = {
+  name: "Alice",
+  age: 30
+};
+
+const key = "name";
+
+if (key in person) {
+  console.log("The key " + key + " exists in the object");
+} else {
+  console.log("The key " + key + " does not exist in the object");
+}
+
+// Output: The key name exists in the object
+```
+
+Program to Clone a JS Object
+
+```javascript
+const person = {
+  name: "Alice",
+  age: 30
+};
+
+const clone = { ...person };
+
+console.log(clone);
+
+// Output: { name: 'Alice', age: 30 }
+```
+
+Program to Loop Through an Object
+
+```javascript
+const person = {
+  name: "Alice",
+  age: 30
+};
+
+for (const key in person) {
+  console.log(key + ": " + person[key]);
+}
+
+// Output: name: Alice
+```
+
+Program to Merge Property of Two Objects
+
+```javascript
+const obj1 = {
+  name: "Alice"
+};
+
+const obj2 = {
+  age: 30
+};
+
+const mergedObj = { ...obj1, ...obj2 };
+
+console.log(mergedObj);
+
+// Output: { name: 'Alice', age: 30 }
+```
+
+Program to Count the Number of Keys/Properties in an Object
+
+```javascript
+const person = {
+  name: "Alice",
+  age: 30
+};
+
+const keys = Object.keys(person);
+const count = keys.length;
+
+console.log("The number of keys in the object is: " + count);
+
+// Output: The number of keys in the object is: 2
+```
+
+Program to Add Key/Value Pair to an Object
+
+```javascript
+const person = {
+  name: "Alice",
+  age: 30
+};
+
+person.profession = "Developer";
+
+console.log(person);
+
+// Output: { name: 'Alice', age: 30, profession: 'Developer' }
+```
+
+Program to Replace All Occurrences of a String
+
+```javascript
+const str = "hello, world!";
+const newStr = str.replace(/l/g, "x");
+
+console.log("Original string: " + str);
+
+console.log("New string: " + newStr);
+
+// Output: Original string: hello, world!
+// Output: New string: hexxo, worxd!
+```
+
+Program to Create Multiline Strings
+
+```javascript
+const multilineString = `This is a
+multiline
+string`;
+
+console.log(multilineString);
+
+// Output: This is a
+// multiline
+// string
+```
+
+Program to Format Numbers as Currency Strings
+
+```javascript
+const number = 12345.6789;
+
+const currencyString = number.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+
+console.log(currencyString);
+
+// Output: $12,345.68
+```
+
+Program to Generate Random String
+
+```javascript
+const randomString = Math.random().toString(36).substring(7);
+
+console.log(randomString);
+
+// Output: Random string of length 7 characters (e.g., "x8z2j9a")
+```
+
+Program to Check if a String Starts With Another String
+
+```javascript
+const str = "hello, world!";
+const startsWith = "hello";
+
+if (str.startsWith(startsWith)) {
+  console.log("The string starts with " + startsWith);
+} else {
+  console.log("The string does not start with " + startsWith);
+}
+
+// Output: The string starts with hello
+```
+
+Program to Trim a String
+
+```javascript
+const str = "   hello, world!   ";
+const trimmedStr = str.trim();
+
+console.log("Original string: " + str);
+
+console.log("Trimmed string: " + trimmedStr);
+
+// Output: Original string:    hello, world!
+// Output: Trimmed string: hello, world!
+```
+
+Program to Convert Objects to Strings
+
+```javascript
+const person = {
+  name: "Alice",
+  age: 30
+};
+
+const str = JSON.stringify(person);
+
+console.log(str);
+
+// Output: {"name":"Alice","age":30}
+```
+
+Program to Check Whether a String Contains a Substring
+
+```javascript
+const str = "hello, world!";
+const subStr = "world";
+
+if (str.includes(subStr)) {
+  console.log("The string contains " + subStr);
+} else {
+  console.log("The string does not contain " + subStr);
+}
+
+// Output: The string contains world
+```
+
+Program to Compare Two Strings
+
+```javascript
+const str1 = "hello";
+const str2 = "world";
+
+if (str1 === str2) {
+  console.log("The strings are equal");
+} else {
+  console.log("The strings are not equal");
+}
+
+// Output: The strings are not equal
+```
+
+Program to Encode a String to Base64
+
+```javascript
+const str = "hello, world!";
+const encodedStr = btoa(str);
+
+console.log("Encoded string: " + encodedStr);
+
+// Output: Encoded string: aGVsbG8sIHdvcmxkIQ==
+```
+
+Program to Replace all Instances of a Character in a String
+
+```javascript
+const str = "hello, world!";
+const newStr = str.replace(/l/g, "x");
+
+console.log("Original string: " + str);
+
+console.log("New string: " + newStr);
+
+// Output: Original string: hello, world!
+// Output: New string: hexxo, worxd!
+```
+
+Program to Replace All Line Breaks with
+
+```javascript
+const str = "hello\nworld!";
+const newStr = str.replace(/\n/g, " ");
+
+console.log("Original string: " + str);
+
+console.log("New string: " + newStr);
+
+// Output: Original string: hello
+// world!
+// Output: New string: hello world!
+```
+
+Program to Display Date and Time
+
+```javascript
+const date = new Date();
+
+console.log("Current date and time: " + date);
+
+// Output: Current date and time: Sun Oct 31 2021 12:00:00 GMT+0530 (India Standard Time)
+```
+
+Program to Check Leap Year
+
+```javascript
+const year = 2024;
+
+if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+  console.log(year + " is a leap year");
+} else {
+  console.log(year + " is not a leap year");
+}
+
+// Output: 2024 is a leap year
+```
+
+Program to Format the Date
+
+```javascript
+const date = new Date();
+
+const options = { year: 'numeric', month: 'long', day: 'numeric' };
+
+const formattedDate = date.toLocaleDateString('en-US', options);
+
+console.log("Formatted date: " + formattedDate);
+
+// Output: Formatted date: October 31, 2021
+```
+
+Program to Display Current Date
+
+```javascript
+const date = new Date();
+
+const day = date.getDate();
+
+const month = date.getMonth() + 1;
+
+const year = date.getFullYear();
+
+console.log("Current date: " + day + "/" + month + "/" + year);
+
+// Output: Current date: 14/06/2024
+```
+
+Program to Compare The Value of Two Dates
+
+```javascript
+const date1 = new Date('2021-10-31');
+const date2 = new Date('2021-11-01');
+
+if (date1 > date2) {
+  console.log("Date 1 is greater than Date 2");
+} else if (date1 < date2) {
+  console.log("Date 1 is less than Date 2");
+} else {
+  console.log("Date 1 is equal to Date 2");
+}
+
+// Output: Date 1 is less than Date 2
+```
+
+Program to Create Countdown Timer
+
+```javascript
+let count = 10;
+
+const interval = setInterval(() => {
+  console.log(count);
+  count--;
+
+  if (count < 0) {
+    clearInterval(interval);
+    console.log("Countdown is over");
+  }
+}, 1000);
+
+// Output: 10 9 8 7 6 5 4 3 2 1 0 Countdown is over
+```
+
+Program to Remove Specific Item From an Array
+
+```javascript
+const fruits = ["Apple", "Banana", "Orange", "Mango"];
+
+const index = fruits.indexOf("Banana");
+
+if (index > -1) {
+  fruits.splice(index, 1);
+}
+
+console.log(fruits);
+
+// Output: ["Apple", "Orange", "Mango"]
+```
+
+Program to Check if An Array Contains a Specified Value
+
+```javascript
+const fruits = ["Apple", "Banana", "Orange", "Mango"];
+
+const value = "Banana";
+
+if (fruits.includes(value)) {
+  console.log("The array contains " + value);
+} else {
+  console.log("The array does not contain " + value);
+}
+
+// Output: The array contains Banana
+```
+
+Program to Insert Item in an Array
+
+```javascript
+const fruits = ["Apple", "Banana", "Orange", "Mango"];
+
+fruits.push("Grapes");
+
+console.log(fruits);
+
+// Output: ["Apple", "Banana", "Orange", "Mango", "Grapes"]
+```
+
+Program to Append an Object to an Array
+
+```javascript
+const fruits = ["Apple", "Banana", "Orange", "Mango"];
+
+const obj = { name: "Grapes" };
+
+fruits.push(obj);
+
+console.log(fruits);
+
+// Output: ["Apple", "Banana", "Orange", "Mango", { name: 'Grapes' }]
+```
+
+Program to Check if An Object is An Array
+
+```javascript
+const fruits = ["Apple", "Banana", "Orange", "Mango"];
+
+if (Array.isArray(fruits)) {
+  console.log("fruits is an array");
+} else {
+  console.log("fruits is not an array");
+}
+
+// Output: fruits is an array
+```
+
+Program to Empty an Array
+
+```javascript
+let fruits = ["Apple", "Banana", "Orange", "Mango"];
+
+fruits = [];
+
+console.log(fruits);
+
+// Output: []
+```
+
+Program to Add Element to Start of an Array
+
+```javascript
+let fruits = ["Apple", "Banana", "Orange", "Mango"];
+
+fruits.unshift("Grapes");
+
+console.log(fruits);
+
+// Output: ["Grapes", "Apple", "Banana", "Orange", "Mango"]
+```
+
+Program to Remove Duplicates From Array
+
+```javascript
+const fruits = ["Apple", "Banana", "Orange", "Mango", "Apple", "Banana"];
+
+const uniqueFruits = [...new Set(fruits)];
+
+console.log(uniqueFruits);
+
+// Output: ["Apple", "Banana", "Orange", "Mango"]
+```
+
+Program to Merge Two Arrays and Remove Duplicate Items
+
+```javascript
+const arr1 = [1, 2, 3];
+const arr2 = [3, 4, 5];
+
+const mergedArray = [...new Set([...arr1, ...arr2])];
+
+console.log(mergedArray);
+
+// Output: [1, 2, 3, 4, 5]
+```
+
+Program to Sort Array of Objects by Property Values
+
+```javascript
+const persons = [
+  { name: "Alice", age: 30 },
+  { name: "Bob", age: 25 },
+  { name: "Charlie", age: 35 }
+];
+
+persons.sort((a, b) => a.age - b.age);
+
+console.log(persons);
+
+// Output: [ { name: 'Bob', age: 25 }, { name: 'Alice', age: 30 }, { name: 'Charlie', age: 35 } ]
+```
+
+Program to Create Two Dimensional Array
+
+```javascript
+const matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+console.log(matrix);
+
+// Output: [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8, 9 ] ]
+```
+
+Program to Extract Given Property Values from Objects as Array
+
+```javascript
+const persons = [
+  { name: "Alice", age: 30 },
+  { name: "Bob", age: 25 },
+  { name: "Charlie", age: 35 }
+];
+
+const names = persons.map(person => person.name);
+
+console.log(names);
+
+// Output: [ 'Alice', 'Bob', 'Charlie' ]
+```
+
+Program to Compare Elements of Two Arrays
+
+```javascript
+const arr1 = [1, 2, 3];
+const arr2 = [1, 2, 3];
+
+const isEqual = arr1.length === arr2.length && arr1.every((value, index) => value === arr2[index]);
+
+if (isEqual) {
+  console.log("The arrays are equal");
+} else {
+  console.log("The arrays are not equal");
+}
+
+// Output: The arrays are equal
+```
+
+Program to Get Random Item From an Array
+
+```javascript
+const fruits = ["Apple", "Banana", "Orange", "Mango"];
+
+const randomFruit = fruits[Math.floor(Math.random() * fruits.length)];
+
+console.log("Random fruit: " + randomFruit);
+
+// Output: Random fruit: Banana
+```
+
+Program To Perform Intersection Between Two Arrays
+
+```javascript
+const arr1 = [1, 2, 3, 4, 5];
+const arr2 = [3, 4, 5, 6, 7];
+
+const intersection = arr1.filter(value => arr2.includes(value));
+
+console.log(intersection);
+
+// Output: [3, 4, 5]
+```
+
+Program to Split Array into Smaller Chunks
+
+```javascript
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const chunkSize = 3;
+const chunks = [];
+
+for (let i = 0; i < arr.length; i += chunkSize) {
+  chunks.push(arr.slice(i, i + chunkSize));
+}
+
+console.log(chunks);
+
+// Output: [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8, 9 ], [ 10 ] ]
+```
+
+Program to Include a JS file in Another JS file
+
+```javascript
+// index.js
+console.log("Hello, World!");
+
+// script.js
+document.write("This is a script file");
+
+// index.html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Include JS File</title>
+</head>
+<body>
+  <script src="index.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+// Output: In console: Hello, World! In body: This is a script file
+```
+
+Program to Get File Extension
+
+```javascript
+const filename = "script.js";
+const extension = filename.split('.').pop();
+
+console.log("File extension: " + extension);
+
+// Output: File extension: js
+```
+
+Program To Check If A Variable Is undefined or null
+
+```javascript
+let x;
+
+if (x === undefined) {
+  console.log("x is undefined");
+} else {
+  console.log("x is defined");
+}
+
+// Output: x is undefined
+```
+
+Program to Set a Default Parameter Value For a Function
+
+```javascript
+function greet(name = "World") {
+  console.log("Hello, " + name + "!");
+}
+
+greet("Alice");
+
+greet();
+
+// Output: Hello, Alice! Hello, World!
+```
+
+Program to Illustrate Different Set Operations
+
+```javascript
+const set1 = new Set([1, 2, 3, 4, 5]);
+const set2 = new Set([4, 5, 6, 7, 8]);
+
+const union = new Set([...set1, ...set2]);
+const intersection = new Set([...set1].filter(x => set2.has(x)));
+
+console.log("Union: " + [...union]);
+
+console.log("Intersection: " + [...intersection]);
+
+// Output: Union: 1,2,3,4,5,6,7,8 Intersection: 4,5
+```
+
+Program to Generate a Random Number Between Two Numbers
+
+```javascript
+const min = 1;
+const max = 10;
+
+const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+
+console.log("Random number between " + min + " and " + max + ": " + randomNum);
+
+// Output: Random number between 1 and 10: 7
+```
+
+Program To Get The Current URL
+
+```javascript
+const currentURL = window.location.href;
+
+console.log("Current URL: " + currentURL);
+
+// Output: Current URL: https://www.example.com/page
+```
+
+Program to Validate An Email Address
+
+```javascript
+const email = "manthan.ank46@gmail.com";
+const pattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+if (pattern.test(email)) {
+  console.log(email + " is a valid email address");
+} else {
+  console.log(email + " is not a valid email address");
+}
+
+// Output: manthan.ank46@gmail.com is a valid email address
+```
+
+Program to Check If a Variable is of Function Type
+
+```javascript
+function greet() {
+  console.log("Hello, World!");
+}
+
+const x = 10;
+
+if (typeof greet === 'function') {
+  console.log("greet is a function");
+} else {
+  console.log("greet is not a function");
+}
+
+if (typeof x === 'function') {
+  console.log("x is a function");
+} else {
+  console.log("x is not a function");
+}
+
+// Output: greet is a function x is not a function
+```
+
+Program To Work With Constants
+
+```javascript
+const PI = 3.14159;
+
+console.log("The value of PI is: " + PI);
+
+// Output: The value of PI is: 3.14159
+```
+
+Program to Pass Parameter to a setTimeout() Function
+
+```javascript
+function greet(name) {
+  console.log("Hello, " + name + "!");
+}
+
+setTimeout(greet, 1000, "Alice");
+
+// Output: Hello, Alice! (after 1 second)
+```
+
+Program to Generate a Range of Numbers and Characters
+
+```javascript
+const numbers = Array.from({ length: 10 }, (_, i) => i + 1);
+const characters = Array.from({ length: 26 }, (_, i) => String.fromCharCode(65 + i));
+
+console.log("Numbers: " + numbers);
+
+console.log("Characters: " + characters);
+
+// Output: Numbers: 1,2,3,4,5,6,7,8,9,10 Characters: A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z
+```
+
+Program to Perform Function Overloading
+
+```javascript
+function add(x, y) {
+  return x + y;
+}
+
+function add(x, y, z) {
+  return x + y + z;
+}
+
+console.log(add(1, 2)); // Output: NaN
+
+console.log(add(1, 2, 3)); // Output: 6
+
+// Explanation: The second function definition overwrites the first one, resulting in the first function call returning NaN.
+```
+
+Program to Implement a Stack
+
+```javascript
+class Stack {
+  constructor() {
+    this.items = [];
+  }
+
+  push(element) {
+    this.items.push(element);
+  }
+
+  pop() {
+    if (this.items.length === 0) {
+      return "Underflow";
+    }
+    return this.items.pop();
+  }
+
+  peek() {
+    return this.items[this.items.length - 1];
+  }
+
+  isEmpty() {
+    return this.items.length === 0;
+  }
+
+  printStack() {
+    let str = "";
+    for (let i = 0; i < this.items.length; i++) {
+      str += this.items[i] + " ";
+    }
+    return str;
+  }
+}
+
+const stack = new Stack();
+
+stack.push(1);
+
+stack.push(2);
+
+stack.push(3);
+
+console.log(stack.printStack()); // Output: 1 2 3
+
+console.log(stack.peek()); // Output: 3
+
+console.log(stack.pop()); // Output: 3
+
+console.log(stack.printStack()); // Output: 1 2
+
+console.log(stack.isEmpty()); // Output: false
+
+stack.pop();
+
+stack.pop();
+
+console.log(stack.isEmpty()); // Output: true
+
+console.log(stack.pop()); // Output: Underflow
+```
+
+Program to Implement a Queue
+
+```javascript
+class Queue {
+  constructor() {
+    this.items = [];
+  }
+
+  enqueue(element) {
+    this.items.push(element);
+  }
+
+  dequeue() {
+    if (this.items.length === 0) {
+      return "Underflow";
+    }
+    return this.items.shift();
+  }
+
+  front() {
+    if (this.items.length === 0) {
+      return "No elements in Queue";
+    }
+    return this.items[0];
+  }
+
+  isEmpty() {
+    return this.items.length === 0;
+  }
+
+  printQueue() {
+    let str = "";
+    for (let i = 0; i < this.items.length; i++) {
+      str += this.items[i] + " ";
+    }
+    return str;
+  }
+}
+
+const queue = new Queue();
+
+queue.enqueue(1);
+
+queue.enqueue(2);
+
+queue.enqueue(3);
+
+console.log(queue.printQueue()); // Output: 1 2 3
+
+console.log(queue.front()); // Output: 1
+
+console.log(queue.dequeue()); // Output: 1
+
+console.log(queue.printQueue()); // Output: 2 3
+
+console.log(queue.isEmpty()); // Output: false
+
+queue.dequeue();
+
+queue.dequeue();
+
+console.log(queue.isEmpty()); // Output: true
+
+console.log(queue.dequeue()); // Output: Underflow
+```
+
+Program to Check if a Number is Float or Integer
+
+```javascript
+function isFloat(num) {
+  return Number(num) === num && num % 1 !== 0;
+}
+
+function isInteger(num) {
+  return Number(num) === num && num % 1 === 0;
+}
+
+console.log(isFloat(3.14)); // Output: true
+
+console.log(isFloat(5)); // Output: false
+
+console.log(isInteger(5)); // Output: true
+
+console.log(isInteger(3.14)); // Output: false
+
+// Explanation: The isFloat function checks if the number is a float by comparing it with its integer value and checking if it has a non-zero decimal part. The isInteger function checks if the number is an integer by comparing it with its integer value and checking if it has a zero decimal part.
+```
+
+Program to Pass a Function as Parameter
+
+```javascript
+function greet(name) {
+  return "Hello, " + name + "!";
+}
+
+function welcome(greetFunction, name) {
+  return greetFunction(name);
+}
+
+console.log(welcome(greet, "Alice")); // Output: Hello, Alice!
+
+// Explanation: The welcome function takes a function as a parameter and calls it with the provided name parameter.
+```
+
+Program to Get the Dimensions of an Image
+
+```javascript
+const img = new Image();
+
+img.src = "image.jpg";
+
+img.onload = function() {
+  console.log("Image width: " + this.width);
+  console.log("Image height: " + this.height);
+};
+
+// Output: Image width: 800 Image height: 600
+```
+
+Program to Remove All Whitespaces From a Text
+
+```javascript
+const text = "  Hello, World!  ";
+
+const trimmedText = text.replace(/\s/g, "");
+
+console.log("Original text: " + text);
+
+console.log("Trimmed text: " + trimmedText);
+
+// Output: Original text: Hello, World! Trimmed text: Hello,World!
+```
+
+Program to Write to Console
+
+```javascript
+console.log("Hello, World!");
+
+// Output: Hello, World!
+```
+
+Program to Convert Date to Number
+
+```javascript
+const date = new Date();
+
+const timestamp = date.getTime();
+
+console.log("Timestamp: " + timestamp);
+
+// Output: Timestamp: 1635648000000
+```
+
+Program to Get the Last Element of an Array
+
+```javascript
+const fruits = ["Apple", "Banana", "Orange", "Mango"];
+
+const lastFruit = fruits[fruits.length - 1];
+
+console.log("Last fruit: " + lastFruit);
+
+// Output: Last fruit: Mango
+```
+
+Program to Get the Current Time
+
+```javascript
+const date = new Date();
+
+const hours = date.getHours();
+const minutes = date.getMinutes();
+const seconds = date.getSeconds();
+
+console.log("Current time: " + hours + ":" + minutes + ":" + seconds);
+
+// Output: Current time: 12:00:00
+```
+
+Program to Get the Current Day
+
+```javascript
+const date = new Date();
+
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+const day = days[date.getDay()];
+
+console.log("Today is: " + day);
+
+// Output: Today is: Friday
+```
+
+Program to Get the Current Month
+
+```javascript
+const date = new Date();
+
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+const month = months[date.getMonth()];
+
+console.log("Current month: " + month);
+
+// Output: Current month: June
+```
+
+Program to Get the Current Year
+
+```javascript
+const date = new Date();
+
+const year = date.getFullYear();
+
+console.log("Current year: " + year);
+
+// Output: Current year: 2024
+```
+
 ## Snippets
 
 Here are a few JavaScript snippets that you might find useful:
@@ -4546,11 +7087,176 @@ Here are a few JavaScript snippets that you might find useful:
     console.log('Username:', storedUsername);
     ```
 
+11. **Error Handling:**
+
+    ```javascript
+    try {
+        // Code that may throw an error
+        throw new Error('Something went wrong');
+    } catch (error) {
+        console.error('Error:', error.message);
+    }
+    ```
+
+12. **Regular Expression:**
+
+    ```javascript
+    let pattern = /hello/i; // Case-insensitive match for 'hello'
+
+    let text = 'Hello, World!';
+    let result = pattern.test(text);
+
+    console.log(result); // Output: true
+    ```
+
+13. **Math Operations:**
+
+    ```javascript
+    let x = 10;
+
+    console.log(Math.sqrt(x)); // Square root
+
+    console.log(Math.pow(x, 2)); // x raised to the power of 2
+
+    console.log(Math.random()); // Random number between 0 and 1
+    ```
+
+14. **Date and Time:**
+
+    ```javascript
+    let date = new Date();
+
+    console.log(date.toDateString()); // Date in human-readable format
+
+    console.log(date.getHours()); // Current hour
+    ```
+
+15. **Set Timeout:**
+
+    ```javascript
+    setTimeout(function() {
+        console.log('Timeout completed');
+    }, 2000); // 2 seconds
+    ```
+
+16. **Set Interval:**
+
+    ```javascript
+    let counter = 0;
+
+    let interval = setInterval(function() {
+        console.log('Counter:', counter);
+        counter++;
+
+        if (counter === 5) {
+            clearInterval(interval);
+        }
+    }, 1000); // Every 1 second
+    ```
+
+17. **Fetch API:**
+
+    ```javascript
+    fetch('https://api.example.com/data')
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.error('Error fetching data:', error));
+    ```
+
+18. **Arrow Functions:**
+
+    ```javascript
+    let add = (x, y) => x + y;
+
+    console.log(add(5, 3)); // Output: 8
+    ```
+
+19. **Template Literals:**
+
+    ```javascript
+    let name = 'Alice';
+    let greeting = `Hello, ${name}!`;
+
+    console.log(greeting); // Output: Hello, Alice!
+    ```
+
+20. **Destructuring Assignment:**
+
+    ```javascript
+    let person = { name: 'John', age: 30 };
+
+    let { name, age } = person;
+
+    console.log(name, age); // Output: John 30
+    ```
+
+21. **Spread Operator:**
+
+    ```javascript
+    let numbers = [1, 2, 3];
+    let newNumbers = [...numbers, 4, 5];
+
+    console.log(newNumbers); // Output: [1, 2, 3, 4, 5]
+    ```
+
+22. **Promise:**
+
+    ```javascript
+    let promise = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('Promise resolved');
+        }, 2000);
+    });
+
+    promise.then(result => console.log(result));
+    ```
+
+23. **Map Function:**
+
+    ```javascript
+    let numbers = [1, 2, 3, 4, 5];
+
+    let squaredNumbers = numbers.map(num => num * num);
+
+    console.log(squaredNumbers); // Output: [1, 4, 9, 16, 25]
+    ```
+
+24. **Filter Function:**
+
+    ```javascript
+    let numbers = [1, 2, 3, 4, 5];
+
+    let evenNumbers = numbers.filter(num => num % 2 === 0);
+
+    console.log(evenNumbers); // Output: [2, 4]
+    ```
+
+25. **Reduce Function:**
+
+    ```javascript
+    let numbers = [1, 2, 3, 4, 5];
+
+    let sum = numbers.reduce((acc, num) => acc + num, 0);
+
+    console.log(sum); // Output: 15
+    ```
+
+26. **Find Function:**
+
+    ```javascript
+    let numbers = [1, 2, 3, 4, 5];
+
+    let foundNumber = numbers.find(num => num > 3);
+
+    console.log(foundNumber); // Output: 4
+    ```
+
 ## Short Hands
 
 JavaScript offers several shorthand techniques to write code more concisely and improve readability. Here are some common JavaScript shorthand techniques:
 
 1. **Ternary Operator:**
+
    Instead of using an `if-else` statement, you can use the ternary operator for concise conditional expressions.
 
    ```javascript
@@ -4567,6 +7273,7 @@ JavaScript offers several shorthand techniques to write code more concisely and 
    ```
 
 2. **Nullish Coalescing Operator (`??`):**
+
    This operator provides a concise way to provide a default value if a variable is null or undefined.
 
    ```javascript
@@ -4583,6 +7290,7 @@ JavaScript offers several shorthand techniques to write code more concisely and 
    ```
 
 3. **Arrow Functions:**
+
    Arrow functions provide a concise syntax for writing function expressions.
 
    ```javascript
@@ -4596,6 +7304,7 @@ JavaScript offers several shorthand techniques to write code more concisely and 
    ```
 
 4. **Template Literals:**
+
    Template literals make it easier to concatenate strings and include variables within strings.
 
    ```javascript
@@ -4607,6 +7316,7 @@ JavaScript offers several shorthand techniques to write code more concisely and 
    ```
 
 5. **Object Property Shorthand:**
+
    When creating an object with properties that have the same name as the variables being assigned, you can use shorthand notation.
 
    ```javascript
@@ -4626,6 +7336,7 @@ JavaScript offers several shorthand techniques to write code more concisely and 
    ```
 
 6. **Destructuring Assignment:**
+
    Destructuring allows you to extract values from arrays or objects and assign them to variables in a concise way.
 
    ```javascript
@@ -4637,6 +7348,548 @@ JavaScript offers several shorthand techniques to write code more concisely and 
    // Shorthand
    const { name, age } = { name: 'John', age: 30 };
    ```
+
+7. **Default Parameters:**
+
+    Default parameters allow you to specify default values for function parameters.
+  
+    ```javascript
+    // Long form
+    function greet(name) {
+        if (name === undefined) {
+            name = 'World';
+        }
+        console.log('Hello, ' + name + '!');
+    }
+  
+    // Shorthand
+    function greet(name = 'World') {
+        console.log('Hello, ' + name + '!');
+    }
+    ```
+
+8. **Array and Object Spread:**
+
+    The spread operator (`...`) allows you to spread the elements of an array or object into another array or object.
+
+    ```javascript
+    // Long form
+    const numbers = [1, 2, 3];
+    const newNumbers = [...numbers, 4, 5];
+
+    // Shorthand
+    const newNumbers = [...numbers, 4, 5];
+    ```
+
+    ```javascript
+    // Long form
+    const person = { name: 'John', age: 30 };
+
+    const updatedPerson = {
+        name: person.name,
+        age: person.age,
+        profession: 'Developer
+    };
+
+    // Shorthand
+    const updatedPerson = { ...person, profession: 'Developer };
+    ```
+
+9. **Array Destructuring:**
+
+    Array destructuring allows you to extract values from arrays and assign them to variables in a concise way.
+
+    ```javascript
+    // Long form
+    const numbers = [1, 2, 3];
+    const first = numbers[0];
+    const second = numbers[1];
+
+    // Shorthand
+    const [first, second] = [1, 2, 3];
+    ```
+
+10. **Object Destructuring:**
+
+    Object destructuring allows you to extract values from objects and assign them to variables in a concise way.
+
+    ```javascript
+    // Long form
+    const person = { name: 'John', age: 30 };
+    const name = person.name;
+    const age = person.age;
+
+    // Shorthand
+    const { name, age } = { name: 'John', age: 30 };
+    ```
+
+11. **Short-Circuit Evaluation:**
+
+    Short-circuit evaluation allows you to write concise conditional expressions using logical operators.
+
+    ```javascript
+    // Long form
+    let result;
+    if (condition) {
+        result = value;
+    } else {
+        result = 'default';
+    }
+
+    // Shorthand
+    let result = condition && value || 'default';
+    ```
+
+    ```javascript
+    // Long form
+    let result;
+    if (condition) {
+        result = 'true';
+    } else {
+        result = 'false';
+    }
+
+    // Shorthand
+    let result = condition ? 'true' : 'false';
+    ```
+
+    ```javascript
+    // Long form
+    let result;
+
+    if (value !== null && value !== undefined) {
+        result = value;
+    } else {
+        result = 'default';
+    }
+
+    // Shorthand
+    let result = value ?? 'default';
+    ```
+
+12. **Logical Assignment Operators:**
+
+    Logical assignment operators provide a concise way to update a variable based on a condition.
+
+    ```javascript
+    // Long form
+    let count = 0;
+    if (count === 0) {
+        count = 1;
+    }
+
+    // Shorthand
+    let count = 0;
+    count ||= 1;
+    ```
+
+    ```javascript
+    // Long form
+    let count = 0;
+    if (count === 0) {
+        count += 1;
+    }
+
+    // Shorthand
+    let count = 0;
+    count += 1;
+    ```
+
+13. **Optional Chaining:**
+
+    Optional chaining allows you to access nested properties of an object without having to check for the existence of each property.
+
+    ```javascript
+    // Long form
+    let result;
+    if (data && data.user && data.user.name) {
+        result = data.user.name;
+    } else {
+        result = 'Unknown';
+    }
+
+    // Shorthand
+    let result = data?.user?.name ?? 'Unknown';
+    ```
+
+14. **Promise Chaining:**
+
+    Promise chaining allows you to chain multiple asynchronous operations in a concise way.
+
+    ```javascript
+    // Long form
+    fetch('https://api.example.com/data')
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            return fetch('https://api.example.com/other-data');
+        })
+        .then(response => response.json())
+        .then(otherData => console.log(otherData))
+        .catch(error => console.error('Error:', error));
+
+    // Shorthand
+    fetch('https://api.example.com/data')
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .then(() => fetch('https://api.example.com/other-data'))
+        .then(response => response.json())
+        .then(otherData => console.log(otherData))
+        .catch(error => console.error('Error:', error));
+    ```
+
+15. **Async/Await:**
+
+    Async/await provides a more concise way to work with asynchronous code compared to promises.
+
+    ```javascript
+    // Long form
+    function fetchData() {
+        return fetch('https://api.example.com/data')
+            .then(response => response.json());
+    }
+
+    fetchData()
+        .then(data => console.log(data))
+        .catch(error => console.error('Error:', error));
+
+    // Shorthand
+    async function fetchData() {
+        try {
+            let response = await fetch('https://api.example.com/data');
+            let data = await response.json();
+            console.log(data);
+        } catch (error) {
+            console.error('Error:', error);
+        }
+    }
+
+    fetchData();
+    ```
+
+16. **Array Methods:**
+
+    JavaScript array methods provide a concise way to perform common operations on arrays.
+
+    ```javascript
+    // Long form
+    const numbers = [1, 2, 3, 4, 5];
+    const squaredNumbers = numbers.map(num => num * num);
+
+    // Shorthand
+    const squaredNumbers = [1, 2, 3, 4, 5].map(num => num * num);
+    ```
+
+    ```javascript
+    // Long form
+    const numbers = [1, 2, 3, 4, 5];
+    const evenNumbers = numbers.filter(num => num % 2 === 0);
+
+    // Shorthand
+    const evenNumbers = [1, 2, 3, 4, 5].filter(num => num % 2 === 0);
+    ```
+
+    ```javascript
+    // Long form
+    const numbers = [1, 2, 3, 4, 5];
+    const sum = numbers.reduce((acc, num) => acc + num, 0);
+
+    // Shorthand
+    const sum = [1, 2, 3, 4, 5].reduce((acc, num) => acc + num, 0);
+    ```
+
+    ```javascript
+    // Long form
+    const numbers = [1, 2, 3, 4, 5];
+    const foundNumber = numbers.find(num => num > 3);
+
+    // Shorthand
+    const foundNumber = [1, 2, 3, 4, 5].find(num => num > 3);
+    ```
+
+17. **Object Methods:**
+
+    JavaScript object methods provide a concise way to perform common operations on objects.
+
+    ```javascript
+    // Long form
+    const person = { name: 'John', age: 30 };
+    const keys = Object.keys(person);
+
+    // Shorthand
+    const keys = Object.keys({ name: 'John', age: 30 });
+    ```
+
+    ```javascript
+    // Long form
+    const person = { name: 'John', age: 30 };
+    const values = Object.values(person);
+
+    // Shorthand
+    const values = Object.values({ name: 'John', age: 30 });
+    ```
+
+    ```javascript
+    // Long form
+    const person = { name: 'John', age: 30 };
+    const entries = Object.entries(person);
+
+    // Shorthand
+    const entries = Object.entries({ name: 'John', age: 30 });
+    ```
+
+    ```javascript
+    // Long form
+    const person = { name: 'John', age: 30 };
+    const copy = Object.assign({}, person);
+
+    // Shorthand
+    const copy = { ...{ name: 'John', age: 30 } };
+    ```
+
+18. **Function Methods:**
+
+    JavaScript function methods provide a concise way to work with functions.
+
+    ```javascript
+    // Long form
+    function greet(name) {
+        console.log('Hello, ' + name + '!');
+    }
+
+    // Shorthand
+    const greet = name => console.log('Hello, ' + name + '!');
+    ```
+
+    ```javascript
+    // Long form
+    function add(x, y) {
+        return x + y;
+    }
+
+    // Shorthand
+    const add = (x, y) => x + y;
+    ```
+
+    ```javascript
+    // Long form
+    function multiply(x, y) {
+        return x * y;
+    }
+
+    // Shorthand
+    const multiply = (x, y) => x * y;
+    ```
+
+    ```javascript
+    // Long form
+    function divide(x, y) {
+        return x / y;
+    }
+
+    // Shorthand
+    const divide = (x, y) => x / y;
+    ```
+
+19. **String Methods:**
+
+    JavaScript string methods provide a concise way to work with strings.
+
+    ```javascript
+    // Long form
+    const text = 'Hello, World!';
+    const trimmedText = text.trim();
+
+    // Shorthand
+    const trimmedText = '  Hello, World!  '.trim();
+    ```
+
+    ```javascript
+    // Long form
+    const text = 'Hello, World!';
+    const uppercaseText = text.toUpperCase();
+
+    // Shorthand
+    const uppercaseText = 'Hello, World!'.toUpperCase();
+    ```
+
+    ```javascript
+    // Long form
+    const text = 'Hello, World!';
+    const lowercaseText = text.toLowerCase();
+
+    // Shorthand
+    const lowercaseText = 'Hello, World!'.toLowerCase();
+    ```
+
+    ```javascript
+    // Long form
+    const text = 'Hello, World!';
+    const length = text.length;
+
+    // Shorthand
+    const length = 'Hello, World!'.length;
+    ```
+
+20. **Number Methods:**
+
+    JavaScript number methods provide a concise way to work with numbers.
+
+    ```javascript
+    // Long form
+    const number = 3.14159;
+    const roundedNumber = Math.round(number);
+
+    // Shorthand
+    const roundedNumber = Math.round(3.14159);
+    ```
+
+    ```javascript
+    // Long form
+    const number = 3.14159;
+    const squaredNumber = Math.pow(number, 2);
+
+    // Shorthand
+    const squaredNumber = Math.pow(3.14159, 2);
+    ```
+
+    ```javascript
+    // Long form
+    const number = 3.14159;
+    const squareRoot = Math.sqrt(number);
+
+    // Shorthand
+    const squareRoot = Math.sqrt(3.14159);
+    ```
+
+    ```javascript
+    // Long form
+    const number = 3.14159;
+    const absoluteValue = Math.abs(number);
+
+    // Shorthand
+    const absoluteValue = Math.abs(3.14159);
+    ```
+
+21. **Date Methods:**
+
+    JavaScript date methods provide a concise way to work with dates.
+
+    ```javascript
+    // Long form
+    const date = new Date();
+    const day = date.getDate();
+
+    // Shorthand
+    const day = new Date().getDate();
+    ```
+
+    ```javascript
+    // Long form
+    const date = new Date();
+    const month = date.getMonth();
+
+    // Shorthand
+    const month = new Date().getMonth();
+    ```
+
+    ```javascript
+    // Long form
+    const date = new Date();
+    const year = date.getFullYear();
+
+    // Shorthand
+    const year = new Date().getFullYear();
+    ```
+
+    ```javascript
+    // Long form
+    const date = new Date();
+    const hours = date.getHours();
+
+    // Shorthand
+    const hours = new Date().getHours();
+    ```
+
+22. **Math Methods:**
+
+    JavaScript math methods provide a concise way to perform mathematical operations.
+
+    ```javascript
+    // Long form
+    const number = 3.14159;
+    const roundedNumber = Math.round(number);
+
+    // Shorthand
+    const roundedNumber = Math.round(3.14159);
+    ```
+
+    ```javascript
+    // Long form
+    const number = 3.14159;
+    const squaredNumber = Math.pow(number, 2);
+
+    // Shorthand
+    const squaredNumber = Math.pow(3.14159, 2);
+    ```
+
+    ```javascript
+    // Long form
+    const number = 3.14159;
+    const squareRoot = Math.sqrt(number);
+
+    // Shorthand
+    const squareRoot = Math.sqrt(3.14159);
+    ```
+
+    ```javascript
+    // Long form
+    const number = 3.14159;
+    const absoluteValue = Math.abs(number);
+
+    // Shorthand
+    const absoluteValue = Math.abs(3.14159);
+    ```
+
+23. **Array Methods:**
+
+    JavaScript array methods provide a concise way to perform common operations on arrays.
+
+    ```javascript
+    // Long form
+    const numbers = [1, 2, 3, 4, 5];
+    const squaredNumbers = numbers.map(num => num * num);
+
+    // Shorthand
+    const squaredNumbers = [1, 2, 3, 4, 5].map(num => num * num);
+    ```
+
+    ```javascript
+    // Long form
+    const numbers = [1, 2, 3, 4, 5];
+    const evenNumbers = numbers.filter(num => num % 2 === 0);
+
+    // Shorthand
+    const evenNumbers = [1, 2, 3, 4, 5].filter(num => num % 2 === 0);
+    ```
+
+    ```javascript
+    // Long form
+    const numbers = [1, 2, 3, 4, 5];
+    const sum = numbers.reduce((acc, num) => acc + num, 0);
+
+    // Shorthand
+    const sum = [1, 2, 3, 4, 5].reduce((acc, num) => acc + num, 0);
+    ```
+
+    ```javascript
+    // Long form
+    const numbers = [1, 2, 3, 4, 5];
+    const foundNumber = numbers.find(num => num > 3);
+
+    // Shorthand
+    const foundNumber = [1, 2, 3, 4, 5].find(num => num > 3);
+    ```
 
 ## List of GitHub Repositories to learn JavaScript
 
