@@ -10,7 +10,7 @@ This repository contains a list of JavaScript concepts, functions, methods, and 
 
 ![GitHub](https://img.shields.io/github/license/manthanank/learn-javascript)
 
-## Contents
+## Table of Contents
 
 - [Introduction](#introduction)
 - [Add JavaScript](#add-javascript)
@@ -279,9 +279,23 @@ const c = 1; // Declare a read-only variable z with the value 15 (block-level sc
 
 ## Data Types
 
+There are two types of data types in JavaScript:
+
+- **Primitive Data Types**
+- **Non-Primitive Data Types**
+
 ### 1. Primitive Data Types
 
 **Primitive data types** are the most basic data types in JavaScript. They are immutable (cannot be changed) and are copied by value.
+
+**Primitive data types** include:
+
+- **numbers**
+- **strings**
+- **booleans**
+- **null**
+- **undefined**
+- **symbol**
 
 **numbers** -
 
@@ -322,6 +336,15 @@ let a = Symbol();
 
 ### 2. Non Primitive Data Types
 
+**Non-primitive data types** are complex data types that are mutable (can be changed) and are copied by reference.
+
+**Non-primitive data types** include:
+
+- **objects**
+- **arrays**
+- **functions**
+- **regexp**
+
 **functions** -
 
 ```javascript
@@ -356,9 +379,25 @@ Example
 let pattern = /w3schools/i;
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 ## Operators
 
 Operators are used to perform operations on variables and values.
+
+There are different types of operators in JavaScript:
+
+- **Arithmetic Operators**
+- **Logical Operators**
+- **Comparison Operators**
+- **Bitwise Operators**
+- **Type Operators**
+- **Assignment Operators**
+- **Conditional (Ternary) Operator**
+- **Nullish Coalescing Operator(??)**
+- **Optional Chaining Operator(?.)**
+- **delete Operator**
+- **Spread (...) Operator**
 
 ### Arithmetic Operators
 
@@ -633,6 +672,8 @@ let numbers = [1, 2, 3];
 console.log(sum(...numbers)); // Output: 6
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 ## Boolean
 
 JavaScript booleans can have one of two values: true or false.
@@ -678,6 +719,8 @@ let value = true;
 
 console.log(value.valueOf()); // Output: true
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 ## Object
 
@@ -752,6 +795,8 @@ let person = {
 console.log(person.valueOf()); // Output: {firstName: "Manthan", lastName: "Ank"}
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 ## Arrays
 
 Arrays are used to store multiple values in a single variable.
@@ -763,6 +808,30 @@ const letters = ['a', 'b', 'c'];
 ### Array Methods
 
 The following are some of the most commonly used array methods in JavaScript:
+
+- **concat()**
+- **constructor**
+- **copyWithin()**
+- **entries()**
+- **every()**
+- **fill()**
+- **filter()**
+- **find()**
+- **findIndex()**
+- **forEach()**
+- **from()**
+- **includes()**
+- **indexOf()**
+- **isArray()**
+- **join()**
+- **keys()**
+- **lastIndexOf()**
+- **length**
+- **map()**
+- **pop()**
+- **prototype**
+- **push()**
+- **reduce()**
 
 **concat()** - Joins arrays and returns an array with the joined arrays
 
@@ -874,9 +943,13 @@ array.forEach(value => {
 **from()** - Creates an array from an object
 
 ```javascript
-let array = Array.from('hello');
+let array = 'hello';
 
-console.log(array); // Output: ["h", "e", "l", "l", "o"]
+let newArray = Array.from(array);
+
+console.log(array); // Output: "hello"
+
+console.log(newArray); // Output: ["h", "e", "l", "l", "o"]
 ```
 
 **includes()** - Check if an array contains the specified element
@@ -886,7 +959,10 @@ let array = [1, 2, 3, 4, 5];
 
 let result = array.includes(3);
 
+console.log(array); // Output: [1, 2, 3, 4, 5]
+
 console.log(result); // Output: true
+console.log(array.includes(6)); // Output: false
 ```
 
 **indexOf()** - Search the array for an element and returns its position
@@ -896,7 +972,10 @@ let array = [1, 2, 3, 4, 5];
 
 let index = array.indexOf(3);
 
+console.log(array); // Output: [1, 2, 3, 4, 5]
+
 console.log(index); // Output: 2
+console.log(array.indexOf(6)); // Output: -1
 ```
 
 **isArray()** - Checks whether an object is an array
@@ -906,7 +985,10 @@ let array = [1, 2, 3, 4, 5];
 
 let result = Array.isArray(array);
 
+console.log(array); // Output: [1, 2, 3, 4, 5]
+
 console.log(result); // Output: true
+console.log(Array.isArray('hello')); // Output: false
 ```
 
 **join()** - Joins all elements of an array into a string
@@ -915,6 +997,8 @@ console.log(result); // Output: true
 let array = ['a', 'b', 'c'];
 
 let result = array.join();
+
+console.log(array); // Output: ["a", "b", "c"]
 
 console.log(result); // Output: "a,b,c"
 ```
@@ -926,6 +1010,8 @@ let array = ['a', 'b', 'c'];
 
 let iterator = array.keys();
 
+console.log(array); // Output: ["a", "b", "c"]
+
 console.log(iterator.next().value); // Output: 0
 ```
 
@@ -936,6 +1022,8 @@ let array = [1, 2, 3, 4, 5, 3];
 
 let index = array.lastIndexOf(3);
 
+console.log(array); // Output: [1, 2, 3, 4, 5, 3]
+
 console.log(index); // Output: 5
 ```
 
@@ -943,6 +1031,8 @@ console.log(index); // Output: 5
 
 ```javascript
 let array = ['a', 'b', 'c'];
+
+console.log(array); // Output: ["a", "b", "c"]
 
 console.log(array.length); // Output: 3
 ```
@@ -954,6 +1044,8 @@ let array = [1, 2, 3, 4, 5];
 
 let newArray = array.map(value => value * 2);
 
+console.log(array); // Output: [1, 2, 3, 4, 5]
+
 console.log(newArray); // Output: [2, 4, 6, 8, 10]
 ```
 
@@ -964,23 +1056,21 @@ let array = ['a', 'b', 'c'];
 
 let element = array.pop();
 
+console.log(array); // Output: ["a", "b"]
+
 console.log(element); // Output: "c"
 ```
 
 **prototype** - Allows you to add properties and methods to an Array object
 
 ```javascript
-Array.prototype.sum = function() {
-  let total = 0;
-  for (let i = 0; i < this.length; i++) {
-    total += this[i];
-  }
-  return total;
-};
+let array = ['a', 'b', 'c'];
 
-let array = [1, 2, 3, 4, 5];
+Array.prototype.age = 25;
 
-console.log(array.sum()); // Output: 15
+console.log(array); // Output: ["a", "b", "c"]
+
+console.log(array.age); // Output: 25
 ```
 
 **push()** - Adds new elements to the end of an array, and returns the new length
@@ -988,7 +1078,9 @@ console.log(array.sum()); // Output: 15
 ```javascript
 let array = ['a', 'b', 'c'];
 
-let length = array.push('d');
+let length = array.push('d', 'e');
+
+console.log(array); // Output: ["a", "b", "c", "d", "e"]
 
 console.log(length); // Output: 4
 ```
@@ -999,6 +1091,8 @@ console.log(length); // Output: 4
 let array = [1, 2, 3, 4, 5];
 
 let total = array.reduce((accumulator, value) => accumulator + value, 0);
+
+console.log(array); // Output: [1, 2, 3, 4, 5]
 
 console.log(total); // Output: 15
 ```
