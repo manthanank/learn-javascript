@@ -86,9 +86,9 @@ This repository contains a list of JavaScript concepts, functions, methods, and 
 - [Performace](#performance)
 - [ES6 Featues](#es6-features)
 - [ES5 Features](#es5-features)
-- [Examples](#examples)
 - [Snippets](#snippets)
 - [Short Hands](#short-hands)
+- [Interview Questions](#interview-questions)
 - [List of GitHub Repositories to learn JavaScript](#list-of-github-repositories-to-learn-javascript)
 - [List of Websites to learn JavaScript](#list-of-websites-to-learn-javascript)
 - [List of Books to learn JavaScript](#list-of-books-to-learn-javascript)
@@ -448,6 +448,7 @@ let y = false;
 console.log(x && y); // Output: false
 console.log(x || y); // Output: true
 console.log(!x); // Output: false
+console.log(!y); // Output: true
 ```
 
 ### Comparison Operators
@@ -581,13 +582,14 @@ Syntax
 let x = 10;
 let y = 5;
 
-let max = (x > y) ? x : y;
-console.log(max); // Output: 10
+let result = (x > y) ? "x is greater than y" : "x is less than y";
+
+console.log(result); // Output: "x is greater than y"
 ```
 
 ### Nullish Coalescing Operator(??)
 
-The nullish coalescing operator (??) is a logical operator that returns its right-hand side operand when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand.
+The nullish coalescing operator (??) is a new operator in JavaScript that returns the right-hand operand when the left-hand operand is null or undefined.
 
 Example
 
@@ -596,9 +598,9 @@ let x = null;
 let y = undefined;
 let z = 'Hello';
 
-console.log(x ?? 'world'); // Output: "world"
-console.log(y ?? 'world'); // Output: "world"
-console.log(z ?? 'world'); // Output: "Hello"
+console.log(x ?? 'Default Value'); // Output: "Default Value"
+console.log(y ?? 'Default Value'); // Output: "Default Value"
+console.log(z ?? 'Default Value'); // Output: "Hello"
 ```
 
 ### Optional Chaining Operator(?.)
@@ -618,9 +620,8 @@ let person = {
   }
 };
 
-console.log(person.name); // Output: "John"
-console.log(person.address.city); // Output: "New York"
-console.log(person.address.zipCode?.code); // Output: undefined
+console.log(person.address?.city); // Output: "New York"
+console.log(person.address?.zipCode); // Output: undefined
 ```
 
 ### delete Operator
@@ -636,8 +637,10 @@ const person = {
   age:25,
   eyeColor:"black"
 };
-delete person.age; // Deleted the "age" property from the "person" object
-console.log(person.age); // Output: undefined
+
+delete person.age;
+
+console.log(person); // Output: {firstName: "Manthan", lastName: "Ank", eyeColor: "black"}
 ```
 
 ### Spread (...) Operator
@@ -649,20 +652,13 @@ Example
 ```javascript
 // Array literal
 let numbers = [1, 2, 3];
-let moreNumbers = [...numbers, 4, 5, 6];
-console.log(moreNumbers); // Output: [1, 2, 3, 4, 5, 6]
+let newNumbers = [...numbers, 4, 5, 6];
+console.log(newNumbers); // Output: [1, 2, 3, 4, 5, 6]
 
 // Object literal
-let person = {
-  name: 'John',
-  age: 30
-};
-let employee = {
-  ...person,
-  salary: 50000,
-  position: 'Manager'
-};
-console.log(employee); // Output: {name: "John", age: 30, salary: 50000, position: "Manager"}
+let person = {name: 'John', age: 30};
+let newPerson = {...person, city: 'New York', country: 'USA'};
+console.log(newPerson); // Output: {name: "John", age: 30, city: "New York", country: "USA"}
 
 // Function call
 function sum(a, b, c) {
@@ -670,6 +666,11 @@ function sum(a, b, c) {
 }
 let numbers = [1, 2, 3];
 console.log(sum(...numbers)); // Output: 6
+
+// Copy an array
+let numbers = [1, 2, 3];
+let newNumbers = [...numbers];
+console.log(newNumbers); // Output: [1, 2, 3]
 ```
 
 [Back to Top⤴️](#table-of-contents)
@@ -686,7 +687,7 @@ let value = true;
 
 The following are some of the most commonly used boolean methods and properties in JavaScript:
 
-constructor - Returns the function that created JavaScript's Boolean prototype
+**constructor** - Returns the function that created JavaScript's Boolean prototype
 
 ```javascript
 let value = true;
@@ -694,7 +695,7 @@ let value = true;
 console.log(value.constructor); // Output: ƒ Boolean() { [native code] }
 ```
 
-prototype - Allows you to add properties and methods to the Boolean prototype
+**prototype** - Allows you to add properties and methods to the Boolean prototype
 
 ```javascript
 Boolean.prototype.age = 25;
@@ -704,7 +705,7 @@ let value = true;
 console.log(value.age); // Output: 25
 ```
 
-toString() - Converts a boolean value to a string, and returns the result
+**toString()** - Converts a boolean value to a string, and returns the result
 
 ```javascript
 let value = true;
@@ -712,7 +713,7 @@ let value = true;
 console.log(value.toString()); // Output: "true"
 ```
 
-valueOf() - Returns the primitive value of a boolean
+**valueOf()** - Returns the primitive value of a boolean
 
 ```javascript
 let value = true;
@@ -737,7 +738,7 @@ const person = {
 
 The following are some of the most commonly used object methods and properties in JavaScript:
 
-constructor - Returns the function that created an object's prototype
+**constructor** - Returns the function that created an object's prototype
 
 ```javascript
 let person = {
@@ -748,7 +749,7 @@ let person = {
 console.log(person.constructor); // Output: ƒ Object() { [native code] }
 ```
 
-keys() - Returns an Array Iterator object with the keys of an object
+**keys()** - Returns an Array Iterator object with the keys of an object
 
 ```javascript
 const person = {
@@ -760,7 +761,7 @@ let keys = Object.keys(person);
 console.log(keys); // Output: ["firstName", "lastName"]
 ```
 
-prototype - Let you to add properties and methods to JavaScript objects
+**prototype** - Let you to add properties and methods to JavaScript objects
 
 ```javascript
 let person = {
@@ -773,7 +774,7 @@ Object.prototype.age = 25;
 console.log(person.age); // Output: 25
 ```
 
-toString() - Converts an object to a string and returns the result
+**toString()** - Converts an object to a string and returns the result
 
 ```javascript
 let person = {
@@ -784,7 +785,7 @@ let person = {
 console.log(person.toString()); // Output: "[object Object]"
 ```
 
-valueOf() - Returns the primitive value of an object
+**valueOf()** - Returns the primitive value of an object
 
 ```javascript
 let person = {
@@ -5013,7 +5014,924 @@ const arr = [
 console.log(arr); // Output: [1, 2, 3]
 ```
 
-## Examples
+[Back to Top⤴️](#table-of-contents)
+
+## Snippets
+
+Here are a few JavaScript snippets that you might find useful:
+
+1. **Hello World:**
+
+   ```javascript
+   console.log("Hello, World!");
+   ```
+
+2. **Variable Declaration:**
+
+   ```javascript
+   let variableName = "Some value";
+   ```
+
+3. **Conditional Statement (if-else):**
+
+   ```javascript
+   let condition = true;
+
+   if (condition) {
+       console.log("Condition is true");
+   } else {
+       console.log("Condition is false");
+   }
+   ```
+
+4. **Loop (for):**
+
+   ```javascript
+   for (let i = 0; i < 5; i++) {
+       console.log(i);
+   }
+   ```
+
+5. **Function Declaration:**
+
+   ```javascript
+   function greet(name) {
+       console.log("Hello, " + name + "!");
+   }
+
+   greet("John");
+   ```
+
+6. **Array Manipulation:**
+
+   ```javascript
+   let fruits = ['Apple', 'Banana', 'Orange'];
+
+   // Add an element to the end
+   fruits.push('Mango');
+
+   // Remove the last element
+   fruits.pop();
+
+   // Access elements by index
+   console.log(fruits[1]);
+   ```
+
+7. **Object Declaration:**
+
+   ```javascript
+   let person = {
+       name: 'John',
+       age: 25,
+       profession: 'Developer'
+   };
+
+   // Accessing object properties
+   console.log(person.name);
+   ```
+
+8. **Async/Await:**
+
+   ```javascript
+   async function fetchData() {
+       try {
+           let response = await fetch('https://api.example.com/data');
+           let data = await response.json();
+           console.log(data);
+       } catch (error) {
+           console.error('Error fetching data:', error);
+       }
+   }
+
+   fetchData();
+   ```
+
+9. **Event Handling:**
+
+   ```javascript
+   let button = document.getElementById('myButton');
+
+   button.addEventListener('click', function() {
+       console.log('Button clicked!');
+   });
+   ```
+
+10. **LocalStorage:**
+
+    ```javascript
+    // Save data to local storage
+    localStorage.setItem('username', 'JohnDoe');
+
+    // Retrieve data from local storage
+    let storedUsername = localStorage.getItem('username');
+    console.log('Username:', storedUsername);
+    ```
+
+11. **Error Handling:**
+
+    ```javascript
+    try {
+        // Code that may throw an error
+        throw new Error('Something went wrong');
+    } catch (error) {
+        console.error('Error:', error.message);
+    }
+    ```
+
+12. **Regular Expression:**
+
+    ```javascript
+    let pattern = /hello/i; // Case-insensitive match for 'hello'
+
+    let text = 'Hello, World!';
+    let result = pattern.test(text);
+
+    console.log(result); // Output: true
+    ```
+
+13. **Math Operations:**
+
+    ```javascript
+    let x = 10;
+
+    console.log(Math.sqrt(x)); // Square root
+
+    console.log(Math.pow(x, 2)); // x raised to the power of 2
+
+    console.log(Math.random()); // Random number between 0 and 1
+    ```
+
+14. **Date and Time:**
+
+    ```javascript
+    let date = new Date();
+
+    console.log(date.toDateString()); // Date in human-readable format
+
+    console.log(date.getHours()); // Current hour
+    ```
+
+15. **Set Timeout:**
+
+    ```javascript
+    setTimeout(function() {
+        console.log('Timeout completed');
+    }, 2000); // 2 seconds
+    ```
+
+16. **Set Interval:**
+
+    ```javascript
+    let counter = 0;
+
+    let interval = setInterval(function() {
+        console.log('Counter:', counter);
+        counter++;
+
+        if (counter === 5) {
+            clearInterval(interval);
+        }
+    }, 1000); // Every 1 second
+    ```
+
+17. **Fetch API:**
+
+    ```javascript
+    fetch('https://api.example.com/data')
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.error('Error fetching data:', error));
+    ```
+
+18. **Arrow Functions:**
+
+    ```javascript
+    let add = (x, y) => x + y;
+
+    console.log(add(5, 3)); // Output: 8
+    ```
+
+19. **Template Literals:**
+
+    ```javascript
+    let name = 'Alice';
+    let greeting = `Hello, ${name}!`;
+
+    console.log(greeting); // Output: Hello, Alice!
+    ```
+
+20. **Destructuring Assignment:**
+
+    ```javascript
+    let person = { name: 'John', age: 30 };
+
+    let { name, age } = person;
+
+    console.log(name, age); // Output: John 30
+    ```
+
+21. **Spread Operator:**
+
+    ```javascript
+    let numbers = [1, 2, 3];
+    let newNumbers = [...numbers, 4, 5];
+
+    console.log(newNumbers); // Output: [1, 2, 3, 4, 5]
+    ```
+
+22. **Promise:**
+
+    ```javascript
+    let promise = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('Promise resolved');
+        }, 2000);
+    });
+
+    promise.then(result => console.log(result));
+    ```
+
+23. **Map Function:**
+
+    ```javascript
+    let numbers = [1, 2, 3, 4, 5];
+
+    let squaredNumbers = numbers.map(num => num * num);
+
+    console.log(squaredNumbers); // Output: [1, 4, 9, 16, 25]
+    ```
+
+24. **Filter Function:**
+
+    ```javascript
+    let numbers = [1, 2, 3, 4, 5];
+
+    let evenNumbers = numbers.filter(num => num % 2 === 0);
+
+    console.log(evenNumbers); // Output: [2, 4]
+    ```
+
+25. **Reduce Function:**
+
+    ```javascript
+    let numbers = [1, 2, 3, 4, 5];
+
+    let sum = numbers.reduce((acc, num) => acc + num, 0);
+
+    console.log(sum); // Output: 15
+    ```
+
+26. **Find Function:**
+
+    ```javascript
+    let numbers = [1, 2, 3, 4, 5];
+
+    let foundNumber = numbers.find(num => num > 3);
+
+    console.log(foundNumber); // Output: 4
+    ```
+
+## Short Hands
+
+JavaScript offers several shorthand techniques to write code more concisely and improve readability. Here are some common JavaScript shorthand techniques:
+
+1. **Ternary Operator:**
+
+   Instead of using an `if-else` statement, you can use the ternary operator for concise conditional expressions.
+
+   ```javascript
+   // Long form
+   let result;
+   if (condition) {
+       result = 'true';
+   } else {
+       result = 'false';
+   }
+
+   // Shorthand
+   let result = condition ? 'true' : 'false';
+   ```
+
+2. **Nullish Coalescing Operator (`??`):**
+
+   This operator provides a concise way to provide a default value if a variable is null or undefined.
+
+   ```javascript
+   // Long form
+   let value;
+   if (value !== null && value !== undefined) {
+       result = value;
+   } else {
+       result = 'default';
+   }
+
+   // Shorthand
+   let result = value ?? 'default';
+   ```
+
+3. **Arrow Functions:**
+
+   Arrow functions provide a concise syntax for writing function expressions.
+
+   ```javascript
+   // Long form
+   function add(x, y) {
+       return x + y;
+   }
+
+   // Shorthand
+   const add = (x, y) => x + y;
+   ```
+
+4. **Template Literals:**
+
+   Template literals make it easier to concatenate strings and include variables within strings.
+
+   ```javascript
+   // Long form
+   const greeting = 'Hello, ' + name + '!';
+
+   // Shorthand
+   const greeting = `Hello, ${name}!`;
+   ```
+
+5. **Object Property Shorthand:**
+
+   When creating an object with properties that have the same name as the variables being assigned, you can use shorthand notation.
+
+   ```javascript
+   // Long form
+   const name = 'John';
+   const age = 30;
+   const user = {
+       name: name,
+       age: age
+   };
+
+   // Shorthand
+   const user = {
+       name,
+       age
+   };
+   ```
+
+6. **Destructuring Assignment:**
+
+   Destructuring allows you to extract values from arrays or objects and assign them to variables in a concise way.
+
+   ```javascript
+   // Long form
+   const person = { name: 'John', age: 30 };
+   const name = person.name;
+   const age = person.age;
+
+   // Shorthand
+   const { name, age } = { name: 'John', age: 30 };
+   ```
+
+7. **Default Parameters:**
+
+    Default parameters allow you to specify default values for function parameters.
+  
+    ```javascript
+    // Long form
+    function greet(name) {
+        if (name === undefined) {
+            name = 'World';
+        }
+        console.log('Hello, ' + name + '!');
+    }
+  
+    // Shorthand
+    function greet(name = 'World') {
+        console.log('Hello, ' + name + '!');
+    }
+    ```
+
+8. **Array and Object Spread:**
+
+    The spread operator (`...`) allows you to spread the elements of an array or object into another array or object.
+
+    ```javascript
+    // Long form
+    const numbers = [1, 2, 3];
+    const newNumbers = [...numbers, 4, 5];
+
+    // Shorthand
+    const newNumbers = [...numbers, 4, 5];
+    ```
+
+    ```javascript
+    // Long form
+    const person = { name: 'John', age: 30 };
+
+    const updatedPerson = {
+        name: person.name,
+        age: person.age,
+        profession: 'Developer
+    };
+
+    // Shorthand
+    const updatedPerson = { ...person, profession: 'Developer };
+    ```
+
+9. **Array Destructuring:**
+
+    Array destructuring allows you to extract values from arrays and assign them to variables in a concise way.
+
+    ```javascript
+    // Long form
+    const numbers = [1, 2, 3];
+    const first = numbers[0];
+    const second = numbers[1];
+
+    // Shorthand
+    const [first, second] = [1, 2, 3];
+    ```
+
+10. **Object Destructuring:**
+
+    Object destructuring allows you to extract values from objects and assign them to variables in a concise way.
+
+    ```javascript
+    // Long form
+    const person = { name: 'John', age: 30 };
+    const name = person.name;
+    const age = person.age;
+
+    // Shorthand
+    const { name, age } = { name: 'John', age: 30 };
+    ```
+
+11. **Short-Circuit Evaluation:**
+
+    Short-circuit evaluation allows you to write concise conditional expressions using logical operators.
+
+    ```javascript
+    // Long form
+    let result;
+    if (condition) {
+        result = value;
+    } else {
+        result = 'default';
+    }
+
+    // Shorthand
+    let result = condition && value || 'default';
+    ```
+
+    ```javascript
+    // Long form
+    let result;
+    if (condition) {
+        result = 'true';
+    } else {
+        result = 'false';
+    }
+
+    // Shorthand
+    let result = condition ? 'true' : 'false';
+    ```
+
+    ```javascript
+    // Long form
+    let result;
+
+    if (value !== null && value !== undefined) {
+        result = value;
+    } else {
+        result = 'default';
+    }
+
+    // Shorthand
+    let result = value ?? 'default';
+    ```
+
+12. **Logical Assignment Operators:**
+
+    Logical assignment operators provide a concise way to update a variable based on a condition.
+
+    ```javascript
+    // Long form
+    let count = 0;
+    if (count === 0) {
+        count = 1;
+    }
+
+    // Shorthand
+    let count = 0;
+    count ||= 1;
+    ```
+
+    ```javascript
+    // Long form
+    let count = 0;
+    if (count === 0) {
+        count += 1;
+    }
+
+    // Shorthand
+    let count = 0;
+    count += 1;
+    ```
+
+13. **Optional Chaining:**
+
+    Optional chaining allows you to access nested properties of an object without having to check for the existence of each property.
+
+    ```javascript
+    // Long form
+    let result;
+    if (data && data.user && data.user.name) {
+        result = data.user.name;
+    } else {
+        result = 'Unknown';
+    }
+
+    // Shorthand
+    let result = data?.user?.name ?? 'Unknown';
+    ```
+
+14. **Promise Chaining:**
+
+    Promise chaining allows you to chain multiple asynchronous operations in a concise way.
+
+    ```javascript
+    // Long form
+    fetch('https://api.example.com/data')
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            return fetch('https://api.example.com/other-data');
+        })
+        .then(response => response.json())
+        .then(otherData => console.log(otherData))
+        .catch(error => console.error('Error:', error));
+
+    // Shorthand
+    fetch('https://api.example.com/data')
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .then(() => fetch('https://api.example.com/other-data'))
+        .then(response => response.json())
+        .then(otherData => console.log(otherData))
+        .catch(error => console.error('Error:', error));
+    ```
+
+15. **Async/Await:**
+
+    Async/await provides a more concise way to work with asynchronous code compared to promises.
+
+    ```javascript
+    // Long form
+    function fetchData() {
+        return fetch('https://api.example.com/data')
+            .then(response => response.json());
+    }
+
+    fetchData()
+        .then(data => console.log(data))
+        .catch(error => console.error('Error:', error));
+
+    // Shorthand
+    async function fetchData() {
+        try {
+            let response = await fetch('https://api.example.com/data');
+            let data = await response.json();
+            console.log(data);
+        } catch (error) {
+            console.error('Error:', error);
+        }
+    }
+
+    fetchData();
+    ```
+
+16. **Array Methods:**
+
+    JavaScript array methods provide a concise way to perform common operations on arrays.
+
+    ```javascript
+    // Long form
+    const numbers = [1, 2, 3, 4, 5];
+    const squaredNumbers = numbers.map(num => num * num);
+
+    // Shorthand
+    const squaredNumbers = [1, 2, 3, 4, 5].map(num => num * num);
+    ```
+
+    ```javascript
+    // Long form
+    const numbers = [1, 2, 3, 4, 5];
+    const evenNumbers = numbers.filter(num => num % 2 === 0);
+
+    // Shorthand
+    const evenNumbers = [1, 2, 3, 4, 5].filter(num => num % 2 === 0);
+    ```
+
+    ```javascript
+    // Long form
+    const numbers = [1, 2, 3, 4, 5];
+    const sum = numbers.reduce((acc, num) => acc + num, 0);
+
+    // Shorthand
+    const sum = [1, 2, 3, 4, 5].reduce((acc, num) => acc + num, 0);
+    ```
+
+    ```javascript
+    // Long form
+    const numbers = [1, 2, 3, 4, 5];
+    const foundNumber = numbers.find(num => num > 3);
+
+    // Shorthand
+    const foundNumber = [1, 2, 3, 4, 5].find(num => num > 3);
+    ```
+
+17. **Object Methods:**
+
+    JavaScript object methods provide a concise way to perform common operations on objects.
+
+    ```javascript
+    // Long form
+    const person = { name: 'John', age: 30 };
+    const keys = Object.keys(person);
+
+    // Shorthand
+    const keys = Object.keys({ name: 'John', age: 30 });
+    ```
+
+    ```javascript
+    // Long form
+    const person = { name: 'John', age: 30 };
+    const values = Object.values(person);
+
+    // Shorthand
+    const values = Object.values({ name: 'John', age: 30 });
+    ```
+
+    ```javascript
+    // Long form
+    const person = { name: 'John', age: 30 };
+    const entries = Object.entries(person);
+
+    // Shorthand
+    const entries = Object.entries({ name: 'John', age: 30 });
+    ```
+
+    ```javascript
+    // Long form
+    const person = { name: 'John', age: 30 };
+    const copy = Object.assign({}, person);
+
+    // Shorthand
+    const copy = { ...{ name: 'John', age: 30 } };
+    ```
+
+18. **Function Methods:**
+
+    JavaScript function methods provide a concise way to work with functions.
+
+    ```javascript
+    // Long form
+    function greet(name) {
+        console.log('Hello, ' + name + '!');
+    }
+
+    // Shorthand
+    const greet = name => console.log('Hello, ' + name + '!');
+    ```
+
+    ```javascript
+    // Long form
+    function add(x, y) {
+        return x + y;
+    }
+
+    // Shorthand
+    const add = (x, y) => x + y;
+    ```
+
+    ```javascript
+    // Long form
+    function multiply(x, y) {
+        return x * y;
+    }
+
+    // Shorthand
+    const multiply = (x, y) => x * y;
+    ```
+
+    ```javascript
+    // Long form
+    function divide(x, y) {
+        return x / y;
+    }
+
+    // Shorthand
+    const divide = (x, y) => x / y;
+    ```
+
+19. **String Methods:**
+
+    JavaScript string methods provide a concise way to work with strings.
+
+    ```javascript
+    // Long form
+    const text = 'Hello, World!';
+    const trimmedText = text.trim();
+
+    // Shorthand
+    const trimmedText = '  Hello, World!  '.trim();
+    ```
+
+    ```javascript
+    // Long form
+    const text = 'Hello, World!';
+    const uppercaseText = text.toUpperCase();
+
+    // Shorthand
+    const uppercaseText = 'Hello, World!'.toUpperCase();
+    ```
+
+    ```javascript
+    // Long form
+    const text = 'Hello, World!';
+    const lowercaseText = text.toLowerCase();
+
+    // Shorthand
+    const lowercaseText = 'Hello, World!'.toLowerCase();
+    ```
+
+    ```javascript
+    // Long form
+    const text = 'Hello, World!';
+    const length = text.length;
+
+    // Shorthand
+    const length = 'Hello, World!'.length;
+    ```
+
+20. **Number Methods:**
+
+    JavaScript number methods provide a concise way to work with numbers.
+
+    ```javascript
+    // Long form
+    const number = 3.14159;
+    const roundedNumber = Math.round(number);
+
+    // Shorthand
+    const roundedNumber = Math.round(3.14159);
+    ```
+
+    ```javascript
+    // Long form
+    const number = 3.14159;
+    const squaredNumber = Math.pow(number, 2);
+
+    // Shorthand
+    const squaredNumber = Math.pow(3.14159, 2);
+    ```
+
+    ```javascript
+    // Long form
+    const number = 3.14159;
+    const squareRoot = Math.sqrt(number);
+
+    // Shorthand
+    const squareRoot = Math.sqrt(3.14159);
+    ```
+
+    ```javascript
+    // Long form
+    const number = 3.14159;
+    const absoluteValue = Math.abs(number);
+
+    // Shorthand
+    const absoluteValue = Math.abs(3.14159);
+    ```
+
+21. **Date Methods:**
+
+    JavaScript date methods provide a concise way to work with dates.
+
+    ```javascript
+    // Long form
+    const date = new Date();
+    const day = date.getDate();
+
+    // Shorthand
+    const day = new Date().getDate();
+    ```
+
+    ```javascript
+    // Long form
+    const date = new Date();
+    const month = date.getMonth();
+
+    // Shorthand
+    const month = new Date().getMonth();
+    ```
+
+    ```javascript
+    // Long form
+    const date = new Date();
+    const year = date.getFullYear();
+
+    // Shorthand
+    const year = new Date().getFullYear();
+    ```
+
+    ```javascript
+    // Long form
+    const date = new Date();
+    const hours = date.getHours();
+
+    // Shorthand
+    const hours = new Date().getHours();
+    ```
+
+22. **Math Methods:**
+
+    JavaScript math methods provide a concise way to perform mathematical operations.
+
+    ```javascript
+    // Long form
+    const number = 3.14159;
+    const roundedNumber = Math.round(number);
+
+    // Shorthand
+    const roundedNumber = Math.round(3.14159);
+    ```
+
+    ```javascript
+    // Long form
+    const number = 3.14159;
+    const squaredNumber = Math.pow(number, 2);
+
+    // Shorthand
+    const squaredNumber = Math.pow(3.14159, 2);
+    ```
+
+    ```javascript
+    // Long form
+    const number = 3.14159;
+    const squareRoot = Math.sqrt(number);
+
+    // Shorthand
+    const squareRoot = Math.sqrt(3.14159);
+    ```
+
+    ```javascript
+    // Long form
+    const number = 3.14159;
+    const absoluteValue = Math.abs(number);
+
+    // Shorthand
+    const absoluteValue = Math.abs(3.14159);
+    ```
+
+23. **Array Methods:**
+
+    JavaScript array methods provide a concise way to perform common operations on arrays.
+
+    ```javascript
+    // Long form
+    const numbers = [1, 2, 3, 4, 5];
+    const squaredNumbers = numbers.map(num => num * num);
+
+    // Shorthand
+    const squaredNumbers = [1, 2, 3, 4, 5].map(num => num * num);
+    ```
+
+    ```javascript
+    // Long form
+    const numbers = [1, 2, 3, 4, 5];
+    const evenNumbers = numbers.filter(num => num % 2 === 0);
+
+    // Shorthand
+    const evenNumbers = [1, 2, 3, 4, 5].filter(num => num % 2 === 0);
+    ```
+
+    ```javascript
+    // Long form
+    const numbers = [1, 2, 3, 4, 5];
+    const sum = numbers.reduce((acc, num) => acc + num, 0);
+
+    // Shorthand
+    const sum = [1, 2, 3, 4, 5].reduce((acc, num) => acc + num, 0);
+    ```
+
+    ```javascript
+    // Long form
+    const numbers = [1, 2, 3, 4, 5];
+    const foundNumber = numbers.find(num => num > 3);
+
+    // Shorthand
+    const foundNumber = [1, 2, 3, 4, 5].find(num => num > 3);
+    ```
+
+## Interview Questions
 
 Print only id's
 
@@ -5260,6 +6178,114 @@ var newObj = obj.printNum;
 newObj();
 
 // output: 10
+```
+
+Write a JavaScript program to remove duplicate items from an array.
+
+```javascript
+// using built-in Set
+let arr = ['CS001', 'TSW002','STS003','CS001','TSW002','STS004'];
+let uniqueArr = [...new Set(arr)];
+console.log(uniqueArr); // Output: ['CS001', 'TSW002', 'STS003', 'STS004']
+
+// using filter
+let arr = ['CS001', 'TSW002','STS003','CS001','TSW002','STS004'];
+let uniqueArr = arr.filter((item, index) => arr.indexOf(item) === index);
+console.log(uniqueArr); // Output: ['CS001', 'TSW002', 'STS003', 'STS004']
+
+// using reduce
+let arr = ['CS001', 'TSW002','STS003','CS001','TSW002','STS004'];
+let uniqueArr = arr.reduce((acc, item) => {
+  if (!acc.includes(item)) {
+    acc.push(item);
+  }
+  return acc;
+}, []);
+console.log(uniqueArr); // Output: ['CS001', 'TSW002', 'STS003', 'STS004']
+
+// using forEach
+let arr = ['CS001', 'TSW002','STS003','CS001','TSW002','STS004'];
+let uniqueArr = [];
+arr.forEach((item) => {
+  if (!uniqueArr.includes(item)) {
+    uniqueArr.push(item);
+  }
+});
+console.log(uniqueArr); // Output: ['CS001', 'TSW002', 'STS003', 'STS004']
+
+// using indexOf
+let arr = ['CS001', 'TSW002','STS003','CS001','TSW002','STS004'];
+let uniqueArr = [];
+for (let i = 0; i < arr.length; i++) {
+  if (uniqueArr.indexOf(arr[i]) === -1) {
+    uniqueArr.push(arr[i]);
+  }
+}
+console.log(uniqueArr); // Output: ['CS001', 'TSW002', 'STS003', 'STS004']
+
+// using includes
+let arr = ['CS001', 'TSW002','STS003','CS001','TSW002','STS004'];
+let uniqueArr = [];
+for (let i = 0; i < arr.length; i++) {
+  if (!uniqueArr.includes(arr[i])) {
+    uniqueArr.push(arr[i]);
+  }
+}
+
+console.log(uniqueArr); // Output: ['CS001', 'TSW002', 'STS003', 'STS004']
+
+// using map
+let arr = ['CS001', 'TSW002','STS003','CS001','TSW002','STS004'];
+let uniqueArr = [];
+arr.map((item) => {
+  if (!uniqueArr.includes(item)) {
+    uniqueArr.push(item);
+  }
+});
+console.log(uniqueArr); // Output: ['CS001', 'TSW002', 'STS003', 'STS004']
+
+// using while loop
+let arr = ['CS001', 'TSW002','STS003','CS001','TSW002','STS004'];
+let uniqueArr = [];
+let i = 0;
+while (i < arr.length) {
+  if (!uniqueArr.includes(arr[i])) {
+    uniqueArr.push(arr[i]);
+  }
+  i++;
+}
+console.log(uniqueArr); // Output: ['CS001', 'TSW002', 'STS003', 'STS004']
+
+// using without built-in methods
+let arr = ['CS001', 'TSW002','STS003','CS001','TSW002','STS004'];
+let uniqueArr = [];
+for (let i = 0; i < arr.length; i++) {
+  let isUnique = true;
+  for (let j = 0; j < uniqueArr.length; j++) {
+    if (arr[i] === uniqueArr[j]) {
+      isUnique = false;
+      break;
+    }
+  }
+  if (isUnique) {
+    uniqueArr.push(arr[i]);
+  }
+}
+console.log(uniqueArr); // Output: ['CS001', 'TSW002', 'STS003', 'STS004']
+```
+
+Give the output for the code below
+
+```javascript
+function counter() {
+    let count = 0;
+    return () => count++;
+}
+
+let c = counter();
+console.log("count1", c()); // Output: 0
+console.log("count2", c()); // Output: 1
+console.log("count3", c()); // Output: 2
 ```
 
 Program To Print Hello World
@@ -7069,921 +8095,6 @@ console.log("Current year: " + year);
 
 // Output: Current year: 2024
 ```
-
-## Snippets
-
-Here are a few JavaScript snippets that you might find useful:
-
-1. **Hello World:**
-
-   ```javascript
-   console.log("Hello, World!");
-   ```
-
-2. **Variable Declaration:**
-
-   ```javascript
-   let variableName = "Some value";
-   ```
-
-3. **Conditional Statement (if-else):**
-
-   ```javascript
-   let condition = true;
-
-   if (condition) {
-       console.log("Condition is true");
-   } else {
-       console.log("Condition is false");
-   }
-   ```
-
-4. **Loop (for):**
-
-   ```javascript
-   for (let i = 0; i < 5; i++) {
-       console.log(i);
-   }
-   ```
-
-5. **Function Declaration:**
-
-   ```javascript
-   function greet(name) {
-       console.log("Hello, " + name + "!");
-   }
-
-   greet("John");
-   ```
-
-6. **Array Manipulation:**
-
-   ```javascript
-   let fruits = ['Apple', 'Banana', 'Orange'];
-
-   // Add an element to the end
-   fruits.push('Mango');
-
-   // Remove the last element
-   fruits.pop();
-
-   // Access elements by index
-   console.log(fruits[1]);
-   ```
-
-7. **Object Declaration:**
-
-   ```javascript
-   let person = {
-       name: 'John',
-       age: 25,
-       profession: 'Developer'
-   };
-
-   // Accessing object properties
-   console.log(person.name);
-   ```
-
-8. **Async/Await:**
-
-   ```javascript
-   async function fetchData() {
-       try {
-           let response = await fetch('https://api.example.com/data');
-           let data = await response.json();
-           console.log(data);
-       } catch (error) {
-           console.error('Error fetching data:', error);
-       }
-   }
-
-   fetchData();
-   ```
-
-9. **Event Handling:**
-
-   ```javascript
-   let button = document.getElementById('myButton');
-
-   button.addEventListener('click', function() {
-       console.log('Button clicked!');
-   });
-   ```
-
-10. **LocalStorage:**
-
-    ```javascript
-    // Save data to local storage
-    localStorage.setItem('username', 'JohnDoe');
-
-    // Retrieve data from local storage
-    let storedUsername = localStorage.getItem('username');
-    console.log('Username:', storedUsername);
-    ```
-
-11. **Error Handling:**
-
-    ```javascript
-    try {
-        // Code that may throw an error
-        throw new Error('Something went wrong');
-    } catch (error) {
-        console.error('Error:', error.message);
-    }
-    ```
-
-12. **Regular Expression:**
-
-    ```javascript
-    let pattern = /hello/i; // Case-insensitive match for 'hello'
-
-    let text = 'Hello, World!';
-    let result = pattern.test(text);
-
-    console.log(result); // Output: true
-    ```
-
-13. **Math Operations:**
-
-    ```javascript
-    let x = 10;
-
-    console.log(Math.sqrt(x)); // Square root
-
-    console.log(Math.pow(x, 2)); // x raised to the power of 2
-
-    console.log(Math.random()); // Random number between 0 and 1
-    ```
-
-14. **Date and Time:**
-
-    ```javascript
-    let date = new Date();
-
-    console.log(date.toDateString()); // Date in human-readable format
-
-    console.log(date.getHours()); // Current hour
-    ```
-
-15. **Set Timeout:**
-
-    ```javascript
-    setTimeout(function() {
-        console.log('Timeout completed');
-    }, 2000); // 2 seconds
-    ```
-
-16. **Set Interval:**
-
-    ```javascript
-    let counter = 0;
-
-    let interval = setInterval(function() {
-        console.log('Counter:', counter);
-        counter++;
-
-        if (counter === 5) {
-            clearInterval(interval);
-        }
-    }, 1000); // Every 1 second
-    ```
-
-17. **Fetch API:**
-
-    ```javascript
-    fetch('https://api.example.com/data')
-        .then(response => response.json())
-        .then(data => console.log(data))
-        .catch(error => console.error('Error fetching data:', error));
-    ```
-
-18. **Arrow Functions:**
-
-    ```javascript
-    let add = (x, y) => x + y;
-
-    console.log(add(5, 3)); // Output: 8
-    ```
-
-19. **Template Literals:**
-
-    ```javascript
-    let name = 'Alice';
-    let greeting = `Hello, ${name}!`;
-
-    console.log(greeting); // Output: Hello, Alice!
-    ```
-
-20. **Destructuring Assignment:**
-
-    ```javascript
-    let person = { name: 'John', age: 30 };
-
-    let { name, age } = person;
-
-    console.log(name, age); // Output: John 30
-    ```
-
-21. **Spread Operator:**
-
-    ```javascript
-    let numbers = [1, 2, 3];
-    let newNumbers = [...numbers, 4, 5];
-
-    console.log(newNumbers); // Output: [1, 2, 3, 4, 5]
-    ```
-
-22. **Promise:**
-
-    ```javascript
-    let promise = new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve('Promise resolved');
-        }, 2000);
-    });
-
-    promise.then(result => console.log(result));
-    ```
-
-23. **Map Function:**
-
-    ```javascript
-    let numbers = [1, 2, 3, 4, 5];
-
-    let squaredNumbers = numbers.map(num => num * num);
-
-    console.log(squaredNumbers); // Output: [1, 4, 9, 16, 25]
-    ```
-
-24. **Filter Function:**
-
-    ```javascript
-    let numbers = [1, 2, 3, 4, 5];
-
-    let evenNumbers = numbers.filter(num => num % 2 === 0);
-
-    console.log(evenNumbers); // Output: [2, 4]
-    ```
-
-25. **Reduce Function:**
-
-    ```javascript
-    let numbers = [1, 2, 3, 4, 5];
-
-    let sum = numbers.reduce((acc, num) => acc + num, 0);
-
-    console.log(sum); // Output: 15
-    ```
-
-26. **Find Function:**
-
-    ```javascript
-    let numbers = [1, 2, 3, 4, 5];
-
-    let foundNumber = numbers.find(num => num > 3);
-
-    console.log(foundNumber); // Output: 4
-    ```
-
-## Short Hands
-
-JavaScript offers several shorthand techniques to write code more concisely and improve readability. Here are some common JavaScript shorthand techniques:
-
-1. **Ternary Operator:**
-
-   Instead of using an `if-else` statement, you can use the ternary operator for concise conditional expressions.
-
-   ```javascript
-   // Long form
-   let result;
-   if (condition) {
-       result = 'true';
-   } else {
-       result = 'false';
-   }
-
-   // Shorthand
-   let result = condition ? 'true' : 'false';
-   ```
-
-2. **Nullish Coalescing Operator (`??`):**
-
-   This operator provides a concise way to provide a default value if a variable is null or undefined.
-
-   ```javascript
-   // Long form
-   let value;
-   if (value !== null && value !== undefined) {
-       result = value;
-   } else {
-       result = 'default';
-   }
-
-   // Shorthand
-   let result = value ?? 'default';
-   ```
-
-3. **Arrow Functions:**
-
-   Arrow functions provide a concise syntax for writing function expressions.
-
-   ```javascript
-   // Long form
-   function add(x, y) {
-       return x + y;
-   }
-
-   // Shorthand
-   const add = (x, y) => x + y;
-   ```
-
-4. **Template Literals:**
-
-   Template literals make it easier to concatenate strings and include variables within strings.
-
-   ```javascript
-   // Long form
-   const greeting = 'Hello, ' + name + '!';
-
-   // Shorthand
-   const greeting = `Hello, ${name}!`;
-   ```
-
-5. **Object Property Shorthand:**
-
-   When creating an object with properties that have the same name as the variables being assigned, you can use shorthand notation.
-
-   ```javascript
-   // Long form
-   const name = 'John';
-   const age = 30;
-   const user = {
-       name: name,
-       age: age
-   };
-
-   // Shorthand
-   const user = {
-       name,
-       age
-   };
-   ```
-
-6. **Destructuring Assignment:**
-
-   Destructuring allows you to extract values from arrays or objects and assign them to variables in a concise way.
-
-   ```javascript
-   // Long form
-   const person = { name: 'John', age: 30 };
-   const name = person.name;
-   const age = person.age;
-
-   // Shorthand
-   const { name, age } = { name: 'John', age: 30 };
-   ```
-
-7. **Default Parameters:**
-
-    Default parameters allow you to specify default values for function parameters.
-  
-    ```javascript
-    // Long form
-    function greet(name) {
-        if (name === undefined) {
-            name = 'World';
-        }
-        console.log('Hello, ' + name + '!');
-    }
-  
-    // Shorthand
-    function greet(name = 'World') {
-        console.log('Hello, ' + name + '!');
-    }
-    ```
-
-8. **Array and Object Spread:**
-
-    The spread operator (`...`) allows you to spread the elements of an array or object into another array or object.
-
-    ```javascript
-    // Long form
-    const numbers = [1, 2, 3];
-    const newNumbers = [...numbers, 4, 5];
-
-    // Shorthand
-    const newNumbers = [...numbers, 4, 5];
-    ```
-
-    ```javascript
-    // Long form
-    const person = { name: 'John', age: 30 };
-
-    const updatedPerson = {
-        name: person.name,
-        age: person.age,
-        profession: 'Developer
-    };
-
-    // Shorthand
-    const updatedPerson = { ...person, profession: 'Developer };
-    ```
-
-9. **Array Destructuring:**
-
-    Array destructuring allows you to extract values from arrays and assign them to variables in a concise way.
-
-    ```javascript
-    // Long form
-    const numbers = [1, 2, 3];
-    const first = numbers[0];
-    const second = numbers[1];
-
-    // Shorthand
-    const [first, second] = [1, 2, 3];
-    ```
-
-10. **Object Destructuring:**
-
-    Object destructuring allows you to extract values from objects and assign them to variables in a concise way.
-
-    ```javascript
-    // Long form
-    const person = { name: 'John', age: 30 };
-    const name = person.name;
-    const age = person.age;
-
-    // Shorthand
-    const { name, age } = { name: 'John', age: 30 };
-    ```
-
-11. **Short-Circuit Evaluation:**
-
-    Short-circuit evaluation allows you to write concise conditional expressions using logical operators.
-
-    ```javascript
-    // Long form
-    let result;
-    if (condition) {
-        result = value;
-    } else {
-        result = 'default';
-    }
-
-    // Shorthand
-    let result = condition && value || 'default';
-    ```
-
-    ```javascript
-    // Long form
-    let result;
-    if (condition) {
-        result = 'true';
-    } else {
-        result = 'false';
-    }
-
-    // Shorthand
-    let result = condition ? 'true' : 'false';
-    ```
-
-    ```javascript
-    // Long form
-    let result;
-
-    if (value !== null && value !== undefined) {
-        result = value;
-    } else {
-        result = 'default';
-    }
-
-    // Shorthand
-    let result = value ?? 'default';
-    ```
-
-12. **Logical Assignment Operators:**
-
-    Logical assignment operators provide a concise way to update a variable based on a condition.
-
-    ```javascript
-    // Long form
-    let count = 0;
-    if (count === 0) {
-        count = 1;
-    }
-
-    // Shorthand
-    let count = 0;
-    count ||= 1;
-    ```
-
-    ```javascript
-    // Long form
-    let count = 0;
-    if (count === 0) {
-        count += 1;
-    }
-
-    // Shorthand
-    let count = 0;
-    count += 1;
-    ```
-
-13. **Optional Chaining:**
-
-    Optional chaining allows you to access nested properties of an object without having to check for the existence of each property.
-
-    ```javascript
-    // Long form
-    let result;
-    if (data && data.user && data.user.name) {
-        result = data.user.name;
-    } else {
-        result = 'Unknown';
-    }
-
-    // Shorthand
-    let result = data?.user?.name ?? 'Unknown';
-    ```
-
-14. **Promise Chaining:**
-
-    Promise chaining allows you to chain multiple asynchronous operations in a concise way.
-
-    ```javascript
-    // Long form
-    fetch('https://api.example.com/data')
-        .then(response => response.json())
-        .then(data => {
-            console.log(data);
-            return fetch('https://api.example.com/other-data');
-        })
-        .then(response => response.json())
-        .then(otherData => console.log(otherData))
-        .catch(error => console.error('Error:', error));
-
-    // Shorthand
-    fetch('https://api.example.com/data')
-        .then(response => response.json())
-        .then(data => console.log(data))
-        .then(() => fetch('https://api.example.com/other-data'))
-        .then(response => response.json())
-        .then(otherData => console.log(otherData))
-        .catch(error => console.error('Error:', error));
-    ```
-
-15. **Async/Await:**
-
-    Async/await provides a more concise way to work with asynchronous code compared to promises.
-
-    ```javascript
-    // Long form
-    function fetchData() {
-        return fetch('https://api.example.com/data')
-            .then(response => response.json());
-    }
-
-    fetchData()
-        .then(data => console.log(data))
-        .catch(error => console.error('Error:', error));
-
-    // Shorthand
-    async function fetchData() {
-        try {
-            let response = await fetch('https://api.example.com/data');
-            let data = await response.json();
-            console.log(data);
-        } catch (error) {
-            console.error('Error:', error);
-        }
-    }
-
-    fetchData();
-    ```
-
-16. **Array Methods:**
-
-    JavaScript array methods provide a concise way to perform common operations on arrays.
-
-    ```javascript
-    // Long form
-    const numbers = [1, 2, 3, 4, 5];
-    const squaredNumbers = numbers.map(num => num * num);
-
-    // Shorthand
-    const squaredNumbers = [1, 2, 3, 4, 5].map(num => num * num);
-    ```
-
-    ```javascript
-    // Long form
-    const numbers = [1, 2, 3, 4, 5];
-    const evenNumbers = numbers.filter(num => num % 2 === 0);
-
-    // Shorthand
-    const evenNumbers = [1, 2, 3, 4, 5].filter(num => num % 2 === 0);
-    ```
-
-    ```javascript
-    // Long form
-    const numbers = [1, 2, 3, 4, 5];
-    const sum = numbers.reduce((acc, num) => acc + num, 0);
-
-    // Shorthand
-    const sum = [1, 2, 3, 4, 5].reduce((acc, num) => acc + num, 0);
-    ```
-
-    ```javascript
-    // Long form
-    const numbers = [1, 2, 3, 4, 5];
-    const foundNumber = numbers.find(num => num > 3);
-
-    // Shorthand
-    const foundNumber = [1, 2, 3, 4, 5].find(num => num > 3);
-    ```
-
-17. **Object Methods:**
-
-    JavaScript object methods provide a concise way to perform common operations on objects.
-
-    ```javascript
-    // Long form
-    const person = { name: 'John', age: 30 };
-    const keys = Object.keys(person);
-
-    // Shorthand
-    const keys = Object.keys({ name: 'John', age: 30 });
-    ```
-
-    ```javascript
-    // Long form
-    const person = { name: 'John', age: 30 };
-    const values = Object.values(person);
-
-    // Shorthand
-    const values = Object.values({ name: 'John', age: 30 });
-    ```
-
-    ```javascript
-    // Long form
-    const person = { name: 'John', age: 30 };
-    const entries = Object.entries(person);
-
-    // Shorthand
-    const entries = Object.entries({ name: 'John', age: 30 });
-    ```
-
-    ```javascript
-    // Long form
-    const person = { name: 'John', age: 30 };
-    const copy = Object.assign({}, person);
-
-    // Shorthand
-    const copy = { ...{ name: 'John', age: 30 } };
-    ```
-
-18. **Function Methods:**
-
-    JavaScript function methods provide a concise way to work with functions.
-
-    ```javascript
-    // Long form
-    function greet(name) {
-        console.log('Hello, ' + name + '!');
-    }
-
-    // Shorthand
-    const greet = name => console.log('Hello, ' + name + '!');
-    ```
-
-    ```javascript
-    // Long form
-    function add(x, y) {
-        return x + y;
-    }
-
-    // Shorthand
-    const add = (x, y) => x + y;
-    ```
-
-    ```javascript
-    // Long form
-    function multiply(x, y) {
-        return x * y;
-    }
-
-    // Shorthand
-    const multiply = (x, y) => x * y;
-    ```
-
-    ```javascript
-    // Long form
-    function divide(x, y) {
-        return x / y;
-    }
-
-    // Shorthand
-    const divide = (x, y) => x / y;
-    ```
-
-19. **String Methods:**
-
-    JavaScript string methods provide a concise way to work with strings.
-
-    ```javascript
-    // Long form
-    const text = 'Hello, World!';
-    const trimmedText = text.trim();
-
-    // Shorthand
-    const trimmedText = '  Hello, World!  '.trim();
-    ```
-
-    ```javascript
-    // Long form
-    const text = 'Hello, World!';
-    const uppercaseText = text.toUpperCase();
-
-    // Shorthand
-    const uppercaseText = 'Hello, World!'.toUpperCase();
-    ```
-
-    ```javascript
-    // Long form
-    const text = 'Hello, World!';
-    const lowercaseText = text.toLowerCase();
-
-    // Shorthand
-    const lowercaseText = 'Hello, World!'.toLowerCase();
-    ```
-
-    ```javascript
-    // Long form
-    const text = 'Hello, World!';
-    const length = text.length;
-
-    // Shorthand
-    const length = 'Hello, World!'.length;
-    ```
-
-20. **Number Methods:**
-
-    JavaScript number methods provide a concise way to work with numbers.
-
-    ```javascript
-    // Long form
-    const number = 3.14159;
-    const roundedNumber = Math.round(number);
-
-    // Shorthand
-    const roundedNumber = Math.round(3.14159);
-    ```
-
-    ```javascript
-    // Long form
-    const number = 3.14159;
-    const squaredNumber = Math.pow(number, 2);
-
-    // Shorthand
-    const squaredNumber = Math.pow(3.14159, 2);
-    ```
-
-    ```javascript
-    // Long form
-    const number = 3.14159;
-    const squareRoot = Math.sqrt(number);
-
-    // Shorthand
-    const squareRoot = Math.sqrt(3.14159);
-    ```
-
-    ```javascript
-    // Long form
-    const number = 3.14159;
-    const absoluteValue = Math.abs(number);
-
-    // Shorthand
-    const absoluteValue = Math.abs(3.14159);
-    ```
-
-21. **Date Methods:**
-
-    JavaScript date methods provide a concise way to work with dates.
-
-    ```javascript
-    // Long form
-    const date = new Date();
-    const day = date.getDate();
-
-    // Shorthand
-    const day = new Date().getDate();
-    ```
-
-    ```javascript
-    // Long form
-    const date = new Date();
-    const month = date.getMonth();
-
-    // Shorthand
-    const month = new Date().getMonth();
-    ```
-
-    ```javascript
-    // Long form
-    const date = new Date();
-    const year = date.getFullYear();
-
-    // Shorthand
-    const year = new Date().getFullYear();
-    ```
-
-    ```javascript
-    // Long form
-    const date = new Date();
-    const hours = date.getHours();
-
-    // Shorthand
-    const hours = new Date().getHours();
-    ```
-
-22. **Math Methods:**
-
-    JavaScript math methods provide a concise way to perform mathematical operations.
-
-    ```javascript
-    // Long form
-    const number = 3.14159;
-    const roundedNumber = Math.round(number);
-
-    // Shorthand
-    const roundedNumber = Math.round(3.14159);
-    ```
-
-    ```javascript
-    // Long form
-    const number = 3.14159;
-    const squaredNumber = Math.pow(number, 2);
-
-    // Shorthand
-    const squaredNumber = Math.pow(3.14159, 2);
-    ```
-
-    ```javascript
-    // Long form
-    const number = 3.14159;
-    const squareRoot = Math.sqrt(number);
-
-    // Shorthand
-    const squareRoot = Math.sqrt(3.14159);
-    ```
-
-    ```javascript
-    // Long form
-    const number = 3.14159;
-    const absoluteValue = Math.abs(number);
-
-    // Shorthand
-    const absoluteValue = Math.abs(3.14159);
-    ```
-
-23. **Array Methods:**
-
-    JavaScript array methods provide a concise way to perform common operations on arrays.
-
-    ```javascript
-    // Long form
-    const numbers = [1, 2, 3, 4, 5];
-    const squaredNumbers = numbers.map(num => num * num);
-
-    // Shorthand
-    const squaredNumbers = [1, 2, 3, 4, 5].map(num => num * num);
-    ```
-
-    ```javascript
-    // Long form
-    const numbers = [1, 2, 3, 4, 5];
-    const evenNumbers = numbers.filter(num => num % 2 === 0);
-
-    // Shorthand
-    const evenNumbers = [1, 2, 3, 4, 5].filter(num => num % 2 === 0);
-    ```
-
-    ```javascript
-    // Long form
-    const numbers = [1, 2, 3, 4, 5];
-    const sum = numbers.reduce((acc, num) => acc + num, 0);
-
-    // Shorthand
-    const sum = [1, 2, 3, 4, 5].reduce((acc, num) => acc + num, 0);
-    ```
-
-    ```javascript
-    // Long form
-    const numbers = [1, 2, 3, 4, 5];
-    const foundNumber = numbers.find(num => num > 3);
-
-    // Shorthand
-    const foundNumber = [1, 2, 3, 4, 5].find(num => num > 3);
-    ```
 
 ## List of GitHub Repositories to learn JavaScript
 
