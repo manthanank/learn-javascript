@@ -834,9 +834,7 @@ The following are some of the most commonly used array methods in JavaScript:
 - **push()**
 - **reduce()**
 
-**concat()** - Joins arrays and returns an array with the joined arrays
-
-It is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array that contains the values of the original arrays.
+**concat()** - Joins arrays and returns an array with the joined arrays.
 
 ```javascript
 let array1 = ['a', 'b', 'c'];
@@ -902,6 +900,7 @@ let array = [1, 2, 3, 4, 5];
 
 let newArray = array.filter(value => value > 3);
 
+console.log(array); // Output: [1, 2, 3, 4, 5]
 console.log(newArray); // Output: [4, 5]
 ```
 
@@ -912,6 +911,7 @@ let array = [1, 2, 3, 4, 5];
 
 let value = array.find(value => value > 3);
 
+console.log(array); // Output: [1, 2, 3, 4, 5]
 console.log(value); // Output: 4
 ```
 
@@ -922,6 +922,7 @@ let array = [1, 2, 3, 4, 5];
 
 let index = array.findIndex(value => value > 3);
 
+console.log(array); // Output: [1, 2, 3, 4, 5]
 console.log(index); // Output: 3
 ```
 
@@ -949,7 +950,6 @@ let array = 'hello';
 let newArray = Array.from(array);
 
 console.log(array); // Output: "hello"
-
 console.log(newArray); // Output: ["h", "e", "l", "l", "o"]
 ```
 
@@ -1000,7 +1000,6 @@ let array = ['a', 'b', 'c'];
 let result = array.join();
 
 console.log(array); // Output: ["a", "b", "c"]
-
 console.log(result); // Output: "a,b,c"
 ```
 
@@ -1012,7 +1011,6 @@ let array = ['a', 'b', 'c'];
 let iterator = array.keys();
 
 console.log(array); // Output: ["a", "b", "c"]
-
 console.log(iterator.next().value); // Output: 0
 ```
 
@@ -1024,7 +1022,6 @@ let array = [1, 2, 3, 4, 5, 3];
 let index = array.lastIndexOf(3);
 
 console.log(array); // Output: [1, 2, 3, 4, 5, 3]
-
 console.log(index); // Output: 5
 ```
 
@@ -1034,7 +1031,6 @@ console.log(index); // Output: 5
 let array = ['a', 'b', 'c'];
 
 console.log(array); // Output: ["a", "b", "c"]
-
 console.log(array.length); // Output: 3
 ```
 
@@ -1046,7 +1042,6 @@ let array = [1, 2, 3, 4, 5];
 let newArray = array.map(value => value * 2);
 
 console.log(array); // Output: [1, 2, 3, 4, 5]
-
 console.log(newArray); // Output: [2, 4, 6, 8, 10]
 ```
 
@@ -1058,7 +1053,6 @@ let array = ['a', 'b', 'c'];
 let element = array.pop();
 
 console.log(array); // Output: ["a", "b"]
-
 console.log(element); // Output: "c"
 ```
 
@@ -1070,7 +1064,6 @@ let array = ['a', 'b', 'c'];
 Array.prototype.age = 25;
 
 console.log(array); // Output: ["a", "b", "c"]
-
 console.log(array.age); // Output: 25
 ```
 
@@ -1082,7 +1075,6 @@ let array = ['a', 'b', 'c'];
 let length = array.push('d', 'e');
 
 console.log(array); // Output: ["a", "b", "c", "d", "e"]
-
 console.log(length); // Output: 4
 ```
 
@@ -1094,7 +1086,6 @@ let array = [1, 2, 3, 4, 5];
 let total = array.reduce((accumulator, value) => accumulator + value, 0);
 
 console.log(array); // Output: [1, 2, 3, 4, 5]
-
 console.log(total); // Output: 15
 ```
 
@@ -1105,6 +1096,7 @@ let array = [1, 2, 3, 4, 5];
 
 let total = array.reduceRight((accumulator, value) => accumulator + value, 0);
 
+console.log(array); // Output: [1, 2, 3, 4, 5]
 console.log(total); // Output: 15
 ```
 
@@ -1125,6 +1117,7 @@ let array = ['a', 'b', 'c'];
 
 let element = array.shift();
 
+console.log(array); // Output: ["b", "c"]
 console.log(element); // Output: "a"
 ```
 
@@ -1135,6 +1128,7 @@ let array = ['a', 'b', 'c', 'd', 'e', 'f'];
 
 let newArray = array.slice(2, 4);
 
+console.log(array); // Output: ["a", "b", "c", "d", "e", "f"]
 console.log(newArray); // Output: ["c", "d"]
 ```
 
@@ -1145,6 +1139,7 @@ let array = [1, 2, 3, 4, 5];
 
 let result = array.some(value => value > 3);
 
+console.log(array); // Output: [1, 2, 3, 4, 5]
 console.log(result); // Output: true
 ```
 
@@ -1206,6 +1201,29 @@ const name = 'Manthan';
 
 The following are some of the most commonly used string methods in JavaScript:
 
+- **charAt()**
+- **charCodeAt()**
+- **concat()**
+- **constructor**
+- **endsWith()**
+- **fromCharCode()**
+- **includes()**
+- **indexOf()**
+- **lastIndexOf()**
+- **length**
+- **localeCompare()**
+- **match()**
+- **prototype**
+- **repeat()**
+- **replace()**
+- **search()**
+- **slice()**
+- **split()**
+- **startsWith()**
+- **substr()**
+- **substring()**
+- **toLocaleLowerCase()**
+
 **charAt()** - Returns the character at a specified index (position)
 
 ```javascript
@@ -1228,7 +1246,9 @@ console.log(myString.charCodeAt(0)); // Output: 72
 let myString1 = "Hello";
 let myString2 = "World!";
 
-console.log(myString1.concat(" ", myString2)); // Output: "Hello World!"
+let newString = myString1.concat(" ", myString2);
+
+console.log(newString); // Output: "Hello World!"
 ```
 
 **constructor** - Returns the string's constructor function
@@ -1302,19 +1322,17 @@ let myString = "The quick brown fox jumps over the lazy dog.";
 
 let result = myString.match(/the/i);
 
+console.log(myString); // Output: "The quick brown fox jumps over the lazy dog."
 console.log(result); // Output: ["the", index: 30, input: "The quick brown fox jumps over the lazy dog.", groups: undefined]
 ```
 
 **prototype** - Allows you to add properties and methods to an object
 
 ```javascript
-String.prototype.reverse = () => {
-  return this.split("").reverse().join("");
-};
-
 let myString = "Hello World!";
+String.prototype.age = 25;
 
-console.log(myString.reverse()); // Output: "!dlroW olle
+console.log(myString.age); // Output: 25
 ```
 
 **repeat()** - Returns a new string with a number of copies of a string
@@ -1332,6 +1350,7 @@ let myString = "Hello World!";
 
 let newString = myString.replace("World", "Universe");
 
+console.log(myString); // Output: "Hello World!"
 console.log(newString); // Output: "Hello Universe!"
 ```
 
@@ -1342,6 +1361,7 @@ let myString = "The quick brown fox jumps over the lazy dog.";
 
 let result = myString.search(/fox/);
 
+console.log(myString); // Output: "The quick brown fox jumps over the lazy dog."
 console.log(result); // Output: 16
 ```
 
@@ -1352,6 +1372,7 @@ let myString = "Hello World!";
 
 let newString = myString.slice(6, 11);
 
+console.log(myString); // Output: "Hello World!"
 console.log(newString); // Output: "World"
 ```
 
@@ -1362,6 +1383,7 @@ let myString = "Hello World!";
 
 let array = myString.split(" ");
 
+console.log(myString); // Output: "Hello World!"
 console.log(array); // Output: ["Hello", "World!"]
 ```
 
@@ -1380,6 +1402,7 @@ let myString = "Hello World!";
 
 let newString = myString.substr(6, 5);
 
+console.log(myString); // Output: "Hello World!"
 console.log(newString); // Output: "World"
 ```
 
@@ -1390,6 +1413,7 @@ let myString = "Hello World!";
 
 let newString = myString.substring(6, 11);
 
+console.log(myString); // Output: "Hello World!"
 console.log(newString); // Output: "World"
 ```
 
@@ -1414,6 +1438,7 @@ console.log(myString.toLocaleUpperCase()); // Output: "HELLO WORLD!"
 ```javascript
 let myString = "Hello World!";
 
+console.log(myString); // Output: "Hello World!"
 console.log(myString.toLowerCase()); // Output: "hello world!"
 ```
 
@@ -1421,8 +1446,10 @@ console.log(myString.toLowerCase()); // Output: "hello world!"
 
 ```javascript
 let myString = "Hello World!";
+let number = 25; 
 
 console.log(myString.toString()); // Output: "Hello World!"
+console.log(number.toString()); // Output: "25"
 ```
 
 **toUpperCase()** - Returns a string converted to uppercase letters
@@ -1430,6 +1457,7 @@ console.log(myString.toString()); // Output: "Hello World!"
 ```javascript
 let myString = "Hello World!";
 
+console.log(myString); // Output: "Hello World!"
 console.log(myString.toUpperCase()); // Output: "HELLO WORLD
 ```
 
@@ -1438,6 +1466,7 @@ console.log(myString.toUpperCase()); // Output: "HELLO WORLD
 ```javascript
 let myString = " Hello World! ";
 
+console.log(myString); // Output: " Hello World! "
 console.log(myString.trim()); // Output: "Hello World!"
 ```
 
@@ -1446,6 +1475,7 @@ console.log(myString.trim()); // Output: "Hello World!"
 ```javascript
 let myString = " Hello World! ";
 
+console.log(myString); // Output: " Hello World! "
 console.log(myString.trimEnd()); // Output: " Hello World!"
 ```
 
@@ -1454,47 +1484,16 @@ console.log(myString.trimEnd()); // Output: " Hello World!"
 ```javascript
 let myString = " Hello World! ";
 
+console.log(myString); // Output: " Hello World! "
 console.log(myString.trimStart()); // Output: "Hello World! "
 ```
 
-**valueOf()** - Returns the primitive value of a string or a string object
+**valueOf()** - Returns the primitive value of a string or a string object.
 
 ```javascript
 let myString = "Hello World!";
 
 console.log(myString.valueOf()); // Output: "Hello World!"
-```
-
-**charCodeAt** - It returns the Unicode of the character at a specified index in a string. Unicode is a standardized encoding system that assigns a unique number (code point) to each character in most languages and scripts in the world.
-
-```javascript
-let myString = "Hello World!";
-console.log(myString.charCodeAt(0)); // Output: 72
-console.log(myString.charCodeAt(5)); // Output: 32
-console.log(myString.charCodeAt(6)); // Output: 87
-```
-
-**concat** - It is used to concatenate (combine) one or more strings together. It returns a new string that is the combination of the original string and the strings that are passed to the method as arguments. The original string is not modified.
-
-```javascript
-let myString = "Hello";
-let newString = myString.concat(" ", "World!");
-console.log(newString); // Output: "Hello World!"
-```
-
-**fromCharCode** - It is actually a static method of the String object, not a method that is called on a string instance. It is a static method that takes a sequence of Unicode values, and returns a new string that contains the corresponding characters. It is used to create a new string from one or more Unicode code points.
-
-```javascript
-let myString = String.fromCharCode(72, 101, 108, 108, 111);
-console.log(myString); // Output: "Hello"
-```
-
-**indexOf** - It is used to determine the first index at which a given element can be found in a string, or -1 if the element is not present in the string. The method takes one argument, which is the string or character you want to search for.
-
-```javascript
-let str = "Hello, world!";
-let n = str.indexOf("world");
-console.log(n);  // output: 7
 ```
 
 ## Loops
@@ -1511,7 +1510,7 @@ There are several types of loops in JavaScript:
 
 ### for loop
 
-This type of loop is used to execute a block of code a specified number of times. The for loop has three parts: the initialization, the condition, and the increment.
+This type of loop is used to execute a block of code a specified number of times.
 
 ```javascript
 for (let i = 0; i < 5; i++) {
@@ -1644,7 +1643,33 @@ function name(parameter1, parameter2, parameter3) {
 }
 ```
 
-## Arrow Function
+### Types of Functions
+
+- Named Function
+- Anonymous Function
+- Arrow Function
+
+### Named Function
+
+A named function is a function that has a name. It can be defined using the function keyword followed by the function name.
+
+```javascript
+function name(parameter1, parameter2, parameter3) {
+  // code to be executed
+}
+```
+
+### Anonymous Function
+
+An anonymous function is a function that does not have a name. It can be defined using the function keyword followed by parentheses ().
+
+```javascript
+const name = function(parameter1, parameter2, parameter3) {
+  // code to be executed
+}
+```
+
+### Arrow Function
 
 Arrow functions are a more concise way to write functions in JavaScript. They are defined using the => syntax.
 
@@ -1997,7 +2022,8 @@ console.log(num); // Output: 123
 String
 
 ```javascript
-String(123) // Output: '123'
+let str = String(123);
+console.log(str); // Output: "123"
 ```
 
 toString
@@ -2309,6 +2335,16 @@ letters.size; // 3
 
 ### Set Methods
 
+The Set object has several built-in methods that can be used to work with Sets. Some of the most commonly used methods are:
+
+- new Set()
+- add()
+- delete()
+- has()
+- forEach()
+- values()
+- size
+
 **new Set** - Creates a new Set
 
 ```javascript
@@ -2393,6 +2429,17 @@ fruits.size; // 3
 
 ### Map Methods
 
+The Map object has several built-in methods that can be used to work with Maps. Some of the most commonly used methods are:
+
+- new Map()
+- set()
+- get()
+- delete()
+- has()
+- forEach()
+- entries()
+- size
+
 **new Map** - Creates a new Map
 
 ```javascript
@@ -2462,7 +2509,7 @@ fruits.size;
 
 ## Async
 
-Asynchronous programming is a way to handle tasks that take time to complete. In synchronous programming, the program waits for each task to complete before moving on to the next task. In asynchronous programming, the program can move on to the next task before the first task is complete.
+Asynchronous programming allows you to run multiple tasks concurrently without blocking the main thread. JavaScript provides several ways to work with asynchronous code, including callbacks, promises, and async/await.
 
 ### Callbacks
 
@@ -2485,27 +2532,20 @@ myCalculator(5, 5, myDisplayer);
 
 ### Asynchronous JavaScript
 
+JavaScript is a single-threaded language, which means it can only execute one task at a time. Asynchronous JavaScript allows you to run multiple tasks concurrently without blocking the main thread.
+
 ```javascript
-function myDisplayer(some) {
-  document.getElementById("demo").innerHTML = some;
-}
+let myPromise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("The async operation was successful");
+  }, 1000);
+});
 
-function getFile(myCallback) {
-  let req = new XMLHttpRequest();
-  req.open('GET', "mycar.html");
-  req.onload = function() {
-    if (req.status == 200) {
-      myCallback(this.responseText);
-    } else {
-      myCallback("Error: " + req.status);
-    }
-  }
-  req.send();
-}
+myPromise.then((value) => {
+  console.log(value);
+});
 
-getFile(myDisplayer);
-
-// Output: The content of the mycar.html file
+// Output: The async operation was successful
 ```
 
 ### Callback function
@@ -2529,9 +2569,7 @@ myCalculator(5, 5, myDisplayer);
 
 ### Promise
 
-Promises are used to handle asynchronous operations in JavaScript. They are easy to manage when dealing with multiple asynchronous operations where callbacks can create callback hell leading to unmanageable code.
-
-A Promise is a JavaScript object that links producing code and consuming code.
+A promise is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
 
 Syntax -
 
@@ -2572,16 +2610,22 @@ const myPromise = new Promise((resolve, reject) => {
         resolve("The async operation was successful");
     }, 1000);
 });
+
+myPromise.then((value) => {
+    console.log(value);
+});
+
+// Output: The async operation was successful
 ```
 
 ### async/await
 
-The async/await feature was introduced in ES8 (ECMAScript 2017) to simplify the process of working with promises.
+The async/await syntax allows you to write asynchronous code that looks synchronous. The async keyword is used to define an asynchronous function, and the await keyword is used to wait for a promise to be resolved.
 
 Async Syntax
 
 ```javascript
-async function asyncFunc() {
+async function myFunction() {
     // code
 }
 ```
@@ -2593,7 +2637,7 @@ let result = await promise;
 
 // or
 
-await promise1;
+await promise;
 ```
 
 Example
@@ -2601,7 +2645,7 @@ Example
 ```javascript
 async function myFunction() {
     let promise = new Promise((resolve, reject) => {
-        setTimeout(() => resolve("done!"), 1000)
+        setTimeout(() => resolve("The async operation was successful"), 1000);
     });
 
     let result = await promise;
@@ -2609,11 +2653,13 @@ async function myFunction() {
 }
 
 myFunction();
+
+// Output: The async operation was successful
 ```
 
 ## DOM
 
-The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document as a tree of nodes, where each node represents a part of the document (e.g., an element, an attribute, or a text node).
+The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document as a tree of nodes, where each node is an object representing a part of the document.
 
 ### DOM Properties
 
@@ -3072,7 +3118,7 @@ document.getElementById("myList").innerHTML = "Mango";
 
 ## Browser BOM
 
-Browser Object Model
+Browser Object Model (BOM) is used to interact with the browser. The Browser Object Model (BOM) allows JavaScript to interact with the browser. The BOM is not standardized, and its properties and methods may differ between browsers.
 
 **Window** -
 
@@ -3655,7 +3701,7 @@ document.cookie = "username=; expires=Sat, 28 Jan 2023 12:00:00 UTC; path=/;";
 
 ## Web API
 
-Web API is an application programming interface for the Web.
+Web API is an application programming interface for the Web. It defines the structure of web services and allows different software applications to communicate with each other over the web.
 
 `API` - Application Programming Interface.
 
@@ -4014,13 +4060,14 @@ xhttp.onreadystatechange = function() {
 
 ## JSON
 
-JSON stands for JavaScript Object Notation
-
-JSON is a text format for storing and transporting data
-
-JSON is "self-describing" and easy to understand
+JSON (JavaScript Object Notation) is a lightweight data-interchange format. It is easy for humans to read and write. It is easy for machines to parse and generate. JSON is a text format that is completely language-independent but uses conventions that are familiar to programmers of the C family of languages, including C, C++, C#, Java, JavaScript, Perl, Python, and many others.
 
 ### JSON Methods
+
+There are two methods in JSON
+
+- `JSON.parse()`
+- `JSON.stringify()`
 
 parse() - Parses a JSON string and returns a JavaScript object
 
@@ -4111,6 +4158,8 @@ const colors = ["Red", "Green", "Blue"];
 ```
 
 ## JQuery
+
+jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, and animation much simpler with an easy-to-use API that works across a multitude of browsers.
 
 Selectors
 
@@ -5933,7 +5982,7 @@ JavaScript offers several shorthand techniques to write code more concisely and 
 
 ## Interview Questions
 
-Print only id's
+Print only id's from the below array
 
 ```jsx
 const nameList = [{
@@ -5948,12 +5997,19 @@ const nameList = [{
   id: '3'
 }]
 
-// solution
+// solution using built-in method or funtion
 const ids = nameList.map(item => item.id);
-console.log(ids); // [ '1', '2', '3' ]
+console.log(ids); // ['1', '2', '3']
+
+// solution using without built-in method or funtion
+let ids = [];
+for (let i = 0; i < nameList.length; i++) {
+  ids[i] = nameList[i].id;
+}
+console.log(ids); // ['1', '2', '3']
 ```
 
-Get output as below
+Print the output as shown below
 
 ```jsx
 // output
@@ -5975,8 +6031,20 @@ const nameList = {
   }]
 }
 
-const outputArray = nameList.name.map(item => ({amount: nameList.amount, name: item.name, id: item.id}));
-console.log(outputArray); // [{amount: 300, name: 'a', id: '1'}, {amount: 300, name: 'b', id: '2'}, {amount: 300, name: 'c', id: '3'}]
+// solution using built-in method or funtion
+const outputArray = nameList.name.map(item => ({ ...item, amount: nameList.amount }));
+console.log(outputArray); // [{amount:300,name:'a',id:'1'},{amount:300,name:'b',id:'2'},{amount:300,name:'c',id:'3'}]
+
+// solution using without built-in method or funtion
+let outputArray = [];
+for (let i = 0; i < nameList.name.length; i++) {
+  outputArray[i] = {
+    amount: nameList.amount,
+    name: nameList.name[i].name,
+    id: nameList.name[i].id
+  };
+}
+console.log(outputArray); // [{amount:300,name:'a',id:'1'},{amount:300,name:'b',id:'2'},{amount:300,name:'c',id:'3'}]
 ```
 
 Print a half pyramid in JavaScript as shown below
@@ -5987,7 +6055,21 @@ Print a half pyramid in JavaScript as shown below
 // **
 // ***
 
-// solution
+// solution using built-in method or funtion
+for (let i = 1; i <= 3; i++) {
+  console.log('*'.repeat(i));
+}
+
+// solution using without built-in method or funtion
+for (let i = 1; i <= 3; i++) {
+  let string = '';
+  for (let j = 1; j <= i; j++) {
+    string += '*';
+  }
+  console.log(string);
+}
+
+// solution using without built-in method or funtion
 let string = "";
 
 for (let i = 0; i < 3; i++){
@@ -6004,6 +6086,12 @@ Print a inverted half pyramid in JavaScript as shown below
 // **
 // *
 
+// solution using built-in method or funtion
+for (let i = 3; i >= 1; i--) {
+  console.log('*'.repeat(i));
+}
+
+// solution using without built-in method or funtion
 for (let i = 3; i >= 1; i--) {
   let string = '';
   for (let j = 1; j <= i; j++) {
@@ -6024,14 +6112,33 @@ Print the output as shown below
 
 let nums = [2, 5, 3, 6, 8, 5];
 
+// solution using built-in method or funtion
 let evenNums = nums.filter((num) => num % 2 === 0);
 let oddNums = nums.filter((num) => num % 2 !== 0);
 
-let result = nums.reduce((acc, num) => {
-  acc['even'] = evenNums;
-  acc['odd'] = oddNums;
-  return acc;
-}, {});
+let result = {
+  "odd": oddNums,
+  "even": evenNums
+};
+
+console.log(result);
+
+// solution using without built-in method or funtion
+let evenNums = [];
+let oddNums = [];
+
+for (let i = 0; i < nums.length; i++) {
+  if (nums[i] % 2 === 0) {
+    evenNums[evenNums.length] = nums[i];
+  } else {
+    oddNums[oddNums.length] = nums[i];
+  }
+}
+
+let result = {
+  "odd": oddNums,
+  "even": evenNums
+};
 
 console.log(result);
 ```
@@ -6081,7 +6188,8 @@ console.log(obj2.num);
 Print the result for the code below
 
 ```javascript
-var num = 10; var obj = {
+var num = 10; 
+var obj = {
   num: 20
 }; 
 (function() {
