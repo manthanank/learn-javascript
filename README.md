@@ -93,6 +93,7 @@ This repository contains a list of JavaScript concepts, functions, methods, and 
 - [List of Websites to learn JavaScript](#list-of-websites-to-learn-javascript)
 - [List of Books to learn JavaScript](#list-of-books-to-learn-javascript)
 - [List of YouTube Channels to learn JavaScript](#list-of-youtube-channels-to-learn-javascript)
+- [List of Udemy Courses to learn JavaScript](#list-of-udemy-courses-to-learn-javascript)
 - [List of Games to learn JavaScript by playing](#list-of-games-to-learn-javascript-by-playing)
 - [List of Blogs Sites to learn JavaScript](#list-of-blogs-sites-to-learn-javascript)
 - [List of JavaScript Online Editors/Compilers](#list-of-javascript-online-editorscompilers)
@@ -159,6 +160,8 @@ There are three ways to add JavaScript to a web page:
 </body>
 </html>
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 ## Outputing JavaScript
 
@@ -235,6 +238,8 @@ console.log(5 + 6);
 </html>
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 ## Single Line Comments
 
 Single line comments start with `//`
@@ -252,6 +257,8 @@ Multi-line comments start with `/*` and end with `*/`.
 Hello, How are you?
 */ 
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 ## Variables
 
@@ -276,6 +283,8 @@ let b = 1; // Declare a variable y with the value 10 (block-level scope).
 ```jsx
 const c = 1; // Declare a read-only variable z with the value 15 (block-level scope).
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 ## Data Types
 
@@ -333,6 +342,8 @@ let name;
 ```javascript
 let a = Symbol();
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 ### 2. Non Primitive Data Types
 
@@ -431,6 +442,8 @@ y--;
 console.log(y); // Output: 1
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 ### Logical Operators
 
 | Operator | Description |
@@ -483,6 +496,8 @@ console.log(x ? y : x); // Output: 10
 console.log(x ? x : y); // Output: 5
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 ### Bitwise Operators
 
 | Operator | Description |
@@ -530,6 +545,8 @@ console.log(typeof []); // Output: "object"
 console.log(typeof function() {}); // Output: "function"
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 ### Assignment Operators
 
 | Operator | Description |
@@ -568,6 +585,8 @@ x : y;
 console.log(x); // Output: 10
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 ### Conditional (Ternary) Operator
 
 The conditional (ternary) operator is the only JavaScript operator that takes three operands: a condition followed by a question mark (?), then an expression to execute if the condition is truthy followed by a colon (:), and finally the expression to execute if the condition is falsy.
@@ -602,6 +621,8 @@ console.log(x ?? 'Default Value'); // Output: "Default Value"
 console.log(y ?? 'Default Value'); // Output: "Default Value"
 console.log(z ?? 'Default Value'); // Output: "Hello"
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 ### Optional Chaining Operator(?.)
 
@@ -642,6 +663,8 @@ delete person.age;
 
 console.log(person); // Output: {firstName: "Manthan", lastName: "Ank", eyeColor: "black"}
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 ### Spread (...) Operator
 
@@ -834,6 +857,8 @@ The following are some of the most commonly used array methods in JavaScript:
 - **push()**
 - **reduce()**
 
+[Back to Top⤴️](#table-of-contents)
+
 **concat()** - Joins arrays and returns an array with the joined arrays.
 
 ```javascript
@@ -860,6 +885,8 @@ let array = ['a', 'b', 'c', 'd', 'e', 'f'];
 array.copyWithin(0, 3, 5);
 console.log(array); // Output: ["d", "e", "c", "d", "e", "f"]
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 **entries()** - Returns a key/value pair Array Iteration Object
 
@@ -893,6 +920,8 @@ array.fill('x', 2, 4);
 console.log(array); // Output: ["a", "b", "x", "x", "e", "f"]
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 **filter()** - Creates a new array with every element in an array that pass a test
 
 ```javascript
@@ -925,6 +954,8 @@ let index = array.findIndex(value => value > 3);
 console.log(array); // Output: [1, 2, 3, 4, 5]
 console.log(index); // Output: 3
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 **forEach()** - Calls a function for each array element
 
@@ -979,6 +1010,8 @@ console.log(index); // Output: 2
 console.log(array.indexOf(6)); // Output: -1
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 **isArray()** - Checks whether an object is an array
 
 ```javascript
@@ -1013,6 +1046,8 @@ let iterator = array.keys();
 console.log(array); // Output: ["a", "b", "c"]
 console.log(iterator.next().value); // Output: 0
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 **lastIndexOf()** - Search the array for an element, starting at the end, and returns its position
 
@@ -1056,6 +1091,8 @@ console.log(array); // Output: ["a", "b"]
 console.log(element); // Output: "c"
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 **prototype** - Allows you to add properties and methods to an Array object
 
 ```javascript
@@ -1089,6 +1126,8 @@ console.log(array); // Output: [1, 2, 3, 4, 5]
 console.log(total); // Output: 15
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 **reduceRight()** - Reduce the values of an array to a single value (going right-to-left)
 
 ```javascript
@@ -1120,6 +1159,8 @@ let element = array.shift();
 console.log(array); // Output: ["b", "c"]
 console.log(element); // Output: "a"
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 **slice()** - Selects a part of an array, and returns the new array
 
@@ -1153,6 +1194,8 @@ array.sort();
 console.log(array); // Output: [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 **splice()** - Adds/Removes elements from an array
 
 ```javascript
@@ -1171,6 +1214,8 @@ let array = ['a', 'b', 'c'];
 console.log(array.toString()); // Output: "a,b,c"
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 **unshift()** - Adds new elements to the beginning of an array, and returns the new length
 
 ```javascript
@@ -1188,6 +1233,8 @@ let array = ['a', 'b', 'c'];
 
 console.log(array.valueOf()); // Output: ["a", "b", "c"]
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 ## Strings
 
@@ -1224,6 +1271,8 @@ The following are some of the most commonly used string methods in JavaScript:
 - **substring()**
 - **toLocaleLowerCase()**
 
+[Back to Top⤴️](#table-of-contents)
+
 **charAt()** - Returns the character at a specified index (position)
 
 ```javascript
@@ -1239,6 +1288,8 @@ let myString = "Hello World!";
 
 console.log(myString.charCodeAt(0)); // Output: 72
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 **concat()** - Returns two or more joined strings
 
@@ -1259,6 +1310,8 @@ let myString = "Hello World!";
 console.log(myString.constructor); // Output: ƒ String() { [native code] }
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 **endsWith()** - Returns if a string ends with a specified value
 
 ```javascript
@@ -1274,6 +1327,8 @@ let myString = String.fromCharCode(72, 101, 108, 108, 111);
 
 console.log(myString); // Output: "Hello"
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 **includes()** - Returns if a string contains a specified value
 
@@ -1291,6 +1346,8 @@ let myString = "Hello World!";
 console.log(myString.indexOf("World")); // Output: 6
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 **lastIndexOf()** - Returns the index (position) of the last occurrence of a value in a string
 
 ```javascript
@@ -1306,6 +1363,8 @@ let myString = "Hello World!";
 
 console.log(myString.length); // Output: 12
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 **localeCompare()** - Compares two strings in the current locale
 
@@ -1326,6 +1385,8 @@ console.log(myString); // Output: "The quick brown fox jumps over the lazy dog."
 console.log(result); // Output: ["the", index: 30, input: "The quick brown fox jumps over the lazy dog.", groups: undefined]
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 **prototype** - Allows you to add properties and methods to an object
 
 ```javascript
@@ -1342,6 +1403,8 @@ let myString = "Hello World!";
 
 console.log(myString.repeat(2)); // Output: "Hello World!Hello World!"
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 **replace()** - Searches a string for a value, or a regular expression, and returns a string where the values are replaced
 
@@ -1365,6 +1428,8 @@ console.log(myString); // Output: "The quick brown fox jumps over the lazy dog."
 console.log(result); // Output: 16
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 **slice()** - Extracts a part of a string and returns a new string
 
 ```javascript
@@ -1387,6 +1452,8 @@ console.log(myString); // Output: "Hello World!"
 console.log(array); // Output: ["Hello", "World!"]
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 **startsWith()** - Checks whether a string begins with specified characters
 
 ```javascript
@@ -1405,6 +1472,8 @@ let newString = myString.substr(6, 5);
 console.log(myString); // Output: "Hello World!"
 console.log(newString); // Output: "World"
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 **substring()** - Extracts characters from a string, between two specified indices (positions)
 
@@ -1425,6 +1494,8 @@ let myString = "Hello World!";
 console.log(myString.toLocaleLowerCase()); // Output: "hello world!"
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 **toLocaleUpperCase()** - Returns a string converted to uppercase letters, using the host's locale
 
 ```javascript
@@ -1441,6 +1512,8 @@ let myString = "Hello World!";
 console.log(myString); // Output: "Hello World!"
 console.log(myString.toLowerCase()); // Output: "hello world!"
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 **toString()** - Returns a string or a string object as a string
 
@@ -1461,6 +1534,8 @@ console.log(myString); // Output: "Hello World!"
 console.log(myString.toUpperCase()); // Output: "HELLO WORLD
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 **trim()** - Returns a string with removed whitespaces
 
 ```javascript
@@ -1479,6 +1554,8 @@ console.log(myString); // Output: " Hello World! "
 console.log(myString.trimEnd()); // Output: " Hello World!"
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 **trimStart()** - Returns a string with removed whitespaces from the start
 
 ```javascript
@@ -1496,6 +1573,8 @@ let myString = "Hello World!";
 console.log(myString.valueOf()); // Output: "Hello World!"
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 ## Loops
 
 Loops are used to execute a block of code multiple times.
@@ -1507,6 +1586,8 @@ There are several types of loops in JavaScript:
 - do while loop
 - for in loop
 - for of loop
+
+[Back to Top⤴️](#table-of-contents)
 
 ### for loop
 
@@ -1529,6 +1610,8 @@ while (i < 5) {
   i++;
 }
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 ### do while loop
 
@@ -1553,6 +1636,8 @@ for (let prop in obj) {
 }
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 ### for of loop
 
 This type of loop is used to iterate over the iterable objects such as arrays, strings, and maps.
@@ -1575,6 +1660,8 @@ There are several types of conditional statements in JavaScript:
 - if else else if statement
 - switch statement
 
+[Back to Top⤴️](#table-of-contents)
+
 ## if statement
 
 The if statement is used to execute a block of code if a specified condition is true.
@@ -1596,6 +1683,8 @@ if (x > 0) {
   console.log("x is not greater than 0");
 }
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 ### if else else if statement
 
@@ -1633,6 +1722,8 @@ switch (day) {
 }
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 ## Functions
 
 Defined with the function keyword, followed by a name, followed by parentheses ().
@@ -1648,6 +1739,8 @@ function name(parameter1, parameter2, parameter3) {
 - Named Function
 - Anonymous Function
 - Arrow Function
+
+[Back to Top⤴️](#table-of-contents)
 
 ### Named Function
 
@@ -1696,6 +1789,8 @@ const name = () => {
   return expression
 }
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 ## Scope
 
@@ -1746,6 +1841,8 @@ function myFunction () {
 myFunction();
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 ### Function Scope
 
 ```javascript
@@ -1771,6 +1868,8 @@ myFunction()
 console.log(a);
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 ## Dates
 
 JavaScript provides a built-in Date object that can be used to work with dates and times.
@@ -1793,6 +1892,8 @@ new Date(milliseconds) // milliseconds since January 1, 1970, 00:00:00 UTC
 new Date(dateString) // date string (e.g. "October 13, 2014 11:13:00")
 new Date(year, month, day, hours, minutes, seconds, milliseconds) // year, month, day, hours, minutes, seconds, milliseconds
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 ### Date Properties
 
@@ -1819,6 +1920,8 @@ const d = new Date();
 d.UTC(); // 1642149980524
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 **parse** - Parses a date string and returns the number of milliseconds since January 1, 1970, 00:00:00 UTC
 
 ```javascript
@@ -1830,6 +1933,8 @@ Date.parse("Jan 1, 2023"); // 1672531200000
 ```javascript
 Date.now(); // 1642149980524
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 ### Date Methods
 
@@ -1847,6 +1952,8 @@ const d = new Date();
 d.toDateString(); // 'Sat Jan 14 2023'
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 **toUTCString** - It is a built-in function that can be used to convert a date object to a string in the format of "Weekday, DD Mon YYYY HH:MM:SS GMT".
 
 ```javascript
@@ -1860,6 +1967,8 @@ d.toUTCString(); // 'Sat, 14 Jan 2023 05:06:20 GMT'
 const d = new Date();
 d.toISOString(); // '2023-01-14T05:06:20.524Z'
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 ## Date Get Methods
 
@@ -1878,6 +1987,8 @@ d.getFullYear();
 const d = new Date();
 d.getMonth();
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 **getDate** - returns the day of the month of the date (1-31).
 
@@ -1900,6 +2011,8 @@ const d = new Date();
 d.getHours();
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 **getMinutes** - returns the minutes of the date (0-59).
 
 ```javascript
@@ -1914,6 +2027,8 @@ const d = new Date();
 d.getSeconds();
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 **getMilliseconds** - returns the milliseconds of the date (0-999).
 
 ```javascript
@@ -1927,6 +2042,8 @@ d.getMilliseconds();
 const d = new Date();
 d.getTime();
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 ## Date Set Methods
 
@@ -1943,6 +2060,8 @@ d.setDate(15);
 const d = new Date();
 d.setFullYear(2020);
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 **setHours** - sets the hours, minutes, seconds and milliseconds of the date object.
 
@@ -1965,6 +2084,8 @@ const d = new Date();
 d.setMinutes(30);
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 **setSeconds** - sets the seconds and milliseconds of the date object.
 
 ```javascript
@@ -1986,13 +2107,15 @@ const d = new Date();
 d.setTime(30);
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 ## Type Conversion
 
 JavaScript is a loosely typed language, which means that variables can hold values of any data type. JavaScript automatically converts the data type of a variable to the appropriate type when needed.
 
 ### Convert string to numbers
 
-Number
+**Number** - Converts a string to a number using the Number() function.
 
 ```javascript
 Number("3.14") // 3.14
@@ -2003,14 +2126,18 @@ Number("99 88") // NaN
 Number("John") // NaN
 ```
 
-parseFloat
+[Back to Top⤴️](#table-of-contents)
+
+**parseFloat** - Converts a string to a floating-point number using the parseFloat() method.
 
 ```javascript
 let num = parseFloat("123.456");
 console.log(num); // Output: 123.456
 ```
 
-parseInt
+[Back to Top⤴️](#table-of-contents)
+
+**parseInt** - Converts a string to an integer using the parseInt() method.
 
 ```javascript
 let num = parseInt("123");
@@ -2019,35 +2146,39 @@ console.log(num); // Output: 123
 
 ### Convert number to a string
 
-String
+**String** - Converts a number to a string using the String() method.
 
 ```javascript
 let str = String(123);
 console.log(str); // Output: "123"
 ```
 
-toString
+[Back to Top⤴️](#table-of-contents)
+
+**toString** - Converts a number to a string using the toString() method.
 
 ```javascript
 let str = (123).toString();
 console.log(str); // Output: "123"
 ```
 
-toExponential
+**toExponential** - Converts a number to a string, using toExponential() method.
 
 ```javascript
 let str = (123).toExponential();
 console.log(str); // Output: 1.23e+2
 ```
 
-toFixed
+**toFixed** - Converts a number to a string, using toFixed() method.
 
 ```javascript
 let str = (123).toFixed();
 console.log(str); // Output: 123
 ```
 
-toPrecision
+[Back to Top⤴️](#table-of-contents)
+
+**toPrecision** - Converts a number to a string, using toPrecision() method.
 
 ```javascript
 let str = (123).toPrecision();
@@ -2056,27 +2187,31 @@ console.log(str); // Output: 123
 
 ### Convert dates to numbers
 
-Number
+**Number** - Converts a date to a number using the Number() function.
 
 ```javascript
 d = new Date();
 Number(d) // 1673677425068
 ```
 
-getTime
+[Back to Top⤴️](#table-of-contents)
+
+**getTime** Converts a date to a number using the getTime() method.
 
 ```javascript
 d = new Date();
 d.getTime() // 1673677461233
 ```
 
-string
+**string** - Converts a date to a string using the String() function.
 
 ```javascript
 String(Date()) // 'Sat Jan 14 2023 11:54:38 GMT+0530 (India Standard Time)'
 ```
 
-toString
+[Back to Top⤴️](#table-of-contents)
+
+**toString** - Converts a date to a string using the toString() method.
 
 ```javascript
 Date().toString() //'Sat Jan 14 2023 11:54:57 GMT+0530 (India Standard Time)'
@@ -2084,16 +2219,18 @@ Date().toString() //'Sat Jan 14 2023 11:54:57 GMT+0530 (India Standard Time)'
 
 ### Convert boolean to number
 
-Number
+**Number** - Converts a boolean to a number using the Number() function.
 
 ```javascript
 Number(false)     // returns 0
 Number(true)      // returns 1
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 ### Convert boolean to string
 
-string
+**string** - Converts a boolean to a string using the String() function.
 
 ```javascript
 String(false)      // returns "false"
@@ -2125,6 +2262,8 @@ String(true)       // returns "true"
 | null | 0 | "null" | false |
 | undefined | NaN | "undefined" | false |
 
+[Back to Top⤴️](#table-of-contents)
+
 ## Typeof
 
 The typeof operator is used to get the data type of a variable or an expression.
@@ -2142,6 +2281,8 @@ typeof myCar                  // Returns "undefined" *
 typeof null                   // Returns "object"
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Keep in mind that
 
 - The data type of NaN is number
@@ -2158,6 +2299,8 @@ The Math object allows you to perform mathematical tasks on numbers.
 ```javascript
 Math.PI // returns 3.141592653589793
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 ### Math Property
 
@@ -2178,6 +2321,8 @@ Math.LOG2E    // returns base 2 logarithm of E
 Math.LOG10E   // returns base 10 logarithm of E
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 ### Math Methods
 
 The Math object has several built-in methods that can be used to perform mathematical tasks. Some of the most commonly used methods are:
@@ -2194,6 +2339,8 @@ Math.round(4.6); // 5
 Math.ceil(4.4); // 5
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 **Math.floor** - Returns x rounded down to its nearest integer
 
 ```javascript
@@ -2205,6 +2352,8 @@ Math.floor(4.7); // 4
 ```javascript
 Math.trunc(4.7); // 4
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 **Math.sign** - Returns if x is negative, null or positive.
 
@@ -2224,6 +2373,8 @@ Math.pow(8, 2); // 64
 Math.sqrt(64); // 8
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 **Math.abs** - returns the absolute (positive) value of x.
 
 ```javascript
@@ -2241,6 +2392,8 @@ Math.sin(90 * Math.PI / 180);     // returns 1 (the sine of 90 degrees)
 ```javascript
 Math.cos(0 * Math.PI / 180);     // returns 1 (the cos of 0 degrees)
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 **Math.min** - It can be used to find the lowest value in a list of arguments.
 
@@ -2260,6 +2413,8 @@ Math.max(0, 150, 30, 20, -8, -200); // 150
 Math.random(); // 0.07840484495533051
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 **Math.log** - returns the natural logarithm of x.
 
 ```javascript
@@ -2277,6 +2432,8 @@ Math.log2(8); // 3
 ```javascript
 Math.log10(1000); // 3
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 | Method | Description |
 |---|---|
@@ -2316,6 +2473,8 @@ collection of unique values. A Set is a collection of unique values. A Set can h
 const letters = new Set(["a","b","c"]);
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 ### Set Properties
 
 **constructor** - Returns the function that created the Set object's prototype
@@ -2332,6 +2491,8 @@ Set.prototype.size = 0;
 const letters = new Set(["a","b","c"]);
 letters.size; // 3
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 ### Set Methods
 
@@ -2351,6 +2512,8 @@ The Set object has several built-in methods that can be used to work with Sets. 
 const letters = new Set(["a","b","c"]);
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 **add** - Adds a new element to the Set
 
 ```javascript
@@ -2368,6 +2531,8 @@ letters.delete("d");
 ```javascript
 letters.has("a");
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 **forEach** - Invokes a callback for each element in the Set
 
@@ -2388,6 +2553,8 @@ letters.forEach (function(value) {
 letters.values()   // Returns [object Set Iterator]
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 **size Property** - Returns the number of elements in a Set
 
 ```javascript
@@ -2405,6 +2572,8 @@ const fruits = new Map([
   ["oranges", 200]
 ]);
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 ### Map Properties
 
@@ -2426,6 +2595,8 @@ const fruits = new Map([
 ]);
 fruits.size; // 3
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 ### Map Methods
 
@@ -2451,6 +2622,8 @@ const fruits = new Map([
 ]);
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 **set** - Sets the value for a key in a Map
 
 ```javascript
@@ -2474,6 +2647,8 @@ fruits.get("apples");    // Returns 500
 ```javascript
 fruits.delete("apples");
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 **has** - Returns true if a key exists in a Map
 
@@ -2507,6 +2682,8 @@ for (const x of fruits.entries()) {
 fruits.size;
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 ## Async
 
 Asynchronous programming allows you to run multiple tasks concurrently without blocking the main thread. JavaScript provides several ways to work with asynchronous code, including callbacks, promises, and async/await.
@@ -2529,6 +2706,8 @@ myCalculator(5, 5, myDisplayer);
 
 // Output: 10
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 ### Asynchronous JavaScript
 
@@ -2566,6 +2745,8 @@ myCalculator(5, 5, myDisplayer);
 
 // Output: 10
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 ### Promise
 
@@ -2618,6 +2799,8 @@ myPromise.then((value) => {
 // Output: The async operation was successful
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 ### async/await
 
 The async/await syntax allows you to write asynchronous code that looks synchronous. The async keyword is used to define an asynchronous function, and the await keyword is used to wait for a promise to be resolved.
@@ -2657,6 +2840,8 @@ myFunction();
 // Output: The async operation was successful
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 ## DOM
 
 The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document as a tree of nodes, where each node is an object representing a part of the document.
@@ -2681,6 +2866,8 @@ document.cookie;
 document.doctype;
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 **document.documentElement** - Returns the document's root element
 
 ```javascript
@@ -2698,6 +2885,8 @@ document.documentURI;
 ```javascript
 document.domain;
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 **document.head** - Returns the head element
 
@@ -2723,6 +2912,8 @@ document.lastModified;
 document.links;
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 **document.readyState** - Returns the loading status of the document
 
 ```javascript
@@ -2747,6 +2938,8 @@ document.title;
 document.URL;
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 ### DOM Methods
 
 The Document object has several built-in methods that can be used to manipulate the document. Some of the most commonly used methods are:
@@ -2764,6 +2957,8 @@ adoptNode() - It is used to adopt the node from the other documents.
 ```javascript
 document.adoptNode(node);
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 append() - It appends the new node or HTML after the last child node of the document.
 
@@ -2783,6 +2978,8 @@ close() - It closes the output stream opened using the document.open() method.
 document.close();
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 createAttribute() - It creates a new attribute node.
 
 ```javascript
@@ -2800,6 +2997,8 @@ createComment() - It creates a new comment node with a specific text message.
 ```javascript
 document.createComment("This is a comment");
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 createDocumentFragment() - It creates a DocumentFragment node.
 
@@ -2825,6 +3024,8 @@ createEvent() - It creates a new event node.
 document.createEvent("Event");
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 createTextNode() - It creates a new text node.
 
 ```javascript
@@ -2842,6 +3043,8 @@ elementsFromPoint() - It returns the array of elements that are at the specified
 ```javascript
 document.elementsFromPoint(x, y);
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 getAnimations() - It returns the array of all animations applied on the document.
 
@@ -2861,6 +3064,8 @@ getElementsByClassName() - It accesses the HTML element using the class name.
 document.getElementsByClassName("class");
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 getElementsByName() - It accesses the HTML element using the name.
 
 ```javascript
@@ -2878,6 +3083,8 @@ hasFocus() - It returns the boolean value based on whether any element or docume
 ```javascript
 document.hasFocus();
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 importNode() - It is used to import the node from another document.
 
@@ -2897,6 +3104,8 @@ open() - It is used to open a new output stream.
 document.open();
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 prepand() - It is used to insert the particular node before all nodes.
 
 ```javascript
@@ -2915,6 +3124,8 @@ querySelectorAll() - It returns the nodelist of the HTML elements, which matches
 document.querySelectorAll("p.intro");
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 removeEventListener() - It is used to remove the event listener from the document.
 
 ```javascript
@@ -2929,6 +3140,8 @@ replaceChildren() - It replaces the children nodes of the document.
 document.replaceChildren(node);
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 write() - It is used to write text, HTML, etc., into the document.
 
 ```javascript
@@ -2940,6 +3153,8 @@ writeln() - It is similar to the write() method but writes each statement in the
 ```javascript
 document.writeln("Hello World!");
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 ### Documents
 
@@ -2964,6 +3179,8 @@ The Document object represents the entire HTML document. It is the root node of 
 | Method | Description |
 |--|--|
 | element.setAttribute(attribute, value) | Change the attribute value of an HTML element |
+
+[Back to Top⤴️](#table-of-contents)
 
 **Adding and Deleting Elements** -
 
@@ -3011,6 +3228,8 @@ The Document object represents the entire HTML document. It is the root node of 
 | document.title | Returns the  element | 1 |
 | document.URL | Returns the complete URL of the document | 1 |
 
+[Back to Top⤴️](#table-of-contents)
+
 **Elements** -
 
 Finding HTML elements by id
@@ -3036,6 +3255,8 @@ Finding HTML elements by CSS selectors
 ```javascript
 const x = document.querySelectorAll("p.intro");
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Finding HTML elements by HTML object collections
 
@@ -3066,6 +3287,8 @@ Changing CSS
 document.getElementById("demo").style.fontSize = "35px";
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Animations
 
 ```javascript
@@ -3085,6 +3308,8 @@ document.getElementById("myBtn").addEventListener("click", function() {
   alert("Hello World!");
 });
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Navigation
 
@@ -3115,6 +3340,8 @@ Lists
 ```javascript
 document.getElementById("myList").innerHTML = "Mango";
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 ## Browser BOM
 
@@ -3149,6 +3376,8 @@ window.innerWidth;
 
 window.innerHeight;
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 **Window Screen** -
 
@@ -3196,6 +3425,8 @@ document.getElementById("demo").innerHTML =
 "Screen Pixel Depth: " + screen.pixelDepth;
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Example
 
 ```javascript
@@ -3236,6 +3467,8 @@ document.getElementById('demo6').innerHTML =
 
 [Stackblitz Link](https://stackblitz.com/edit/web-platform-paqevc?file=index.html)
 
+[Back to Top⤴️](#table-of-contents)
+
 Window Location
 
 `window.location` - object can be used to get the current page address (URL) and to redirect the browser to a new page.
@@ -3274,6 +3507,8 @@ window.location.assign() loads a new document
 document.getElementById("demo").innerHTML =
 "Port number is " + window.location.port;
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Window Location Assign
 
@@ -3340,6 +3575,8 @@ document.getElementById('demo5').innerHTML =
 
 [Stackblitz Link](https://stackblitz.com/edit/web-platform-sixdd6?file=script.js)
 
+[Back to Top⤴️](#table-of-contents)
+
 **Window History** - The window.history object contains the browser's history.
 
 `window.history` - object can be written without the window prefix.
@@ -3375,6 +3612,8 @@ window.history.forward()
 </html>
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 **Window Navigator** - Window Navigator object contains information about the visitor's browser.
 
 navigator.cookieEnabled
@@ -3403,6 +3642,8 @@ Browser Application Code Name
 document.getElementById("demo").innerHTML =
 "navigator.appCodeName is " + navigator.appCodeName;
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Browser Engine
 
@@ -3440,6 +3681,8 @@ Is The Browser Online?
 ```javascript
 document.getElementById("demo").innerHTML = navigator.onLine;
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Is Java Enabled?
 
@@ -3502,6 +3745,8 @@ document.getElementById('demo10').innerHTML =
 
 [Stackblitz Link](https://stackblitz.com/edit/web-platform-m1vzbh?file=index.html)
 
+[Back to Top⤴️](#table-of-contents)
+
 **Popup Boxes** -
 
 Alert Box
@@ -3536,6 +3781,8 @@ function myFunction() {
 ```
 
 [Replit Link](https://replit.com/@manthanank/Alert-box-in-JavaScript#index.html)
+
+[Back to Top⤴️](#table-of-contents)
 
 Confirm Box
 
@@ -3576,6 +3823,8 @@ function myFunction() {
 ```
 
 [Replit Link](https://replit.com/@manthanank/Confirm-Box-in-JavaScript#index.html)
+
+[Back to Top⤴️](#table-of-contents)
 
 Prompt Box
 
@@ -3619,6 +3868,8 @@ function myFunction() {
 
 [Replit Link](https://replit.com/@manthanank/Prompt-Box#index.html)
 
+[Back to Top⤴️](#table-of-contents)
+
 Line Breaks
 
 ```javascript
@@ -3644,6 +3895,8 @@ Line Breaks
 
 [Replit Link](https://replit.com/@manthanank/Line-Breaks-in-JavaScript#index.html)
 
+[Back to Top⤴️](#table-of-contents)
+
 **Timing Events** -
 
 **setTimeout(function, milliseconds)** - Executes a function, after waiting a specified number of milliseconds.
@@ -3665,6 +3918,8 @@ setInterval(() => {
   console.log("Hello World!");
 }, 5000);
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 **Cookies** - Cookies are data, stored in small text files, on your computer.
 
@@ -3698,6 +3953,8 @@ Delete a Cookie with JavaScript
 ```javascript
 document.cookie = "username=; expires=Sat, 28 Jan 2023 12:00:00 UTC; path=/;";
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 ## Web API
 
@@ -3733,6 +3990,8 @@ function myFunction() {
 document.getElementById("id1").setCustomValidity("Input not valid");
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 **Constraint Validation DOM Properties** -
 
 `validity` - Contains boolean properties related to the validity of an input element.
@@ -3752,6 +4011,8 @@ document.getElementById("id1").validationMessage;
 ```javascript
 document.getElementById("id1").willValidate;
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 **Validity Properties** -
 
@@ -3785,6 +4046,8 @@ function myFunction() {
 }
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 `rangeUnderflow` - Set to true, if an element's value is less than its min attribute.
 
 ```html
@@ -3815,6 +4078,8 @@ document.getElementById("id1").validity.stepMismatch;
 document.getElementById("id1").validity.tooLong;
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 `typeMismatch` - Set to true, if an element's value is invalid per its type attribute.
 
 ```javascript
@@ -3832,6 +4097,8 @@ document.getElementById("id1").validity.valueMissing;
 ```javascript
 document.getElementById("id1").validity.valid;
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 **History API** -
 
@@ -3852,6 +4119,8 @@ function myFunction() {
   window.history.go(-2);
 }
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 **History Object Properties** -
 
@@ -3881,6 +4150,8 @@ history.forward()
 history.go()
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 **Storage API** -
 
 Web Storage API is a simple syntax for storing and retrieving data in the browser.
@@ -3900,6 +4171,8 @@ getItem() Method
 ```javascript
 localStorage.getItem("name", "Manthan Ankolekar");
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 sessionStorage Object -
 
@@ -3933,6 +4206,8 @@ localStorage.length;
 sessionStorage.length;
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 getItem(keyname) - Returns the value of the specified key name
 
 ```jsx
@@ -3961,6 +4236,8 @@ localStorage.clear()
 sessionStorage.clear()
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Related Pages for Web Storage API
 
 window.localStorage - Allows to save key/value pairs in a web browser. Stores the data with no expiration date
@@ -3978,6 +4255,8 @@ window.sessionStorage
 
 sessionStorage
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 **Worker API** -
 
@@ -4013,6 +4292,8 @@ function showPosition(position) {
 }
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 ## AJAX
 
 AJAX (Asynchronous JavaScript and XML) is a technique used in web development to create asynchronous web applications. It allows you to update parts of a web page without reloading the entire page. Originally, XML (eXtensible Markup Language) was commonly used for data exchange, but modern AJAX implementations often use JSON (JavaScript Object Notation) for data interchange due to its lighter syntax.
@@ -4031,6 +4312,8 @@ xhttp.send(); // Send the request
 ```
 
 You can also send data along with the request by passing parameters within the send() method.
+
+[Back to Top⤴️](#table-of-contents)
 
 **Response** - Handling the response from the server can be done using event listeners like onreadystatechange and checking for the readyState and status of the request
 
@@ -4058,6 +4341,8 @@ xhttp.onreadystatechange = function() {
 };
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 ## JSON
 
 JSON (JavaScript Object Notation) is a lightweight data-interchange format. It is easy for humans to read and write. It is easy for machines to parse and generate. JSON is a text format that is completely language-independent but uses conventions that are familiar to programmers of the C family of languages, including C, C++, C#, Java, JavaScript, Perl, Python, and many others.
@@ -4081,6 +4366,8 @@ Data Types
 - an array
 - a boolean
 - null
+
+[Back to Top⤴️](#table-of-contents)
 
 **String:**
 
@@ -4122,6 +4409,8 @@ const bool = true;
 const nullValue = null;
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 **Parse** - The parse() method is used to parse a JSON string and convert it into a JavaScript object.
 
 ```javascript
@@ -4151,6 +4440,8 @@ const person = {
 };
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 **Arrays** - Arrays in JSON are ordered lists of values enclosed in square brackets [].
 
 ```javascript
@@ -4168,6 +4459,8 @@ $("p")
 $(".test")
 $("#test")
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 ## Graphics
 
@@ -4193,6 +4486,8 @@ const data = [
 Plotly.newPlot('myDiv', data);
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 **Chart.js** - Chart.js is a simple yet flexible JavaScript charting library for designers & developers.
 
 ```javascript
@@ -4205,6 +4500,8 @@ const ctx = document.getElementById('myChart').getContext('2d');
 google.charts.load('current', {packages: ['corechart', 'bar']});
 google.charts.setOnLoadCallback(drawChart);
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 **D3.js** - D3.js is a JavaScript library for producing dynamic, interactive data visualizations in web browsers.
 
@@ -4226,6 +4523,8 @@ svg.append("text")
   .attr("dy", ".3em")
   .text("Hello, D3.js!");
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 ## Best Practices
 
@@ -4265,6 +4564,8 @@ function myFunction() {
 }
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Intialize Variables - Always initialize variables when you declare them.
 
 ```javascript
@@ -4301,6 +4602,8 @@ let colors = ["Red", "Green", "Blue"];
 const colors = ["Red", "Green", "Blue"];
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Don't Use new Objects - Avoid using the `new` keyword to create objects.
 
 ```javascript
@@ -4322,6 +4625,8 @@ Use === Comparison - Use the `===` operator to compare values and data types.
 ```javascript
 console.log(10 === "10"); // Output: false
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Use Parameter Defaults - Use parameter defaults to assign default values to function parameters.
 
@@ -4365,6 +4670,8 @@ switch (new Date().getDay()) {
 console.log(day);
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Avoid Number, String, and Boolean as Objects - Avoid using `Number`, `String`, or `Boolean` objects.
 
 ```javascript
@@ -4384,6 +4691,8 @@ let x = eval("10 * 20");
 // Good
 let x = 10 * 20;
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 ## Common Mistakes
 
@@ -4417,6 +4726,8 @@ Misundering Floats - Be aware of floating-point arithmetic in JavaScript.
 console.log(0.1 + 0.2); // Output: 0.30000000000000004
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Breaking a JavaScript String - Be careful when breaking a string into multiple lines.
 
 ```javascript
@@ -4444,6 +4755,8 @@ function myFunction() {
 
 console.log(myFunction()); // Output: undefined
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Accessing Arrays with Named Indexes - Be careful when accessing arrays with named indexes.
 
@@ -4474,6 +4787,8 @@ let x;
 console.log(x); // Output: undefined
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 ## Performance
 
 Reduce Activity in Loops - Avoid unnecessary activity inside loops.
@@ -4501,6 +4816,8 @@ let element = document.getElementById("demo");
 element.innerHTML = "Hello, World!";
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Reduce DOM Size - Minimize the size of the DOM.
 
 ```javascript
@@ -4527,6 +4844,8 @@ let z = x + y;
 // Good
 let z = 10 + 20;
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Delay Javascript Loading - Load JavaScript files at the end of the body tag.
 
@@ -4557,6 +4876,8 @@ let text = "Hello, World!";
 console.log(text);
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 ## ES6 Features
 
 The let keyword - The `let` keyword allows you to declare block-scoped variables.
@@ -4581,6 +4902,8 @@ PI = 3.14; // Error: Assignment to constant variable
 console.log(PI); // Output: 3.14159
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Arrow Functions - Arrow functions provide a more concise syntax for writing function expressions.
 
 ```javascript
@@ -4598,6 +4921,8 @@ const arr2 = [...arr1, 4, 5, 6];
 
 console.log(arr2); // Output: [1, 2, 3, 4, 5, 6]
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 For/of Loop - The `for...of` loop allows you to iterate over the values of an iterable object.
 
@@ -4620,6 +4945,8 @@ map.set("name", "Alice");
 
 console.log(map.get("name")); // Output: Alice
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Set Objects - The `Set` object allows you to store unique values of any type.
 
@@ -4650,6 +4977,8 @@ const person = new Person("Alice", 30);
 person.greet(); // Output: Hello, my name is Alice and I am 30 years old.
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Promises - Promises provide a more flexible way to handle asynchronous operations in JavaScript.
 
 ```javascript
@@ -4675,6 +5004,8 @@ obj[key] = "value";
 
 console.log(obj[key]); // Output: value
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Default Parameters - Default parameters allow you to specify default values for function parameters.
 
@@ -4704,6 +5035,8 @@ const str = "Hello, World!";
 console.log(str.includes("World")); // Output: true
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 String.startsWith() - The `startsWith()` method allows you to check if a string starts with a specific substring.
 
 ```javascript
@@ -4726,6 +5059,8 @@ const arr = Array.from("Hello");
 
 console.log(arr); // Output: ["H", "e", "l", "l", "o"]
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Array keys() - The `keys()` method returns an array iterator that contains the keys for each index in the array.
 
@@ -4759,6 +5094,8 @@ const index = arr.findIndex((x) => x > 3);
 console.log(index); // Output: 3
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 New Math Methods - The `Math` object in JavaScript provides several new methods in ES6.
 
 ```javascript
@@ -4783,6 +5120,8 @@ New Global Methods - The global object in JavaScript provides several new method
 console.log(isFinite(10)); // Output: true
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Object entries - The `Object.entries()` method returns an array of a given object's own enumerable property `[key, value]` pairs.
 
 ```javascript
@@ -4804,6 +5143,8 @@ import { add } from "./math.js";
 
 console.log(add(10, 20)); // Output: 30
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 ## ES5 Features
 
@@ -4831,6 +5172,8 @@ console.log(str); // Output: Hello,
                   //         World!
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 String.trim() - The `trim()` method removes whitespace from both ends of a string.
 
 ```javascript
@@ -4856,6 +5199,8 @@ arr.forEach((x) => console.log(x));
 
 // Output: 1, 2, 3
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Array map() - The `map()` method creates a new array with the results of calling a provided function on every element in the array.
 
@@ -4887,6 +5232,8 @@ const result = arr.reduce((acc, val) => acc + val, 0);
 console.log(result); // Output: 15
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Array reduceRight() - The `reduceRight()` method applies a function against an accumulator and each value of the array (from right-to-left) to reduce it to a single value.
 
 ```javascript
@@ -4917,6 +5264,8 @@ const result = arr.some((x) => x > 3);
 console.log(result); // Output: true
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Array indexOf() - The `indexOf()` method returns the first index at which a given element can be found in the array, or -1 if it is not present.
 
 ```javascript
@@ -4946,6 +5295,8 @@ const jsonObject = JSON.parse(jsonString);
 
 console.log(jsonObject); // Output: { name: 'Alice', age: 30 }
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 JSON.stringify() - The `stringify()` method converts a JavaScript object to a JSON string.
 
@@ -4980,6 +5331,8 @@ const date = new Date();
 
 console.log(date.toJSON()); // Output: "2021-10-08T07:00:00.000Z"
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Property getters and setters - Getters and setters allow you to define object properties that behave like methods.
 
@@ -5020,6 +5373,8 @@ const keys = Object.keys(obj);
 
 console.log(keys); // Output: ["name", "age"]
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Object defineProperty() - The `defineProperty()` method defines a new property directly on an object, or modifies an existing property.
 
@@ -5339,6 +5694,8 @@ Here are a few JavaScript snippets that you might find useful:
 
     console.log(foundNumber); // Output: 4
     ```
+
+[Back to Top⤴️](#table-of-contents)
 
 ## Short Hands
 
@@ -5980,6 +6337,8 @@ JavaScript offers several shorthand techniques to write code more concisely and 
     const foundNumber = [1, 2, 3, 4, 5].find(num => num > 3);
     ```
 
+[Back to Top⤴️](#table-of-contents)
+
 ## Interview Questions
 
 Print only id's from the below array
@@ -6008,6 +6367,8 @@ for (let i = 0; i < nameList.length; i++) {
 }
 console.log(ids); // ['1', '2', '3']
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Print the output as shown below
 
@@ -6078,6 +6439,8 @@ for (let i = 0; i < 3; i++){
 }
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Print a inverted half pyramid in JavaScript as shown below
 
 ```jsx
@@ -6143,6 +6506,8 @@ let result = {
 console.log(result);
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Show Chess board in javascript and make it to center.
 
 ```javascript
@@ -6199,6 +6564,8 @@ var obj = {
 // output: 10 20
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Print the result for the code below
 
 ```javascript
@@ -6225,6 +6592,8 @@ newObj();
 
 // output: 20
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Print the result for the code below
 
@@ -6258,6 +6627,8 @@ person.greet();
 // output: Hello, my name is Jane
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Print the result for the code below
 
 ```javascript
@@ -6288,9 +6659,13 @@ newObj();
 // output: 10
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Write a JavaScript program to remove duplicate items from an array.
 
 ```javascript
+let arr = ['CS001', 'TSW002','STS003','CS001','TSW002','STS004'];
+
 // using built-in Set
 let arr = ['CS001', 'TSW002','STS003','CS001','TSW002','STS004'];
 let uniqueArr = [...new Set(arr)];
@@ -6382,6 +6757,73 @@ for (let i = 0; i < arr.length; i++) {
 console.log(uniqueArr); // Output: ['CS001', 'TSW002', 'STS003', 'STS004']
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
+Write a JavaScript program to find 'CS001' in the array.
+
+```javascript
+let arr = ['CS001', 'TSW002','STS003','CS001','TSW002','STS004'];
+
+// using built-in method find
+let arr = ['CS001', 'TSW002','STS003','CS001','TSW002','STS004'];
+let index = arr.find((item) => item === 'TSW002');
+console.log(index); // Output: TSW002
+
+// using without built-in methods or functions
+let arr = ['CS001', 'TSW002','STS003','CS001','TSW002','STS004'];
+let index = -1;
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] === 'TSW002') {
+    index = i;
+    break;
+  }
+}
+console.log(index); // Output: 1
+console.log(arr[index]); // Output: TSW002
+```
+
+Write a JavaScript program to find middle element of an array.
+
+```javascript
+let arr = ['CS001', 'TSW002','STS003','CS001','TSW002'];
+
+// using built-in method slice
+let arr = ['CS001', 'TSW002','STS003','CS001','TSW002'];
+let middle = arr.slice(Math.floor(arr.length / 2), Math.ceil(arr.length / 2) + 1);
+console.log(middle); // Output: ['STS003']
+
+// using without built-in methods or functions
+let arr = ['CS001', 'TSW002','STS003','CS001','TSW002'];
+let middle = [];
+if (arr.length % 2 === 0) {
+  middle = [arr[arr.length / 2 - 1], arr[arr.length / 2]];
+} else {
+  middle = [arr[(arr.length - 1) / 2]];
+}
+console.log(middle); // Output: ['STS003']
+```
+
+[Back to Top⤴️](#table-of-contents)
+
+Write a JavaScript program to find last element of an array.
+
+```javascript
+let arr = ['CS001', 'TSW002','STS003','CS001','TSW002','STS004'];
+
+// using built-in method or function
+let arr = ['CS001', 'TSW002','STS003','CS001','TSW002','STS004'];
+let last = arr[arr.length - 1];
+console.log(last); // Output: STS004
+
+// using without built-in methods or functions
+let arr = ['CS001', 'TSW002','STS003','CS001','TSW002','STS004'];
+for (let i = 0; i < arr.length; i++) {
+  if (i === arr.length - 1) {
+    console.log(arr[i]); // Output: STS004
+  }
+}
+```
+
 Give the output for the code below
 
 ```javascript
@@ -6395,6 +6837,8 @@ console.log("count1", c()); // Output: 0
 console.log("count2", c()); // Output: 1
 console.log("count3", c()); // Output: 2
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Program To Print Hello World
 
@@ -6426,6 +6870,8 @@ console.log("The square root of " + num + " is: " + squareRoot);
 
 // Output: The square root of 16 is: 4
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Program to Calculate the Area of a Triangle
 
@@ -6481,6 +6927,8 @@ if (discriminant > 0) {
 // Output: The roots are: -2 and -3
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Program to Convert Kilometers to Miles
 
 ```javascript
@@ -6514,6 +6962,8 @@ console.log("Random number between " + min + " and " + max + " is: " + randomNum
 
 // Output: Random number between 1 and 10 is: 7
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Program to Check if a number is Positive, Negative, or Zero
 
@@ -6566,6 +7016,8 @@ console.log("The largest number is: " + largest);
 
 // Output: The largest number is: 20
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Program to Check Prime Number
 
@@ -6625,6 +7077,8 @@ for (let i = lowerNumber; i <= upperNumber; i++) {
 // Output: Prime numbers between 10 and 50 are:
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Program to Find the Factorial of a Number
 
 ```javascript
@@ -6674,6 +7128,8 @@ for (let i = 1; i <= num; i++) {
 
 // Output: Fibonacci series up to 10 terms: 0 1 1 2 3 5 8 13 21 34
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Program to Check Armstrong Number
 
@@ -6726,6 +7182,8 @@ for (let i = lowerNumber; i <= upperNumber; i++) {
 // Output: Armstrong numbers between 100 and 1000 are: 153 370 371 407
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Program to Make a Simple Calculator
 
 ```javascript
@@ -6769,6 +7227,8 @@ console.log("The sum of natural numbers up to " + num + " is: " + sum);
 // Output: The sum of natural numbers up to 10 is: 55
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Program to Check if the Numbers Have Same Last Digit
 
 ```javascript
@@ -6783,6 +7243,8 @@ if (num1 % 10 === num2 % 10) {
 
 // Output: Both numbers have the same last digit
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Program to Find HCF or GCD
 
@@ -6801,6 +7263,8 @@ console.log("The HCF of " + num1 + " and " + num2 + " is: " + hcf);
 
 // Output: The HCF of 12 and 18 is: 6
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Program to Find LCM
 
@@ -6821,6 +7285,8 @@ while (true) {
 
 // Output: The LCM of 12 and 18 is: 36
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Program to Find the Factors of a Number
 
@@ -6857,6 +7323,8 @@ console.log("The sum of natural numbers up to " + n + " is: " + result);
 // Output: The sum of natural numbers up to 10 is: 55
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Program to Guess a Random Number
 
 ```javascript
@@ -6878,6 +7346,8 @@ console.log("Congratulations! You guessed the correct number.");
 
 // Output: Congratulations! You guessed the correct number.
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Program to Shuffle Deck of Cards
 
@@ -6923,6 +7393,8 @@ for (let i = 0; i < n; i++) {
 // Output: Fibonacci series up to 10 terms: 0 1 1 2 3 5 8 13 21 34
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Program to Find Factorial of Number Using Recursion
 
 ```javascript
@@ -6967,6 +7439,8 @@ console.log("The ASCII value of " + char + " is: " + char.charCodeAt(0));
 // Output: The ASCII value of A is: 65
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Program to Check Whether a String is Palindrome or Not
 
 ```javascript
@@ -7004,6 +7478,8 @@ for (const word of words) {
 // Output: Words in alphabetical order: Apple Banana Mango Orange
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Program to Replace Characters of a String
 
 ```javascript
@@ -7029,12 +7505,13 @@ for (let i = str.length - 1; i >= 0; i--) {
 }
 
 console.log("Original string: " + str);
-
 console.log("Reversed string: " + reversedStr);
 
 // Output: Original string: Hello, World!
 // Output: Reversed string: !dlroW ,olleH
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Program to Create Objects in Different Ways
 
@@ -7082,9 +7559,10 @@ for (let i = 0; i < str.length; i++) {
 }
 
 console.log("The number of occurrences of " + char + " in the string is: " + count);
-
 // Output: The number of occurrences of o in the string is: 2
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Program to Convert the First Letter of a String into UpperCase
 
@@ -7095,7 +7573,6 @@ const firstLetter = str[0].toUpperCase();
 const newStr = firstLetter + str.slice(1);
 
 console.log("Original string: " + str);
-
 console.log("New string: " + newStr);
 
 // Output: Original string: hello, world!
@@ -7116,9 +7593,10 @@ for (let char of str) {
 }
 
 console.log("The number of vowels in the string is: " + count);
-
 // Output: The number of vowels in the string is: 3
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Program to Remove a Property from an Object
 
@@ -7132,7 +7610,6 @@ const person = {
 delete person.profession;
 
 console.log(person);
-
 // Output: { name: 'Alice', age: 30 }
 ```
 
@@ -7151,6 +7628,8 @@ if (str.startsWith(startsWith) && str.endsWith(endsWith)) {
 
 // Output: The string starts with he and ends with ld
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Program to Check if a Key Exists in an Object
 
@@ -7182,9 +7661,10 @@ const person = {
 const clone = { ...person };
 
 console.log(clone);
-
 // Output: { name: 'Alice', age: 30 }
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Program to Loop Through an Object
 
@@ -7218,6 +7698,8 @@ console.log(mergedObj);
 
 // Output: { name: 'Alice', age: 30 }
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Program to Count the Number of Keys/Properties in an Object
 
@@ -7264,6 +7746,8 @@ console.log("New string: " + newStr);
 // Output: New string: hexxo, worxd!
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Program to Create Multiline Strings
 
 ```javascript
@@ -7299,6 +7783,8 @@ console.log(randomString);
 
 // Output: Random string of length 7 characters (e.g., "x8z2j9a")
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Program to Check if a String Starts With Another String
 
@@ -7344,6 +7830,8 @@ console.log(str);
 // Output: {"name":"Alice","age":30}
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Program to Check Whether a String Contains a Substring
 
 ```javascript
@@ -7381,9 +7869,10 @@ const str = "hello, world!";
 const encodedStr = btoa(str);
 
 console.log("Encoded string: " + encodedStr);
-
 // Output: Encoded string: aGVsbG8sIHdvcmxkIQ==
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Program to Replace all Instances of a Character in a String
 
@@ -7392,7 +7881,6 @@ const str = "hello, world!";
 const newStr = str.replace(/l/g, "x");
 
 console.log("Original string: " + str);
-
 console.log("New string: " + newStr);
 
 // Output: Original string: hello, world!
@@ -7406,7 +7894,6 @@ const str = "hello\nworld!";
 const newStr = str.replace(/\n/g, " ");
 
 console.log("Original string: " + str);
-
 console.log("New string: " + newStr);
 
 // Output: Original string: hello
@@ -7420,9 +7907,10 @@ Program to Display Date and Time
 const date = new Date();
 
 console.log("Current date and time: " + date);
-
 // Output: Current date and time: Sun Oct 31 2021 12:00:00 GMT+0530 (India Standard Time)
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Program to Check Leap Year
 
@@ -7448,7 +7936,6 @@ const options = { year: 'numeric', month: 'long', day: 'numeric' };
 const formattedDate = date.toLocaleDateString('en-US', options);
 
 console.log("Formatted date: " + formattedDate);
-
 // Output: Formatted date: October 31, 2021
 ```
 
@@ -7464,9 +7951,10 @@ const month = date.getMonth() + 1;
 const year = date.getFullYear();
 
 console.log("Current date: " + day + "/" + month + "/" + year);
-
 // Output: Current date: 14/06/2024
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Program to Compare The Value of Two Dates
 
@@ -7503,6 +7991,8 @@ const interval = setInterval(() => {
 // Output: 10 9 8 7 6 5 4 3 2 1 0 Countdown is over
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Program to Remove Specific Item From an Array
 
 ```javascript
@@ -7515,7 +8005,6 @@ if (index > -1) {
 }
 
 console.log(fruits);
-
 // Output: ["Apple", "Orange", "Mango"]
 ```
 
@@ -7535,6 +8024,8 @@ if (fruits.includes(value)) {
 // Output: The array contains Banana
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Program to Insert Item in an Array
 
 ```javascript
@@ -7543,7 +8034,6 @@ const fruits = ["Apple", "Banana", "Orange", "Mango"];
 fruits.push("Grapes");
 
 console.log(fruits);
-
 // Output: ["Apple", "Banana", "Orange", "Mango", "Grapes"]
 ```
 
@@ -7557,9 +8047,10 @@ const obj = { name: "Grapes" };
 fruits.push(obj);
 
 console.log(fruits);
-
 // Output: ["Apple", "Banana", "Orange", "Mango", { name: 'Grapes' }]
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Program to Check if An Object is An Array
 
@@ -7587,6 +8078,8 @@ console.log(fruits);
 // Output: []
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Program to Add Element to Start of an Array
 
 ```javascript
@@ -7595,7 +8088,6 @@ let fruits = ["Apple", "Banana", "Orange", "Mango"];
 fruits.unshift("Grapes");
 
 console.log(fruits);
-
 // Output: ["Grapes", "Apple", "Banana", "Orange", "Mango"]
 ```
 
@@ -7607,7 +8099,6 @@ const fruits = ["Apple", "Banana", "Orange", "Mango", "Apple", "Banana"];
 const uniqueFruits = [...new Set(fruits)];
 
 console.log(uniqueFruits);
-
 // Output: ["Apple", "Banana", "Orange", "Mango"]
 ```
 
@@ -7620,9 +8111,10 @@ const arr2 = [3, 4, 5];
 const mergedArray = [...new Set([...arr1, ...arr2])];
 
 console.log(mergedArray);
-
 // Output: [1, 2, 3, 4, 5]
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Program to Sort Array of Objects by Property Values
 
@@ -7636,7 +8128,6 @@ const persons = [
 persons.sort((a, b) => a.age - b.age);
 
 console.log(persons);
-
 // Output: [ { name: 'Bob', age: 25 }, { name: 'Alice', age: 30 }, { name: 'Charlie', age: 35 } ]
 ```
 
@@ -7650,7 +8141,6 @@ const matrix = [
 ];
 
 console.log(matrix);
-
 // Output: [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8, 9 ] ]
 ```
 
@@ -7666,9 +8156,10 @@ const persons = [
 const names = persons.map(person => person.name);
 
 console.log(names);
-
 // Output: [ 'Alice', 'Bob', 'Charlie' ]
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Program to Compare Elements of Two Arrays
 
@@ -7695,7 +8186,6 @@ const fruits = ["Apple", "Banana", "Orange", "Mango"];
 const randomFruit = fruits[Math.floor(Math.random() * fruits.length)];
 
 console.log("Random fruit: " + randomFruit);
-
 // Output: Random fruit: Banana
 ```
 
@@ -7708,9 +8198,10 @@ const arr2 = [3, 4, 5, 6, 7];
 const intersection = arr1.filter(value => arr2.includes(value));
 
 console.log(intersection);
-
 // Output: [3, 4, 5]
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Program to Split Array into Smaller Chunks
 
@@ -7724,7 +8215,6 @@ for (let i = 0; i < arr.length; i += chunkSize) {
 }
 
 console.log(chunks);
-
 // Output: [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8, 9 ], [ 10 ] ]
 ```
 
@@ -7752,6 +8242,8 @@ document.write("This is a script file");
 // Output: In console: Hello, World! In body: This is a script file
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Program to Get File Extension
 
 ```javascript
@@ -7777,6 +8269,8 @@ if (x === undefined) {
 // Output: x is undefined
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Program to Set a Default Parameter Value For a Function
 
 ```javascript
@@ -7801,11 +8295,11 @@ const union = new Set([...set1, ...set2]);
 const intersection = new Set([...set1].filter(x => set2.has(x)));
 
 console.log("Union: " + [...union]);
-
 console.log("Intersection: " + [...intersection]);
-
 // Output: Union: 1,2,3,4,5,6,7,8 Intersection: 4,5
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Program to Generate a Random Number Between Two Numbers
 
@@ -7816,7 +8310,6 @@ const max = 10;
 const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
 
 console.log("Random number between " + min + " and " + max + ": " + randomNum);
-
 // Output: Random number between 1 and 10: 7
 ```
 
@@ -7826,7 +8319,6 @@ Program To Get The Current URL
 const currentURL = window.location.href;
 
 console.log("Current URL: " + currentURL);
-
 // Output: Current URL: https://www.example.com/page
 ```
 
@@ -7844,6 +8336,8 @@ if (pattern.test(email)) {
 
 // Output: manthan.ank46@gmail.com is a valid email address
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Program to Check If a Variable is of Function Type
 
@@ -7875,9 +8369,10 @@ Program To Work With Constants
 const PI = 3.14159;
 
 console.log("The value of PI is: " + PI);
-
 // Output: The value of PI is: 3.14159
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Program to Pass Parameter to a setTimeout() Function
 
@@ -7887,7 +8382,6 @@ function greet(name) {
 }
 
 setTimeout(greet, 1000, "Alice");
-
 // Output: Hello, Alice! (after 1 second)
 ```
 
@@ -7898,9 +8392,7 @@ const numbers = Array.from({ length: 10 }, (_, i) => i + 1);
 const characters = Array.from({ length: 26 }, (_, i) => String.fromCharCode(65 + i));
 
 console.log("Numbers: " + numbers);
-
 console.log("Characters: " + characters);
-
 // Output: Numbers: 1,2,3,4,5,6,7,8,9,10 Characters: A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z
 ```
 
@@ -7916,11 +8408,12 @@ function add(x, y, z) {
 }
 
 console.log(add(1, 2)); // Output: NaN
-
 console.log(add(1, 2, 3)); // Output: 6
 
 // Explanation: The second function definition overwrites the first one, resulting in the first function call returning NaN.
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Program to Implement a Stack
 
@@ -7984,6 +8477,8 @@ console.log(stack.isEmpty()); // Output: true
 
 console.log(stack.pop()); // Output: Underflow
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Program to Implement a Queue
 
@@ -8051,6 +8546,8 @@ console.log(queue.isEmpty()); // Output: true
 console.log(queue.dequeue()); // Output: Underflow
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Program to Check if a Number is Float or Integer
 
 ```javascript
@@ -8089,6 +8586,8 @@ console.log(welcome(greet, "Alice")); // Output: Hello, Alice!
 // Explanation: The welcome function takes a function as a parameter and calls it with the provided name parameter.
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Program to Get the Dimensions of an Image
 
 ```javascript
@@ -8126,6 +8625,8 @@ console.log("Hello, World!");
 // Output: Hello, World!
 ```
 
+[Back to Top⤴️](#table-of-contents)
+
 Program to Convert Date to Number
 
 ```javascript
@@ -8146,7 +8647,6 @@ const fruits = ["Apple", "Banana", "Orange", "Mango"];
 const lastFruit = fruits[fruits.length - 1];
 
 console.log("Last fruit: " + lastFruit);
-
 // Output: Last fruit: Mango
 ```
 
@@ -8160,9 +8660,10 @@ const minutes = date.getMinutes();
 const seconds = date.getSeconds();
 
 console.log("Current time: " + hours + ":" + minutes + ":" + seconds);
-
 // Output: Current time: 12:00:00
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 Program to Get the Current Day
 
@@ -8174,7 +8675,6 @@ const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", 
 const day = days[date.getDay()];
 
 console.log("Today is: " + day);
-
 // Output: Today is: Friday
 ```
 
@@ -8188,7 +8688,6 @@ const months = ["January", "February", "March", "April", "May", "June", "July", 
 const month = months[date.getMonth()];
 
 console.log("Current month: " + month);
-
 // Output: Current month: June
 ```
 
@@ -8200,9 +8699,10 @@ const date = new Date();
 const year = date.getFullYear();
 
 console.log("Current year: " + year);
-
 // Output: Current year: 2024
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 ## List of GitHub Repositories to learn JavaScript
 
@@ -8277,6 +8777,13 @@ console.log("Current year: " + year);
 - [Harshit Vashisth](https://www.youtube.com/@Harshitvashisth)
 - [AniaKubow](https://www.youtube.com/@AniaKubow)
 
+## List of Udemy Courses to learn JavaScript
+
+- [The Complete JavaScript Course 2021: From Zero to Expert!](https://www.udemy.com/course/the-complete-javascript-course/)
+- [JavaScript - The Complete Guide 2021 (Beginner + Advanced)](https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/)
+- [Modern JavaScript From The Beginning](https://www.udemy.com/course/modern-javascript-from-the-beginning/)
+- [JavaScript Web Projects: 20 Projects to Build Your Portfolio](https://www.udemy.com/course/javascript-web-projects-to-build-your-portfolio-resume/)
+
 ## List of Games to learn JavaScript by playing
 
 - [JSRobot](https://lab.reaal.me/jsrobot/)
@@ -8320,6 +8827,8 @@ console.log("Current year: " + year);
 - [Adrian Bogdan](https://www.linkedin.com/in/adrian-%F0%9F%9F%A3-b-b52348181/)
 - [Jayesh Choudary](https://www.linkedin.com/in/jayesh-choudhary-72444518b/)
 - [Pradeep Pandey](https://www.linkedin.com/in/pradeep-pandey-5a545a163/)
+
+[Back to top⤴️](#table-of-contents)
 
 ## Contributing
 
