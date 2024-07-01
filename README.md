@@ -882,8 +882,11 @@ console.log(array.constructor); // Output: ƒ Array() { [native code] }
 ```javascript
 let array = ['a', 'b', 'c', 'd', 'e', 'f'];
 
-array.copyWithin(0, 3, 5);
-console.log(array); // Output: ["d", "e", "c", "d", "e", "f"]
+array.copyWithin(2, 0);
+console.log(array); // Output: ["a", "b", "a", "b", "c", "d"]
+
+array.copyWithin(4, 0, 2);
+console.log(array); // Output: ["a", "b", "a", "b", "a", "b"]
 ```
 
 [Back to Top⤴️](#table-of-contents)
