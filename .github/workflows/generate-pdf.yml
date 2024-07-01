@@ -1,0 +1,33 @@
+name: Generate PDF from README.md
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  generate-pdf:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+
+    - name: Install dependencies
+      run: npm install markdown-pdf
+
+    - name: Convert README.md to PDF
+      run: |
+        npx markdown-pdf README.md -o README.pdf
+
+    - name: Upload PDF to GitHub Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: README-pdf
+        path: README.pdf
