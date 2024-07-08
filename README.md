@@ -262,9 +262,11 @@ Hello, How are you?
 
 ## Variables
 
+Variables are containers for storing data values. In JavaScript, variables are declared using the `var`, `let`, or `const` keyword.
+
 ### Declare Variables
 
-Variables are containers for storing data values. In JavaScript, variables are declared using the `var`, `let`, or `const` keyword.
+There are three ways to declare variables in JavaScript:
 
 **1. var** - It is used to declare a variable. It is function-scoped.
 
@@ -288,6 +290,8 @@ const c = 1; // Declare a read-only variable z with the value 15 (block-level sc
 
 ## Data Types
 
+Data types are used to define the type of data that a variable can store. JavaScript is a loosely typed language, which means that you do not have to declare the data type of a variable when you declare it.
+
 There are two types of data types in JavaScript:
 
 - **Primitive Data Types**
@@ -306,38 +310,38 @@ There are two types of data types in JavaScript:
 - **undefined**
 - **symbol**
 
-**numbers** -
+**numbers** - numbers can be written with or without decimals.
 
 ```javascript
 let number = 10;
 ```
 
-**strings** -
+**strings** - strings are text. They are written inside double or single quotes.
 
 ```javascript
 let name = "Manthan";
 ```
 
-**booleans** -
+**booleans** - booleans can only have two values: true or false.
 
 ```javascript
 let value1 = true;
 let value2 = false;
 ```
 
-**null** -
+**null** - null is an empty value.
 
 ```javascript
 let value = null;
 ```
 
-**undefined** -
+**undefined** - undefined means a variable has been declared but has not yet been assigned a value.
 
 ```javascript
 let name;
 ```
 
-**symbol** -
+**symbol** - symbols are unique and immutable values.
 
 ```javascript
 let a = Symbol();
@@ -356,7 +360,7 @@ let a = Symbol();
 - **functions**
 - **regexp**
 
-**functions** -
+**functions** - functions are objects that can be invoked.
 
 ```javascript
 function greet() {
@@ -364,27 +368,19 @@ function greet() {
 }
 ```
 
-**object** -
+**object** - objects are used to store collections of data and more complex entities.
 
 ```javascript
 let name = {firstName:"Manthan", lastName:"Ank"};
 ```
 
-**arrays** -
+**arrays** - arrays are used to store multiple values in a single variable.
 
 ```javascript
 let array = ["value1", "value2"];
 ```
 
-**regexp** -
-
-Syntax
-
-```javascript
-/pattern/modifiers;
-```
-
-Example
+**regexp** - regular expressions are used to perform pattern-matching in strings.
 
 ```javascript
 let pattern = /w3schools/i;
@@ -543,6 +539,18 @@ console.log(typeof null); // Output: "object" (this is a bug in JavaScript)
 console.log(typeof {}); // Output: "object"
 console.log(typeof []); // Output: "object"
 console.log(typeof function() {}); // Output: "function"
+
+let cars = ['BMW', 'Volvo', 'Mini'];
+
+console.log(cars instanceof Array); // Output: true
+console.log(cars instanceof Object); // Output: true
+console.log(cars instanceof String); // Output: false
+console.log(cars instanceof Number); // Output: false
+console.log(cars instanceof Function); // Output: false
+console.log(cars instanceof RegExp); // Output: false
+console.log(cars instanceof Date); // Output: false
+console.log(cars instanceof Symbol); // Output: false
+console.log(cars instanceof Boolean); // Output: false
 ```
 
 [Back to Top⤴️](#table-of-contents)
@@ -557,31 +565,35 @@ console.log(typeof function() {}); // Output: "function"
 | *= | x *= y |
 | /= | x /= y |
 | %= | x %= y |
+| **= | x **= y |
 | : | x : 45 |
 
 ```javascript
 let x = 5;
 let y = 10;
 
-x = y;
+x = y; // x = y (x is now 10)
 console.log(x); // Output: 5
 
-x += y; // Add y to x and assign the result to x (x is now 15)
+x += y; // x = x + y (x is now 15)
 console.log(x); // Output: 15
 
-x -= y; // Subtract y from x and assign the result to x (x is now 5)
+x -= y; // x = x - y (x is now 5)
 console.log(x); // Output: 5
 
-x *= y; // Multiply x by y and assign the result to x (x is now 50)
+x *= y; // x = x * y (x is now 50)
 console.log(x); // Output: 50
 
-x /= y; // Divide x by y and assign the result to x (x is now 5)
+x /= y; // x = x / y (x is now 5)
 console.log(x); // Output: 5
 
-x %= y; // Calculate the remainder of x divided by y and assign the result to x (x is now 5)
+x %= y; // x = x % y (x is now 5)
 console.log(x); // Output: 5
 
-x : y;
+x **= y; // x = x ** y (x is now 9765625)
+console.log(x); // Output: 9765625
+
+x : y; // x = y (x is now 10)
 console.log(x); // Output: 10
 ```
 
