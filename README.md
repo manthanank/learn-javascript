@@ -1916,6 +1916,36 @@ function multiply(a) {
 console.log(multiply(2)(3)(4)); // Output: 24
 ```
 
+## IIFE
+
+An IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined.
+
+```javascript
+(function() {
+  console.log("Hello World!");
+})();
+```
+
+[Back to Top⤴️](#table-of-contents)
+
+## Higher-Order Functions
+
+A higher-order function is a function that takes another function as an argument or returns a function as a result.
+
+```javascript
+function greet() {
+  return "Hello World!";
+}
+
+function greetUser(greet) {
+  return greet();
+}
+
+console.log(greetUser(greet)); // Output: "Hello World!"
+```
+
+[Back to Top⤴️](#table-of-contents)
+
 ## Dates
 
 JavaScript provides a built-in Date object that can be used to work with dates and times.
