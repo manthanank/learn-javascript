@@ -55,6 +55,8 @@ This repository contains a list of JavaScript concepts, functions, methods, and 
   - [Block Scope](#block-scope)
   - [Function Scope](#function-scope)
   - [Global Scope](#global-scope)
+- [Hoisting](#hoisting)
+- [Currying](#currying)
 - [Dates](#dates)
   - [Date Methods](#date-methods)
 - [Date Get Methods](#date-get-methods)
@@ -73,6 +75,7 @@ This repository contains a list of JavaScript concepts, functions, methods, and 
   - [Set Methods](#set-methods)
 - [Map](#map)
   - [Map Methods](#map-methods)
+- [Recursion](#recursion)
 - [Async](#async)
 - [DOM](#dom)
 - [Browser BOM](#browser-bom)
@@ -80,7 +83,7 @@ This repository contains a list of JavaScript concepts, functions, methods, and 
 - [Web API](#web-api)
 - [Ajax](#ajax)
 - [jQuery](#jquery)
-- [Graphocs](#graphics)
+- [Graphics](#graphics)
 - [Best Practices](#best-practices)
 - [Common Mistakes](#common-mistakes)
 - [Performace](#performance)
@@ -1885,6 +1888,34 @@ console.log(a);
 
 [Back to Top⤴️](#table-of-contents)
 
+## Hoisting
+
+Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their containing scope during the compilation phase.
+
+```javascript
+console.log(x); // Output: undefined
+
+var x = 5;
+```
+
+[Back to Top⤴️](#table-of-contents)
+
+## Currying
+
+Currying is a technique in which a function with multiple arguments is converted into a sequence of nested functions, each taking a single argument.
+
+```javascript
+function multiply(a) {
+  return function(b) {
+    return function(c) {
+      return a * b * c;
+    };
+  };
+}
+
+console.log(multiply(2)(3)(4)); // Output: 24
+```
+
 ## Dates
 
 JavaScript provides a built-in Date object that can be used to work with dates and times.
@@ -1896,6 +1927,8 @@ The Date object is used to work with dates and times in JavaScript. It can be cr
 ```javascript
 new Date()
 ```
+
+[Back to Top⤴️](#table-of-contents)
 
 ### Date Formats
 
@@ -2699,6 +2732,24 @@ fruits.size;
 
 [Back to Top⤴️](#table-of-contents)
 
+## Recursion
+
+Recursion is a programming technique where a function calls itself in order to solve a problem. Recursion is used to solve problems that can be broken down into smaller, more manageable subproblems.
+
+```javascript
+function factorial(n) {
+  if (n === 0) {
+    return 1;
+  } else {
+    return n * factorial(n - 1);
+  }
+}
+
+factorial(5); // 120
+```
+
+[Back to Top⤴️](#table-of-contents)
+
 ## Async
 
 Asynchronous programming allows you to run multiple tasks concurrently without blocking the main thread. JavaScript provides several ways to work with asynchronous code, including callbacks, promises, and async/await.
@@ -2741,27 +2792,6 @@ myPromise.then((value) => {
 
 // Output: The async operation was successful
 ```
-
-### Callback function
-
-A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
-
-```javascript
-function myDisplayer(some) {
-  document.getElementById("demo").innerHTML = some;
-}
-
-function myCalculator(num1, num2, myCallback) {
-  let sum = num1 + num2;
-  myCallback(sum);
-}
-
-myCalculator(5, 5, myDisplayer);
-
-// Output: 10
-```
-
-[Back to Top⤴️](#table-of-contents)
 
 ### Promise
 
