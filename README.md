@@ -1404,6 +1404,7 @@ const name = 'Manthan';
 
 The following are some of the most commonly used string methods in JavaScript:
 
+- **at()**
 - **charAt()**
 - **charCodeAt()**
 - **concat()**
@@ -1416,9 +1417,13 @@ The following are some of the most commonly used string methods in JavaScript:
 - **length**
 - **localeCompare()**
 - **match()**
+- **matchAll()**
+- **padEnd()**
+- **padStart()**
 - **prototype**
 - **repeat()**
 - **replace()**
+- **replaceAll()**
 - **search()**
 - **slice()**
 - **split()**
@@ -1426,8 +1431,24 @@ The following are some of the most commonly used string methods in JavaScript:
 - **substr()**
 - **substring()**
 - **toLocaleLowerCase()**
+- **toLocaleUpperCase()**
+- **toLowerCase()**
+- **toString()**
+- **toUpperCase()**
+- **trim()**
+- **trimEnd()**
+- **trimStart()**
+- **valueOf()**
 
 [Back to Top⤴️](#table-of-contents)
+
+**at()** - Returns the character at a specified index (position)
+
+```javascript
+let myString = "Hello World!";
+
+console.log(myString.at(0)); // Output: "H"
+```
 
 **charAt()** - Returns the character at a specified index (position)
 
@@ -1539,6 +1560,39 @@ let result = myString.match(/the/i);
 
 console.log(myString); // Output: "The quick brown fox jumps over the lazy dog."
 console.log(result); // Output: ["the", index: 30, input: "The quick brown fox jumps over the lazy dog.", groups: undefined]
+```
+
+**matchAll()** - Returns an iterator of all results matching a string against a regular expression
+
+```javascript
+let myString = "The quick brown fox jumps over the lazy dog.";
+
+let result = myString.matchAll(/the/gi);
+
+console.log(myString); // Output: "The quick brown fox jumps over the lazy dog."
+console.log(result); // Output: [RegExpStringIterator]
+```
+
+**padEnd()** - Pads a string with a specified value at the end
+
+```javascript
+let myString = "Hello";
+
+let newString = myString.padEnd(10, " World!");
+
+console.log(myString); // Output: "Hello"
+console.log(newString); // Output: "Hello World!"
+```
+
+**padStart()** - Pads a string with a specified value at the start
+
+```javascript
+let myString = "Hello";
+
+let newString = myString.padStart(10, " World!");
+
+console.log(myString); // Output: "Hello"
+console.log(newString); // Output: " World!Hello"
 ```
 
 [Back to Top⤴️](#table-of-contents)
