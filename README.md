@@ -848,6 +848,7 @@ const letters = ['a', 'b', 'c'];
 
 The following are some of the most commonly used array methods in JavaScript:
 
+- **at()**
 - **concat()**
 - **constructor**
 - **copyWithin()**
@@ -857,6 +858,10 @@ The following are some of the most commonly used array methods in JavaScript:
 - **filter()**
 - **find()**
 - **findIndex()**
+- **findLast()**
+- **findLastIndex()**
+- **flat()**
+- **flatMap()**
 - **forEach()**
 - **from()**
 - **includes()**
@@ -871,8 +876,32 @@ The following are some of the most commonly used array methods in JavaScript:
 - **prototype**
 - **push()**
 - **reduce()**
+- **reduceRight()**
+- **reverse()**
+- **shift()**
+- **slice()**
+- **some()**
+- **sort()**
+- **splice()**
+- **toLocaleString()**
+- **toReversed()**
+- **toSorted()**
+- **toSpliced()**
+- **toString()**
+- **unshift()**
+- **valueOf()**
+- **values()**
+- **with()**
 
 [Back to Top⤴️](#table-of-contents)
+
+**at()** - Returns the element at a specified index in an array
+
+```javascript
+let array = ['a', 'b', 'c'];
+
+console.log(array.at(1)); // Output: "b"
+```
 
 **concat()** - Joins arrays and returns an array with the joined arrays.
 
@@ -973,7 +1002,51 @@ console.log(array); // Output: [1, 2, 3, 4, 5]
 console.log(index); // Output: 3
 ```
 
+**findLast()** - Returns the value of the last element in an array that pass a test
+
+```javascript
+let array = [1, 2, 3, 4, 5];
+
+let value = array.findLast(value => value > 3);
+
+console.log(array); // Output: [1, 2, 3, 4, 5]
+console.log(value); // Output: 5
+```
+
+**findLastIndex()** - Returns the index of the last element in an array that pass a test
+
+```javascript
+let array = [1, 2, 3, 4, 5];
+
+let index = array.findLastIndex(value => value > 3);
+
+console.log(array); // Output: [1, 2, 3, 4, 5]
+console.log(index); // Output: 4
+```
+
 [Back to Top⤴️](#table-of-contents)
+
+**flat()** - Flattens an array up to a specified depth
+
+```javascript
+let array = [1, 2, [3, 4, [5, 6]]];
+
+let newArray = array.flat(2);
+
+console.log(array); // Output: [1, 2, [3, 4, [5, 6]]]
+console.log(newArray); // Output: [1, 2, 3, 4, 5, 6]
+```
+
+**flatMap()** - Maps each element using a mapping function, then flattens the result into a new array
+
+```javascript
+let array = [1, 2, 3, 4, 5];
+
+let newArray = array.flatMap(value => [value * 2]);
+
+console.log(array); // Output: [1, 2, 3, 4, 5]
+console.log(newArray); // Output: [2, 4, 6, 8, 10]
+```
 
 **forEach()** - Calls a function for each array element
 
@@ -1224,6 +1297,49 @@ array.splice(2, 0, 'x', 'y');
 console.log(array); // Output: ["a", "b", "x", "y", "c", "d", "e", "f"]
 ```
 
+**toLocaleString()** - Converts an array to a string, using locale-specific settings
+
+```javascript
+let array = ['a', 'b', 'c'];
+
+console.log(array.toLocaleString()); // Output: "a,b,c"
+```
+
+**toReversed()** - Reverses the elements of an array
+
+```javascript
+let array = ['a', 'b', 'c'];
+
+let reversedArray = array.toReversed();
+
+console.log(array); // Output: ["a", "b", "c"]
+console.log(reversedArray); // Output: ["c", "b", "a"]
+```
+
+[Back to Top⤴️](#table-of-contents)
+
+**toSorted()** - Sorts the elements of an array
+
+```javascript
+let array = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5];
+
+let sortedArray = array.toSorted();
+
+console.log(array); // Output: [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
+console.log(sortedArray); // Output: [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]
+```
+
+**toSpliced()** - Adds/Removes elements from an array
+
+```javascript
+let array = ['a', 'b', 'c', 'd', 'e', 'f'];
+
+let splicedArray = array.toSpliced(2, 0, 'x', 'y');
+
+console.log(array); // Output: ["a", "b", "c", "d", "e", "f"]
+console.log(splicedArray); // Output: ["a", "b", "x", "y", "c", "d", "e", "f"]
+```
+
 **toString()** - Converts an array to a string, and returns the result
 
 ```javascript
@@ -1250,6 +1366,28 @@ console.log(array); // Output: ["x", "y", "a", "b", "c"]
 let array = ['a', 'b', 'c'];
 
 console.log(array.valueOf()); // Output: ["a", "b", "c"]
+```
+
+**values()** - Returns an Array Iteration Object, containing the values of the original array
+
+```javascript
+let array = ['a', 'b', 'c'];
+
+let iterator = array.values();
+
+console.log(array); // Output: ["a", "b", "c"]
+console.log(iterator.next().value); // Output: "a"
+```
+
+**with()** - Allows you to add properties and methods to an Array object
+
+```javascript
+let array = ['a', 'b', 'c'];
+
+Array.with = 25;
+
+console.log(array); // Output: ["a", "b", "c"]
+console.log(Array.with); // Output: 25
 ```
 
 [Back to Top⤴️](#table-of-contents)
