@@ -18,7 +18,7 @@ jobs:
       run: sudo apt-get install -y pandoc
 
     - name: Convert README.md to PDF
-      run: pandoc README.md -o README.pdf
+      run: pandoc --resource-path=./ README.md -o README.pdf
 
     - name: Upload PDF artifact
       uses: actions/upload-artifact@v2
