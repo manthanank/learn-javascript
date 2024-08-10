@@ -15,10 +15,10 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Install Pandoc
-      run: sudo apt-get install -y pandoc
+      run: sudo apt-get install -y pandoc texlive-latex-base
 
-    - name: Install pdflatex
-      run: sudo apt-get install -y texlive-latex-base
+    - name: Remove Image References
+      run: sed -i '/bmc-button.svg/d' README.md
 
     - name: Convert README.md to PDF
       run: pandoc README.md -o README.pdf --pdf-engine=pdflatex
