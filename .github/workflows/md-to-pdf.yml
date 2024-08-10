@@ -23,7 +23,7 @@ jobs:
       run: sudo apt-get install -y texlive
 
     - name: Convert README.md to README.pdf
-      run: pandoc README.md -o README.pdf
+      run: pandoc README.md -o README.pdf --resource-path=.:assets
 
     - name: Upload README.pdf
       uses: actions/upload-artifact@v2
