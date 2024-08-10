@@ -1,0 +1,28 @@
+name: Generate PDF from README.md
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install Pandoc
+      run: sudo apt-get install -y pandoc
+
+    - name: Convert README.md to PDF
+      run: pandoc README.md -o README.pdf
+
+    - name: Upload PDF artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: README-pdf
+        path: README.pdf
+        
