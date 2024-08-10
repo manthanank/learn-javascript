@@ -1785,6 +1785,410 @@ console.log(myString.valueOf()); // Output: "Hello World!"
 
 [Back to Top⤴️](#table-of-contents)
 
+## Objects
+
+Objects are used to store collections of data and more complex entities.
+
+```javascript
+const person = {
+  firstName: "Manthan",
+  lastName: "Ank",
+  age: 25,
+  hobbies: ["reading", "coding", "traveling"],
+  address: {
+    street: "123 Main St",
+    city: "Mumbai",
+    state: "MH",
+  },
+};
+```
+
+### Object Methods
+
+The following are some of the most commonly used object methods in JavaScript:
+
+- **assign()**
+- **create()**
+- **defineProperties()**
+- **defineProperty()**
+- **entries()**
+- **freeze()**
+- **fromEntries()**
+- **getOwnPropertyDescriptor()**
+- **getOwnPropertyDescriptors()**
+- **getOwnPropertyNames()**
+- **getOwnPropertySymbols()**
+- **getPrototypeOf()**
+- **groupBy()**
+- **hasOwn()**
+- **is()**
+- **isExtensible()**
+- **isFrozen()**
+- **isSealed()**
+- **keys()**
+- **preventExtensions()**
+- **prototype**
+- **seal()**
+- **setPrototypeOf()**
+- **values()**
+
+[Back to Top⤴️](#table-of-contents)
+
+**assign()** - Copies the values of all enumerable own properties from one or more source objects to a target object
+
+```javascript
+const person = {
+  firstName: "Manthan",
+  lastName: "Ank",
+};
+
+const details = {
+  age: 25,
+  hobbies: ["reading", "coding", "traveling"],
+};
+
+const newPerson = Object.assign(person, details);
+
+console.log(newPerson); // Output: {firstName: "Manthan", lastName: "Ank", age: 25, hobbies: Array(3)}
+```
+
+**create()** - Creates a new object with the specified prototype object and properties
+
+```javascript
+const person = {
+  firstName: "Manthan",
+  lastName: "Ank",
+};
+
+const newPerson = Object.create(person);
+
+console.log(newPerson); // Output: {}
+```
+
+[Back to Top⤴️](#table-of-contents)
+
+**defineProperties()** - Defines new or modifies existing properties directly on an object, returning the object
+
+```javascript
+const person = {};
+
+Object.defineProperties(person, {
+  firstName: {
+    value: "Manthan",
+    writable: true,
+  },
+  lastName: {
+    value: "Ank",
+    writable: true,
+  },
+});
+
+console.log(person); // Output: {firstName: "Manthan", lastName: "Ank"}
+```
+
+**defineProperty()** - Defines a new property directly on an object, or modifies an existing property on an object, and returns the object
+
+```javascript
+const person = {};
+
+Object.defineProperty(person, "firstName", {
+  value: "Manthan",
+  writable: true,
+});
+
+console.log(person); // Output: {firstName: "Manthan"}
+```
+
+[Back to Top⤴️](#table-of-contents)
+
+**entries()** - Returns an array of a given object's own enumerable string-keyed property [key, value] pairs
+
+```javascript
+const person = {
+  firstName: "Manthan",
+  lastName: "Ank",
+};
+
+const entries = Object.entries(person);
+
+console.log(entries); // Output: [["firstName", "Manthan"], ["lastName", "Ank"]]
+```
+
+**freeze()** - Freezes an object: other code can't delete or change any properties
+
+```javascript
+const person = {
+  firstName: "Manthan",
+  lastName: "Ank",
+};
+
+Object.freeze(person);
+
+person.age = 25;
+
+console.log(person); // Output: {firstName: "Manthan", lastName: "Ank"}
+```
+
+[Back to Top⤴️](#table-of-contents)
+
+**fromEntries()** - Returns a new object from an iterable of [key, value] pairs
+
+```javascript
+const entries = [
+  ["firstName", "Manthan"],
+  ["lastName", "Ank"],
+];
+
+const person = Object.fromEntries(entries);
+
+console.log(person); // Output: {firstName: "Manthan", lastName: "Ank"}
+```
+
+**getOwnPropertyDescriptor()** - Returns a property descriptor for a named property on an object
+
+```javascript
+const person = {
+  firstName: "Manthan",
+  lastName: "Ank",
+};
+
+const descriptor = Object.getOwnPropertyDescriptor(person, "firstName");
+
+console.log(descriptor); // Output: {value: "Manthan", writable: true, enumerable: true, configurable: true}
+```
+
+[Back to Top⤴️](#table-of-contents)
+
+**getOwnPropertyDescriptors()** - Returns all own property descriptors of a given object
+
+```javascript
+const person = {
+  firstName: "Manthan",
+  lastName: "Ank",
+};
+
+const descriptors = Object.getOwnPropertyDescriptors(person);
+
+console.log(descriptors); // Output: {firstName: {…}, lastName: {…}}
+```
+
+**getOwnPropertyNames()** - Returns an array of all properties (enumerable or not) found directly upon a given object
+
+```javascript
+const person = {
+  firstName: "Manthan",
+  lastName: "Ank",
+};
+
+const properties = Object.getOwnPropertyNames(person);
+
+console.log(properties); // Output: ["firstName", "lastName"]
+```
+
+[Back to Top⤴️](#table-of-contents)
+
+**getOwnPropertySymbols()** - Returns an array of all symbol properties found directly upon a given object
+
+```javascript
+const person = {
+  [Symbol("firstName")]: "Manthan",
+  [Symbol("lastName")]: "Ank",
+};
+
+const symbols = Object.getOwnPropertySymbols(person);
+
+console.log(symbols); // Output: [Symbol(firstName), Symbol(lastName)]
+```
+
+**getPrototypeOf()** - Returns the prototype of the specified object
+
+```javascript
+const person = {
+  firstName: "Manthan",
+  lastName: "Ank",
+};
+
+const prototype = Object.getPrototypeOf(person);
+
+console.log(prototype); // Output: {constructor: ƒ, __defineGetter__: ƒ, __defineSetter__: ƒ, hasOwnProperty: ƒ, __lookupGetter__: ƒ, …}
+```
+
+[Back to Top⤴️](#table-of-contents)
+
+**groupBy()** - Groups the elements of an array based on the given function
+
+```javascript
+const people = [
+  { name: "Manthan", age: 25 },
+  { name: "Ank", age: 30 },
+  { name: "John", age: 25 },
+];
+
+const groupedPeople = people.groupBy(person => person.age);
+
+console.log(groupedPeople); // Output: {25: Array(2), 30: Array(1)}
+```
+
+**hasOwn()** - Returns a boolean indicating whether the object has the specified property as its own property
+
+```javascript
+const person = {
+  firstName: "Manthan",
+  lastName: "Ank",
+};
+
+console.log(person.hasOwn("firstName")); // Output: true
+```
+
+[Back to Top⤴️](#table-of-contents)
+
+**is()** - Compares if two values are the same value
+
+```javascript
+const person = {
+  firstName: "Manthan",
+  lastName: "Ank",
+};
+
+const newPerson = {
+  firstName: "Manthan",
+  lastName: "Ank",
+};
+
+console.log(Object.is(person, newPerson)); // Output: false
+```
+
+**isExtensible()** - Returns a boolean indicating if the object is extensible
+
+```javascript
+const person = {
+  firstName: "Manthan",
+  lastName: "Ank",
+};
+
+console.log(Object.isExtensible(person)); // Output: true
+```
+
+[Back to Top⤴️](#table-of-contents)
+
+**isFrozen()** - Returns a boolean indicating if the object is frozen
+
+```javascript
+const person = {
+  firstName: "Manthan",
+  lastName: "Ank",
+};
+
+Object.freeze(person);
+
+console.log(Object.isFrozen(person)); // Output: true
+```
+
+**isSealed()** - Returns a boolean indicating if the object is sealed
+
+```javascript
+const person = {
+  firstName: "Manthan",
+  lastName: "Ank",
+};
+
+Object.seal(person);
+
+console.log(Object.isSealed(person)); // Output: true
+```
+
+[Back to Top⤴️](#table-of-contents)
+
+**keys()** - Returns an array of a given object's own enumerable property names
+
+```javascript
+const person = {
+  firstName: "Manthan",
+  lastName: "Ank",
+};
+
+const keys = Object.keys(person);
+
+console.log(keys); // Output: ["firstName", "lastName"]
+```
+
+**preventExtensions()** - Prevents any extensions of an object
+
+```javascript
+const person = {
+  firstName: "Manthan",
+  lastName: "Ank",
+};
+
+Object.preventExtensions(person);
+
+person.age = 25;
+
+console.log(person); // Output: {firstName: "Manthan", lastName: "Ank"}
+```
+
+[Back to Top⤴️](#table-of-contents)
+
+**prototype** - Allows you to add properties and methods to an object
+
+```javascript
+const person = {
+  firstName: "Manthan",
+  lastName: "Ank",
+};
+
+Object.prototype.age = 25;
+
+console.log(person.age); // Output: 25
+```
+
+**seal()** - Prevents other code from deleting properties of an object
+
+```javascript
+const person = {
+  firstName: "Manthan",
+  lastName: "Ank",
+};
+
+Object.seal(person);
+
+delete person.firstName;
+
+console.log(person); // Output: {firstName: "Manthan", lastName: "Ank"}
+```
+
+[Back to Top⤴️](#table-of-contents)
+
+**setPrototypeOf()** - Sets the prototype (i.e., the internal [[Prototype]] property) of a specified object to another object or null
+
+```javascript
+const person = {
+  firstName: "Manthan",
+  lastName: "Ank",
+};
+
+const newPerson = {
+  age: 25,
+};
+
+Object.setPrototypeOf(newPerson, person);
+
+console.log(newPerson); // Output: {age: 25}
+```
+
+**values()** - Returns an array of a given object's own enumerable property values
+
+```javascript
+const person = {
+  firstName: "Manthan",
+  lastName: "Ank",
+};
+
+const values = Object.values(person);
+
+console.log(values); // Output: ["Manthan", "Ank"]
+```
+
 ## Loops
 
 Loops are used to execute a block of code multiple times.
