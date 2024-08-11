@@ -3141,7 +3141,7 @@ Math.log10(1000); // 3
 
 ## Sets
 
-collection of unique values. A Set is a collection of unique values. A Set can hold any datatype, including primitive types and objects.
+A Set is a collection of unique values. A Set can hold any datatype, including primitive types and objects.
 
 ```javascript
 const letters = new Set(["a","b","c"]);
