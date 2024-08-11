@@ -2340,7 +2340,7 @@ switch (day) {
 
 ## Functions
 
-Defined with the function keyword, followed by a name, followed by parentheses ().
+Functions are blocks of code that can be reused to perform a specific task. Defined with the function keyword, followed by a name, followed by parentheses ().
 
 ```jsx
 function name(parameter1, parameter2, parameter3) {
