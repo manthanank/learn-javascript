@@ -50,7 +50,14 @@ This repository contains a list of JavaScript concepts, functions, methods, and 
   - [if else else if statement](#if-else-else-if-statement)
   - [switch statement](#switch-statement)
 - [Functions](#functions)
-- [Arrow Functions](#arrow-function)
+  - [Named Function](#named-function)
+  - [Anonymous Function](#anonymous-function)
+  - [Arrow Functions](#arrow-function)
+  - [Immediately Invoked Function Expression (IIFE)](#iife)
+  - [Higher Order Function](#higher-order-functions)
+  - [Function Declaration](#function-declaration)
+  - [Function Expression](#function-expression)
+  - [Function Constructor](#function-constructor)
 - [Scope](#scope)
   - [Block Scope](#block-scope)
   - [Function Scope](#function-scope)
@@ -2353,6 +2360,11 @@ function name(parameter1, parameter2, parameter3) {
 - Named Function
 - Anonymous Function
 - Arrow Function
+- IIFE
+- Higher-Order Function
+- Function Expression
+- Function Declaration
+- Function Constructor
 
 [Back to Top⤴️](#table-of-contents)
 
@@ -2402,6 +2414,71 @@ const name = parameter => {
 const name = () => {
   return expression
 }
+```
+
+[Back to Top⤴️](#table-of-contents)
+
+## IIFE
+
+An IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined.
+
+```javascript
+(function() {
+  console.log("Hello World!");
+})();
+```
+
+[Back to Top⤴️](#table-of-contents)
+
+## Higher-Order Functions
+
+A higher-order function is a function that takes another function as an argument or returns a function as a result.
+
+```javascript
+function greet() {
+  return "Hello World!";
+}
+
+function greetUser(greet) {
+  return greet();
+}
+
+console.log(greetUser(greet)); // Output: "Hello World!"
+```
+
+[Back to Top⤴️](#table-of-contents)
+
+## Function Expression
+
+A function expression is a function that is assigned to a variable.
+
+```javascript
+const greet = function() {
+  return "Hello World!";
+}
+
+console.log(greet()); // Output: "Hello World!"
+```
+
+## Function Declaration
+
+A function declaration is a function that is defined using the function keyword followed by the function name.
+
+```javascript
+function greet() {
+  return "Hello World!";
+}
+
+console.log(greet()); // Output: "Hello World!"
+```
+
+### Function Constructor
+
+A function constructor is a function that is used to create new objects.
+
+```javascript
+const greet = new Function("return 'Hello World!'");
+console.log(greet()); // Output: "Hello World!"
 ```
 
 [Back to Top⤴️](#table-of-contents)
@@ -2511,36 +2588,6 @@ function multiply(a) {
 
 console.log(multiply(2)(3)(4)); // Output: 24
 ```
-
-## IIFE
-
-An IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined.
-
-```javascript
-(function() {
-  console.log("Hello World!");
-})();
-```
-
-[Back to Top⤴️](#table-of-contents)
-
-## Higher-Order Functions
-
-A higher-order function is a function that takes another function as an argument or returns a function as a result.
-
-```javascript
-function greet() {
-  return "Hello World!";
-}
-
-function greetUser(greet) {
-  return greet();
-}
-
-console.log(greetUser(greet)); // Output: "Hello World!"
-```
-
-[Back to Top⤴️](#table-of-contents)
 
 ## Dates
 
