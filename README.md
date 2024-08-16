@@ -9420,6 +9420,34 @@ console.log("Current year: " + year);
 // Output: Current year: 2024
 ```
 
+Count the character 'l' in the string "Hello, World!"
+
+```javascript
+const str = "Hello, World!";
+
+let count = 0;
+
+for (let i = 0; i < str.length; i++) {
+  if (str[i] === 'l') {
+    count++;
+  }
+}
+
+console.log("The number of occurrences of 'l' in the string is: " + count);
+// Output: The number of occurrences of 'l' in the string is: 3
+```
+
+Count the number of words in the string "Hello, World!"
+
+```javascript
+const str = "Hello, World!";
+
+const words = str.split(" ");
+
+console.log("The number of words in the string is: " + words.length);
+// Output: The number of words in the string is: 2
+```
+
 [Back to Top⤴️](#table-of-contents)
 
 ## List of GitHub Repositories to learn JavaScript
