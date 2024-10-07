@@ -7115,6 +7115,50 @@ const numbers = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5];
 console.log(findMin(numbers)); // Output: 1
 ```
 
+Remove special characters from the given string without using built-in methods:
+
+```javascript
+const input = "MA@NT+H(A+N)";
+
+const remove = (str) => {
+    let result = '';
+    for (let i = 0; i < str.length; i++){
+        let char = str[i];
+        if(
+            (char >= 'A' && char <= 'Z') ||
+            (char >= 'a' && char <= 'z') ||
+            (char >= '0' && char <= '9') || 
+            char === ' '
+        ){
+            result += char;
+        }
+    }
+    return result;
+}
+
+console.log(remove(input)); // Output=MANTHAN
+```
+
+Print the given values in matrix form without using built-in methods
+
+```javascript
+Output: 
+1   4   7   
+2   5   8   
+3   6   9
+
+let input = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// Manually print the matrix
+for (let row = 0; row < 3; row++) {
+    let output = "";  // Initialize an empty string for each row
+    for (let col = 0; col < 3; col++) {
+        output += input[row + col * 3] + "   ";  // Calculate index and add spaces
+    }
+    console.log(output);
+}
+```
+
 Write a function that calculates the sum of an array of numbers Without Inbuilt Method.
 
 ```javascript
