@@ -1,3 +1,12 @@
+# [1.16.0](https://github.com/manthanank/learn-javascript/compare/v1.15.0...v1.16.0) (2024-10-07)
+
+
+### Features
+
+* Add functions for sorting, finding max/min, sum/average, prime/palindrome checks, and duplicate removal ([4042709](https://github.com/manthanank/learn-javascript/commit/40427091267a271b2ec3160f4d47563fd53a2a07))
+
+
+
 # [1.15.0](https://github.com/manthanank/learn-javascript/compare/v1.14.0...v1.15.0) (2024-10-06)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * Update Dockerfile ([c5cb230](https://github.com/manthanank/learn-javascript/commit/c5cb23038387664b13b420401659ce8c09185821))
-
-
-
-# [1.11.0](https://github.com/manthanank/learn-javascript/compare/v1.10.0...v1.11.0) (2024-02-04)
-
-
-### Features
-
-* updated ([93d412d](https://github.com/manthanank/learn-javascript/commit/93d412d7f7fd41a48181d93ebe5d7a06a0dc1af8))
 
 
 
