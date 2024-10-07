@@ -3259,13 +3259,15 @@ letters.has("a");
 
 ```javascript
 // Create a Set
-const letters = new Set(["a","b","c"]);
+const letters = new Set(["a", "b", "c"]);
 
 // List all Elements
 let text = "";
-letters.forEach (function(value) {
-  text += value;
-})
+letters.forEach(function(value) {
+  text += value + " ";
+});
+
+console.log(text.trim()); // Output: "a b c"
 ```
 
 **values** - Returns an iterator with all the values in a Set
