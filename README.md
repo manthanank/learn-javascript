@@ -7061,10 +7061,10 @@ JavaScript offers several shorthand techniques to write code more concisely and 
 
 ## Interview Questions
 
-Write a function that sorts an array of numbers Without Inbuilt Method.
+Sorts an array of numbers without using any built-in method.
 
 ```javascript
-function sortArray(arr) {
+const sortArray = (arr) => {
   for (let i = 0; i < arr.length; i++) {
     for (let j = i + 1; j < arr.length; j++) {
       if (arr[i] > arr[j]) {
@@ -7075,16 +7075,16 @@ function sortArray(arr) {
     }
   }
   return arr;
-}
+};
 
 const numbers = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5];
 console.log(sortArray(numbers)); // Output: [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]
 ```
 
-Write a function that finds the maximum number in an array of numbers Without Inbuilt Method.
+Find the maximum number in an array of numbers without using any built-in method.
 
 ```javascript
-function findMax(arr) {
+const findMax = (arr) => {
   let max = arr[0];
   for (let i = 1; i < arr.length; i++) {
     if (arr[i] > max) {
@@ -7092,16 +7092,16 @@ function findMax(arr) {
     }
   }
   return max;
-}
+};
 
 const numbers = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5];
 console.log(findMax(numbers)); // Output: 9
 ```
 
-Write a function that finds the minimum number in an array of numbers Without Inbuilt Method.
+Find the minimum number in an array of numbers without using any built-in method.
 
 ```javascript
-function findMin(arr) {
+const findMin = (arr) => {
   let min = arr[0];
   for (let i = 1; i < arr.length; i++) {
     if (arr[i] < min) {
@@ -7109,7 +7109,7 @@ function findMin(arr) {
     }
   }
   return min;
-}
+};
 
 const numbers = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5];
 console.log(findMin(numbers)); // Output: 1
@@ -7199,76 +7199,90 @@ console.log(isPalindrome('madam')); // Output: true
 console.log(isPalindrome('hello')); // Output: false
 ```
 
-Write a function to find duplicate numbers in an Array Without Inbuilt Method.
+Find duplicate numbers in an array without using any built-in method.
 
 ```javascript
-function findDuplicates(arr) {
-  const duplicates = [];
+const findDuplicates = (arr) => {
+  let duplicates = [];
+  let index = 0;
   for (let i = 0; i < arr.length; i++) {
     for (let j = i + 1; j < arr.length; j++) {
-      if (arr[i] === arr[j] && !duplicates.includes(arr[i])) {
-        duplicates.push(arr[i]);
+      let isDuplicate = false;
+      if (arr[i] === arr[j]) {
+        for (let k = 0; k < index; k++) {
+          if (duplicates[k] === arr[i]) {
+            isDuplicate = true;
+            break;
+          }
+        }
+        if (!isDuplicate) {
+          duplicates[index] = arr[i];
+          index++;
+        }
       }
     }
   }
   return duplicates;
-}
+};
 
-const numbers = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5];
-console.log(findDuplicates(numbers)); // Output: [1, 3, 5]
+let numbers = [1, 2, 3, 4, 2, 5, 6, 3, 7, 8, 8];
+console.log(findDuplicates(numbers)); // Output: [2, 3, 8]
 ```
 
 [Back to Top⤴️](#table-of-contents)
 
-Write a function to remove duplicate numbers in an Array Without Inbuilt Method.
+Remove duplicate numbers in an array without using any built-in method.
 
 ```javascript
-function removeDuplicates(arr) {
-  const unique = [];
+const removeDuplicates = (arr) => {
+  let unique = [];
+  let index = 0;
+
   for (let i = 0; i < arr.length; i++) {
     let isDuplicate = false;
-    for (let j = 0; j < unique.length; j++) {
+    for (let j = 0; j < index; j++) {
       if (arr[i] === unique[j]) {
         isDuplicate = true;
         break;
       }
     }
     if (!isDuplicate) {
-      unique.push(arr[i]);
+      unique[index] = arr[i];
+      index++;
     }
   }
   return unique;
-}
+};
 
-const numbers = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5];
-console.log(removeDuplicates(numbers)); // Output: [3, 1, 4, 5, 9, 2, 6]
+let numbers = [1, 2, 3, 4, 2, 5, 6, 3, 7, 8, 8];
+console.log(removeDuplicates(numbers)); // Output: [1, 2, 3, 4, 5, 6, 7, 8]
 ```
 
-Write a function to reverse a string Without Inbuilt Method.
+Reverse a string without using any built-in method.
 
 ```javascript
-function reverseString(str) {
+const reverseString = (str) => {
   let reversed = '';
   for (let i = str.length - 1; i >= 0; i--) {
     reversed += str[i];
   }
   return reversed;
-}
+};
 
 console.log(reverseString('hello')); // Output: 'olleh'
 ```
 
-Write a function to reverse a number Without Inbuilt Method.
+Reverse a number without using any built-in method.
 
 ```javascript
-function reverseNumber(num) {
+const reverseNumber = (num) => {
   let reversed = 0;
   while (num > 0) {
     reversed = reversed * 10 + (num % 10);
     num = Math.floor(num / 10);
   }
   return reversed;
-}
+};
 
 console.log(reverseNumber(12345)); // Output: 54321
 ```
