@@ -7115,6 +7115,29 @@ const numbers = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5];
 console.log(findMin(numbers)); // Output: 1
 ```
 
+Find the second largest number from the array given
+
+```javascript
+let array = [1, 8, 9, 40, 50];
+
+const secondLar = (arr) => {
+    let first = -Infinity;
+    let second = -Infinity;    
+    for (let i = 0; i < arr.length; i++){
+
+        if( arr[i] > first){
+            second = first;
+            first = arr[i];
+        } else if (arr[i] > second && arr[i] != first){
+            second = arr[i];
+        }
+    }
+    return second === -Infinity ? "No second largest number" : second;
+}
+
+console.log(secondLar(array));
+```
+
 Remove special characters from the given string without using built-in methods:
 
 ```javascript
