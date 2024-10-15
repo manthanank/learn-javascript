@@ -1,3 +1,12 @@
+# [1.18.0](https://github.com/manthanank/learn-javascript/compare/v1.17.0...v1.18.0) (2024-10-15)
+
+
+### Features
+
+* Add functions for string manipulation and binary tree operations ([dbfda3d](https://github.com/manthanank/learn-javascript/commit/dbfda3d3f3bbaef81b9e1604decccde69ee4ba8f))
+
+
+
 # [1.17.0](https://github.com/manthanank/learn-javascript/compare/v1.16.0...v1.17.0) (2024-10-15)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * Update README.md and add svg file ([39b93f7](https://github.com/manthanank/learn-javascript/commit/39b93f7cb98cde88315664db09ce23224315551c))
-
-
-
-# [1.13.0](https://github.com/manthanank/learn-javascript/compare/v1.12.0...v1.13.0) (2024-06-09)
-
-
-### Features
-
-* Update README.md and add svg file ([aba04bf](https://github.com/manthanank/learn-javascript/commit/aba04bfca61b3a22b8528ddc7f43b4c8baa6bc70))
 
 
 
