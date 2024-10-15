@@ -1,1 +1,1 @@
-console.log("Welcome");
+console.log("Thanks for using learn-javascript!");

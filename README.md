@@ -9743,6 +9743,354 @@ console.log("The number of words in the string is: " + words.length);
 // Output: The number of words in the string is: 2
 ```
 
+Find the largest element in an array.
+
+```javascript
+const numbers = [10, 5, 20, 15, 30];
+
+const largest = Math.max(...numbers);
+
+console.log("Largest number: " + largest);
+
+// Output: Largest number: 30
+```
+
+Find the smallest element in an array.
+
+```javascript
+const numbers = [10, 5, 20, 15, 30];
+
+const smallest = Math.min(...numbers);
+
+console.log("Smallest number: " + smallest);
+
+// Output: Smallest number: 5
+```
+
+Find the largest element in an array without using any built-in functions/methods.
+
+```javascript
+const numbers = [10, 5, 20, 15, 30];
+
+let largest = numbers[0];
+
+for (let i = 1; i < numbers.length; i++) {
+  if (numbers[i] > largest) {
+    largest = numbers[i];
+  }
+}
+
+console.log("Largest number: " + largest);
+
+// Output: Largest number: 30
+```
+
+Find the smallest element in an array without using any built-in functions/methods.
+
+```javascript
+const numbers = [10, 5, 20, 15, 30];
+
+let smallest = numbers[0];
+
+for (let i = 1; i < numbers.length; i++) {
+  if (numbers[i] < smallest) {
+    smallest = numbers[i];
+  }
+}
+
+console.log("Smallest number: " + smallest);
+
+// Output: Smallest number: 5
+```
+
+Reverse an array without using any built-in functions/methods.
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+
+for (let i = 0; i < (numbers.length - 1) / 2; i++) {
+  const temp = numbers[i];
+  numbers[i] = numbers[numbers.length - 1 - i];
+  numbers[numbers.length - 1 - i] = temp;
+}
+
+console.log("Reversed array: " + numbers);
+
+// Output: Reversed array: 5,4,3,2,1
+```
+
+Find the missing number in an array of size n containing numbers from 1 to n+1 without using any built-in functions/methods.
+
+```javascript
+const numbers = [1, 2, 3, 4, 6, 7, 8, 9, 10];
+
+const n = numbers.length + 1;
+
+let sum = (n * (n + 1)) / 2;
+
+for (let i = 0; i < numbers.length; i++) {
+  sum -= numbers[i];
+}
+
+console.log("The missing number is: " + sum);
+
+// Output: The missing number is: 5
+```
+
+Move all zeroes to the end of the array without using any built-in functions/methods.
+
+```javascript
+const numbers = [0, 2, 0, 4, 0, 6, 0, 8];
+
+let count = 0;
+
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] !== 0) {
+    numbers[count] = numbers[i];
+    count++;
+  }
+}
+
+while (count < numbers.length) {
+  numbers[count] = 0;
+  count++;
+}
+
+console.log("Array with zeroes at the end: " + numbers);
+
+// Output: Array with zeroes at the end: 2,4,6,8,0,0,0,0
+```
+
+Find the "Kth" largest element in an array without using any built-in functions/methods.
+
+```javascript
+const numbers = [10, 5, 20, 15, 30];
+
+const k = 2;
+
+for (let i = 0; i < k; i++) {
+  let max = 0;
+  let maxIndex = 0;
+
+  for (let j = 0; j < numbers.length; j++) {
+    if (numbers[j] > max) {
+      max = numbers[j];
+      maxIndex = j;
+    }
+  }
+
+  numbers[maxIndex] = 0;
+}
+
+console.log("The " + k + "th largest element is: " + max);
+
+// Output: The 2th largest element is: 20
+```
+
+Find the "Kth" smallest element in an array without using any built-in functions/methods.
+
+```javascript
+const numbers = [10, 5, 20, 15, 30];
+
+const k = 2;
+
+for (let i = 0; i < k; i++) {
+  let min = numbers[i];
+  let minIndex = i;
+
+  for (let j = i + 1; j < numbers.length; j++) {
+    if (numbers[j] < min) {
+      min = numbers[j];
+      minIndex = j;
+    }
+  }
+
+  // Swap the found minimum element with the element at index i
+  [numbers[i], numbers[minIndex]] = [numbers[minIndex], numbers[i]];
+}
+
+console.log("The " + k + "th smallest element is: " + numbers[k - 1]);
+
+// Output: The 2th smallest element is: 10
+```
+
+Find the subarray with the given sum in a non-negative array without using any built-in functions/methods.
+
+```javascript
+const numbers = [1, 4, 20, 3, 10, 5];
+
+const targetSum = 33;
+
+let start = 0;
+
+let sum = numbers[0];
+
+for (let i = 1; i <= numbers.length; i++) {
+  while (sum > targetSum && start < i - 1) {
+    sum -= numbers[start];
+    start++;
+  }
+
+  if (sum === targetSum) {
+    console.log("Subarray with the given sum found between indexes " + start + " and " + (i - 1));
+    break;
+  }
+
+  if (i < numbers.length) {
+    sum += numbers[i];
+  }
+}
+
+// Output: Subarray with the given sum found between indexes 2 and 4
+```
+
+Kadane’s Algorithm: Find the maximum sum subarray without using any built-in functions/methods.
+
+```javascript
+const numbers = [-2, -3, 4, -1, -2, 1, 5, -3];
+
+let maxSum = numbers[0];
+
+let currentSum = numbers[0];
+
+for (let i = 1; i < numbers.length; i++) {
+  if (currentSum + numbers[i] > numbers[i]) {
+    currentSum = currentSum + numbers[i];
+  } else {
+    currentSum = numbers[i];
+  }
+  
+  if (currentSum > maxSum) {
+    maxSum = currentSum;
+  }
+}
+
+console.log("Maximum sum subarray: " + maxSum);
+
+// Output: Maximum sum subarray: 7
+```
+
+Two Sum Problem: Find pairs in an array that sum to a target value without using any built-in functions/methods.
+
+```javascript
+const numbers = [2, 7, 11, 15];
+
+const target = 9;
+
+const pairs = [];
+
+for (let i = 0; i < numbers.length; i++) {
+  for (let j = i + 1; j < numbers.length; j++) {
+    if (numbers[i] + numbers[j] === target) {
+      pairs[pairs.length] = [numbers[i], numbers[j]];
+    }
+  }
+}
+
+console.log("Pairs that sum to " + target + ": " + pairs);
+
+// Output: Pairs that sum to 9: 2,7
+```
+
+Merge two sorted arrays without using any built-in functions/methods.
+
+```javascript
+const arr1 = [1, 3, 5, 7];
+const arr2 = [2, 4, 6, 8];
+
+const mergedArray = [];
+
+let i = 0;
+
+let j = 0;
+
+while (i < arr1.length && j < arr2.length) {
+  if (arr1[i] < arr2[j]) {
+    mergedArray[mergedArray.length] = arr1[i];
+    i++;
+  } else {
+    mergedArray[mergedArray.length] = arr2[j];
+    j++;
+  }
+}
+
+while (i < arr1.length) {
+  mergedArray[mergedArray.length] = arr1[i];
+  i++;
+}
+
+while (j < arr2.length) {
+  mergedArray[mergedArray.length] = arr2[j];
+  j++;
+}
+
+console.log("Merged array: " + mergedArray);
+
+// Output: Merged array: 1,2,3,4,5,6,7,8
+```
+
+Find the longest increasing subsequence in an array without using any built-in functions/methods.
+
+```javascript
+const numbers = [10, 22, 9, 33, 21, 50, 41, 60, 80];
+
+const lis = [];
+for (let i = 0; i < numbers.length; i++) {
+  lis[i] = 1;
+}
+
+for (let i = 1; i < numbers.length; i++) {
+  for (let j = 0; j < i; j++) {
+    if (numbers[i] > numbers[j] && lis[i] < lis[j] + 1) {
+      lis[i] = lis[j] + 1;
+    }
+  }
+}
+
+let maxLis = 0;
+
+for (let i = 0; i < lis.length; i++) {
+  if (lis[i] > maxLis) {
+    maxLis = lis[i];
+  }
+}
+
+console.log("Length of the longest increasing subsequence: " + maxLis);
+
+// Output: Length of the longest increasing subsequence: 6
+```
+
+Trapping Rain Water Problem without using any built-in functions/methods.
+
+```javascript
+const heights = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1];
+
+let totalWater = 0;
+
+for (let i = 1; i < heights.length - 1; i++) {
+  let leftMax = 0;
+  for (let j = 0; j < i; j++) {
+    if (heights[j] > leftMax) {
+      leftMax = heights[j];
+    }
+  }
+
+  let rightMax = 0;
+  for (let j = i + 1; j < heights.length; j++) {
+    if (heights[j] > rightMax) {
+      rightMax = heights[j];
+    }
+  }
+
+  const minMax = leftMax < rightMax ? leftMax : rightMax;
+  totalWater += minMax > heights[i] ? minMax - heights[i] : 0;
+
+console.log("Total trapped rainwater: " + totalWater);
+
+// Output: Total trapped rainwater: 6
+}
+```
+
 [Back to Top⤴️](#table-of-contents)
 
 ## List of GitHub Repositories to learn JavaScript
