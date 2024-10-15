@@ -1,3 +1,12 @@
+# [1.17.0](https://github.com/manthanank/learn-javascript/compare/v1.16.0...v1.17.0) (2024-10-15)
+
+
+### Features
+
+* Add functions for finding the largest and smallest elements in an array ([7425631](https://github.com/manthanank/learn-javascript/commit/7425631c79c690b239e205907ba112eea46fc907))
+
+
+
 # [1.16.0](https://github.com/manthanank/learn-javascript/compare/v1.15.0...v1.16.0) (2024-10-07)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * Update README.md and add svg file ([aba04bf](https://github.com/manthanank/learn-javascript/commit/aba04bfca61b3a22b8528ddc7f43b4c8baa6bc70))
-
-
-
-# [1.12.0](https://github.com/manthanank/learn-javascript/compare/v1.11.0...v1.12.0) (2024-02-14)
-
-
-### Features
-
-* Update Dockerfile ([c5cb230](https://github.com/manthanank/learn-javascript/commit/c5cb23038387664b13b420401659ce8c09185821))
 
 
 
