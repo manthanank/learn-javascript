@@ -10091,6 +10091,534 @@ console.log("Total trapped rainwater: " + totalWater);
 }
 ```
 
+Reverse a string.
+
+```javascript
+
+````
+
+Check if a string is a palindrome.
+
+```javascript
+
+````
+
+Find the first non-repeating character in a string.
+
+```javascript
+
+````
+
+Find the longest palindrome in a string.
+
+```javascript
+
+````
+
+Check if two strings are anagrams.
+
+```javascript
+
+````
+
+Implement strstr() or indexOf().
+
+```javascript
+
+````
+
+Longest Common Prefix.
+
+```javascript
+
+````
+
+Count and say problem.
+
+```javascript
+
+````
+
+Group anagrams together from a list of strings.
+
+```javascript
+
+````
+
+Check if a string has balanced parentheses.
+
+```javascript
+
+````
+
+Reverse a linked list (iterative and recursive).
+
+```javascript
+
+````
+
+Detect a cycle in a linked list (Floyd’s Cycle Detection).
+
+```javascript
+
+````
+
+Find the middle element of a linked list.
+
+```javascript
+
+````
+
+Merge two sorted linked lists.
+
+```javascript
+
+````
+
+Remove N-th node from the end of a linked list.
+
+```javascript
+
+````
+
+Find the intersection point of two linked lists.
+
+```javascript
+
+````
+
+Detect and remove a loop in a linked list.
+
+```javascript
+
+````
+
+Flatten a linked list.
+
+```javascript
+
+````
+
+Rotate a linked list.
+
+```javascript
+
+````
+
+Clone a linked list with random pointers.
+
+```javascript
+
+````
+
+Implement a stack using arrays or linked lists.
+
+```javascript
+
+````
+
+Implement a queue using stacks.
+
+```javascript
+
+````
+
+Implement a stack that supports getMin() in constant time.
+
+```javascript
+
+````
+
+Next Greater Element in a stack.
+
+```javascript
+
+````
+
+Design a circular queue.
+
+```javascript
+
+````
+
+Evaluate postfix/prefix expressions.
+
+```javascript
+
+````
+
+Implement a LRU (Least Recently Used) Cache.
+
+```javascript
+
+````
+
+Check for balanced parentheses using a stack.
+
+```javascript
+
+````
+
+Sort a stack.
+
+```javascript
+
+````
+
+Find the largest rectangle in a histogram.
+
+```javascript
+
+````
+
+Inorder/Preorder/Postorder traversal of a binary tree (recursive and iterative).
+
+```javascript
+
+````
+
+Level order traversal of a binary tree.
+
+```javascript
+
+````
+
+Find the height of a binary tree.
+
+```javascript
+
+````
+
+Check if two trees are identical.
+
+```javascript
+
+````
+
+Find the diameter of a binary tree.
+
+```javascript
+
+````
+
+Check if a binary tree is a mirror of itself (symmetric).
+
+```javascript
+
+````
+
+Find the lowest common ancestor (LCA) of two nodes in a binary tree.
+
+```javascript
+
+````
+
+Convert a binary tree into its mirror tree.
+
+```javascript
+
+````
+
+Print the boundary nodes of a binary tree.
+
+```javascript
+
+````
+
+Find the path from the root to a given node in a binary tree.
+
+```javascript
+
+````
+
+Insert a node in a binary search tree.
+
+```javascript
+
+````
+
+Delete a node from a binary search tree.
+
+```javascript
+
+````
+
+Find the inorder successor/predecessor of a node in a BST.
+
+```javascript
+
+````
+
+Check if a binary tree is a binary search tree (BST).
+
+```javascript
+
+````
+
+Find the k-th smallest/largest element in a BST.
+
+```javascript
+
+````
+
+Convert a BST into a sorted doubly linked list.
+
+```javascript
+
+````
+
+Merge two binary search trees.
+
+```javascript
+
+````
+
+Check if there’s a pair with a given sum in a BST.
+
+```javascript
+
+````
+
+Construct a BST from a sorted array.
+
+```javascript
+
+````
+
+Find the range sum in a binary search tree.
+
+```javascript
+
+````
+
+Implement a min/max heap.
+
+```javascript
+
+````
+
+Find the k-th largest/smallest element in an array using a heap.
+
+```javascript
+
+````
+
+Merge k sorted arrays using a heap.
+
+```javascript
+
+````
+
+Find the median in a stream of integers.
+
+```javascript
+
+````
+
+Check if a binary tree is a heap.
+
+```javascript
+
+````
+
+Find the top K frequent elements in a stream of data.
+
+```javascript
+
+````
+
+Sort an array using heap sort.
+
+```javascript
+
+````
+
+Rearrange characters in a string such that no two adjacent characters are the same using a heap.
+
+```javascript
+
+````
+
+Depth First Search (DFS) and Breadth First Search (BFS).
+
+```javascript
+
+````
+
+Check if a graph is bipartite.
+
+```javascript
+
+````
+
+Detect a cycle in a directed/undirected graph.
+
+```javascript
+
+````
+
+Find the shortest path in an unweighted graph (BFS).
+
+```javascript
+
+````
+
+Dijkstra's Algorithm for shortest path in a weighted graph.
+
+```javascript
+
+````
+
+Topological Sorting of a directed graph.
+
+```javascript
+
+````
+
+Find the strongly connected components in a graph (Kosaraju’s Algorithm).
+
+```javascript
+
+````
+
+Prim’s and Kruskal’s Algorithm for Minimum Spanning Tree (MST).
+
+```javascript
+
+````
+
+Flood Fill Algorithm.
+
+```javascript
+
+````
+
+Find if there’s a path between two nodes in a graph.
+
+```javascript
+
+````
+
+0/1 Knapsack problem.
+
+```javascript
+
+````
+
+Longest Common Subsequence.
+
+```javascript
+
+````
+
+Longest Increasing Subsequence.
+
+```javascript
+
+````
+
+Coin Change Problem.
+
+```javascript
+
+````
+
+Rod Cutting Problem.
+
+```javascript
+
+````
+
+Subset Sum Problem.
+
+```javascript
+
+````
+
+Edit Distance Problem.
+
+```javascript
+
+````
+
+Egg Dropping Problem.
+
+```javascript
+
+````
+
+Fibonacci number using dynamic programming.
+
+```javascript
+
+````
+
+Word Break Problem.
+
+```javascript
+
+````
+
+Find the majority element in an array (element that appears more than n/2 times).
+
+```javascript
+
+````
+
+Find the median of two sorted arrays.
+
+```javascript
+
+````
+
+Count inversions in an array.
+
+```javascript
+
+````
+
+Best time to buy and sell stock.
+
+```javascript
+
+````
+
+Reservoir sampling.
+
+```javascript
+
+````
+
+Find the minimum number of platforms required for a railway station.
+
+```javascript
+
+````
+
+K-th largest element in a stream.
+
+```javascript
+
+````
+
+Median of a stream of integers.
+
+```javascript
+
+````
+
+Find the longest consecutive sequence in an array.
+
+```javascript
+
+````
+
+Sliding window maximum.
+
+```javascript
+
+````
+
 [Back to Top⤴️](#table-of-contents)
 
 ## List of GitHub Repositories to learn JavaScript
