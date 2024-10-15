@@ -1,4 +1,4 @@
-# Learn Javascript
+# Learn JavaScript
 
 This repository contains a list of JavaScript concepts, functions, methods, and other important topics that are essential for every JavaScript developer to learn. It is a comprehensive guide that covers all the basic and advanced concepts of JavaScript.
 
