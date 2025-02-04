@@ -1,3 +1,12 @@
+## [1.18.1](https://github.com/manthanank/learn-javascript/compare/v1.18.0...v1.18.1) (2025-02-04)
+
+
+### Bug Fixes
+
+* Correct console output comments in README.md for arithmetic operations ([8f233a9](https://github.com/manthanank/learn-javascript/commit/8f233a991ae4c3b9bec97e7f26b983dd82ccdfbc))
+
+
+
 # [1.18.0](https://github.com/manthanank/learn-javascript/compare/v1.17.0...v1.18.0) (2024-10-15)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * Add functions for sorting, finding max/min, sum/average, prime/palindrome checks, and duplicate removal ([76cba6f](https://github.com/manthanank/learn-javascript/commit/76cba6fb77c9126281e2920b6a04017900b04a74))
-
-
-
-# [1.14.0](https://github.com/manthanank/learn-javascript/compare/v1.13.0...v1.14.0) (2024-06-14)
-
-
-### Features
-
-* Update README.md and add svg file ([39b93f7](https://github.com/manthanank/learn-javascript/commit/39b93f7cb98cde88315664db09ce23224315551c))
 
 
 
