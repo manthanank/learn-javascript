@@ -582,28 +582,25 @@ console.log(cars instanceof Boolean); // Output: false
 let x = 5;
 let y = 10;
 
-x = y; // x = y (x is now 10)
-console.log(x); // Output: 5
-
-x += y; // x = x + y (x is now 15)
+x += y; // x = x + y
 console.log(x); // Output: 15
 
-x -= y; // x = x - y (x is now 5)
+x -= y; // x = x - y
 console.log(x); // Output: 5
 
-x *= y; // x = x * y (x is now 50)
+x *= y; // x = x * y
 console.log(x); // Output: 50
 
-x /= y; // x = x / y (x is now 5)
+x /= y; // x = x / y
 console.log(x); // Output: 5
 
-x %= y; // x = x % y (x is now 5)
+x %= y; // x = x % y
 console.log(x); // Output: 5
 
-x **= y; // x = x ** y (x is now 9765625)
+x **= y; // x = x ** y
 console.log(x); // Output: 9765625
 
-x : y; // x = y (x is now 10)
+x = y; // x = y
 console.log(x); // Output: 10
 ```
 
